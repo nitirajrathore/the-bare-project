@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: counter
+  labels:
+    feature: counter
+
+spec:
+  containers:
+    - name: counter-demo
+      image: nitirajrathore/nodeserver-with-counter
+      ports:
+        - containerPort: 3000
+

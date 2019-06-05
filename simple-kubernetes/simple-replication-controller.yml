@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: counter-rc
+spec:
+  replicas: 2
+  selector:
+    app: counter
+  template:
+    metadata:
+      labels:
+        app: counter
+    spec:
+      containers:
+        - name: nodeserver-with-counter
+          image: nitirajrathore/nodeserver-with-counter
+          ports:
+            - name: nodejs-port
+              containerPort: 3000

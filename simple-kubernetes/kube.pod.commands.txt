@@ -33,3 +33,40 @@ l
 ls
 mkdir bin
 vim print_commands.sh
+../bin/print_commands.sh >> ../simple-kubernetes/kube.pod.commands.txt 
+../bin/print_commands.sh >> kube.pod.commands.txt 
+./print_commands.sh 
+cat kube.pod.commands.txt 
+cat print_commands.sh 
+cd ..
+cd ../nodejs-server/
+cd bin/
+cd nodejs-server/
+cd simple-kubernetes/
+chmod +x print_commands.sh 
+docker build . 
+docker build . -t nitirajrathore/nodeserver-with-counter
+docker push nitirajrathore/nodeserver-with-counter
+git add .
+git commit 
+git status
+kubectl attach counter -i 
+kubectl create -f ../simple-kubernetes/pod-counter.yml 
+kubectl create -f pod-counter.yml
+kubectl delete pod busybox 
+kubectl delete pod counter
+kubectl describe pod nodehelloworld.example.com 
+kubectl describe svc frontend
+kubectl get pods
+kubectl get svc
+kubectl logs -f counter 
+kubectl logs counter 
+kubectl port-forward counter 4000:3000
+kubectl port-forward pod counter 4000:3000
+kubectl run -i --tty busybox --image=busybox --restart=Never -- sh
+l
+ls
+mkdir bin
+vim .gitignore
+vim .gitignore 
+vim print_commands.sh

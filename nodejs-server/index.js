@@ -1,12 +1,17 @@
 var express = require("express");
 var app = express();
 
+var count = 0;
+var host;
+var port;
 app.get("/", function(req, res){
-    res.send('Hello World!');
+    count++;
+    console.log("request number : " + count);
+    res.send(count + "." + 'Hello World! from ' + host + ":" + port);
 });
 
 var server = app.listen(3000, function(){
-    var host = server.address().address;
-    var port = server.address().port;
+    host = server.address().address;
+    port = server.address().port;
     console.log("Example app listening at http://%s:%s", host, port);
 });

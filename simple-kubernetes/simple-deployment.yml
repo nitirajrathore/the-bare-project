@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: counter-deployment
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: counter
+    spec:
+      containers:
+        - name: counter
+          image: nitirajrathore/nodeserver-with-counter
+          ports:
+            containerPort: 3000

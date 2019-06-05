@@ -1,0 +1,16 @@
+docker build 
+docker build .
+docker images 
+docker images | grep 6129b0f250e3
+docker ps
+docker ps 
+docker run -p 3000:3000 -t 6129b0f250e3
+docker run -p 3000:3000 -t c79bb508b614
+docker run -p 3000:3005 -t c79bb508b614
+docker run -p 3005:3000 -t c79bb508b614
+docker stop 289957f70720
+docker stop fe240246511e 
+40 docker login 
+41 docker tag c79bb508b614 nitirajrathore/nodejs-helloworld-server
+42 docker images | grep nodejs
+43 docker push nitirajrathore/nodejs-helloworld-server 

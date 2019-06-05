@@ -1,0 +1,35 @@
+kubectl attach nodehelloworld.example.com -i 
+kubectl create -f pod-helloworld.yml 
+kubectl delete pod busybox
+kubectl delete svc frontend 
+kubectl describe pod nodehelloworld.example.com
+kubectl exec nodehelloworld.example.com -- cat Dockerfile 
+kubectl exec nodehelloworld.example.com -- ls 
+kubectl exec nodehelloworld.example.com -- ps -aux 
+kubectl exec nodehelloworld.example.com -- pwd
+kubectl expose pod nodehelloworld.example.com --port=3000 --name=frontend
+kubectl expose pod nodehelloworld.example.com --port=4444 --name=frontend
+kubectl get pod
+kubectl get pods
+kubectl get svc
+kubectl label pod nodehelloworld.example.com mylabel=awesome 
+kubectl port-forward nodehelloworld.example.com 4000
+kubectl port-forward nodehelloworld.example.com 4000:3000
+kubectl run -i --tty busybox --image=busybox --restart=Never -- sh
+../bin/print_commands.sh >> kube.pod.commands.txt 
+./print_commands.sh 
+cat print_commands.sh 
+cd ..
+cd bin/
+cd simple-kubernetes/
+chmod +x print_commands.sh 
+kubectl delete pod busybox 
+kubectl describe pod nodehelloworld.example.com 
+kubectl describe svc frontend
+kubectl get pods
+kubectl get svc
+kubectl run -i --tty busybox --image=busybox --restart=Never -- sh
+l
+ls
+mkdir bin
+vim print_commands.sh

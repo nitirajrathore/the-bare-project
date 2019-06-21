@@ -1,0 +1,21 @@
+$ ./dind-cluster-v1.13.sh up
+
+$ # add kubectl directory to PATH
+$ export PATH="$HOME/.kubeadm-dind-cluster:$PATH"
+
+$ kubectl get nodes
+NAME          STATUS    ROLES     AGE       VERSION
+kube-master   Ready     master    4m        v1.13.0
+kube-node-1   Ready     <none>    2m        v1.13.0
+kube-node-2   Ready     <none>    2m        v1.13.0
+
+$ # k8s dashboard available at http://localhost:8080/api/v1/namespaces/kube-system/services/kubernetes-dashboard:/proxy
+
+$ # restart the cluster, this should happen much quicker than initial startup
+$ ./dind-cluster-v1.13.sh up
+
+$ # stop the cluster
+$ ./dind-cluster-v1.13.sh down
+
+$ # remove DIND containers and volumes
+$ ./dind-cluster-v1.13.sh clean

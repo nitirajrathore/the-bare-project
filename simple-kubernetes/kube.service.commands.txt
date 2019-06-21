@@ -1,0 +1,9 @@
+../bin/print_commands.sh > kube.service.commands.txt
+curl localhost:31001
+kubectl create -f counter-service.yml 
+kubectl create -f pod-counter.yml 
+kubectl delete pod counter
+kubectl delete svc counter-service
+kubectl describe svc counter-service
+kubectl get pods
+kubectl get svc

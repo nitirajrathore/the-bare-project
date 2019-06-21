@@ -1,0 +1,37 @@
+./bin/print_commands.sh 
+./bin/print_commands.sh > kube.dind-cluster.commands.txt
+./dind-cluster-v1.14.sh up
+`brew link kubernetes-cli
+brew install kubernetes-cli
+brew install kubernetes-cli@1.13
+brew install md5sha1sum 
+brew install sha1sum 
+brew link --overwrite --dry-run kubernetes-cli
+brew link --overwrite kubernetes-cli
+brew link kubernetes-cli
+brew search kubernetes
+brew search sha1sum 
+cd 
+cd opt/
+cd ~/work/the-bare-project/
+chmod +x dind-cluster-v1.14.sh 
+docker ps
+docker version 
+hyperkube --version 
+kubeadm
+kubectl --version 
+kubectl delete pod counter 
+kubectl describe pod counter 
+kubectl get nodes
+kubectl get pods
+kubectl get svc 
+kubectl version 
+ls
+mv dind-cluster-v1.14.sh ~/work/the-bare-project/
+rm dind-cluster-v1.13.sh
+sha1sum 
+vim ~/.bash_profile 
+wget https://cdn.rawgit.com/Mirantis/kubeadm-dind-cluster/master/fixed/dind-cluster-v1.8.sh 
+wget https://github.com/kubernetes-sigs/kubeadm-dind-cluster/releases/download/v0.1.0/dind-cluster-v1.13.sh
+wget https://github.com/kubernetes-sigs/kubeadm-dind-cluster/releases/download/v0.1.0/dind-cluster-v1.14.sh
+wget https://github.com/kubernetes-sigs/kubeadm-dind-cluster/releases/download/v0.2.0/dind-cluster-v1.14.sh 

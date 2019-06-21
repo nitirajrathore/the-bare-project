@@ -13,4 +13,5 @@ spec:
         - name: counter
           image: nitirajrathore/nodeserver-with-counter
           ports:
-            containerPort: 3000
+            - name: nodejs-port
+              containerPort: 3000

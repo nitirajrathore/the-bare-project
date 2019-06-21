@@ -1,0 +1,26 @@
+../bin/print_commands.sh > kube.deployment.commands.txt
+curl localhost:31990
+kubectl create -f simple-deployment.yml 
+kubectl describe deployment counter-deployment
+kubectl describe pods counter-deployment-57d9df8df4-hlzm9 
+kubectl describe pods counter-deployment-7d9cb8fb8f-8qnzj
+kubectl describe pods counter-deployment-7d9cb8fb8f-pc8qz 
+kubectl describe rs counter-deployment-7d9cb8fb8f 
+kubectl edit deployment/counter-deployment 
+kubectl expose deployment counter-deployment --type=NodePort 
+kubectl get deployments
+kubectl get pods
+kubectl get pods 
+kubectl get pods --show-labels
+kubectl get rs
+kubectl get service 
+kubectl get svc
+kubectl rollout status deployment/counter-deployment
+kubectl rollout status deployment/counter-deployment 
+kubectl rollout status deployments/counter-deployment
+kubectl rollout undo deployment/counter-deployment 
+kubectl rollout undo deployment/counter-deployment --to-revision=4
+kubectl set image deployment/conter-deployment counter=nitirajrathore/nodeserver-with-cojrathore/nodeserver-with-counter:2 
+kubectl set image deployment/counter-deployment counter=nitirajrathore/nodeserver-with-cojrathore/nodeserver-with-counter:2 
+kubectl set image deployment/counter-deployment counter=nitirajrathore/nodeserver-with-counter --record
+kubectl set image deployment/counter-deployment counter=nitirajrathore/nodeserver-with-counter:2 

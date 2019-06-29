@@ -1,0 +1,10 @@
+version: '3'
+services:
+  grpc-server:
+    image: nitirajrathore/grpc-server
+    ports:
+      - "8000:8000"
+  grpc-client:
+    image: nitirajrathore/grpc-client
+    ports:
+      - "8080:8080"

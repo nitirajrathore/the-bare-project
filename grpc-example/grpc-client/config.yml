@@ -75,6 +75,6 @@ logging:
       maxFileSize: 10MiB
 
 externalService:
-  hostname: localhost
+  hostname: grpc-server
   port: 8000
   shutdownPeriod: 10 seconds

@@ -75,7 +75,7 @@ public class RouteGuideClient {
    * Blocking unary call example.  Calls getFeature and prints the response.
    */
   public void getFeature(int lat, int lon) {
-    log.info("*** GetFeature: lat={0} lon={1}", lat, lon);
+    log.info("*** GetFeature: lat={} lon={}", lat, lon);
 
     Point request = Point.newBuilder().setLatitude(lat).setLongitude(lon).build();
 
@@ -86,19 +86,20 @@ public class RouteGuideClient {
         testHelper.onMessage(feature);
       }
     } catch (StatusRuntimeException e) {
-      log.warn("RPC failed: {0}", e.getStatus());
+      log.error("Exception occurred : ", e);
+      log.warn("RPC failed: {}", e.getStatus());
       if (testHelper != null) {
         testHelper.onRpcError(e);
       }
       return;
     }
     if (RouteGuideUtil.exists(feature)) {
-      log.info("Found feature called \"{0}\" at {1}, {2}",
+      log.info("Found feature called \"{}\" at {}, {}",
           feature.getName(),
           RouteGuideUtil.getLatitude(feature.getLocation()),
           RouteGuideUtil.getLongitude(feature.getLocation()));
     } else {
-      log.info("Found no feature at {0}, {1}",
+      log.info("Found no feature at {}, {}",
           RouteGuideUtil.getLatitude(feature.getLocation()),
           RouteGuideUtil.getLongitude(feature.getLocation()));
     }
@@ -109,7 +110,7 @@ public class RouteGuideClient {
    * response feature as it arrives.
    */
   public void listFeatures(int lowLat, int lowLon, int hiLat, int hiLon) {
-    log.info("*** ListFeatures: lowLat={0} lowLon={1} hiLat={2} hiLon={3}", lowLat, lowLon, hiLat,
+    log.info("*** ListFeatures: lowLat={} lowLon={} hiLat={} hiLon={}", lowLat, lowLon, hiLat,
         hiLon);
 
     Rectangle request =
@@ -121,13 +122,13 @@ public class RouteGuideClient {
       features = blockingStub.listFeatures(request);
       for (int i = 1; features.hasNext(); i++) {
         Feature feature = features.next();
-        log.info("Result #" + i + ": {0}", feature);
+        log.info("Result #" + i + ": {}", feature);
         if (testHelper != null) {
           testHelper.onMessage(feature);
         }
       }
     } catch (StatusRuntimeException e) {
-      log.warn("RPC failed: {0}", e.getStatus());
+      log.warn("RPC failed: {}", e.getStatus());
       if (testHelper != null) {
         testHelper.onRpcError(e);
       }
@@ -144,8 +145,8 @@ public class RouteGuideClient {
     final CountDownLatch finishLatch = new CountDownLatch(1);
     StreamObserver<RouteSummary> responseObserver = new StreamObserver<RouteSummary>() {
       public void onNext(RouteSummary summary) {
-        log.info("Finished trip with {0} points. Passed {1} features. "
-            + "Travelled {2} meters. It took {3} seconds.", summary.getPointCount(),
+        log.info("Finished trip with {} points. Passed {} features. "
+            + "Travelled {} meters. It took {} seconds.", summary.getPointCount(),
             summary.getFeatureCount(), summary.getDistance(), summary.getElapsedTime());
         if (testHelper != null) {
           testHelper.onMessage(summary);
@@ -153,7 +154,7 @@ public class RouteGuideClient {
       }
 
       public void onError(Throwable t) {
-        log.warn("RecordRoute Failed: {0}", Status.fromThrowable(t));
+        log.warn("RecordRoute Failed: {}", Status.fromThrowable(t));
         if (testHelper != null) {
           testHelper.onRpcError(t);
         }
@@ -172,7 +173,7 @@ public class RouteGuideClient {
       for (int i = 0; i < numPoints; ++i) {
         int index = random.nextInt(features.size());
         Point point = features.get(index).getLocation();
-        log.info("Visiting point {0}, {1}", RouteGuideUtil.getLatitude(point),
+        log.info("Visiting point {}, {}", RouteGuideUtil.getLatitude(point),
             RouteGuideUtil.getLongitude(point));
         requestObserver.onNext(point);
         // Sleep for a bit before sending the next one.
@@ -207,7 +208,7 @@ public class RouteGuideClient {
     StreamObserver<RouteNote> requestObserver =
         asyncStub.routeChat(new StreamObserver<RouteNote>() {
           public void onNext(RouteNote note) {
-            log.info("Got message \"{0}\" at {1}, {2}", note.getMessage(), note.getLocation()
+            log.info("Got message \"{}\" at {}, {}", note.getMessage(), note.getLocation()
                 .getLatitude(), note.getLocation().getLongitude());
             if (testHelper != null) {
               testHelper.onMessage(note);
@@ -215,7 +216,7 @@ public class RouteGuideClient {
           }
 
           public void onError(Throwable t) {
-            log.warn("RouteChat Failed: {0}", Status.fromThrowable(t));
+            log.warn("RouteChat Failed: {}", Status.fromThrowable(t));
             if (testHelper != null) {
               testHelper.onRpcError(t);
             }
@@ -234,7 +235,7 @@ public class RouteGuideClient {
               newNote("Third message", 1, 0), newNote("Fourth message", 1, 1)};
 
       for (RouteNote request : requests) {
-        log.info("Sending message \"{0}\" at {1}, {2}", request.getMessage(), request.getLocation()
+        log.info("Sending message \"{}\" at {}, {}", request.getMessage(), request.getLocation()
             .getLatitude(), request.getLocation().getLongitude());
         requestObserver.onNext(request);
       }

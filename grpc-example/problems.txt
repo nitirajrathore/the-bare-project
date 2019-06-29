@@ -1,0 +1,7 @@
+1.
+$ docker-compose up
+grpc-client_1  | /bin/sh: bin/grpc-client.sh: Permission denied
+grpc-server_1  | /bin/sh: bin/grpc-server.sh: Permission denied
+
+2.
+

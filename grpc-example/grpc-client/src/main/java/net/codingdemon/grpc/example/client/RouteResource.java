@@ -26,6 +26,7 @@ public class RouteResource {
     this.client = client;
     try {
       features = RouteGuideUtil.parseFeatures(RouteGuideUtil.getDefaultFeaturesFile());
+
     } catch (IOException ex) {
       log.error("Error occurred.", ex);
     }
@@ -47,6 +48,14 @@ public class RouteResource {
     log.info("Got feature request for : {} : {}, {} : {}" , lat1, lon1, lat2, lon2);
     client.listFeatures(lat1, lon1, lat2, lon2);
     return Response.ok().build();
+  }
+
+  @Path("features")
+  @GET
+  public Response getAllFeatures() {
+    // Looking for a valid feature
+    log.info("sending all the features");
+    return Response.ok().entity(features).build();
   }
 
   @Path("recordRoute")

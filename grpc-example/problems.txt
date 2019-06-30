@@ -4,4 +4,11 @@ grpc-client_1  | /bin/sh: bin/grpc-client.sh: Permission denied
 grpc-server_1  | /bin/sh: bin/grpc-server.sh: Permission denied
 
 2.
+in kubernetes servers can be discovered using service name. This is due to DNS module shipped by default in kubenetes
+
+3.
+Docker does not pull the images always when doing RUN git pull OR CMD git pull in side docker file
+So, using the builds on local and copying them to docker instead of building inside container
+
+
 

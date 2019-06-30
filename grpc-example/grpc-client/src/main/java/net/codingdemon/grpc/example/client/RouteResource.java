@@ -7,10 +7,13 @@ import net.codingdemon.grpc.example.common.proto.Feature;
 import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
 import java.util.List;
+
+import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
 
 @Slf4j
 @Path("route")
@@ -50,6 +53,7 @@ public class RouteResource {
     return Response.ok().build();
   }
 
+  @Produces(APPLICATION_JSON)
   @Path("features")
   @GET
   public Response getAllFeatures() {

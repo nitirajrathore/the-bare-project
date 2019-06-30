@@ -10,5 +10,8 @@ in kubernetes servers can be discovered using service name. This is due to DNS m
 Docker does not pull the images always when doing RUN git pull OR CMD git pull in side docker file
 So, using the builds on local and copying them to docker instead of building inside container
 
+4.
+Dockerfile cannot access path outside of docker context. Docker sets the current folder in the context so using parent
+paths like ../ is not possible. But you can specify Dockerfile path to docker build, so build from parent folders.
 
 

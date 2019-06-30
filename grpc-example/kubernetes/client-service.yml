@@ -6,10 +6,10 @@ metadata:
     app: grpc-client
 spec:
   ports:
-    - port: 30330
+    - port: 3030
       nodePort: 30330
       targetPort: http-port
       protocol: TCP
   selector:
     app: grpc-client
-  type: NodePort
+  type: LoadBalancer

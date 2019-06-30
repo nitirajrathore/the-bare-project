@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: grpc-client-deployment
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: grpc-client
+    spec:
+      containers:
+        - name: grpc-client
+          image: nitirajrathore/grpc-client
+          ports:
+            - name: http-port
+              containerPort: 8080

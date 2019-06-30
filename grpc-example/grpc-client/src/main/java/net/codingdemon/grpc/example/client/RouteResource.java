@@ -35,6 +35,7 @@ public class RouteResource {
   @GET
   public Response getFeature(@QueryParam("lat") int lat, @QueryParam("lon") int lon) {
     // Looking for a valid feature
+    log.info("Got feature request for : {} : {}" , lat, lon );
     client.getFeature(lat, lon);
     return Response.ok().build();
   }
@@ -43,6 +44,7 @@ public class RouteResource {
   @GET
   public Response getAllFeature(@QueryParam("lat1") int lat1, @QueryParam("lon1") int lon1, @QueryParam("lat2") int lat2, @QueryParam("lon2") int lon2) {
     // Looking for a valid feature
+    log.info("Got feature request for : {} : {}, {} : {}" , lat1, lon1, lat2, lon2);
     client.listFeatures(lat1, lon1, lat2, lon2);
     return Response.ok().build();
   }
@@ -51,6 +53,7 @@ public class RouteResource {
   @GET
   public Response doRouteRecord(@QueryParam("points") int n) throws InterruptedException {
     // Looking for a valid feature
+    log.info("Got points : {}" , n);
     client.recordRoute(this.features, n);
     return Response.ok().build();
   }

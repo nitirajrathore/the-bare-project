@@ -3,3 +3,4 @@
 **/.git
 **/.idea/*
 **/target/*
+**/node_modules/*

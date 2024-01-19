@@ -1,0 +1,39 @@
+
+
+2023-12-06 14:24:56    WARN    Error processing file (Skipping): '.ebextensions/simple-nodejs-app-config.config' - Contains invalid key: 'settings'. For information about valid keys, see http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/ebextensions.html
+
+Solution : ➜  Test-webapp-env-2 git:(main) ✗ git commit -m "updated the `settings` key to `option_settings` as the `settings` was giving invalid key error"
+---
+
+2023-12-06 14:28:31    WARN    Error processing file (Skipping): '.ebextensions/simple-nodejs-app-config.config' - Contains invalid key: 'PlatformArn'. For information about valid keys, see http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/ebextensions.html
+
+---
+
+2023-12-06 14:41:29    WARN    Error processing file (Skipping): '.ebextensions/simple-nodejs-app-config.config' - Contains invalid key: 'ApplicationName'. For information about valid keys, see http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/ebextensions.html
+
+---
+
+2023-12-06 14:42:39    WARN    Error processing file (Skipping): '.ebextensions/simple-nodejs-app-config.config' - Contains invalid key: 'EnvironmentName'. For information about valid keys, see http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/ebextensions.html
+
+---
+
+2023-12-06 14:43:36    ERROR   "option_settings" in one of the configuration files failed validation. More details to follow.
+2023-12-06 14:43:36    ERROR   Invalid option specification (Namespace: 'aws:elasticbeanstalk:environment', OptionName: 'ExternalExtensionsS3Bucket'): External extensions can only be applied from the API
+2023-12-06 14:43:36    ERROR   Invalid option specification (Namespace: 'aws:elasticbeanstalk:managedactions', OptionName: 'ServiceRoleForManagedUpdates'): Only Service Linked Role 'AWSServiceRoleForElasticBeanstalkManagedUpdates' or monitoring service role is allowed to be used as Managed Updates service role.
+
+---
+
+2023-12-07 06:07:14    INFO    Environment update is starting.
+2023-12-07 06:07:17    ERROR   "option_settings" in one of the configuration files failed validation. More details to follow.
+2023-12-07 06:07:17    ERROR   Invalid option value: '0.0' (Namespace: 'aws:autoscaling:updatepolicy:rollingupdate', OptionName: 'MinInstancesInService'): You can't enable rolling updates for a single-instance environment.
+2023-12-07 06:07:17    ERROR   Invalid option value: '' (Namespace: 'aws:ec2:vpc', OptionName: 'Custom Availability Zones'): Custom Availability Zones option not supported for VPC environments.
+2023-12-07 06:07:17    ERROR   Invalid option value: '1' (Namespace: 'aws:autoscaling:asg', OptionName: 'MaxSize'): MaxSize is less than MinSize
+2023-12-07 06:07:17    ERROR   Invalid option value: 'sg-0271ed69e0ebdd76e' (Namespace: 'aws:autoscaling:launchconfiguration', OptionName: 'SecurityGroups'): The security group having id 'sg-0271ed69e0ebdd76e' does not exist
+2023-12-07 06:07:17    ERROR   You cannot migrate an environment to a VPC. Launch a new environment in the VPC.
+2023-12-07 06:07:17    ERROR   Invalid option value: '2' (Namespace: 'aws:autoscaling:asg', OptionName: 'MinSize'): MinSize is greater than MaxSize
+2023-12-07 06:07:17    ERROR   Failed to deploy application.
+
+---
+
+ERROR: ServiceError - Configuration validation exception: You cannot migrate an environment to a VPC. Launch a new environment in the VPC.
+

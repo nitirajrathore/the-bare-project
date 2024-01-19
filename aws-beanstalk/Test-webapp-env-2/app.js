@@ -1,12 +1,12 @@
-const port = process.env.PORT || 8080,
+const port = process.env.PORT || 3000,
     http = require('http'),
-    fs = require('fs')
-    // html = fs.readFileSync('index.html');
+    fs = require('fs'),
+    html = fs.readFileSync('index.html');
 
 const log = function(entry) {
     fs.appendFileSync('/tmp/sample-app.log', new Date().toISOString() + ' - ' + entry + '\n');
 };
-numrequests = 0;
+
 const server = http.createServer(function (req, res) {
     if (req.method === 'POST') {
         let body = '';
@@ -17,7 +17,7 @@ const server = http.createServer(function (req, res) {
 
         req.on('end', function() {
             if (req.url === '/') {
-                log('Received message: ' + body);
+                log('Received a message.');
             } else if (req.url = '/scheduled') {
                 log('Received task ' + req.headers['x-aws-sqsd-taskname'] + ' scheduled at ' + req.headers['x-aws-sqsd-scheduled-at']);
             }
@@ -26,11 +26,8 @@ const server = http.createServer(function (req, res) {
             res.end();
         });
     } else {
-        numrequests++;
-        // https://stackoverflow.com/questions/8107856/how-to-determine-a-users-ip-address-in-node
-        log('Received GET call from ip :' + req.headers['x-forwarded-for'] + ". Num of request processed : " + numrequests);
         res.writeHead(200);
-        res.write("Your IP : " + req.headers['x-forwarded-for'] + ". Number of get call received till now : " + numrequests);
+        res.write(html);
         res.end();
     }
 });

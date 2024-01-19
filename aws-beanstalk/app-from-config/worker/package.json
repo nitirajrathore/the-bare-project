@@ -1,0 +1,14 @@
+{
+  "name": "backend-webapp",
+  "version": "1.0.0",
+  "description": "Node.js backend application that reads from SQS queue",
+  "author": "First Last <first.last@example.com>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}
+

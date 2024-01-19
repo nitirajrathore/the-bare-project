@@ -1,0 +1,55 @@
+EnvironmentConfigurationMetadata:
+  Description: Configuration created from the EB CLI using "eb config save".
+  DateCreated: '1701932631000'
+  DateModified: '1701932631000'
+Platform:
+  PlatformArn: arn:aws:elasticbeanstalk:us-west-2::platform/Node.js 18 running on
+    64bit Amazon Linux 2023/6.0.3
+OptionSettings:
+  AWSEBSecurityGroup.aws:ec2:vpc:
+    VPCId: vpc-0bd443f88f5ea2292
+  aws:ec2:instances:
+    SpotFleetOnDemandAboveBasePercentage: '0'
+    InstanceTypes: t3.micro
+  aws:elasticbeanstalk:cloudwatch:logs:
+    RetentionInDays: '3'
+    StreamLogs: true
+  aws:elasticbeanstalk:environment:
+    ServiceRole: arn:aws:iam::226942380391:role/service-role/aws-elasticbeanstalk-service-role
+    EnvironmentType: SingleInstance
+    LoadBalancerType: application
+  AWSEBAutoScalingGroup.aws:ec2:vpc:
+    Subnets: subnet-02faaa88104358544,subnet-049028fb45bc66cc5,subnet-03cca72ba77dbfd76,subnet-0b45a214d294ee889
+  AWSEBAutoScalingLaunchConfiguration.aws:ec2:vpc:
+    AssociatePublicIpAddress: true
+  aws:elasticbeanstalk:healthreporting:system:
+    ConfigDocument:
+      Version: 1
+      CloudWatchMetrics:
+        Instance: {}
+        Environment: {}
+      Rules:
+        Environment:
+          ELB:
+            ELBRequests4xx:
+              Enabled: true
+          Application:
+            ApplicationRequests4xx:
+              Enabled: true
+  aws:autoscaling:launchconfiguration:
+    SSHSourceRestriction: tcp,22,22,117.97.154.38/32
+    EC2KeyName: eb-keypair
+  AWSEBAutoScalingLaunchConfiguration.aws:autoscaling:launchconfiguration:
+    IamInstanceProfile: aws-elasticbeanstalk-ec2-role
+  aws:elasticbeanstalk:managedactions:
+    ManagedActionsEnabled: true
+    PreferredStartTime: THU:05:11
+  aws:elasticbeanstalk:managedactions:platformupdate:
+    UpdateLevel: minor
+  aws:elasticbeanstalk:cloudwatch:logs:health:
+    RetentionInDays: '3'
+    HealthStreamingEnabled: true
+EnvironmentTier:
+  Type: Standard
+  Name: WebServer
+AWSConfigurationTemplateVersion: 1.1.0.0

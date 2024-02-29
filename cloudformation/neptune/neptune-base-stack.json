@@ -10,14 +10,14 @@
     },
     "DBClusterId": {
       "Description": "OPTIONAL: Enter the Cluster id of your Neptune cluster. Empty means we create one for your cluster.",
-      "Default": "",
+      "Default": "KGNeptune",
       "Type": "String",
       "MaxLength": 63
     },
     "DbInstanceType": {
       "Description": "Neptune DB instance type",
       "Type": "String",
-      "Default": "db.serverless",
+      "Default": "db.t3.medium",
       "AllowedValues": [
         "db.serverless",
         "db.t3.medium",
@@ -63,7 +63,7 @@
     },
     "NeptuneQueryTimeout": {
       "Type": "Number",
-      "Default": 20000,
+      "Default": 120000,
       "Description": "Neptune Query Time out (in milliseconds)"
     },
     "NeptuneEnableAuditLog": {
@@ -96,7 +96,7 @@
     "StorageEncrypted": {
       "Description": "Enable Encryption for Neptune.",
       "Type": "String",
-      "Default": "true",
+      "Default": "false",
       "AllowedValues": [
         "true",
         "false"

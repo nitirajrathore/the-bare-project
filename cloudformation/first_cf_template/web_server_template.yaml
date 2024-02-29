@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Description: >-
-  Create a Wordpress 
+  Create a simple webserver 
 
 Resources:
   WebServerSecurityGroup:
@@ -12,11 +12,11 @@ Resources:
         - IpProtocol: tcp
           FromPort: '80'
           ToPort: '80'
-          CidrIp: 106.51.246.94/32
+          CidrIp: 106.51.162.92/32
         - IpProtocol: tcp
           FromPort: '22'
           ToPort: '22'
-          CidrIp: 106.51.246.94/32
+          CidrIp: 106.51.162.92/32
   WebServer:
     Type: 'AWS::EC2::Instance'
     Properties:
@@ -27,7 +27,9 @@ Resources:
       KeyName: 'neptune-testing-keypair'
       UserData:
         Fn::Base64: |
+          #!/bin/bash
           apt update -y
+          snap install nmap
           apt install -y nodejs npm
           npm i -g webserver
           echo "<html><body>Hello World</body></html>" > /home/ubuntu/index.html
@@ -42,4 +44,10 @@ Resources:
     Properties:
       InstanceId: !Ref WebServer
       AllocationId: !GetAtt IPAddress.AllocationId
+
+Outputs:
+  MyEIPOutput:
+    Description: "Elastic IP Address"
+    Value: !GetAtt IPAddress.PublicIp
+
 

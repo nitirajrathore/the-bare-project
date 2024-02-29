@@ -2,17 +2,17 @@
   "Description": "Base Template to create Neptune Stack inside a VPC",
   "Parameters": {
     "NATGW1Id": {
-      "Type": "AWS::EC2::NatGateway::Id",
+      "Type": "String",
       "Default": "nat-0b77ec6c98b8e08c8",
       "Description": "ID of the NATGW 1"
     },
     "NATGW2Id": {
-      "Type": "AWS::EC2::NatGateway::Id",
+      "Type": "String",
       "Default": "nat-0dd2156c8bfccb05f",
       "Description": "ID of the NATGW 2"
     },
     "NATGW3Id": {
-      "Type": "AWS::EC2::NatGateway::Id",
+      "Type": "String",
       "Default": "nat-057020721f8710540",
       "Description": "ID of the NATGW 3"
     },
@@ -37,7 +37,7 @@
       "Description": "ID of the VPC"
     },
     "MyIGWId": {
-      "Type": "AWS::EC2::InternetGateway::Id",
+      "Type": "String",
       "Default": "igw-06c0e371f85949595",
       "Description": "ID of the InternetGateway"
     },

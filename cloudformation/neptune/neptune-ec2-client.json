@@ -8,6 +8,7 @@
     "EC2SSHKeyPairName": {
       "Description": "Name of an existing EC2 KeyPair to enable SSH access to the instances. Required Input",
       "Type": "AWS::EC2::KeyPair::KeyName",
+      "Default" : "neptune-testing-keypair",
       "ConstraintDescription": "Must be the name of an existing EC2 KeyPair in same region."
     },
     "Env": {

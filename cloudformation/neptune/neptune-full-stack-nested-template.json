@@ -413,7 +413,7 @@
           "Fn::Join": [
             "",
             [
-              "https://s3.amazonaws.com/aws-neptune-customer-samples/v2/cloudformation-templates/neptune-base-stack.json"
+              "https://s3.amazonaws.com/nitiraj-test-neptune/neptune-base-stack.json"
             ]
           ]
         },
@@ -464,7 +464,7 @@
           "Fn::Join": [
             "",
             [
-              "https://s3.amazonaws.com/aws-neptune-customer-samples/v2/cloudformation-templates/neptune-ec2-client.json"
+              "https://s3.amazonaws.com/nitiraj-test-neptune/neptune-ec2-client.json"
             ]
           ]
         },
@@ -489,12 +489,6 @@
             "Fn::GetAtt": [
               "NeptuneStack",
               "Outputs.VPC"
-            ]
-          },
-          "Subnet": {
-            "Fn::GetAtt": [
-              "NeptuneStack",
-              "Outputs.PublicSubnet1"
             ]
           },
           "NeptuneDBCluster": {
@@ -532,7 +526,7 @@
           "Fn::Join": [
             "",
             [
-              "https://s3.amazonaws.com/aws-neptune-customer-samples/v2/cloudformation-templates/neptune-sagemaker-notebook-stack.json"
+              "https://s3.amazonaws.com/nitiraj-test-neptune/neptune-sagemaker-notebook-stack.json"
             ]
           ]
         },
@@ -775,15 +769,6 @@
         "Fn::GetAtt": [
           "NeptuneStack",
           "Outputs.PrivateSubnet3"
-        ]
-      }
-    },
-    "Subnet4": {
-      "Description": "Public Subnet1",
-      "Value": {
-        "Fn::GetAtt": [
-          "NeptuneStack",
-          "Outputs.PublicSubnet1"
         ]
       }
     },

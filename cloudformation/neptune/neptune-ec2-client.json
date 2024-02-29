@@ -20,7 +20,7 @@
     "EC2ClientInstanceType": {
       "Description": "EC2 client instance",
       "Type": "String",
-      "Default": "r5.xlarge",
+      "Default": "t3.small",
       "AllowedValues": [
         "t3.micro",
         "t3.small",

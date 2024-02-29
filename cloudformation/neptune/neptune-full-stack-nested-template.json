@@ -413,7 +413,7 @@
           "Fn::Join": [
             "",
             [
-              "https://s3.amazonaws.com/nitiraj-test-neptune/neptune-base-stack.json"
+              "https://nitiraj-test-neptune.s3.ap-south-1.amazonaws.com/neptune-base-stack.json"
             ]
           ]
         },
@@ -464,7 +464,7 @@
           "Fn::Join": [
             "",
             [
-              "https://s3.amazonaws.com/nitiraj-test-neptune/neptune-ec2-client.json"
+              "https://nitiraj-test-neptune.s3.ap-south-1.amazonaws.com/neptune-ec2-client.json"
             ]
           ]
         },
@@ -526,7 +526,7 @@
           "Fn::Join": [
             "",
             [
-              "https://s3.amazonaws.com/nitiraj-test-neptune/neptune-sagemaker-notebook-stack.json"
+              "https://nitiraj-test-neptune.s3.ap-south-1.amazonaws.com/neptune-sagemaker-notebook-stack.json"
             ]
           ]
         },

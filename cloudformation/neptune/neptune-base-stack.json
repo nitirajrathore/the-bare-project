@@ -1,26 +1,14 @@
 {
   "Description": "Base Template to create Neptune Stack inside a VPC",
   "Parameters": {
-    "NATGW1": {
-      "Id" : "nat-0b77ec6c98b8e08c8"
-    },
-    "NATGW2": {
-      "Id": "nat-0dd2156c8bfccb05f"
-    },
-    "NATGW3": {
-      "Id": "nat-057020721f8710540"
-    },
-    "MySubnets" : {
-      "Id1" : "subnet-0d0a7e2b154582c6a",
-      "Id2" : "subnet-0003617ae6e323a81",
-      "Id3" : "subnet-0599e407afbe1ae13"
-    },
-    "MyVPC" : {
-      "Id" : "vpc-0a5e7a612c08536e1"
-    },
-    "MyIGW" : {
-      "Id" : "igw-06c0e371f85949595"
-    },
+    "NATGW1Id":  "nat-0b77ec6c98b8e08c8",
+    "NATGW2Id": "nat-0dd2156c8bfccb05f",
+    "NATGW3Id": "nat-057020721f8710540",
+    "MySubnet1Id" : "subnet-0d0a7e2b154582c6a",
+    "MySubnet2Id" : "subnet-0003617ae6e323a81",
+    "MySubnet3Id" : "subnet-0599e407afbe1ae13",
+    "MyVPCId" : "vpc-0a5e7a612c08536e1",
+    "MyIGWId" : "igw-06c0e371f85949595",
     "Env": {
       "Description": "Environment tag, e.g. prod, nonprod.",
       "Default": "test",
@@ -246,7 +234,7 @@
           ]
         },
         "VpcId": {
-          "Ref": "MyVPC.Id"
+          "Ref": "MyVPCId"
         },
         "PolicyDocument": {
           "Version": "2012-10-17",
@@ -269,7 +257,7 @@
       "Type": "AWS::EC2::SecurityGroup",
       "Properties": {
         "VpcId": {
-          "Ref": "MyVPC.Id"
+          "Ref": "MyVPCId"
         },
         "GroupDescription": "Allow Neptune DBPort Access",
         "SecurityGroupIngress": [
@@ -749,7 +737,7 @@
       "Type": "AWS::EC2::RouteTable",
       "Properties": {
         "VpcId": {
-          "Ref": "MyVPC.Id"
+          "Ref": "MyVPCId"
         }
       }
     },
@@ -757,7 +745,7 @@
       "Type": "AWS::EC2::RouteTable",
       "Properties": {
         "VpcId": {
-          "Ref": "MyVPC.Id"
+          "Ref": "MyVPCId"
         }
       }
     },
@@ -765,7 +753,7 @@
       "Type": "AWS::EC2::RouteTable",
       "Properties": {
         "VpcId": {
-          "Ref": "MyVPC.Id"
+          "Ref": "MyVPCId"
         }
       }
     },
@@ -774,7 +762,7 @@
       "Condition" : "AZ3Present",
       "Properties": {
         "VpcId": {
-          "Ref": "MyVPC.Id"
+          "Ref": "MyVPCId"
         }
       }
     },
@@ -783,7 +771,7 @@
       "Properties": {
         "DestinationCidrBlock": "0.0.0.0/0",
         "GatewayId": {
-          "Ref": "MyIGW.Id"
+          "Ref": "MyIGWId"
         },
         "RouteTableId": {
           "Ref": "PublicRouteTable"
@@ -795,7 +783,7 @@
       "Properties": {
         "DestinationCidrBlock": "0.0.0.0/0",
         "NatGatewayId": {
-          "Ref": "NATGW1.Id"
+          "Ref": "NATGW1Id"
         },
         "RouteTableId": {
           "Ref": "PrivateRouteTable1"
@@ -807,7 +795,7 @@
       "Properties": {
         "DestinationCidrBlock": "0.0.0.0/0",
         "NatGatewayId": {
-          "Ref": "NATGW2.Id"
+          "Ref": "NATGW2Id"
         },
         "RouteTableId": {
           "Ref": "PrivateRouteTable2"
@@ -820,7 +808,7 @@
       "Properties": {
         "DestinationCidrBlock": "0.0.0.0/0",
         "NatGatewayId": {
-          "Ref": "NATGW3.Id"
+          "Ref": "NATGW3Id"
         },
         "RouteTableId": {
           "Ref": "PrivateRouteTable3"
@@ -837,7 +825,7 @@
           "Ref": "PrivateRouteTable1"
         },
         "SubnetId": {
-          "Ref": "Subnet.Id1"
+          "Ref": "MySubnet1Id"
         }
       }
     },
@@ -851,7 +839,7 @@
           "Ref": "PrivateRouteTable2"
         },
         "SubnetId": {
-          "Ref": "Subnet.Id2"
+          "Ref": "MySubnet2Id"
         }
       }
     },
@@ -866,7 +854,7 @@
           "Ref": "PrivateRouteTable3"
         },
         "SubnetId": {
-          "Ref": "Subnet.Id3"
+          "Ref": "MySubnet3Id"
         }
       }
     }
@@ -1038,7 +1026,7 @@
     "VPC": {
       "Description": "VPC",
       "Value": {
-        "Ref": "MyVPC.Id"
+        "Ref": "MyVPCId"
       }
     },
     "NeptuneSG": {
@@ -1050,26 +1038,26 @@
     "InternetGateway": {
       "Description": "Neptune InternetGateway ",
       "Value": {
-        "Ref": "MyIGW.Id"
+        "Ref": "MyIGWId"
       }
     },
     "NatGateway1": {
       "Description": "Neptune NatGateway 1",
       "Value": {
-        "Ref": "NATGW1.Id"
+        "Ref": "NATGW1Id"
       }
     },
     "NatGateway2": {
       "Description": "Neptune NatGateway 2",
       "Value": {
-        "Ref": "NATGW2.Id"
+        "Ref": "NATGW2Id"
       }
     },
     "NatGateway3": {
       "Condition" : "AZ3Present",
       "Description": "Neptune NatGateway 3",
       "Value": {
-        "Ref": "NATGW3.Id"
+        "Ref": "NATGW3Id"
       }
     },
     "ElasticIP1": {

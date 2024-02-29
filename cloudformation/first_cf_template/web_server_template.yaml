@@ -1,0 +1,45 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: >-
+  Create a Wordpress 
+
+Resources:
+  WebServerSecurityGroup:
+    Type: 'AWS::EC2::SecurityGroup'
+    Properties:
+      GroupDescription: >-
+        Enable Http access via port 80 
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: '80'
+          ToPort: '80'
+          CidrIp: 106.51.246.94/32
+        - IpProtocol: tcp
+          FromPort: '22'
+          ToPort: '22'
+          CidrIp: 106.51.246.94/32
+  WebServer:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      ImageId: 'ami-03f4878755434977f'
+      InstanceType: 't2.small'
+      SecurityGroups:
+        - !Ref WebServerSecurityGroup
+      KeyName: 'neptune-testing-keypair'
+      UserData:
+        Fn::Base64: |
+          apt update -y
+          apt install -y nodejs npm
+          npm i -g webserver
+          echo "<html><body>Hello World</body></html>" > /home/ubuntu/index.html
+          webserver run 80 /home/ubuntu/
+    Metadata:
+      Instance:
+        Description: "This server hosts something"
+  IPAddress:
+    Type: 'AWS::EC2::EIP'
+  IPAssoc:
+    Type: 'AWS::EC2::EIPAssociation'
+    Properties:
+      InstanceId: !Ref WebServer
+      AllocationId: !GetAtt IPAddress.AllocationId
+

@@ -18,7 +18,7 @@
     "DbInstanceType": {
       "Description": "Neptune DB instance type",
       "Type": "String",
-      "Default": "db.serverless",
+      "Default": "db.t3.medium",
       "AllowedValues": [
         "db.serverless",
         "db.t3.medium",
@@ -72,7 +72,7 @@
     "EC2ClientInstanceType": {
       "Description": "OPTIONAL: EC2 client instance. Required only if EC2 client needs to setup. Please refer to https://aws.amazon.com/ec2/pricing/ for pricing.",
       "Type": "String",
-      "Default": "none",
+      "Default": "t3.small",
       "AllowedValues": [
         "none",
         "t3.micro",
@@ -116,7 +116,7 @@
     },
     "SetupGremlinConsole": {
       "Type": "String",
-      "Default": "false",
+      "Default": "true",
       "AllowedValues": [
         "true",
         "false"
@@ -125,7 +125,7 @@
     },
     "SetupRDF4JConsole": {
       "Type": "String",
-      "Default": "false",
+      "Default": "true",
       "AllowedValues": [
         "true",
         "false"
@@ -144,7 +144,7 @@
     "NotebookInstanceType": {
       "Description": "SageMaker Notebook instance type. Please refer https://aws.amazon.com/sagemaker/pricing/ for uptodate allowed instance type in aws region and https://aws.amazon.com/neptune/pricing/ for pricing.",
       "Type": "String",
-      "Default": "none",
+      "Default": "ml.t2.medium",
       "AllowedValues": [
         "none",
         "ml.t2.medium",

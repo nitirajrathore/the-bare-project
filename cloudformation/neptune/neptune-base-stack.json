@@ -31,6 +31,21 @@
       "Default": "subnet-0599e407afbe1ae13",
       "Description": "ID of the MySubnet3Id "
     },
+    "MyPubSubnet1Id": {
+      "Type": "AWS::EC2::Subnet::Id",
+      "Default": "subnet-0b83d54d2d625243e",
+      "Description": "ID of the MyPubSubnet1Id "
+    },
+    "MyPubSubnet2Id": {
+      "Type": "AWS::EC2::Subnet::Id",
+      "Default": "subnet-0e34530fb094a350e",
+      "Description": "ID of the MyPubSubnet2Id "
+    },
+    "MyPubSubnet3Id": {
+      "Type": "AWS::EC2::Subnet::Id",
+      "Default": "subnet-07ac0f43835902749",
+      "Description": "ID of the MyPubSubnet3Id "
+    },
     "MyVPCId": {
       "Type": "AWS::EC2::VPC::Id",
       "Default": "vpc-0a5e7a612c08536e1",
@@ -1091,6 +1106,44 @@
       "Description": "IAM User for accessing Neptune via IAM Auth",
       "Value": {
         "Ref": "NeptuneIamAuthUser"
+      }
+    },
+    "PrivateSubnet1": {
+      "Description": "Subnet Id",
+      "Value": {
+        "Ref": "MySubnet1Id"
+      }
+    },
+    "PrivateSubnet2": {
+      "Description": "Subnet Id",
+      "Value": {
+        "Ref": "MySubnet3Id"
+      }
+    },
+    "PrivateSubnet3": {
+      "Condition" : "AZ3Present",
+      "Description": "Subnet Id",
+      "Value": {
+        "Ref": "MySubnet3Id"
+      }
+    },
+    "PublicSubnet1": {
+      "Description": "Subnet Id",
+      "Value": {
+        "Ref": "MyPubSubnet1Id"
+      }
+    },
+    "PublicSubnet2": {
+      "Description": "Subnet Id",
+      "Value": {
+        "Ref": "MyPubSubnet2Id"
+      }
+    },
+    "PublicSubnet3": {
+      "Condition": "AZ3Present",
+      "Description": "Subnet Id",
+      "Value": {
+        "Ref": "MyPubSubnet3Id"
       }
     },
     "NeptuneClientRole": {

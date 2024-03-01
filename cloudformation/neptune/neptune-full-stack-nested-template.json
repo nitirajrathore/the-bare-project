@@ -491,6 +491,12 @@
               "Outputs.VPC"
             ]
           },
+          "Subnet": {
+            "Fn::GetAtt": [
+              "NeptuneStack",
+              "Outputs.PublicSubnet1"
+            ]
+          },
           "NeptuneDBCluster": {
             "Fn::GetAtt": [
               "NeptuneStack",

@@ -6,7 +6,7 @@
       "Description": "OPTIONAL: Name of an existing EC2 KeyPair to enable SSH access to the instances. Required only if an EC2ClientInstanceType is specified",
       "Type": "String",
       "ConstraintDescription": "Must be the name of an existing EC2 KeyPair in same region.",
-      "Default": ""
+      "Default": "neptune-testing-keypair"
     },
     "Env": {
       "Description": "Environment tag, e.g. prod, nonprod.",
@@ -62,7 +62,8 @@
       "Description": "OPTIONAL: Enter the Cluster id of your Neptune cluster. Maximum Length allowed is 38 characters.",
       "Type": "String",
       "AllowedPattern": "^[a-zA-Z]{0}(?:-?[a-zA-Z0-9]){0,37}$",
-      "MaxLength": 38
+      "MaxLength": 38,
+      "Default": "NeptuneDBCId"
     },
     "DBClusterPort": {
       "Type": "String",

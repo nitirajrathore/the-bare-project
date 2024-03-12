@@ -1,0 +1,31 @@
+scala> val textFile = sc.textFile("file:///Users/nitirajrathore/opt/spark/README.md")
+textFile: org.apache.spark.rdd.RDD[String] = file:///Users/nitirajrathore/opt/spark/README.md MapPartitionsRDD[3] at textFile at <console>:23
+
+scala> textFile.first
+res1: String = # Apache Spark
+
+scala> val tokenizedFileData = textFile.flatMap(line => line.split(" "))
+tokenizedFileData: org.apache.spark.rdd.RDD[String] = MapPartitionsRDD[4] at flatMap at <console>:23
+
+scala> val countPrep = tokenizedFileData
+   val tokenizedFileData: org.apache.spark.rdd.RDD[String]
+
+scala> val countPrep = tokenizedFileData.ma
+map   mapPartitions   mapPartitionsWithEvaluator   mapPartitionsWithIndex   max
+
+scala> val countPrep = tokenizedFileData.map
+map   mapPartitions   mapPartitionsWithEvaluator   mapPartitionsWithIndex
+
+scala> val countPrep = tokenizedFileData.map(word => (word, 1))
+countPrep: org.apache.spark.rdd.RDD[(String, Int)] = MapPartitionsRDD[5] at map at <console>:23
+
+scala> val counts = countPrep.reduceByKey((accumValue, newValue) => accumValue + newValue)
+counts: org.apache.spark.rdd.RDD[(String, Int)] = ShuffledRDD[6] at reduceByKey at <console>:23
+
+scala> val sortedCounts = counts.sortBy(kvPair => kvPair._2, false)
+sortedCounts: org.apache.spark.rdd.RDD[(String, Int)] = MapPartitionsRDD[11] at sortBy at <console>:23
+
+scala> sortedCounts.saveAsTextFile("file:///Users/nitirajrathore/sortedCounts.txt")
+
+scala> tokenizedFileData.countByValue
+res3: scala.collection.Map[String,Long] = Map(site, -> 1, Please -> 4, ```scala -> 1, Contributing -> 1, GraphX -> 1, project. -> 1, "" -> 41, for -> 13, find -> 1, Apache -> 1, package -> 1, Hadoop, -> 2, review -> 1, Once -> 1, Maven](https://maven.apache.org/). -> 1, For -> 3, name -> 1, this -> 1, protocols -> 1, Hive -> 2, in -> 5, "local[N]" -> 1, MASTER=spark://host:7077 -> 1, have -> 1, your -> 1, are -> 1, is -> 7, HDFS -> 1, * -> 4, built -> 1, thread, -> 1, examples -> 2, developing -> 1, using -> 3, Shell -> 2, mesos:// -> 1, easiest -> 1, This -> 2, [Apache -> 1, N -> 1, Guide](https://spark.apache.org/docs/latest/configuration.html) -> 1, integration -> 1, <class> -> 1, different -> 1, "local" -> 1, README -> 1, 1,000,000,000: -> 2, online -> 1, s...

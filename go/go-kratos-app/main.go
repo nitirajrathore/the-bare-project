@@ -1,9 +1,11 @@
 package main
 
 import (
-	"context"
+	context "context"
 	"flag"
-	pbs "go-kratos-app/protos"
+	protoConfig "go-kratos-app/protos/config"
+
+	services "go-kratos-app/protos/services"
 	"log"
 	"strconv"
 
@@ -14,9 +16,18 @@ import (
 	"github.com/go-kratos/kratos/v2/transport/http"
 )
 
+type server struct {
+	services.UnimplementedGreeterServer
+}
+
+func (s *server) SayHello(ctx context.Context, in *services.HelloRequest) (*services.HelloReply, error) {
+	log.Printf("Received: %v", in.GetName())
+	return &services.HelloReply{Message: "Hello " + in.GetName()}, nil
+}
+
 func main() {
 	var configFile string
-	flag.StringVar(&configFile, "config-file", "configs/app-conf.json", "configuration file path")
+	flag.StringVar(&configFile, "config-file", "configs/app-conf.yaml", "configuration file path")
 	flag.Parse()
 
 	c := config.New(config.WithSource(file.NewSource(configFile)))
@@ -24,7 +35,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	var config pbs.Config
+	var config protoConfig.Config
 
 	if err := c.Scan(&config); err != nil {
 		log.Fatal(err)
@@ -35,6 +46,11 @@ func main() {
 
 	httpSrv := http.NewServer(http.Address(config.Servers.Http.Host + ":" + strconv.Itoa(int(config.Servers.Http.Port))))
 	grpcSrv := grpc.NewServer(grpc.Address(config.Servers.Grpc.Host + ":" + strconv.Itoa(int(config.Servers.Grpc.Port))))
+
+	var srv server
+
+	services.RegisterGreeterServer(grpcSrv, &srv)
+
 	app := kratos.New(
 		kratos.Name(config.App.Name),
 		kratos.Server(httpSrv, grpcSrv),

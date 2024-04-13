@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-package protos;
+package config;
 
-option go_package = "go-kratos-app/protos";
+option go_package = "go-kratos-app/config";
 
 message App {
   string name = 1;

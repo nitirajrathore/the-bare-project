@@ -8,8 +8,7 @@ import (
 	"github.com/go-kratos/kratos/v2/config/file"
 )
 
-// NOT WORKING
-func main() {
+func main6() {
 	jsonfile := "configs/config2.json"
 	yamlfile := "configs/config.yaml"
 	c := config.New(

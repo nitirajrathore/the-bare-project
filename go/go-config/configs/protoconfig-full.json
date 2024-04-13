@@ -1,0 +1,16 @@
+{
+  "servers" : {
+    "grpc" : {
+      "server" : {
+        "port" : 50051,
+        "host" : "localhost"
+      }
+    },
+    "http" : {
+      "server" : {
+        "port" : 8080,
+        "host" : "localhost"
+      }
+    }
+  }
+}

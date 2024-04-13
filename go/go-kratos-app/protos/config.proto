@@ -1,0 +1,46 @@
+syntax = "proto3";
+
+package protos;
+
+option go_package = "go-kratos-app/protos";
+
+message App {
+  string name = 1;
+  string version = 2;
+  string description = 3;
+  string env = 4;
+}
+
+message Server {
+  string host = 1;
+  int32 port = 2;
+}
+
+message Database {
+  string driver = 1;
+  string source = 2;
+  string user = 3;
+  string password = 4;
+  string database = 5;
+  string collection = 6;
+}
+
+message Logger {
+  string level = 1;
+  string format = 2;
+  string output = 3;
+}
+
+message Servers {
+  Server http = 1;
+  Server grpc = 2;
+  Database database = 3;
+  Logger logger = 4;
+}
+
+message Config {
+  App app = 1;
+  Servers servers = 2;
+  Database database = 3;
+  Logger logger = 4;
+}

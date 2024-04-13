@@ -1,0 +1,25 @@
+app:
+  name: go-kratos-app
+  version: 1.0.0
+  description: A simple go-kratos app
+  env: dev
+
+servers:
+  http:
+    port: 8000
+    host: localhost
+  grpc:
+    port: 9000
+    host: localhost
+
+database:
+  driver: mongodb
+  source: mongodb://localhost:27017
+  database: go-kratos-app
+  collection: users
+  
+logger:
+  level: debug
+  format: json
+  output: stdout
+

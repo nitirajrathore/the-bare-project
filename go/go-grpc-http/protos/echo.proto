@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package protos;
+
+option go_package = "go-grpc-http/protos";
+
+message EchoMessage {
+ string value = 1;
+}
+
+service EchoService {
+  rpc Echo(EchoMessage) returns (EchoMessage) {
+    // option (google.api.http) = {
+    //   post: "/v1/echo"
+    //   body: "*"
+    // };
+  }
+}
+
+

@@ -2,3 +2,32 @@
 
 Q: How to add the google/apis/annotations.proto so that it is available to your protos. 
 A: as per [this](https://stackoverflow.com/questions/66168350/import-google-api-annotations-proto-was-not-found-or-had-errors-how-do-i-add), one way that worked for me was to copy the annotations.proto and http.proto to the root director of my app, like in this commit.
+
+Follow the README.md [here](https://github.com/grpc-ecosystem/grpc-gateway) to generate the gateway code your grpc service.
+You will have to run following commands.
+
+```
+$ go install \
+    github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-grpc-gateway \
+    github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-openapiv2 \
+    google.golang.org/protobuf/cmd/protoc-gen-go \
+    google.golang.org/grpc/cmd/protoc-gen-go-grpc
+
+```
+add these file to the root of your project. Download these files from [here](https://github.com/googleapis/googleapis/tree/master/google/api).
+
+```
+google/api/annotations.proto
+google/api/field_behavior.proto
+google/api/http.proto
+google/api/httpbody.proto
+```
+
+Then generate the proto with grpc and http using
+```
+	protoc --go_out=. --go_opt=paths=source_relative \
+	--go-grpc_out=. --go-grpc_opt=paths=source_relative \
+  --grpc-gateway_out=. --grpc-gateway_opt=paths=source_relative \
+  --grpc-gateway_opt=generate_unbound_methods=true \
+	$(PROTO_FILES)%
+```

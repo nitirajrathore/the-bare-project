@@ -31,3 +31,23 @@ Then generate the proto with grpc and http using
   --grpc-gateway_opt=generate_unbound_methods=true \
 	$(PROTO_FILES)%
 ```
+
+once you run the two servers like below, you should able to make the following curl call to access the http interface exposed by the gateway.
+
+```
+# start the grpc server
+go run server/main.go
+
+# start the http server
+go run http/main.go
+```
+
+Make the curl http client call to get json from http server
+```
+curl -XPOST -d '{"value" : "soemthing"}' localhost:8081/v1/echo
+```
+
+Run the grpc client to directly access the grpc server
+```
+go run client/main.go
+```

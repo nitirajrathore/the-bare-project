@@ -2,8 +2,10 @@ package main
 
 import (
 	"context"
+	"fmt"
 	"go-entc/ent"
 	"log"
+	"time"
 
 	_ "github.com/lib/pq"
 
@@ -22,7 +24,14 @@ func main() {
 
 	// createSchema(ctx, client)
 
-	CreateUser(ctx, client)
+	// CreateUser(ctx, client)
+
+	u, err := createCars(ctx, client)
+	if err != nil {
+		log.Fatalf("failed creating cars: %v", err)
+	}
+
+	log.Println("Created user with cars : %v", u)
 }
 
 func createSchema(ctx context.Context, client *ent.Client) {
@@ -54,4 +63,46 @@ func QueryUser(ctx context.Context, client *ent.Client) (*ent.User, error) {
 	}
 	log.Println("user was queried: ", u)
 	return u, nil
+}
+
+func createCars(ctx context.Context, client *ent.Client) (*ent.User, error) {
+	fmt.Println("inside createCars")
+	tesla, err := client.Car.
+		Create().
+		SetModel("tesla").
+		SetRegisteredAt(time.Now()).
+		Save(ctx)
+
+	if err != nil {
+		return nil, fmt.Errorf("Failed creating car: %v", err)
+	}
+
+	log.Println("car was created: ", tesla)
+
+	ford, err := client.Car.
+		Create().
+		SetModel("ford").
+		SetRegisteredAt(time.Now()).
+		Save(ctx)
+
+	if err != nil {
+		return nil, fmt.Errorf("Failed creating car: %v", err)
+	}
+
+	log.Println("car was created: ", ford)
+
+	a8m, err := client.User.
+		Create().
+		SetAge(30).
+		AddCars(tesla, ford).
+		Save(ctx)
+
+	if err != nil {
+		return nil, fmt.Errorf("Failed creating user: %v", err)
+	}
+
+	log.Println("user was created: ", a8m)
+
+	fmt.Println("createCars finished")
+	return a8m, nil
 }

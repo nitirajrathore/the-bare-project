@@ -10,7 +10,7 @@ import (
 	"google.golang.org/grpc/credentials/insecure"
 	"google.golang.org/grpc/grpclog"
 
-	services "go-grpc-http/protos"
+	services "go-grpc-http/protos/echo/v1"
 )
 
 var (

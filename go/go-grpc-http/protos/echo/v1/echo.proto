@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package protos;
 
-option go_package = "go-grpc-http/protos";
+option go_package = "go-grpc-http/protos/echo/v1";
 
 import "google/api/annotations.proto";
 
@@ -13,7 +13,7 @@ message EchoMessage {
 service EchoService {
   rpc Echo(EchoMessage) returns (EchoMessage) {
     option (google.api.http) = {
-      post: "/"
+      post: "/api/v1/echo"
       body: "*"
     };
   }

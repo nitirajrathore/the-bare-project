@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-	services "go-grpc-http/protos"
+	services "go-grpc-http/protos/echo/v1"
 	"log"
 
 	"google.golang.org/grpc"

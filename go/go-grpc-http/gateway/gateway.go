@@ -10,7 +10,7 @@ import (
 	"os"
 	"strings"
 
-	echov1 "go-grpc-http/protos"
+	echov1 "go-grpc-http/protos/echo/v1"
 
 	"google.golang.org/grpc/credentials/insecure"
 

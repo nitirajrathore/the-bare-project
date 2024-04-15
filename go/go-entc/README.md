@@ -17,6 +17,12 @@ start a postgres docker container for testing.
 docker run --name my-postgres-container -e POSTGRES_PASSWORD=mysecretpassword -d -p 5432:5432 postgres
 ```
 
+Install [Atlas](https://github.com/ariga/atlas) for database schema migration and visualization
+```
+curl -sSf https://atlasgo.sh | sh
+```
+
+
 Postgres cheetsheet of commands : https://www.postgresqltutorial.com/postgresql-cheat-sheet/
 
 connect with psql

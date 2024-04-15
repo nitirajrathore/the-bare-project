@@ -42,11 +42,15 @@ func main() {
 		log.Fatalf("failed getting user: %v", err)
 	}
 
-	err = QueryCars(ctx, u)
-	if err != nil {
-		log.Fatalf("failed querying cars: %v", err)
-	}
+	// err = QueryCars(ctx, u)
+	// if err != nil {
+	// 	log.Fatalf("failed querying cars: %v", err)
+	// }
 
+	err = QueryCarUsers(ctx, u)
+	if err != nil {
+		log.Fatalf("failed querying car users: %v", err)
+	}
 }
 
 func createSchema(ctx context.Context, client *ent.Client) {
@@ -108,6 +112,7 @@ func createCars(ctx context.Context, client *ent.Client) (*ent.User, error) {
 
 	a8m, err := client.User.
 		Create().
+		SetName("nitiraj").
 		SetAge(30).
 		AddCars(tesla, ford).
 		Save(ctx)
@@ -139,5 +144,25 @@ func QueryCars(ctx context.Context, a8m *ent.User) error {
 	}
 
 	log.Println("queried car: ", ford)
+	return nil
+}
+
+func QueryCarUsers(ctx context.Context, a8m *ent.User) error {
+	cars, err := a8m.QueryCars().All(ctx)
+
+	if err != nil {
+		return fmt.Errorf("failed querying cars: %v", err)
+	}
+
+	log.Println("queried cars: ", cars)
+
+	for _, c := range cars {
+		owner, err := c.QueryOwner().Only(ctx)
+		if err != nil {
+			return fmt.Errorf("failed querying owner: %v", err)
+		}
+		log.Printf("cat %q owner: %q\n", c.Model, owner.Name)
+	}
+
 	return nil
 }

@@ -9,6 +9,7 @@ import (
 
 	_ "github.com/lib/pq"
 
+	"go-entc/ent/car"
 	"go-entc/ent/user"
 )
 
@@ -24,14 +25,28 @@ func main() {
 
 	// createSchema(ctx, client)
 
-	// CreateUser(ctx, client)
+	// u, err := CreateUser(ctx, client)
+	// if err != nil {
+	// 	log.Fatalf("failed creating user: %v", err)
+	// }
 
-	u, err := createCars(ctx, client)
+	// u, err := createCars(ctx, client)
+	// if err != nil {
+	// 	log.Fatalf("failed creating cars: %v", err)
+	// }
+
+	// log.Println("Created user with cars : %v", u)
+
+	u, err := client.User.Get(ctx, 3)
 	if err != nil {
-		log.Fatalf("failed creating cars: %v", err)
+		log.Fatalf("failed getting user: %v", err)
 	}
 
-	log.Println("Created user with cars : %v", u)
+	err = QueryCars(ctx, u)
+	if err != nil {
+		log.Fatalf("failed querying cars: %v", err)
+	}
+
 }
 
 func createSchema(ctx context.Context, client *ent.Client) {
@@ -105,4 +120,24 @@ func createCars(ctx context.Context, client *ent.Client) (*ent.User, error) {
 
 	fmt.Println("createCars finished")
 	return a8m, nil
+}
+
+func QueryCars(ctx context.Context, a8m *ent.User) error {
+	cars, err := a8m.QueryCars().All(ctx)
+	if err != nil {
+		return fmt.Errorf("failed querying cars: %v", err)
+	}
+
+	log.Println("queried cars: ", cars)
+
+	ford, err := a8m.QueryCars().
+		Where(car.Model("ford")).
+		Only(ctx)
+
+	if err != nil {
+		return fmt.Errorf("failed querying car: %v", err)
+	}
+
+	log.Println("queried car: ", ford)
+	return nil
 }

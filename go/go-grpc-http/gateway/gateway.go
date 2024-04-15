@@ -2,7 +2,6 @@ package gateway
 
 import (
 	"context"
-	"crypto/tls"
 	"fmt"
 	"io/fs"
 	"io/ioutil"
@@ -11,12 +10,14 @@ import (
 	"os"
 	"strings"
 
+	echov1 "go-grpc-http/protos"
+
+	"google.golang.org/grpc/credentials/insecure"
+
+	"go-grpc-http/third_party"
+
 	"github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
-	"github.com/nitirajrathore/their_tutorial/grpc-gateway-boilerplate/insecure"
-	usersv1 "github.com/nitirajrathore/their_tutorial/grpc-gateway-boilerplate/proto/users/v1"
-	"github.com/nitirajrathore/their_tutorial/grpc-gateway-boilerplate/third_party"
 	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials"
 	"google.golang.org/grpc/grpclog"
 )
 
@@ -43,7 +44,8 @@ func Run(dialAddr string) error {
 	conn, err := grpc.DialContext(
 		context.Background(),
 		dialAddr,
-		grpc.WithTransportCredentials(credentials.NewClientTLSFromCert(insecure.CertPool, "")),
+		grpc.WithTransportCredentials(insecure.NewCredentials()),
+		// grpc.WithTransportCredentials(credentials.NewClientTLSFromCert(insecure.CertPool, "")),
 		grpc.WithBlock(),
 	)
 	if err != nil {
@@ -51,7 +53,7 @@ func Run(dialAddr string) error {
 	}
 
 	gwmux := runtime.NewServeMux()
-	err = usersv1.RegisterUserServiceHandler(context.Background(), gwmux, conn)
+	err = echov1.RegisterEchoServiceHandler(context.Background(), gwmux, conn)
 	if err != nil {
 		return fmt.Errorf("failed to register gateway: %w", err)
 	}
@@ -79,9 +81,9 @@ func Run(dialAddr string) error {
 		return fmt.Errorf("serving gRPC-Gateway server: %w", gwServer.ListenAndServe())
 	}
 
-	gwServer.TLSConfig = &tls.Config{
-		Certificates: []tls.Certificate{insecure.Cert},
-	}
-	log.Info("Serving gRPC-Gateway and OpenAPI Documentation on https://", gatewayAddr)
-	return fmt.Errorf("serving gRPC-Gateway server: %w", gwServer.ListenAndServeTLS("", ""))
+	// gwServer.TLSConfig = &tls.Config{
+	// 	Certificates: []tls.Certificate{insecure.Cert},
+	// }
+	log.Info("Serving gRPC-Gateway and OpenAPI Documentation on http://", gatewayAddr)
+	return fmt.Errorf("serving gRPC-Gateway server: %w", gwServer.ListenAndServe())
 }

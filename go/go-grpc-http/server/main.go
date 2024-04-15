@@ -6,6 +6,8 @@ import (
 	"log"
 	"net"
 
+	gateway "go-grpc-http/gateway"
+
 	"google.golang.org/grpc"
 	// "github.com/go-kratos/kratos/v2/transport/grpc"
 )
@@ -57,7 +59,14 @@ func main() {
 
 	services.RegisterEchoServiceServer(s, &srv)
 
-	s.Serve(lis)
+	go func() {
+		log.Fatal(s.Serve(lis))
+	}()
+
+	err = gateway.Run("dns:///" + addr)
+	if err != nil {
+		log.Fatal(err)
+	}
 
 	log.Println("Server gracefully stopped")
 }

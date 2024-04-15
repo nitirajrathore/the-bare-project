@@ -13,7 +13,7 @@ message EchoMessage {
 service EchoService {
   rpc Echo(EchoMessage) returns (EchoMessage) {
     option (google.api.http) = {
-      post: "/v1/echo"
+      post: "/"
       body: "*"
     };
   }

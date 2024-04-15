@@ -51,3 +51,16 @@ Run the grpc client to directly access the grpc server
 ```
 go run client/main.go
 ```
+
+## Enable OpenAPI endpoints
+
+1. Install https://pkg.go.dev/github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-openapiv2 
+```
+go install github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-openapiv2
+```
+2. You can follow the instructions given in this file for details : https://vscode.dev/github/nitirajrathore/their_tutorials/blob/main/grpc-gateway-boilerplate/third_party/README.md#L4
+I will download the swagger-ui-dist using npm package with following command and then copy the swagger-ui-dist folder from node_modules folder to a directory in your project
+
+```
+npm install swagger-ui-dist
+```

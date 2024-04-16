@@ -6,7 +6,7 @@ package main
 
 import "github.com/google/wire"
 
-func InitializeEvent() Event {
-	wire.Build(NewEvent, NewGreeter, NewMessage)
-	return Event{}
+func Initialize() (MyObjects, error) {
+	wire.Build(NewEvent, NewGreeter, NewMessage, NewMyObjects)
+	return MyObjects{}, nil
 }

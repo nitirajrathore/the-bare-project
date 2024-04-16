@@ -29,7 +29,18 @@ func (e Event) Start() {
 	fmt.Println(msg)
 }
 
+type MyObjects struct {
+	Event   Event
+	Message Message
+}
+
+func NewMyObjects(event Event, message Message) MyObjects {
+	return MyObjects{Event: event, Message: message}
+}
+
 func main() {
-	e := InitializeEvent()
-	e.Start()
+	myobs, _ := Initialize()
+	myobs.Event.Start()
+
+	fmt.Println(myobs.Message)
 }

@@ -5,18 +5,11 @@ import (
 	"fmt"
 	"log"
 
+	entity "go-mongo/entity"
+
 	mongo "go.mongodb.org/mongo-driver/mongo"
 	options "go.mongodb.org/mongo-driver/mongo/options"
 )
-
-type Restaurant struct {
-	Name         string
-	RestaurantId string        `bson:"restaurant_id,omitempty"`
-	Cuisine      string        `bson:"cuisine,omitempty"`
-	Address      interface{}   `bson:"address,omitempty"`
-	Borough      string        `bson:"borough,omitempty"`
-	Grades       []interface{} `bson:"grades,omitempty"`
-}
 
 func connect() *mongo.Client {
 	clientOptions := options.Client().ApplyURI("mongodb://localhost:27017")
@@ -40,7 +33,7 @@ func main() {
 	ctx := context.Background()
 
 	// Insert
-	restaurant := Restaurant{
+	restaurant := entity.Restaurant{
 		Name:         "My Restaurant",
 		RestaurantId: "123",
 		Cuisine:      "Italian",
@@ -61,7 +54,7 @@ func main() {
 	}
 	defer cursor.Close(ctx)
 	for cursor.Next(ctx) {
-		var r Restaurant
+		var r entity.Restaurant
 		err := cursor.Decode(&r)
 		if err != nil {
 			log.Fatal(err)

@@ -12,7 +12,7 @@ type Address struct {
 type Person struct {
 	name    string
 	age     int
-	address Address
+	address *Address
 }
 
 func main() {
@@ -24,7 +24,7 @@ func main() {
 	p := Person{
 		name:    "John Doe",
 		age:     30,
-		address: addr,
+		address: &addr,
 	}
 
 	fmt.Println("p = ", p)
@@ -33,7 +33,7 @@ func main() {
 	fmt.Println("addr = ", addr)
 	fmt.Printf("&addr = %p\n", &addr)
 
-	fmt.Println("p.address = ", p.address)
+	fmt.Println("*p.address = ", *p.address)
 	fmt.Printf("&p.address = %p\n", &p.address)
 
 }

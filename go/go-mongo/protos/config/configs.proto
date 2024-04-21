@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+
+package config;
+
+option go_package = "go-mongo/protos/config";
+
+message DBConfig {
+	string connectionURI = 1;
+	string dbName = 2;
+	string messageCollection = 3;
+	string publisherCollection = 4;
+}
+
+message Config {
+	DBConfig db = 1;
+	Servers servers = 2;
+}
+
+message OpenAPIServer {
+	string host = 1;
+	int32 port = 2;
+	bool serveHttp = 3;
+}
+
+message HttpServer {
+	string host = 1;
+	int32 port = 2;
+}
+
+message GrpcServer {
+	string host = 1;
+	int32 port = 2;
+}
+
+message Servers {
+	GrpcServer grpc = 1;
+	HttpServer http = 2;
+	OpenAPIServer openAPI = 3;
+}

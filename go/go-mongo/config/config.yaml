@@ -1,0 +1,16 @@
+db:
+  connectionURI: "mongodb://localhost:27017"
+  dbName: "message"
+  messageCollection: "message"
+  publisherCollection: "publisher"
+servers:
+  grpc:
+    host: "localhost"
+    port: 50051
+  http:
+    host: "localhost"
+    port: 8080
+  openAPI:
+    host: "localhost"
+    port: 8081
+    serveHttp: true

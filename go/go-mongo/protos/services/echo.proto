@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package protos;
+
+option go_package = "go-mongo/protos/services/v1";
+
+import "google/api/annotations.proto";
+
+message EchoMessage {
+ string value = 1;
+}
+
+service EchoService {
+  rpc Echo(EchoMessage) returns (EchoMessage) {
+    option (google.api.http) = {
+      post: "/api/v1/echo"
+      body: "*"
+    };
+  }
+}
+
+

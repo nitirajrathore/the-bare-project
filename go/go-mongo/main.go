@@ -2,75 +2,43 @@ package main
 
 import (
 	"context"
-	"fmt"
-	"log"
+	"flag"
+	conf "go-mongo/protos/config"
 
-	entity "go-mongo/entity"
-
-	mongo "go.mongodb.org/mongo-driver/mongo"
-	options "go.mongodb.org/mongo-driver/mongo/options"
+	"github.com/go-kratos/kratos/v2/config"
+	"github.com/go-kratos/kratos/v2/config/file"
 )
 
-func connect() *mongo.Client {
-	clientOptions := options.Client().ApplyURI("mongodb://localhost:27017")
+func readConfigs() *conf.Config {
+	var configFile string
+	flag.StringVar(&configFile, "config-file", "config/config.yaml", "config file")
+	flag.Parse()
 
-	client, err := mongo.Connect(context.Background(), clientOptions)
-	if err != nil {
-		log.Fatal(err)
+	// Load the config file
+	c := config.New(config.WithSource(file.NewSource(configFile)))
+
+	if err := c.Load(); err != nil {
+		panic(err)
 	}
-	return client
+
+	var conf conf.Config
+
+	// Unmarshal the config to struct
+	c.Scan(&conf)
+
+	return &conf
 }
 
 func main() {
-	client := connect()
-	defer func() {
-		if err := client.Disconnect(context.Background()); err != nil {
-			log.Fatal(err)
-		}
-	}()
 
-	collection := client.Database("test").Collection("restaurants")
 	ctx := context.Background()
+	c := readConfigs()
+	app := InitializeApp(&ctx, c)
+	go func() { app.GrpcServer.Run(&ctx) }()
+	go func() { app.HttpServer.Run(&ctx) }()
+	go func() { app.OpenAPIServer.Run(&ctx) }()
 
-	// Insert
-	restaurant := entity.Restaurant{
-		Name:         "My Restaurant",
-		RestaurantId: "123",
-		Cuisine:      "Italian",
-		Address:      map[string]string{"street": "123 Main St", "city": "New York"},
-		Borough:      "Manhattan",
-		Grades:       []interface{}{map[string]interface{}{"grade": "A", "score": 10}},
-	}
-	res, err := collection.InsertOne(ctx, restaurant)
-	if err != nil {
-		log.Fatal(err)
-	}
-	fmt.Println(res.InsertedID)
+	ch := make(chan struct{})
 
-	// Find
-	cursor, err := collection.Find(ctx, map[string]interface{}{"borough": "Manhattan"})
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer cursor.Close(ctx)
-	for cursor.Next(ctx) {
-		var r entity.Restaurant
-		err := cursor.Decode(&r)
-		if err != nil {
-			log.Fatal(err)
-		}
-		fmt.Println(r)
-	}
-
-	// Update
-	_, err = collection.UpdateOne(ctx, map[string]interface{}{"restaurant_id": "123"}, map[string]interface{}{"$set": map[string]interface{}{"cuisine": "American"}})
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	// Delete
-	_, err = collection.DeleteOne(ctx, map[string]interface{}{"restaurant_id": "123"})
-	if err != nil {
-		log.Fatal(err)
-	}
+	<-ch
 }

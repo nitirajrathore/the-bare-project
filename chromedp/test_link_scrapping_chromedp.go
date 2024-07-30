@@ -18,6 +18,7 @@ func ScrapeLinksFromPageWithContext(inputCtx context.Context, pageUrl string,
 		inputCtx,
 		chromedp.WithDebugf(log.Printf),
 		chromedp.WithLogf(log.Printf),
+		chromedp.WithErrorf(log.Printf),
 	)
 	defer cancel()
 	var fileLinks = make([]FileLink, 0)

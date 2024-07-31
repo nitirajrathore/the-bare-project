@@ -21,3 +21,7 @@ docker compose -f docker-compose.yml up -d
 # ---- Till here everything is working fine --- I am able to scrape the links using docker and docker compose both.
 
 # Now lets try to do the same in temporal worker.
+
+# install local dev temporal
+curl -sSf https://temporal.download/cli.sh | sh
+

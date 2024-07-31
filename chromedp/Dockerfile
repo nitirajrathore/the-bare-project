@@ -24,5 +24,6 @@ WORKDIR /app
 COPY --from=build-image /app ./
 
 ENV SYMBOL="TRACXN"
+ENV APP_TYPE="temporal-worker"
 EXPOSE 9222
 ENTRYPOINT ./bin/chromedp-test

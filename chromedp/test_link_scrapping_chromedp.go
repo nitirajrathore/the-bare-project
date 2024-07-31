@@ -47,5 +47,7 @@ func ScrapeLinksFromPageWithContext(inputCtx context.Context, pageUrl string,
 
 		fileLinks = append(fileLinks, fileLink)
 	}
+
+	log.Printf("found links from core function : %v", fileLinks)
 	return fileLinks
 }

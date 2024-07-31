@@ -17,3 +17,7 @@ docker run  --volume ./logs:/app/logs --name chromedp-test chromedp-test:v1
 
 # run using docker compose 
 docker compose -f docker-compose.yml up -d 
+
+# ---- Till here everything is working fine --- I am able to scrape the links using docker and docker compose both.
+
+# Now lets try to do the same in temporal worker.

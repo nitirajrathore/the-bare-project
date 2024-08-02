@@ -9,7 +9,8 @@ services:
     ports:
       - 9222:9222
     environment:
-        - APP_TYPE=${APP_TYPE}
+      - SYMBOL=${SYMBOL}
+      - APP_TYPE=${APP_TYPE}
     volumes:
-       - ${LOGS}:/app/logs
+      - ${LOGS}:/app/logs
 

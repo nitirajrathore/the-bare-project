@@ -15,3 +15,7 @@ services:
     networks:
       - chromedp-net
 
+networks:
+  chromedp-net:
+    external: true
+

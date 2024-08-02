@@ -44,7 +44,7 @@ func main() {
 func start_trigger() {
 	fmt.Println("starting start_trigger")
 	log.Println("starting start_trigger")
-	c, err := client.Dial(client.Options{HostPort: "localhost:7233"})
+	c, err := client.Dial(client.Options{HostPort: "192.168.1.100:7233"})
 	if err != nil {
 		log.Fatalln("Unable to create Temporal client.", err)
 	}
@@ -80,7 +80,7 @@ func start_worker() {
 	fmt.Println("starting start_worker")
 	log.Println("starting start_worker")
 
-	c, err := client.Dial(client.Options{HostPort: "localhost:7233"})
+	c, err := client.Dial(client.Options{HostPort: "192.168.1.100:7233"})
 	if err != nil {
 		log.Fatalln("Unable to create Temporal client.", err)
 	}

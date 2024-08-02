@@ -5,6 +5,7 @@ services:
 #    image: stock-indexer:v0.0.6 # Specifying the latest available image - modify if you want a specific version
     image: chromedp-test:v1 # Specifying the latest available image - modify if you want a specific version
     container_name: chromedp-worker
+    network_mode: "host"
     ports:
       - 9222:9222
     environment:

@@ -5,7 +5,7 @@ services:
 #    image: stock-indexer:v0.0.6 # Specifying the latest available image - modify if you want a specific version
     image: chromedp-test:v1 # Specifying the latest available image - modify if you want a specific version
     container_name: chromedp-trigger
-    network_mode: "host"
+#    network_mode: "host"
     ports:
       - 9222:9222
     environment:
@@ -13,4 +13,7 @@ services:
       - APP_TYPE=${APP_TYPE}
     volumes:
       - ${LOGS}:/app/logs
+    networks:
+      - chromedp-net
+
 

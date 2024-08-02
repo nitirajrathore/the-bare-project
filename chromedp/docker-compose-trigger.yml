@@ -1,0 +1,14 @@
+version: '3'
+services:
+  chromedp-trigger: # This is also the hostname of the container within the Docker network
+#    image: stock-indexer:v0.0.6-chromedp-2 # Specifying the latest available image - modify if you want a specific version
+#    image: stock-indexer:v0.0.6 # Specifying the latest available image - modify if you want a specific version
+    image: chromedp-test:v1 # Specifying the latest available image - modify if you want a specific version
+    container_name: chromedp-trigger
+    ports:
+      - 9222:9222
+    environment:
+        - APP_TYPE=${APP_TYPE}
+    volumes:
+       - ${LOGS}:/app/logs
+

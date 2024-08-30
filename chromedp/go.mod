@@ -3,8 +3,8 @@ module nitirajrathore/the-bare-project/chromedp-test
 go 1.22.0
 
 require (
-	github.com/chromedp/cdproto v0.0.0-20240721024200-dac8efcb39ce
-	github.com/chromedp/chromedp v0.9.5
+	github.com/chromedp/cdproto v0.0.0-20240801214329-3f85d328b335
+	github.com/chromedp/chromedp v0.10.0
 	go.temporal.io/sdk v1.28.1
 )
 
@@ -14,7 +14,7 @@ require (
 	github.com/facebookgo/clock v0.0.0-20150410010913-600d898af40a // indirect
 	github.com/gobwas/httphead v0.1.0 // indirect
 	github.com/gobwas/pool v0.2.1 // indirect
-	github.com/gobwas/ws v1.3.2 // indirect
+	github.com/gobwas/ws v1.4.0 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang/mock v1.6.0 // indirect
 	github.com/google/uuid v1.6.0 // indirect

@@ -103,10 +103,11 @@ func test_scrapper() {
 	fmt.Println("starting test_scrapper")
 	log.Println("starting test_scrapper")
 	symbol := os.Getenv("SYMBOL")
-	PageUrl := "https://www.screener.in/company/" + symbol + "/"
+	PageUrl := "https://www.screener.in/company/" + symbol
 	CssSelector := ".annual-reports li"
 	ctx := context.Background()
 
 	links := ScrapeLinksFromPageWithContext(ctx, PageUrl, CssSelector)
-	log.Println("test_scrapper Links found: ", links)
+	log.Printf("test_scrapper Links found: %v", links)
+	fmt.Printf("test_scrapper Links found: %v", links)
 }

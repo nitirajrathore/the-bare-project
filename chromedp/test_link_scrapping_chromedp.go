@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"fmt"
 	"github.com/chromedp/cdproto/cdp"
 	"github.com/chromedp/chromedp"
 	"log"
@@ -23,6 +24,9 @@ func ScrapeLinksFromPageWithContext(inputCtx context.Context, pageUrl string,
 	defer cancel()
 	var fileLinks = make([]FileLink, 0)
 
+	fmt.Printf("ScrapeLinksFromPageWithContext : pageUrl : %s, cssSelector : %s\n", pageUrl, cssSelector)
+	pageUrl += pageUrl + "/"
+	fmt.Printf("final ScrapeLinksFromPageWithContext : pageUrl : %s, cssSelector : %s\n", pageUrl, cssSelector)
 	// navigate to the target web page and select the HTML elements of interest
 	var nodes []*cdp.Node
 	chromedp.Run(ctx,

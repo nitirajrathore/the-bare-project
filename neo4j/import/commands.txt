@@ -1,0 +1,1 @@
+neo4j-admin database import full --nodes import/movies-header.csv,import/movies.csv --nodes import/actors-header.csv,import/actors.csv --relationships import/roles-header.csv,import/roles.csv neo4j

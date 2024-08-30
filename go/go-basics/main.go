@@ -15,6 +15,24 @@ type Person struct {
 	address *Address
 }
 
+func (p Person) setAgeByValue(age int) {
+	p.age = age
+}
+
+func (p *Person) setAgeByPointer(age int) {
+	p.age = age
+}
+
+func printPerson(p Person) {
+	fmt.Println("p = ", p)
+	fmt.Printf("&p = %p\n", &p)
+}
+
+func printPersonWithPointer(p *Person) {
+	fmt.Println("p = ", *p)
+	fmt.Printf("&p = %p\n", p)
+}
+
 func main() {
 	addr := Address{
 		houseNo: 123,
@@ -35,5 +53,13 @@ func main() {
 
 	fmt.Println("*p.address = ", *p.address)
 	fmt.Printf("&p.address = %p\n", &p.address)
+	fmt.Println("p.address = %p\n", p.address)
 
+	// fmt.Println("p.age = ", p.age)
+	// p.setAgeByValue(40)
+	// fmt.Println("p.age = ", p.age)
+	// p.setAgeByPointer(50)
+	// fmt.Println("p.age = ", p.age)
+
+	printPerson(p)
 }

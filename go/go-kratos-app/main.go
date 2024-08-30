@@ -25,6 +25,11 @@ func (s *server) SayHello(ctx context.Context, in *services.HelloRequest) (*serv
 	return &services.HelloReply{Message: "Hello " + in.GetName()}, nil
 }
 
+func (s *server) HelloWorld(ctx context.Context, in *services.EmptyRequest) (*services.HelloReply, error) {
+	log.Printf("Received: helloworld")
+	return &services.HelloReply{Message: "Hello World"}, nil
+}
+
 func main() {
 	var configFile string
 	flag.StringVar(&configFile, "config-file", "configs/app-conf.yaml", "configuration file path")

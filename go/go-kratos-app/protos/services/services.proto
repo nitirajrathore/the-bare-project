@@ -3,15 +3,19 @@ syntax = "proto3";
 package services;
 
 option go_package = "go-kratos-app/protos/services";
+import "google/api/annotations.proto";
 
 
 // The greeting service definition.
 service Greeter {
   // Sends a greeting
-  rpc SayHello (HelloRequest) returns (HelloReply)  {
+  rpc SayHello (HelloRequest) returns (HelloReply)  {}
+  rpc HelloWorld (EmptyRequest) returns (HelloReply) {
+    // option (google.api.http) = { get: "/helloworld" };
   }
 }
 
+message EmptyRequest {}
 // The request message containing the user's name.
 message HelloRequest {
   string name = 1;

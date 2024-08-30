@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 	"github.com/raff/godet"
-	"io/ioutil"
 	"log"
+	"os"
 )
 
 func main() {
@@ -22,9 +22,11 @@ func main() {
 
 	// Set up a handler to intercept network responses
 	debugger.CallbackEvent("Network.responseReceived", func(params godet.Params) {
-		response := params.Obj("response")
-		url := response.String("url")
-		mimeType := response.String("mimeType")
+		response := params.Map("response")
+		url := response["url"]
+		mimeType := response["mimeType"]
+		//url := response.String("url")
+		//mimeType := response.String("mimeType")
 
 		// Check if the URL is the one we're interested in and it's a PDF
 		if url == "https://www.bseindia.com/bseplus/AnnualReport/543258/74183543258.pdf" && mimeType == "application/pdf" {
@@ -38,7 +40,7 @@ func main() {
 			}
 
 			// Write the PDF to a file
-			err = ioutil.WriteFile("output.pdf", []byte(body), 0644)
+			err = os.WriteFile("output.pdf", []byte(body), 0644)
 			if err != nil {
 				log.Fatalf("Failed to write PDF to file: %v", err)
 			}
@@ -48,7 +50,7 @@ func main() {
 	})
 
 	// Enable necessary domains
-	_, err = debugger.NetworkEvents(true)
+	err = debugger.NetworkEvents(true)
 	if err != nil {
 		log.Fatalf("Failed to enable network events: %v", err)
 	}

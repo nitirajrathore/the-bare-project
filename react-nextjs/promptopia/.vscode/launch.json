@@ -1,0 +1,34 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "New Chrome",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}",
+            // "runtimeArgs": [
+            //     "--incognito",
+            //     "--no-first-run",
+            // ]    
+        },
+        {
+            "type": "chrome",
+            "request": "attach",
+            "name": "Debug in Same Chrome",
+            "port": 9222,
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}",
+            "restart": true,
+            "skipFiles": ["<node_internals>/**"],
+            "sourceMaps": true,
+            "resolveSourceMapLocations": [
+              "${workspaceFolder}/**",
+              "!**/node_modules/**"
+            ]      
+        }
+    ]
+}

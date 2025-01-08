@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "serverside-nextjs debug",
+            "port": 9230,
+            "request": "attach",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "clientside-nextjs debug",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}",
+        },
+    ],
+    "compounds": [
+        {
+            "name": "fullstack-nextjs debug",
+            "configurations": [
+                "clientside-nextjs debug",
+                "serverside-nextjs debug"
+            ],
+            "stopAll": true
+        }
+    ]
+}

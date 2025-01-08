@@ -1,8 +1,10 @@
-import Image from "next/image";
+'use client'
+
+import Todo from "./components/todo";
 
 export default function Home() {
+
   return (
-    <div>App
-    </div>
+    <Todo />
   );
 }

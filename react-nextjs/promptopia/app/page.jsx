@@ -2,6 +2,7 @@ import Feed from '@components/Feed';
 
 
 const Home = () => {
+    console.log("someline in debug")
     return (
         <section className="w-full flex-center flex-col">
 

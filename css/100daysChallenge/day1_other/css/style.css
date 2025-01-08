@@ -1,0 +1,40 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #3b3bff, #47e1e9);
+    font-family: 'Arial', sans-serif;
+    color: white;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .logo {
+    position: relative;
+  }
+  
+  .large-text {
+    font-size: 120px;
+    font-weight: bold;
+    letter-spacing: -5px;
+  }
+  
+  .small-text {
+    display: block;
+    font-size: 40px;
+    margin-top: -10px;
+  }
+  
+  .tagline {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+    letter-spacing: 2px;
+  }
+  

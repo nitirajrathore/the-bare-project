@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 4px dashed red;
+    font-size: 1.5rem;
+    margin: 1em;
+    padding: 1.5rem;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .flex-container {
+        height: calc(100vh - 20px);
+        width: calc(100vw - 20px);
+        border: 10px solid red;
+        box-sizing: border-box;
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap; 
+        align-content: center;
+        /* align-items:flex-end; */
+        /* justify-content: space-evenly; */
+        /* gap: 2em; */
+
+      }
+
+      .item {
+        /* margin: 10px; */
+        padding: 10px;
+        background-color: lightblue;
+        border: 1px solid gray;
+        /* height: 40px;
+        width: 40px; */
+        /* flex-grow: 1; */
+      }
+
+      #item-1 {
+        /* flex-grow:1 ; */
+        /* flex-basis: 200px; */
+        flex: 1;
+      }
+
+      /* #item-2 {
+        flex-grow:2 ;
+      }  */
+
+
+    </style>
+  </head>
+  <body>
+    <div id="container" class="flex-container"></div>
+
+    <script>
+      const container = document.getElementById("container");
+      const itemCount = 3; // Number of items to create
+
+      for (let i = 1; i <= itemCount; i++) {
+        const div = document.createElement("div");
+        div.className = "item";
+        div.textContent = `Item ${i}`;
+        div.id= `item-${i}`;
+        container.appendChild(div);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .dropdown {
+        background-color: green;
+        width: 70px;
+        height: 40px;
+        border: solid 1px darkgreen;
+        border-radius: 5px;
+      }
+
+      .dropbtn {
+        padding: 12px  0;
+        text-align: center;
+      }
+      
+      .dropdown:hover {
+        background-color: lightgreen;
+      }
+      .dropdown-content a {
+        display: block;
+        text-decoration: none;
+        background-color: white;
+        color: black;
+        width: 70px;
+        height: 20px;
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+        border-radius: 5px;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .dropdown-content a:hover {
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Dropdown Menu</h2>
+    <p>Move the mouse over the button to open the dropdown menu.</p>
+
+    <div class="dropdown">
+      <div class="dropbtn">Dropdown</div>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+
+    <p>
+      <strong>Note:</strong> We use href="#" for test links. In a real web site
+      this would be URLs.
+    </p>
+  </body>
+</html>

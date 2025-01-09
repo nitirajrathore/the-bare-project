@@ -20,7 +20,7 @@ export default function Todos() {
             <p> query data status : {todoIdsQuery.status}</p>
             <p> Global isFetching : {isFetching}</p>
             {todoIdsQuery.data?.map((id) => (
-                <p key={id + 100}>{id}</p>
+                <p key={id}>{id}</p>
             ))}
         </div>
     );

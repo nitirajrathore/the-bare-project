@@ -3,6 +3,7 @@
 import Todos from "./components/todos";
 import TodoComponent from "./components/todo";
 import Projects from "./components/projects";
+import Products from "./components/products";
 
 export default function Home() {
 
@@ -10,7 +11,8 @@ export default function Home() {
     <>
       {/* <Todos /> */}
       {/* <TodoComponent /> */}
-      <Projects />
+      {/* <Projects /> */}
+      <Products />
     </>
   );
 }

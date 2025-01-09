@@ -45,8 +45,9 @@ export default function TodoComponent() {
         }
     }
 
-    const handleDeleteTodo = (id: number) => {
-        deleteTodoMutation.mutate(id)
+    const handleDeleteTodo = async (id: number) => {
+        await deleteTodoMutation.mutateAsync(id)
+        console.log("deletion completed.")
     }
 
     return (

@@ -1,7 +1,9 @@
 import { getProducts, getProjects, getTodosIds } from "./api"
-import { useQuery, useQueries, keepPreviousData } from "@tanstack/react-query"
+import { useQuery, useQueries, keepPreviousData, useQueryClient } from "@tanstack/react-query"
 import { getTodo } from "./api";
 import { useInfiniteQuery } from "@tanstack/react-query";
+import { getProduct } from "./api";
+import { Product } from "@/types/product";
 
 export function useTodosIds() {
     return useQuery({
@@ -51,6 +53,25 @@ export function useProducts() {
                 return undefined;
             }
             return firstPageParam - 1;
+        },
+    });
+}
+
+export function useProduct(id: number | null) {
+    const queryClient = useQueryClient();
+
+    return useQuery({
+        queryKey: ["product", { id }],
+        queryFn: () => getProduct(id!),
+        enabled: Boolean(id),  // only run if id is non null
+        placeholderData: () => {
+            const cachedPrdoucts = (queryClient.getQueryData(["products"]) as {
+                pages: Product[] | undefined;
+            })?.pages?.flat(2);
+
+            if (cachedPrdoucts) {
+                return { ...cachedPrdoucts.find((item) => item.id === id), name: "coming up.." };
+            }
         },
     });
 }

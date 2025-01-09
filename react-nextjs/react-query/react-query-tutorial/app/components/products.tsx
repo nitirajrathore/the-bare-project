@@ -1,9 +1,11 @@
-import { useProducts } from "@/services/queries"
+import { useProduct, useProducts } from "@/services/queries"
 import { Fragment, useState } from "react";
 
 export default function Products() {
     const [selectedProductId, setSelectedProductId] = useState<number | null>(null);
     const productsQuery = useProducts();
+    const productQuery = useProduct(selectedProductId);
+
 
     return <>
         {productsQuery.data?.pages.map((group, index) => (
@@ -23,5 +25,8 @@ export default function Products() {
             <button onClick={() => productsQuery.fetchNextPage()} disabled={!productsQuery.hasNextPage || productsQuery.isFetchingNextPage}>{productsQuery.isFetchingNextPage ? 'Loading more..' :
                 productsQuery.hasNextPage ? "Load More" : "Nothing more to load"}</button>
         </div>
+
+        <div>Selected Product :</div>
+        {JSON.stringify(productQuery.data)}
     </>
 }

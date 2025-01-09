@@ -34,3 +34,7 @@ export const getProjects = async (page = 1) => {
 export const getProducts = async ({ pageParam }: { pageParam: number }) => {
     return (await axiosInstance.get<Product[]>(`products?_page=${pageParam + 1}&_limit=3`)).data;
 }
+
+export const getProduct = async (id:number) => {
+    return (await axiosInstance.get<Product>(`products/${id}`)).data;
+}

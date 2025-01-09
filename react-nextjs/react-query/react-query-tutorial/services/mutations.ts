@@ -1,6 +1,6 @@
 import { useQueryClient, useMutation, dataTagErrorSymbol } from "@tanstack/react-query";
 import { Todo } from "@/types/todos";
-import { createTodo } from "./api";
+import { createTodo, deleteTodo } from "./api";
 import { updateTodo } from "./api";
 
 export function useCreateTodo() {
@@ -43,6 +43,27 @@ export function useUpdateTodo() {
                 await queryClient.invalidateQueries({
                     queryKey: ["todo", { id: variables.id }],
                 });
+            }
+        }
+    })
+}
+
+
+export function useDeleteTodo() {
+    const queryClient = useQueryClient()
+
+    return useMutation({
+        mutationFn: (id: number) => deleteTodo(id),
+
+        onSuccess: () => {
+            console.log("deleted successfully")
+        },
+
+        onSettled: async (_, error) => {
+            if (error) {
+                console.log("error");
+            } else {
+                await queryClient.invalidateQueries({ queryKey: ["todos"] });
             }
         }
     })

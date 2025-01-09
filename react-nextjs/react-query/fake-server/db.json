@@ -1,33 +1,9 @@
 {
   "todos": [
     {
-      "checked": true,
-      "title": "title6",
-      "description": "desc6",
-      "id": 6
-    },
-    {
-      "checked": true,
-      "title": "title7",
-      "description": "desc7",
-      "id": 7
-    },
-    {
-      "checked": true,
-      "title": "title8",
-      "description": "desc8",
-      "id": 8
-    },
-    {
       "title": "test",
       "description": "test",
       "id": 9,
-      "checked": true
-    },
-    {
-      "title": "test",
-      "description": "",
-      "id": 10,
       "checked": true
     },
     {
@@ -63,12 +39,6 @@
     {
       "title": "new todo",
       "description": "new todo",
-      "id": 16,
-      "checked": true
-    },
-    {
-      "title": "new todo",
-      "description": "new todo",
       "id": 17
     },
     {
@@ -80,11 +50,6 @@
       "title": "new todo",
       "description": "new todo",
       "id": 19
-    },
-    {
-      "title": "new todo",
-      "description": "new todo",
-      "id": 20
     },
     {
       "title": "my todo 1",

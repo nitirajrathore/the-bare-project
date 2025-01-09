@@ -1,8 +1,13 @@
+import { useCreateTodo } from "@/services/mutations";
 import { useTodos, useTodosIds } from "@/services/queries";
+import { Todo } from "@/types/todos";
+import {SubmitHandler, useForm} from 'react-hook-form'
 
-export default function Todo() {
+export default function TodoComponent() {
     const todosIdsQuery = useTodosIds();
     const todosQueries = useTodos(todosIdsQuery.data);
+    const createTodoMutation = useCreateTodo();
+    const {register, handleSubmit} = useForm<Todo>();
 
     // Early return if the todosIdsQuery is still loading or has an error
     if (todosIdsQuery.isPending) {
@@ -27,8 +32,21 @@ export default function Todo() {
         return <span> there is an error with one or more todos! </span>;
     }
 
+    const handleCreateTodoSubmit: SubmitHandler<Todo> = (data) => {
+        createTodoMutation.mutate(data);
+    }
+
     return (
         <>
+        <form onSubmit={handleSubmit(handleCreateTodoSubmit)}>
+            <h4> New Todo: </h4>
+            <input placeholder="Title" {...register("title")} />
+            <br />
+            <input placeholder="Description" {...register("description")} /> 
+            <br />
+            <input type="submit" />
+        </form>
+        
             <ul>
                 {todosQueries.map(({ data }) => (
                     <li key={data?.id}>

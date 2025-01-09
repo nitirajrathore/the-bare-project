@@ -1,14 +1,14 @@
 'use client'
 
 import Todos from "./components/todos";
-import Todo from "./components/todo";
+import TodoComponent from "./components/todo";
 
 export default function Home() {
 
   return (
     <>
-      <Todos />
-      <Todo />
+      {/* <Todos /> */}
+      <TodoComponent />
     </>
   );
 }

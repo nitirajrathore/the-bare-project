@@ -1,13 +1,15 @@
-import { useCreateTodo } from "@/services/mutations";
+import { useCreateTodo, useUpdateTodo } from "@/services/mutations";
 import { useTodos, useTodosIds } from "@/services/queries";
 import { Todo } from "@/types/todos";
-import {SubmitHandler, useForm} from 'react-hook-form'
+import { SubmitHandler, useForm } from 'react-hook-form'
 
 export default function TodoComponent() {
     const todosIdsQuery = useTodosIds();
     const todosQueries = useTodos(todosIdsQuery.data);
     const createTodoMutation = useCreateTodo();
-    const {register, handleSubmit} = useForm<Todo>();
+    const updateTodoMutation = useUpdateTodo();
+
+    const { register, handleSubmit } = useForm<Todo>();
 
     // Early return if the todosIdsQuery is still loading or has an error
     if (todosIdsQuery.isPending) {
@@ -36,17 +38,23 @@ export default function TodoComponent() {
         createTodoMutation.mutate(data);
     }
 
+    const handleMarkAsDoneSubmit = (data: Todo | undefined) => {
+        if (data) {
+            updateTodoMutation.mutate({ ...data, checked: true })
+        }
+    }
+
     return (
         <>
-        <form onSubmit={handleSubmit(handleCreateTodoSubmit)}>
-            <h4> New Todo: </h4>
-            <input placeholder="Title" {...register("title")} />
-            <br />
-            <input placeholder="Description" {...register("description")} /> 
-            <br />
-            <input type="submit" />
-        </form>
-        
+            <form onSubmit={handleSubmit(handleCreateTodoSubmit)}>
+                <h4> New Todo: </h4>
+                <input placeholder="Title" {...register("title")} />
+                <br />
+                <input placeholder="Description" {...register("description")} />
+                <br />
+                <input type="submit" />
+            </form>
+
             <ul>
                 {todosQueries.map(({ data }) => (
                     <li key={data?.id}>
@@ -55,6 +63,11 @@ export default function TodoComponent() {
                             <strong>Title:</strong> {data?.title},{" "}
                             <strong>Description:</strong> {data?.description}
                         </span>
+                        <div>
+                            <button onClick={() => handleMarkAsDoneSubmit(data)} disabled={data?.checked}>
+                                {data?.checked ? "Done" : "Mark as done"}
+                            </button>
+                        </div>
                     </li>
                 ))}
             </ul>

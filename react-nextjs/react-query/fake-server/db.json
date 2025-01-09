@@ -51,17 +51,20 @@
     {
       "title": "test",
       "description": "test",
-      "id": 14
+      "id": 14,
+      "checked": true
     },
     {
       "title": "test",
       "description": "test",
-      "id": 15
+      "id": 15,
+      "checked": true
     },
     {
       "title": "new todo",
       "description": "new todo",
-      "id": 16
+      "id": 16,
+      "checked": true
     },
     {
       "title": "new todo",

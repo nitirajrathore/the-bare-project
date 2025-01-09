@@ -1,6 +1,7 @@
-import { useQueryClient, useMutation } from "@tanstack/react-query";
+import { useQueryClient, useMutation, dataTagErrorSymbol } from "@tanstack/react-query";
 import { Todo } from "@/types/todos";
 import { createTodo } from "./api";
+import { updateTodo } from "./api";
 
 export function useCreateTodo() {
     const queryClient = useQueryClient();
@@ -18,20 +19,31 @@ export function useCreateTodo() {
         },
         onSettled: async (data, error, variables) => {
             console.log("settled");
-            if(error) {
+            if (error) {
                 console.log(error);
             } else {
-                await queryClient.invalidateQueries({queryKey: ["todos"]});
+                await queryClient.invalidateQueries({ queryKey: ["todos"] });
             }
         }
     });
 }
 
 
-// export function useUpdateTodo() {
-//     const queryClient = useQueryClient();
+export function useUpdateTodo() {
+    const queryClient = useQueryClient();
 
-//     return useMutation({
-//         mutationFn: (data: Todo) => updateTodo()
-//     })
-// }
+    return useMutation({
+        mutationFn: (data: Todo) => updateTodo(data),
+
+        onSettled: async (data, error, variables) => {
+            if (error) {
+                console.log(error);
+            } else {
+                await queryClient.invalidateQueries({ queryKey: ['todos'] });
+                await queryClient.invalidateQueries({
+                    queryKey: ["todo", { id: variables.id }],
+                });
+            }
+        }
+    })
+}

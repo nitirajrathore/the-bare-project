@@ -5,3 +5,5 @@
 pdf2image
 markdownify
 playwright
+pdfminer.six
+pytesseract

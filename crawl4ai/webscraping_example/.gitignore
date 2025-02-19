@@ -2,3 +2,4 @@
 .env*
 website
 markdown
+__pycache__/

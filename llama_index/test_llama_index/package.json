@@ -1,9 +1,12 @@
 {
   "dependencies": {
+    "@llamaindex/node-parser": "^1.0.2",
     "@llamaindex/openai": "^0.1.54",
     "@llamaindex/readers": "^2.0.2",
     "dotenv": "^16.4.7",
     "llamaindex": "^0.9.3",
+    "tree-sitter": "^0.22.4",
+    "tree-sitter-typescript": "^0.23.2",
     "tsx": "^4.19.3"
   },
   "name": "test_llama_index",

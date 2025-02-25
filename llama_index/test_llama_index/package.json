@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@llamaindex/openai": "^0.1.54",
+    "@llamaindex/readers": "^2.0.2",
     "dotenv": "^16.4.7",
     "llamaindex": "^0.9.3",
     "tsx": "^4.19.3"

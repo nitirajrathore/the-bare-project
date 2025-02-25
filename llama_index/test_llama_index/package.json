@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "@llamaindex/openai": "^0.1.54",
+    "dotenv": "^16.4.7",
+    "llamaindex": "^0.9.3",
+    "tsx": "^4.19.3"
+  },
+  "name": "test_llama_index",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

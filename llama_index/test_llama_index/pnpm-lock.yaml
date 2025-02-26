@@ -17,6 +17,9 @@ importers:
       '@llamaindex/readers':
         specifier: ^2.0.2
         version: 2.0.2(@llamaindex/core@0.5.2(gpt-tokenizer@2.8.1))(@llamaindex/env@0.1.28(gpt-tokenizer@2.8.1))
+      '@llamaindex/workflow':
+        specifier: ^0.0.11
+        version: 0.0.11(@llamaindex/env@0.1.28(gpt-tokenizer@2.8.1))
       dotenv:
         specifier: ^16.4.7
         version: 16.4.7
@@ -274,6 +277,11 @@ packages:
     resolution: {integrity: sha512-O+Hv8FhK+jpNes4fscX+gFUcb5EY1SFJjA92n82TYWwjBP0KV7fF53RdPkg6EVTUpBrB/bX3c/fFAbpfFaURSw==}
     peerDependencies:
       '@llamaindex/core': 0.5.2
+      '@llamaindex/env': 0.1.28
+
+  '@llamaindex/workflow@0.0.11':
+    resolution: {integrity: sha512-eyjSgVmYBrPvjDKleHBCNqQi5qnQOv8m1kM35vlhXgBfVnnFSeim2U9EWKiW0Z3n7rJkFGtJ37qN3anPTQLbZw==}
+    peerDependencies:
       '@llamaindex/env': 0.1.28
 
   '@mapbox/node-pre-gyp@1.0.11':
@@ -1226,6 +1234,10 @@ snapshots:
       - socks
       - supports-color
       - utf-8-validate
+
+  '@llamaindex/workflow@0.0.11(@llamaindex/env@0.1.28(gpt-tokenizer@2.8.1))':
+    dependencies:
+      '@llamaindex/env': 0.1.28(gpt-tokenizer@2.8.1)
 
   '@mapbox/node-pre-gyp@1.0.11':
     dependencies:

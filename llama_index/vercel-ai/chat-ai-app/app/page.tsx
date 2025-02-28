@@ -1,9 +1,11 @@
 'use client';
 
 import { useChat } from '@ai-sdk/react';
+import Spinner from '@/components/spinner';
 
 export default function Page() {
-  const { messages, input, handleInputChange, handleSubmit } = useChat({});
+  const { messages, input, handleInputChange, handleSubmit, status, stop } =
+    useChat({});
 
   return (
     <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-purple-300 flex flex-col items-center justify-center p-4">
@@ -14,6 +16,19 @@ export default function Page() {
             {message.content}
           </div>
         ))}
+
+        {(status === 'submitted' || status === 'streaming') && (
+          <div className="flex flex-col items-end mt-4">
+            {status === 'submitted' && <Spinner />}
+            <button
+              type="button"
+              onClick={() => stop()}
+              className="mt-2 p-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 dark:bg-purple-500 dark:hover:bg-purple-600"
+            >
+              Stop
+            </button>
+          </div>
+        )}
 
         <form onSubmit={handleSubmit} className="mt-4 flex flex-col items-center">
           <input

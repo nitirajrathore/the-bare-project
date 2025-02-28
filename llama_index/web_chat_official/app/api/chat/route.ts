@@ -20,7 +20,7 @@ export async function POST(request: NextRequest) {
 
     const vercelStreamData = new StreamData()
 
-    if (!process.env.OPENAI_API_KEY) {
+    if (!process.env.MODEL_PROVIDER) {
       // Return fake stream if API key is not set
       return new Response(fakeStreamText(), {
         headers: {

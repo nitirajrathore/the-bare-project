@@ -3,9 +3,10 @@
 import { useChat } from '@ai-sdk/react';
 import Spinner from '@/components/spinner';
 import { useState, useEffect } from 'react';
+import { Trash2 } from 'lucide-react';
 
 export default function Page() {
-  const { messages, input, handleInputChange, handleSubmit, status, stop, error, reload } =
+  const { messages, setMessages, input, handleInputChange, handleSubmit, status, stop, error, reload } =
     useChat({});
 
   const [localError, setLocalError] = useState(error);
@@ -14,13 +15,23 @@ export default function Page() {
     setLocalError(error);
   }, [error]);
 
+  const handleDelete = (id) => {
+    setMessages(messages.filter(message => message.id !== id));
+  };
+
   return (
     <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-purple-300 flex flex-col items-center justify-center p-4">
       <div className="w-full max-w-md">
         {messages.map(message => (
-          <div key={message.id} className="mb-2 p-2 rounded-md bg-white dark:bg-gray-800">
+          <div key={message.id} className="relative mb-2 p-2 rounded-md bg-white dark:bg-gray-800">
             <span className="font-bold">{message.role === 'user' ? 'User: ' : 'AI: '}</span>
             {message.content}
+            <button
+              onClick={() => handleDelete(message.id)}
+              className="absolute top-2 right-2 text-red-500 hover:text-red-700"
+            >
+              <Trash2 size={16} />
+            </button>
           </div>
         ))}
 

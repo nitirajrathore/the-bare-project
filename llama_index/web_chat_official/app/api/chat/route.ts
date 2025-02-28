@@ -1,9 +1,7 @@
 import { Message, LlamaIndexAdapter, StreamData } from 'ai'
+import "@/lib/llm-settings"
 import {
   ChatMessage,
-  OpenAI,
-  OpenAIEmbedding,
-  Settings,
   SimpleChatEngine,
 } from 'llamaindex'
 import { NextResponse, type NextRequest } from 'next/server'
@@ -13,12 +11,6 @@ export const runtime = 'nodejs'
 // This export ensures that the route is always dynamically rendered on the server
 // regardless of any static optimization that Next.js might apply.
 export const dynamic = 'force-dynamic'
-
-Settings.llm = new OpenAI({ model: 'gpt-4o-mini' })
-Settings.embedModel = new OpenAIEmbedding({
-  model: 'text-embedding-3-large',
-  dimensions: 1024,
-})
 
 export async function POST(request: NextRequest) {
   try {

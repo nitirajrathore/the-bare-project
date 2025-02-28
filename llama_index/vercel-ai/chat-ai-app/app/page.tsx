@@ -2,10 +2,17 @@
 
 import { useChat } from '@ai-sdk/react';
 import Spinner from '@/components/spinner';
+import { useState, useEffect } from 'react';
 
 export default function Page() {
-  const { messages, input, handleInputChange, handleSubmit, status, stop } =
+  const { messages, input, handleInputChange, handleSubmit, status, stop, error, reload } =
     useChat({});
+
+  const [localError, setLocalError] = useState(error);
+
+  useEffect(() => {
+    setLocalError(error);
+  }, [error]);
 
   return (
     <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-purple-300 flex flex-col items-center justify-center p-4">
@@ -27,6 +34,28 @@ export default function Page() {
             >
               Stop
             </button>
+          </div>
+        )}
+
+        {localError && (
+          <div className="flex flex-col items-center mt-4">
+            <div className="text-red-500 mb-2">An error occurred.</div>
+            <div className="flex space-x-2">
+              <button
+                type="button"
+                onClick={() => reload()}
+                className="p-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 dark:bg-purple-500 dark:hover:bg-purple-600"
+              >
+                Retry
+              </button>
+              <button
+                type="button"
+                onClick={() => setLocalError(undefined)}
+                className="p-2 bg-gray-500 text-white rounded-md hover:bg-gray-600 dark:bg-gray-700 dark:hover:bg-gray-800"
+              >
+                Cancel
+              </button>
+            </div>
           </div>
         )}
 

@@ -11,6 +11,7 @@ import { Button } from '@/components/shadcn/button';
 export default function Page() {
   const { messages, setMessages, input, handleInputChange, handleSubmit, status, stop, error, reload } =
     useChat({
+      streamProtocol: 'data',
       api: '/api/custom-chat',
       onFinish: (message, { usage, finishReason }) => {
         console.log('Finished streaming message:', message);
@@ -42,12 +43,16 @@ export default function Page() {
           <div key={message.id} className="relative mb-2 p-2 rounded-md bg-white dark:bg-gray-800">
             <span className="font-bold">{message.role === 'user' ? 'User: ' : 'AI: '}</span>
             {message.content}
+            {/* <div className="text-xs text-gray-500 dark:text-gray-400">
+              {JSON.stringify(message, null, 2)}
+            </div> */}
             <button
               onClick={() => handleDelete(message.id)}
               className="absolute top-2 right-2 text-red-500 hover:text-red-700"
             >
               <Trash2 size={16} />
             </button>
+
           </div>
         ))}
 

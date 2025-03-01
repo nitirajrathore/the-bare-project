@@ -66,7 +66,7 @@ export default function Page() {
 
         {localError && (
           <div className="flex flex-col items-center mt-4">
-            <div className="text-red-500 mb-2">An error occurred.</div>
+            <div className="text-red-500 mb-2">{localError.message}</div>
             <div className="flex space-x-2">
               <button
                 type="button"

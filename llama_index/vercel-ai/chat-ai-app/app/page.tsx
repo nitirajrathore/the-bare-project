@@ -86,7 +86,13 @@ export default function Page() {
           </div>
         )}
 
-        <form onSubmit={handleSubmit} className="mt-4 flex flex-col items-center">
+        <form onSubmit={(event) => {
+          handleSubmit(event, {
+            body: {
+              customKey: 'customValue',
+            }
+          })
+        }} className="mt-4 flex flex-col items-center">
           <Input
             name="prompt"
             value={input}

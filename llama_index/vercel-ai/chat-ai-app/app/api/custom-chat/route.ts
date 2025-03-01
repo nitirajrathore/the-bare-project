@@ -5,8 +5,9 @@ import { streamText } from 'ai';
 export const maxDuration = 30;
 
 export async function POST(req: Request) {
-  const { messages } = await req.json();
+  const { messages, customKey } = await req.json();
 
+  console.log("customKey", customKey);
   const result = streamText({
     model: openai('gpt-4-turbo'),
     system: 'You are a helpful assistant.',

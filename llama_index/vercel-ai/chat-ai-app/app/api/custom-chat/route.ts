@@ -31,6 +31,7 @@ export async function POST(req: Request) {
 
         return JSON.stringify(error);
       },
+      // sendUsage: false,
     });
   } catch (error) {
     console.error('An error occurred:', error);

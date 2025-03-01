@@ -11,6 +11,7 @@ import { Button } from '@/components/shadcn/button';
 export default function Page() {
   const { messages, setMessages, input, handleInputChange, handleSubmit, status, stop, error, reload } =
     useChat({
+      api: '/api/custom-chat',
       onFinish: (message, { usage, finishReason }) => {
         console.log('Finished streaming message:', message);
         console.log('Token usage:', usage);

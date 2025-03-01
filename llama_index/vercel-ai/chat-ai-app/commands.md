@@ -23,3 +23,7 @@ pnpm dlx @chakra-ui/cli snippet add
 pnpm add '@ai-sdk/openai-compatible'
 ```
 
+### Add google adapter
+```
+pnpm add @ai-sdk/google
+```

@@ -7,7 +7,6 @@ import { Trash2 } from 'lucide-react';
 import { Input } from '@/components/shadcn/input';
 import { Button } from '@/components/shadcn/button';
 
-
 export default function Page() {
   const { messages, setMessages, input, handleInputChange, handleSubmit, status, stop, error, reload } =
     useChat({
@@ -36,6 +35,7 @@ export default function Page() {
     setMessages(messages.filter(message => message.id !== id));
   };
 
+  console.log("messages", messages);
   return (
     <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-purple-300 flex flex-col items-center justify-center p-4">
       <div className="w-full max-w-md">
@@ -59,6 +59,18 @@ export default function Page() {
                 );
               }
             })}
+            {message.parts
+              .filter(part => part.type === 'source')
+              .map(part => (
+                <ul key={`source-${part.source.id}`} className="list-disc list-inside">
+                  <li>
+                    <a href={part.source.url} target="_blank" className="text-blue-500 hover:underline">
+                      {part.source.title ?? new URL(part.source.url).hostname}
+                    </a>
+                  </li>
+                </ul>
+              ))}
+
             {/* <div className="text-xs text-gray-500 dark:text-gray-400">
               {JSON.stringify(message, null, 2)}
             </div> */}

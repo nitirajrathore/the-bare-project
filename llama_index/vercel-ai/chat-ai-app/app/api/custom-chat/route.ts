@@ -2,6 +2,7 @@ import { openai } from '@ai-sdk/openai';
 import { deepseek } from '@ai-sdk/deepseek';
 import { streamText } from 'ai';
 import { createOpenAICompatible } from '@ai-sdk/openai-compatible';
+import { google } from '@ai-sdk/google';
 
 // Allow streaming responses up to 30 seconds
 export const maxDuration = 30;
@@ -37,15 +38,24 @@ export async function POST(req: Request) {
     //   messages,
     // });
 
-    // working with ollama.
+    // Google model
     const result = streamText({
-      model: createOpenAICompatible({
-        baseURL: 'http://213.180.0.77:47937/v1',
-        name: 'ollama-llama3.2_1b',
-      }).chatModel('llama3.2:1b'),
+      model: google('gemini-2.0-flash-exp', { useSearchGrounding: true }),
       system: 'You are a helpful assistant.',
       messages,
     });
+
+
+
+    // working with ollama.
+    // const result = streamText({
+    //   model: createOpenAICompatible({
+    //     baseURL: 'http://213.180.0.77:47937/v1',
+    //     name: 'ollama-llama3.2_1b',
+    //   }).chatModel('llama3.2:1b'),
+    //   system: 'You are a helpful assistant.',
+    //   messages,
+    // });
 
 
     return result.toDataStreamResponse({
@@ -66,6 +76,7 @@ export async function POST(req: Request) {
       },
       // sendUsage: false,
       sendReasoning: true,
+      sendSources: true,
     });
   } catch (error) {
     console.error('An error occurred:', error);

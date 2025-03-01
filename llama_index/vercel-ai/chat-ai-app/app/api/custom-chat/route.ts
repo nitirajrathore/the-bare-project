@@ -27,25 +27,25 @@ export async function POST(req: Request) {
 
     //  OpenRouter : Eg. : https://openrouter.ai/docs/quickstart
     //  This is not a reasoning model, so we will not get reasoning data.
-    const result = streamText({
-      model: createOpenAICompatible({
-        baseURL: 'https://openrouter.ai/api/v1',
-        name: 'openrouter-deepseek-r1',
-        apiKey: process.env.OPENROUTER_API_KEY,
-      }).chatModel('deepseek/deepseek-r1:free'),
-      system: 'You are a helpful assistant.',
-      messages,
-    });
-
     // const result = streamText({
     //   model: createOpenAICompatible({
-    //     baseURL: 'http://213.180.0.77:47937/api/v1',
-    //     name: 'ollama-llama3.2_1b',
-    //     // apiKey: process.env.OPENROUTER_API_KEY,
-    //   }).chatModel('llama3.2:1b'),
+    //     baseURL: 'https://openrouter.ai/api/v1',
+    //     name: 'openrouter-deepseek-r1',
+    //     apiKey: process.env.OPENROUTER_API_KEY,
+    //   }).chatModel('deepseek/deepseek-r1:free'),
     //   system: 'You are a helpful assistant.',
     //   messages,
     // });
+
+    // working with ollama.
+    const result = streamText({
+      model: createOpenAICompatible({
+        baseURL: 'http://213.180.0.77:47937/v1',
+        name: 'ollama-llama3.2_1b',
+      }).chatModel('llama3.2:1b'),
+      system: 'You are a helpful assistant.',
+      messages,
+    });
 
 
     return result.toDataStreamResponse({

@@ -42,7 +42,23 @@ export default function Page() {
         {messages.map(message => (
           <div key={message.id} className="relative mb-2 p-2 rounded-md bg-white dark:bg-gray-800">
             <span className="font-bold">{message.role === 'user' ? 'User: ' : 'AI: '}</span>
-            {message.content}
+            {message.parts.map((part, index) => {
+              // text parts:
+              if (part.type === 'text') {
+                return <div key={index}>{part.text}</div>;
+              }
+
+              // reasoning parts:
+              if (part.type === 'reasoning') {
+                return (
+                  <pre key={index}>
+                    {part.details.map(detail =>
+                      detail.type === 'text' ? detail.text : '<redacted>',
+                    )}
+                  </pre>
+                );
+              }
+            })}
             {/* <div className="text-xs text-gray-500 dark:text-gray-400">
               {JSON.stringify(message, null, 2)}
             </div> */}

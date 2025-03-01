@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ai-sdk/deepseek": "^0.1.12",
     "@ai-sdk/openai": "^1.1.15",
+    "@ai-sdk/openai-compatible": "^0.1.12",
     "@ai-sdk/react": "^1.1.18",
     "@chakra-ui/react": "^3.8.1",
     "@emotion/react": "^11.14.0",

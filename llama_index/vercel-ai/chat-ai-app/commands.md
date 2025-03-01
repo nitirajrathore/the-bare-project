@@ -18,3 +18,8 @@ pnpm add @chakra-ui/react @emotion/react
 pnpm dlx @chakra-ui/cli snippet add
 ```
 
+### install openAI-compatible adapter
+```
+pnpm add '@ai-sdk/openai-compatible'
+```
+

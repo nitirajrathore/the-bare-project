@@ -103,7 +103,7 @@ export default function Page() {
                           return (
                             <div key={callId}>
                               {part.toolInvocation.args.message}
-                              <div>
+                              <div className="mt-2 flex space-x-2">
                                 <button
                                   onClick={() =>
                                     addToolResult({
@@ -111,6 +111,7 @@ export default function Page() {
                                       result: 'Yes, confirmed.',
                                     })
                                   }
+                                  className="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600"
                                 >
                                   Yes
                                 </button>
@@ -121,6 +122,7 @@ export default function Page() {
                                       result: 'No, denied',
                                     })
                                   }
+                                  className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600"
                                 >
                                   No
                                 </button>

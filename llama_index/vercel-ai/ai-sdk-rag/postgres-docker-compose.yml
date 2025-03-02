@@ -1,0 +1,13 @@
+services:
+  postgres:
+    image: ankane/pgvector
+    container_name: vercel-ai-rag-postgres
+    restart: always
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: ai_rag
+    ports:
+      - "5432:5432"
+    volumes:
+      - ../../../../rough/postgres_ai_rag_data:/var/lib/postgresql/data

@@ -8,8 +8,26 @@ import { Input } from '@/components/shadcn/input';
 import { Button } from '@/components/shadcn/button';
 
 export default function Page() {
-  const { messages, setMessages, input, handleInputChange, handleSubmit, status, stop, error, reload } =
+  const { messages, setMessages, input, handleInputChange, handleSubmit, status, stop, error, reload, addToolResult } =
     useChat({
+      maxSteps: 5,
+      // run client-side tools that are automatically executed:
+      async onToolCall({ toolCall }) {
+        if (toolCall.toolName === 'getLocation') {
+          const cities = [
+            'Bengaluru',
+            'Delhi',
+            'Bhopal',
+            'Indore',
+            'Mumbai',
+            'Chennai',
+            'Kolkata',
+            'Jaipur',
+          ];
+          return cities[Math.floor(Math.random() * cities.length)];
+        }
+      },
+
       streamProtocol: 'data',
       api: '/api/custom-chat',
       onFinish: (message, { usage, finishReason }) => {
@@ -45,38 +63,128 @@ export default function Page() {
         {messages.map(message => (
           <div key={message.id} className="relative mb-2 p-2 rounded-md bg-white dark:bg-gray-800">
             <span className="font-bold">{message.role === 'user' ? 'User: ' : 'AI: '}</span>
+
             {message.parts.map((part, index) => {
-              // text parts:
-              if (part.type === 'text') {
-                return <div key={index}>{part.text}</div>;
-              }
+              switch (part.type) {
+                // render text parts as simple text:
+                case 'text':
+                  return <div key={index}>{part.text}</div>;
 
-              // reasoning parts:
-              if (part.type === 'reasoning') {
-                return (
-                  <pre key={index}>
-                    {part.details.map(detail =>
-                      detail.type === 'text' ? detail.text : '<redacted>',
-                    )}
-                  </pre>
-                );
-              }
-            })}
-            {message.parts
-              .filter(part => part.type === 'source')
-              .map(part => (
-                <ul key={`source-${part.source.id}`} className="list-disc list-inside">
-                  <li>
-                    <a href={part.source.url} target="_blank" className="text-blue-500 hover:underline">
-                      {part.source.title ?? new URL(part.source.url).hostname}
-                    </a>
-                  </li>
-                </ul>
-              ))}
+                // reasoning parts:
+                case 'reasoning': {
+                  return (
+                    <pre key={index}>
+                      {part.details.map(detail =>
+                        detail.type === 'text' ? detail.text : '<redacted>',
+                      )}
+                    </pre>
+                  );
+                }
 
-            {/* <div className="text-xs text-gray-500 dark:text-gray-400">
-              {JSON.stringify(message, null, 2)}
-            </div> */}
+                case 'source': {
+                  return (
+                    <ul key={`source-${part.source.id}`} className="list-disc list-inside">
+                      <li>
+                        <a href={part.source.url} target="_blank" className="text-blue-500 hover:underline">
+                          {part.source.title ?? new URL(part.source.url).hostname}
+                        </a>
+                      </li>
+                    </ul>
+                  )
+                }
+                // for tool invocations, distinguish between the tools and the state:
+                case 'tool-invocation': {
+                  const callId = part.toolInvocation.toolCallId;
+
+                  switch (part.toolInvocation.toolName) {
+                    case 'askForConfirmation': {
+                      switch (part.toolInvocation.state) {
+                        case 'call':
+                          return (
+                            <div key={callId}>
+                              {part.toolInvocation.args.message}
+                              <div>
+                                <button
+                                  onClick={() =>
+                                    addToolResult({
+                                      toolCallId: callId,
+                                      result: 'Yes, confirmed.',
+                                    })
+                                  }
+                                >
+                                  Yes
+                                </button>
+                                <button
+                                  onClick={() =>
+                                    addToolResult({
+                                      toolCallId: callId,
+                                      result: 'No, denied',
+                                    })
+                                  }
+                                >
+                                  No
+                                </button>
+                              </div>
+                            </div>
+                          );
+                        case 'result':
+                          return (
+                            <div key={callId}>
+                              Location access allowed:{' '}
+                              {part.toolInvocation.result}
+                            </div>
+                          );
+                      }
+                      break;
+                    }
+
+                    case 'getLocation': {
+                      switch (part.toolInvocation.state) {
+                        case 'call':
+                          return <div key={callId}>Getting location...</div>;
+                        case 'result':
+                          return (
+                            <div key={callId}>
+                              Location: {part.toolInvocation.result}
+                            </div>
+                          );
+                      }
+                      break;
+                    }
+
+                    case 'getWeatherInformation': {
+                      switch (part.toolInvocation.state) {
+                        // example of pre-rendering streaming tool calls:
+                        case 'partial-call':
+                          return (
+                            <pre key={callId}>
+                              {JSON.stringify(part.toolInvocation, null, 2)}
+                            </pre>
+                          );
+                        case 'call':
+                          return (
+                            <div key={callId}>
+                              Getting weather information for{' '}
+                              {part.toolInvocation.args.city}...
+                            </div>
+                          );
+                        case 'result':
+                          return (
+                            <div key={callId}>
+                              Weather in {part.toolInvocation.args.city}:{' '}
+                              {part.toolInvocation.result}
+                            </div>
+                          );
+                      }
+                      break;
+                    }
+                  }
+                }
+              }
+            }
+            )
+            }
+
             <button
               onClick={() => handleDelete(message.id)}
               className="absolute top-2 right-2 text-red-500 hover:text-red-700"
@@ -179,6 +287,6 @@ export default function Page() {
           </Button>
         </form>
       </div>
-    </div>
+    </div >
   );
 }

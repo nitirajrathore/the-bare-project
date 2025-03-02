@@ -3,6 +3,7 @@ import { deepseek } from '@ai-sdk/deepseek';
 import { streamText } from 'ai';
 import { createOpenAICompatible } from '@ai-sdk/openai-compatible';
 import { google } from '@ai-sdk/google';
+import { z } from 'zod';
 
 // Allow streaming responses up to 30 seconds
 export const maxDuration = 30;
@@ -11,13 +12,40 @@ export async function POST(req: Request) {
   try {
     const { messages, customKey } = await req.json();
 
-    console.log("customKey", customKey);
+    // console.log("customKey", customKey);
     //  Setup for openai
-    // const result = streamText({
-    //   model: openai('gpt-4o-mini'),
-    //   system: 'You are a helpful assistant.',
-    //   messages,
-    // });
+    const result = streamText({
+      model: openai('gpt-4o-mini'),
+      system: 'You are a helpful assistant.',
+      messages,
+      tools: {
+        // server-side tool with execute function:
+        getWeatherInformation: {
+          description: 'show the weather in a given city to the user',
+          parameters: z.object({ city: z.string() }),
+          execute: async ({ }: { city: string }) => {
+            const weatherOptions = ['sunny', 'cloudy', 'rainy', 'snowy', 'windy'];
+            return weatherOptions[
+              Math.floor(Math.random() * weatherOptions.length)
+            ];
+          },
+        },
+        // client-side tool that starts user interaction:
+        askForConfirmation: {
+          description: 'Ask the user for confirmation.',
+          parameters: z.object({
+            message: z.string().describe('The message to ask for confirmation.'),
+          }),
+        },
+        // client-side tool that is automatically executed on the client:
+        getLocation: {
+          description:
+            'Get the user location. Always ask for confirmation before using this tool.',
+          parameters: z.object({}),
+        },
+      },
+
+    });
 
     // this should work with deepseek, but I do not have api key for it so will use openrouter for testing.
     // const result = streamText({
@@ -39,11 +67,11 @@ export async function POST(req: Request) {
     // });
 
     // Google model
-    const result = streamText({
-      model: google('gemini-2.0-flash-exp', { useSearchGrounding: true }),
-      system: 'You are a helpful assistant.',
-      messages,
-    });
+    // const result = streamText({
+    //   model: google('gemini-2.0-flash-exp', { useSearchGrounding: true }),
+    //   system: 'You are a helpful assistant.',
+    //   messages,
+    // });
 
 
 

@@ -1,5 +1,11 @@
 ## install libs
 
+### install zod for tool schema
+```
+pnpm add zod
+```
+
+### install vercel ai sdk lib
 ```
 pnpm add @ai-sdk/react
 pnpm add ai

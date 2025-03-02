@@ -18,6 +18,7 @@ export async function POST(req: Request) {
       model: openai('gpt-4o-mini'),
       system: 'You are a helpful assistant.',
       messages,
+      toolCallStreaming: true,
       tools: {
         // server-side tool with execute function:
         getWeatherInformation: {

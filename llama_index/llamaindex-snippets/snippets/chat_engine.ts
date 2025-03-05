@@ -1,11 +1,5 @@
 import { stdin as input, stdout as output } from "node:process";
 import readline from "node:readline/promises";
-import { initialize } from '@/lib/llm/init-settings';
-
-import dotenv from "dotenv";
-dotenv.config();
-
-
 import {
   ContextChatEngine,
   Document,
@@ -13,9 +7,17 @@ import {
   VectorStoreIndex,
 } from "llamaindex";
 
+
+import { initialize } from '@/lib/llm/init-settings';
+import dotenv from "dotenv";
+dotenv.config();
+initialize();
+
+
+
 import essay from "./essay";
 
-initialize();
+
 // Update chunk size
 Settings.chunkSize = 512;
 

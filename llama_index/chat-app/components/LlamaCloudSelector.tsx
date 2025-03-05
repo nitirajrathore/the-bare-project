@@ -1,4 +1,4 @@
-import { useChatInput, useChatUI } from '@llamaindex/chat-ui'
+import { useChatUI } from '@llamaindex/chat-ui'
 
 export const LlamaCloudSelector = () => {
   const { requestData, setRequestData } = useChatUI()

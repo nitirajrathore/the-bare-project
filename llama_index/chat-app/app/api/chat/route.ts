@@ -1,9 +1,7 @@
-import { MockLLM } from "@llamaindex/core/utils";
 import { LlamaIndexAdapter, type Message } from "ai";
-import { Settings, SimpleChatEngine, type ChatMessage } from "llamaindex";
+import { SimpleChatEngine, type ChatMessage } from "llamaindex";
 import { NextResponse, type NextRequest } from "next/server";
-
-Settings.llm = new MockLLM(); // config your LLM here
+import '@/lib/llm/init-settings'; // required for it to work in development mode.
 
 export async function POST(request: NextRequest) {
   try {
@@ -24,7 +22,6 @@ export async function POST(request: NextRequest) {
         chatHistory: messages as ChatMessage[],
         stream: true,
       }),
-      {},
     );
   } catch (error) {
     const detail = (error as Error).message;

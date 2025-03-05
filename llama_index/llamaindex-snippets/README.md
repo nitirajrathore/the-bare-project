@@ -1,22 +1,15 @@
-SOURCE : https://github.com/run-llama/chat-ui
-
 ## Commands
 
-### install libs
-
-#### Install vercel ai newest libs
 ```
-pnpm add @ai-sdk/react
+pnpm add llamaindex @llamaindex/openai
 ```
 
-#### install llama_index llm providers
-```
-pnpm add @llamaindex/openai @llamaindex/ollama
 
+T
 
 ---
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+his is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 

@@ -3,14 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "set NODE_OPTIONS=--inspect&& next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@ai-sdk/react": "^1.1.20",
     "@llamaindex/chat-ui": "^0.2.0",
     "@llamaindex/core": "^0.5.2",
+    "@llamaindex/google": "^0.0.12",
+    "@llamaindex/ollama": "^0.0.44",
+    "@llamaindex/openai": "^0.1.56",
     "ai": "^4.1.46",
     "llamaindex": "^0.9.3",
     "next": "15.1.7",
@@ -22,9 +26,10 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "autoprefixer": "^10.4.20",
     "eslint": "^9",
     "eslint-config-next": "15.1.7",
-    "postcss": "^8",
+    "postcss": "^8.5.3",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }

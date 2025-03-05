@@ -1,18 +1,24 @@
 import { stdin as input, stdout as output } from "node:process";
 import readline from "node:readline/promises";
- 
+import { initialize } from '@/lib/llm/init-settings';
+
+import dotenv from "dotenv";
+dotenv.config();
+
+
 import {
   ContextChatEngine,
   Document,
   Settings,
   VectorStoreIndex,
 } from "llamaindex";
- 
+
 import essay from "./essay";
- 
+
+initialize();
 // Update chunk size
 Settings.chunkSize = 512;
- 
+
 async function main() {
   const document = new Document({ text: essay });
   const index = await VectorStoreIndex.fromDocuments([document]);
@@ -21,7 +27,7 @@ async function main() {
   });
   const chatEngine = new ContextChatEngine({ retriever });
   const rl = readline.createInterface({ input, output });
- 
+
   while (true) {
     const query = await rl.question("Query: ");
     const stream = await chatEngine.chat({ message: query, stream: true });
@@ -31,6 +37,5 @@ async function main() {
     }
   }
 }
- 
+
 main().catch(console.error);
- 

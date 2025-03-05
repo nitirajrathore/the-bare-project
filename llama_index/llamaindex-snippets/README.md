@@ -3,8 +3,12 @@
 ```
 pnpm add llamaindex @llamaindex/openai
 ```
-
-
+```
+pnpm install @llamaindex/ollama "@llamaindex/google"
+```
+```
+pnpm install '@llamaindex/core/utils dotenv'
+```
 T
 
 ---

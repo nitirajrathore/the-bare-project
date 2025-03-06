@@ -3,15 +3,17 @@ import { FunctionTool } from "llamaindex";
 import { stdin as input, stdout as output } from "node:process";
 import readline from "node:readline/promises";
 
-
 import { initialize } from '@/lib/llm/init-settings';
 import dotenv from "dotenv";
 dotenv.config();
 initialize();
 
-
 const sumNumbers = FunctionTool.from(
-  ({ a, b }: { a: number; b: number }) => `${a + b}`,
+  ({ a, b }: { a: number; b: number }) => {
+    const result = a + b;
+    console.log(`sumNumbers called with a=${a}, b=${b}, result=${result}`);
+    return `${result}`;
+  },
   {
     name: "sumNumbers",
     description: "Use this function to sum two numbers",
@@ -33,7 +35,11 @@ const sumNumbers = FunctionTool.from(
 );
 
 const divideNumbers = FunctionTool.from(
-  ({ a, b }: { a: number; b: number }) => `${a / b}`,
+  ({ a, b }: { a: number; b: number }) => {
+    const result = a / b;
+    console.log(`divideNumbers called with a=${a}, b=${b}, result=${result}`);
+    return `${result}`;
+  },
   {
     name: "divideNumbers",
     description: "Use this function to divide two numbers",
@@ -62,7 +68,9 @@ const getWeather = FunctionTool.from(
       "Tokyo": "Sunny, 25°C",
       "New York": "Rainy, 20°C",
     };
-    return mockWeather[city] || "Weather data not available";
+    const result = mockWeather[city] || "Weather data not available";
+    console.log(`getWeather called with city=${city}, result=${result}`);
+    return result;
   },
   {
     name: "getWeather",

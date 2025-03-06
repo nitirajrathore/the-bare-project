@@ -9,7 +9,9 @@ pnpm install @llamaindex/ollama "@llamaindex/google"
 ```
 pnpm install '@llamaindex/core/utils dotenv'
 ```
-T
+T```
+pnpm add @llamaindex/huggingface
+```
 
 ---
 

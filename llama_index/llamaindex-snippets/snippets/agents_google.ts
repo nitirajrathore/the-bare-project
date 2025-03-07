@@ -14,6 +14,17 @@ Settings.callbackManager.on("llm-tool-result", (event) => {
   console.log(event.detail);
 });
 
+
+Settings.callbackManager.on("llm-start", (event) => {
+  console.log(event.detail);
+});
+
+Settings.callbackManager.on("llm-end", (event) => {
+  console.log(event.detail);
+});
+
+
+
 const sumNumbers = FunctionTool.from(
   ({ a, b }: { a: number; b: number }) => `${a + b}`,
   {

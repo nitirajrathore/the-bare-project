@@ -74,6 +74,6 @@ export function setupOllamaProvider() {
     config: ollamaConfig,
     options: ollamaOptions,
   });
-  console.log("Ollama provider setup complete with Settings.embedModel: ", Settings.embedModel);
-  console.log("Ollama provider setup complete with Settings.llm: ", Settings.llm);
+  console.log("Ollama provider setup complete with Settings.embedModel: ", Settings.embedModel.name);
+  console.log("Ollama provider setup complete with Settings.llm: ", Settings.llm.model);
 }

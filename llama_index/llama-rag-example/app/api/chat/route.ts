@@ -19,11 +19,39 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 Settings.callbackManager.on("llm-start", (event) => {
-  console.log(event.detail);
+  console.log("llm-start:", event.detail);
 });
 
 Settings.callbackManager.on("llm-end", (event) => {
-  console.log(event.detail);
+  console.log("llm-end:", event.detail);
+});
+
+Settings.callbackManager.on("llm-stream", (event) => {
+  console.log("llm-stream:", event.detail);
+});
+
+Settings.callbackManager.on("query-start", (event) => {
+  console.log("query-start:", event.detail);
+});
+
+Settings.callbackManager.on("query-end", (event) => {
+  console.log("query-end:", event.detail);
+});
+
+Settings.callbackManager.on("agent-start", (event) => {
+  console.log("agent-start:", event.detail);
+});
+
+Settings.callbackManager.on("agent-end", (event) => {
+  console.log("agent-end:", event.detail);
+});
+
+Settings.callbackManager.on("retrieve-start", (event) => {
+  console.log("retrieve-start:", event.detail);
+});
+
+Settings.callbackManager.on("retrieve-end", (event) => {
+  console.log("retrieve-end:", event.detail);
 });
 
 export async function POST(request: NextRequest) {

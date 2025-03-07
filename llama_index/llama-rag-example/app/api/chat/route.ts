@@ -18,6 +18,14 @@ initSettings();
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
+Settings.callbackManager.on("llm-start", (event) => {
+  console.log(event.detail);
+});
+
+Settings.callbackManager.on("llm-end", (event) => {
+  console.log(event.detail);
+});
+
 export async function POST(request: NextRequest) {
   // Init Vercel AI StreamData and timeout
   const vercelStreamData = new StreamData();

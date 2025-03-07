@@ -4,7 +4,7 @@ import { storageContextFromDefaults } from "llamaindex/storage/StorageContext";
 import * as dotenv from "dotenv";
 
 import { getDocuments } from "./loader";
-import { initSettings } from "./settings";
+import { initSettings } from "@/lib/llm/settings";
 
 // Load environment variables from local .env file
 dotenv.config();

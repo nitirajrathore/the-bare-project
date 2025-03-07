@@ -1,6 +1,6 @@
 import { Settings } from "llamaindex";
 import { setupOpenAIProvider, setupOllamaProvider, setupMockProvider, setupGoogleProvider } from "./provider";
-
+import { setupCallbacks } from "./setup_callbacks";
 const CHUNK_SIZE = 512;
 const CHUNK_OVERLAP = 20;
 
@@ -35,7 +35,11 @@ export const initSettings = async (): Promise<void> => {
 
   // isInitialized = true;
   console.log("LlamaIndex settings initialized successfully");
+
+  setupCallbacks(process.env.MODEL_PROVIDER, process.env.MODEL, process.env.EMBEDDING_MODEL);
+
 };
+
 
 // Initialize settings immediately when this module is imported
 // This ensures it runs once when the server starts

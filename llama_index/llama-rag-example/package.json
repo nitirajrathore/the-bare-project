@@ -33,6 +33,7 @@
     "duck-duck-scrape": "^2.2.5",
     "formdata-node": "^6.0.3",
     "got": "^14.4.1",
+    "js-tiktoken": "^1.0.19",
     "llamaindex": "^0.9.1",
     "lucide-react": "^0.460.0",
     "marked": "^14.1.2",

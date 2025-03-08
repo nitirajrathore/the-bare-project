@@ -1,9 +1,9 @@
-import { initObservability } from "@/app/observability";
+// import { initObservability } from "@/app/observability";
 import { LlamaIndexAdapter, Message, StreamData } from "ai";
 import { ChatMessage, Settings } from "llamaindex";
 import { NextRequest, NextResponse } from "next/server";
 import { createChatEngine } from "./engine/chat";
-import { initSettings } from "./engine/settings";
+import { initSettings } from "@/lib/llm/settings";
 import {
   isValidMessages,
   retrieveDocumentIds,
@@ -12,7 +12,7 @@ import {
 import { createCallbackManager } from "./llamaindex/streaming/events";
 import { generateNextQuestions } from "./llamaindex/streaming/suggestion";
 
-initObservability();
+// initObservability();
 initSettings();
 
 export const runtime = "nodejs";

@@ -1,4 +1,4 @@
-import { initObservability } from "@/app/observability";
+import { initObservability } from "@/lib/llm/observability";
 import { createDataStreamResponse, LlamaIndexAdapter, Message, DataStreamWriter } from "ai";
 import { ChatMessage, Settings } from "llamaindex";
 import { NextRequest, NextResponse } from "next/server";

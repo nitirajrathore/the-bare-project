@@ -3,6 +3,7 @@ import { setupOpenAIProvider, setupOllamaProvider, setupMockProvider, setupGoogl
 import { setupCallbacks } from "./setup_callbacks";
 const CHUNK_SIZE = 512;
 const CHUNK_OVERLAP = 20;
+import { initObservability } from "./observability";
 
 // Flag to track if initialization has been done
 // let isInitialized = false;
@@ -36,7 +37,9 @@ export const initSettings = async (): Promise<void> => {
   // isInitialized = true;
   console.log("LlamaIndex settings initialized successfully");
 
-  setupCallbacks(process.env.MODEL_PROVIDER, process.env.MODEL, process.env.EMBEDDING_MODEL);
+  // setupCallbacks(process.env.MODEL_PROVIDER, process.env.MODEL, process.env.EMBEDDING_MODEL);
+
+  initObservability();
 
 };
 

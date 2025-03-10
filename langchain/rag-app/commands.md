@@ -40,3 +40,8 @@ pipreqsnb .
 ```
 pip install -r requirements.txt
 ```
+
+### install ollama
+```
+pip install -qU langchain langchain-community ollama langchain-ollama
+```

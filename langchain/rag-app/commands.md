@@ -45,3 +45,8 @@ pip install -r requirements.txt
 ```
 pip install -qU langchain langchain-community ollama langchain-ollama
 ```
+
+### For schema of structured output
+```
+pip install -qU pydantic
+```

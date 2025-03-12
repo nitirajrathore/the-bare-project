@@ -15,16 +15,21 @@ def greet():
   print("Hello World")
 
 def greetSomeone(age, ti):
-  name = ti.xcom_pull(task_ids='third_task')
-  print(f"Hello {name}. And I am {age} years old")
+  first_name = ti.xcom_pull(task_ids='forth_task', key='first_name')
+  last_name = ti.xcom_pull(task_ids='forth_task', key='last_name')
+  print(f"Hello {first_name}, {last_name} . And I am {age} years old")
 
 
 def get_name():
   return "rituraj"
 
+def get_full_name(ti):
+  first_name = ti.xcom_pull(task_ids='third_task')
+  ti.xcom_push(key='first_name', value=first_name)
+  ti.xcom_push(key='last_name', value='singh')
 
 with DAG(
-  dag_id='python_operator_dag4',
+  dag_id='python_operator_dag7',
   description='This is our python operator dag',
   # start_date=datetime(2025, 3, 1),
   # schedule_interval='@daily'
@@ -45,4 +50,10 @@ with DAG(
     python_callable=get_name
   )
 
-  task1 >> task3 >> task2 
+  task4 = PythonOperator(
+    task_id='forth_task',
+    python_callable=get_full_name
+  )
+
+
+  task1 >> task3 >> task4 >> task2 

@@ -18,10 +18,12 @@ def greetSomeone(name, age):
   print(f"Hello {name}. And I am {age} years old")
 
 
+def get_name():
+  return "nitiraj"
 
 
 with DAG(
-  dag_id='python_operator_dag2',
+  dag_id='python_operator_dag3',
   description='This is our python operator dag',
   # start_date=datetime(2025, 3, 1),
   # schedule_interval='@daily'
@@ -37,4 +39,9 @@ with DAG(
     op_kwargs={'name':'nitiraj', 'age':20}
   )
 
-  task1 >> task2
+  task3 = PythonOperator(
+    task_id='third_task',
+    python_callable=get_name
+  )
+  
+  task1 >> task2 >> task3

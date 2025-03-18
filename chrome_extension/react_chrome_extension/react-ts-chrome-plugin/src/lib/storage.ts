@@ -13,10 +13,12 @@ class InMemoryStorage<T> implements Storage<T> {
   }
 
   async get(key: string): Promise<T | null> {
+    console.log("returning value : ", this.store.get(key), " for key: ", key)
     return this.store.get(key) || null;
   }
 
   async set(key: string, value: T): Promise<void> {
+    console.log("Setting value : ", value, " for key: ", key)
     this.store.set(key, value);
   }
 }

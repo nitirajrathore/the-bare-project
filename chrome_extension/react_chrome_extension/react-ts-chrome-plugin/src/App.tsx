@@ -33,7 +33,7 @@ function App() {
       <h1 className="text-2xl font-bold mb-4">Extension Settings</h1>
 
       <div className="mb-6 space-y-4">
-        <div className="bg-white p-4 rounded-md shadow-sm">
+        <div className="bg-white p-4 rounded-md shadow-sm min-w-[480px] max-w-[800px] mx-auto">
           <MetricsColorSelector
             metrics={metrics}
             onMetricsChange={handleMetricsChange}

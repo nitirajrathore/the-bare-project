@@ -1,3 +1,14 @@
+## install and configure
+
+1. Tailwind
+
+2. Chrome
+```
+npm install --save-dev @types/chrome
+```
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -23,10 +23,26 @@ class InMemoryStorage<T> implements Storage<T> {
   }
 }
 
-const storage = new InMemoryStorage<any>
+const memstorage = new InMemoryStorage<any>
+
+class ChromeLocalStorage<T> implements Storage<T> {
+  async get(key: string): Promise<T | null> {
+    return new Promise((resolve) => {
+      chrome.storage.local.get(key, (result) => {
+        resolve(result[key] || null);
+      });
+    });
+  }
+
+  async set(key: string, value: T): Promise<void> {
+    return new Promise((resolve) => {
+      chrome.storage.local.set({ [key]: value }, () => {
+        resolve();
+      });
+    });
+  }
+}
+
+const storage = new ChromeLocalStorage<any>();
 
 export default storage;
-
-//     chrome.storage.sync.set({ username, theme }, () => {
-//   alert('Settings saved!');
-// });

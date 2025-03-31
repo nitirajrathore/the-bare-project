@@ -32,3 +32,8 @@ npm run build
 ```
 npm install --save-dev html-webpack-plugin
 ```
+
+#### using webpack dev server
+```
+npm install --save-dev webpack-dev-server
+```

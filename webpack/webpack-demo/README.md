@@ -28,4 +28,7 @@ npx webpack --config webpack.config.js
 ```
 npm run build
 ```
-
+#### handle dynamic html updation
+```
+npm install --save-dev html-webpack-plugin
+```

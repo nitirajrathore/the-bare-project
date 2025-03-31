@@ -2,6 +2,7 @@ source : https://webpack.js.org/guides/getting-started
 
 source2 : https://webpack.js.org/guides/asset-management
 
+source3 : https://webpack.js.org/guides/output-management/
 
 ### Install
 

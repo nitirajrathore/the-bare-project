@@ -1,5 +1,7 @@
 source : https://webpack.js.org/guides/getting-started
 
+source2 : https://webpack.js.org/guides/asset-management
+
 
 ### Install
 

@@ -4,7 +4,8 @@
   "description": "source : https://webpack.js.org/guides/getting-started",
   "private": true,
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "watch": "webpack --watch"
   },
   "keywords": [],
   "author": "",

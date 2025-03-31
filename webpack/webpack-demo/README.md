@@ -21,4 +21,8 @@ npm install --save lodash
 npx webpack --config webpack.config.js
 ```
 
+#### run with npm
+```
+npm run build
+```
 

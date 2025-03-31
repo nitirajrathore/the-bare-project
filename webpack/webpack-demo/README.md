@@ -16,3 +16,9 @@ npm install webpack webpack-cli --save-dev
 npm install --save lodash
 ```
 
+#### run webpack with config
+```
+npx webpack --config webpack.config.js
+```
+
+

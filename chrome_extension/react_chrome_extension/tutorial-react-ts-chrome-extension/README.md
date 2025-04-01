@@ -41,3 +41,8 @@ npm i @types/chrome -D
 ```
 npm i @types/react @types/react-dom -D
 ```
+
+### install react and react-dom
+```
+npm i react react-dom
+```

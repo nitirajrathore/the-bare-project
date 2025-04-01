@@ -32,3 +32,12 @@ npm i @babel/preset-env @babel/preset-react babel-loader @babel/preset-typescrip
 ```
 npm i html-webpack-plugin copy-webpack-plugin -D
 ```
+
+### adding chrome extension types 
+```
+npm i @types/chrome -D
+```
+### install react types
+```
+npm i @types/react @types/react-dom -D
+```

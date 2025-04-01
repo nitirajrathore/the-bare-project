@@ -53,8 +53,8 @@ class ScreenerFormatter {
                     if (label && valueText && this.config && this.config[label]) {
                         console.log('Processing metric:', label, valueText);
                         const numValue = utils.parseNumber(valueText);
-                        const rules = this.config[label];
-                        const color = this.getColorForValue(numValue, rules);
+                        const rule = this.config[label];
+                        const color = this.getColorForValue(numValue, rule.conditions);
                         if (color && valueElement) {
                             (valueElement as HTMLElement).style.backgroundColor = color;
                             console.log('Applied color:', color, 'to:', label);
@@ -101,10 +101,10 @@ class ScreenerFormatter {
     //     }
     // }
 
-    getColorForValue(value: any, rules: Condition[]) {
-        for (const rule of rules) {
-            if (this.evaluateCondition(value, rule.condition)) {
-                return rule.color;
+    getColorForValue(value: number, conditions: Condition[]) {
+        for (const condition of conditions) {
+            if (this.evaluateCondition(value, condition)) {
+                return condition.color;
             }
         }
         return null;
@@ -119,15 +119,14 @@ class ScreenerFormatter {
         return null;
     }
 
-    evaluateCondition(value: any, condition: any) {
-        const [operator, threshold] = condition.split(' ');
-        const thresholdValue = parseFloat(threshold);
+    evaluateCondition(metricValue: number, condition: Condition) {
+        const { operator, value } = condition;
 
         switch (operator) {
-            case '>': return value > thresholdValue;
-            case '<': return value < thresholdValue;
-            case '>=': return value >= thresholdValue;
-            case '<=': return value <= thresholdValue;
+            case '>': return metricValue > value;
+            case '<': return metricValue < value;
+            case '>=': return metricValue >= value;
+            case '<=': return metricValue <= value;
             default: return false;
         }
     }

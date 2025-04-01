@@ -17,3 +17,18 @@ npm i typescript -D
 ```
 npx tsc --init
 ```
+
+### install webpack
+```
+npm i webpack webpack-cli -D
+```
+
+### install loader for weback , babel
+```
+npm i @babel/preset-env @babel/preset-react babel-loader @babel/preset-typescript
+```
+
+### install more webpack plugins
+```
+npm i html-webpack-plugin copy-webpack-plugin -D
+```

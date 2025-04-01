@@ -1,50 +1,57 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from 'react';
+import storage from './lib/storage';
+import MetricsColorSelector from './components/MetricsColorSelector';
+import { MetricConfig } from './components/types';
+import { METRICS_CONFIG } from './constants';
 import { createRoot } from "react-dom/client";
 
-const Popup = () => {
-  const [count, setCount] = useState(0);
-  const [currentURL, setCurrentURL] = useState<string>();
 
-  useEffect(() => {
-    chrome.action.setBadgeText({ text: count.toString() });
-  }, [count]);
+// const CONFIGS = "configs";
+function Popup() {
+  const [metrics, setMetrics] = useState<MetricConfig[]>([]);
 
+  // Load settings when the component mounts
   useEffect(() => {
-    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-      setCurrentURL(tabs[0].url);
-    });
+    (async () => {
+      const metricsConfig = await storage.get(METRICS_CONFIG);
+      console.log("Loaded metrics config:", metricsConfig);
+      if (metricsConfig) {
+        setMetrics(metricsConfig);
+      }
+    })();
   }, []);
 
-  const changeBackground = () => {
-    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-      const tab = tabs[0];
-      if (tab.id) {
-        chrome.tabs.sendMessage(
-          tab.id,
-          {
-            color: "#555555",
-          },
-          (msg) => {
-            console.log("result message:", msg);
-          }
-        );
-      }
-    });
+  // Save settings to Chrome storage
+  const saveSettings = () => {
+    storage.set(METRICS_CONFIG, metrics);
+  };
+
+  // Handle metrics changes
+  const handleMetricsChange = (updatedMetrics: MetricConfig[]) => {
+    setMetrics(updatedMetrics);
   };
 
   return (
     <>
-      <ul style={{ minWidth: "700px" }}>
-        <li>Current URL: {currentURL}</li>
-        <li>Current Time: {new Date().toLocaleTimeString()}</li>
-      </ul>
-      <button
-        onClick={() => setCount(count + 1)}
-        style={{ marginRight: "5px" }}
-      >
-        count up
-      </button>
-      <button onClick={changeBackground}>change background</button>
+      <div className="p-4 min-h-screen bg-gray-100 text-gray-800">
+        <h1 className="text-2xl font-bold mb-4">Extension Settings</h1>
+
+        <div className="mb-6 space-y-4">
+          <div className="bg-white p-4 rounded-md shadow-sm min-w-[480px] max-w-[800px] mx-auto">
+            <MetricsColorSelector
+              metrics={metrics}
+              onMetricsChange={handleMetricsChange}
+            />
+          </div>
+        </div>
+
+        <button
+          onClick={saveSettings}
+          className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
+        >
+          Save All Settings
+        </button>
+      </div>
     </>
   );
 };
@@ -56,3 +63,5 @@ root.render(
     <Popup />
   </React.StrictMode>
 );
+
+

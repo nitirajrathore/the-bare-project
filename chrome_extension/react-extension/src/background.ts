@@ -20,5 +20,5 @@ chrome.runtime.onInstalled.addListener(async () => {
   ];
 
   await storage.set(METRICS_CONFIG, defaultConfig);
-  console.log('Default configuration saved');
+  console.log('Default configuration saved: ', defaultConfig);
 });

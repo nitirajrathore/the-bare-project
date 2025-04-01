@@ -3,7 +3,8 @@ const CopyPlugin = require('copy-webpack-plugin');
 const path = require('path');
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
+  devtool: "source-map", // Ensure this is set
   target: 'web',
   entry: {
     contentScript: './src/content/index.ts',
@@ -13,7 +14,10 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].js',
-    clean: true
+    clean: true,
+    devtoolModuleFilenameTemplate: (info) => {
+      return `webpack:///${info.resourcePath.replace(/^\.\//, "")}`;
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -37,7 +41,7 @@ module.exports = {
           options: {
             presets: [
               '@babel/preset-env',
-              ['@babel/preset-react', {'runtime': 'automatic'}],
+              ['@babel/preset-react', { 'runtime': 'automatic' }],
               '@babel/preset-typescript'
             ]
           }

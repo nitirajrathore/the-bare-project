@@ -1,11 +1,8 @@
-// filepath: tailwind.config.js
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,ts,jsx,tsx,html}"], // Ensure all your React components are scanned
   theme: {
     extend: {},
   },
   plugins: [],
-}
+};

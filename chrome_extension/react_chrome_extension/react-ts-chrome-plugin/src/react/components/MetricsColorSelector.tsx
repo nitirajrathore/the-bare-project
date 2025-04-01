@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { MetricConfig } from './types';
 import MetricCondition from './MetricCondition';
 import { v4 as uuidv4 } from 'uuid';
-import metricsData from '../resources/metrices.json';
+import metricsData from '../../resources/metrices.json';
 
 interface MetricsColorSelectorProps {
   metrics: MetricConfig[];

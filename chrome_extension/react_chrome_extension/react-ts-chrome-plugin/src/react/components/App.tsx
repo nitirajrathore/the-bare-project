@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
-import storage from './lib/storage';
-import MetricsColorSelector from './components/MetricsColorSelector';
-import { MetricConfig } from './components/types';
+import storage from '../../lib/storage';
+import MetricsColorSelector from './MetricsColorSelector';
+import { MetricConfig } from './types';
+import { METRICS_CONFIG } from '../../constants'
 
-const CONFIGS = "configs";
-const METRICS_CONFIG = "metrics_config";
+// const CONFIGS = "configs";
 function App() {
   const [metrics, setMetrics] = useState<MetricConfig[]>([]);
 

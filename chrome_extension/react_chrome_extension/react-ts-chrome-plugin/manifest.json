@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "React Screener.in Highlighter",
+  "version": "1.0",
+  "description": "Conditional formatting for financial metrics on screener.in",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://www.screener.in/*"
+  ],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.screener.in/*"
+      ],
+      "js": [
+        "contentScript.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "contentScript.js.map"
+      ],
+      "matches": [
+        "https://www.screener.in/*"
+      ]
+    }
+  ]
+}

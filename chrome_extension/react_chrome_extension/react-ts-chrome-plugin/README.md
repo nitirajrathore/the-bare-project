@@ -1,3 +1,10 @@
+## Where am I???
+I lost track of how to make a react plugin for chrome. 
+I lost progress and now I don't know how to fix this code.
+Instead of fixing this, I will create another plugin in React 
+and use that as an example to fix this or directly create a ScreenerPlus plugin.
+
+
 ## install and configure
 
 1. Tailwind

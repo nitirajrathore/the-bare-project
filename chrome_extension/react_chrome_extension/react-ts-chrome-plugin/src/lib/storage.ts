@@ -29,6 +29,7 @@ class ChromeLocalStorage<T> implements Storage<T> {
   async get(key: string): Promise<T | null> {
     return new Promise((resolve) => {
       chrome.storage.local.get(key, (result) => {
+        console.log("get : ", key, " : ", result[key])
         resolve(result[key] || null);
       });
     });

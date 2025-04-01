@@ -18,9 +18,17 @@ function App() {
     })();
   }, []);
 
-  // Save settings to Chrome storage
-  const saveSettings = () => {
-    storage.set(METRICS_CONFIG, metrics);
+  // Save settings to Chrome storage and notify content script
+  const saveSettings = async () => {
+    await storage.set(METRICS_CONFIG, metrics);
+
+    // Send message to all tabs with screener.in URL
+    const tabs = await chrome.tabs.query({ url: 'https://www.screener.in/*' });
+    tabs.forEach(tab => {
+      if (tab.id) {
+        chrome.tabs.sendMessage(tab.id, { type: 'CONFIG_UPDATED' });
+      }
+    });
   };
 
   // Handle metrics changes

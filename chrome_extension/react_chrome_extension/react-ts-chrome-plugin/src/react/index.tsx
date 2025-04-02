@@ -5,6 +5,6 @@ import "../global.css"; // Import Tailwind styles
 import Test from './components/Test';
 
 const root = createRoot(document.getElementById('root') as HTMLElement);
-// root.render(<App />);
+root.render(<App />);
 
-root.render(<Test />);
+// root.render(<Test />);

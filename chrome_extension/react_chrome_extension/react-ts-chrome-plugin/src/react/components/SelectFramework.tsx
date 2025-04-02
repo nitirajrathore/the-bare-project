@@ -1,3 +1,4 @@
+import * as React from "react"
 import { useId, useState } from "react"
 import { CheckIcon, ChevronDownIcon } from "lucide-react"
 
@@ -85,13 +86,18 @@ const frameworks = [
   },
 ]
 
-export default function SelectFramework() {
+interface SelectFrameworkProps {}
+
+const SelectFramework = React.forwardRef<
+  HTMLDivElement,
+  SelectFrameworkProps
+>((props, ref) => {
   const id = useId()
   const [open, setOpen] = useState<boolean>(false)
   const [value, setValue] = useState<string>("")
 
   return (
-    <div className="*:not-first:mt-2">
+    <div className="*:not-first:mt-2" ref={ref}>
       <Label htmlFor={id}>Select with search</Label>
       <Popover open={open} onOpenChange={setOpen}>
         <PopoverTrigger asChild>
@@ -146,4 +152,8 @@ export default function SelectFramework() {
       </Popover>
     </div>
   )
-}
+})
+
+SelectFramework.displayName = "SelectFramework"
+
+export default SelectFramework

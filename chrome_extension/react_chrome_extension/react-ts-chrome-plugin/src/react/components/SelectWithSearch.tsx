@@ -23,13 +23,25 @@ import {
   PopoverTrigger,
 } from "@/src/react/components/ui/popover"
 
-export default function SelectWithSearch({ menuList, menuType, value, setValue }: { menuList: Menu[], menuType: string, value: string, setValue: (value: string) => void }) {
+import * as React from "react"
+
+interface SelectWithSearchProps {
+  menuList: Menu[];
+  menuType: string;
+  value: string;
+  setValue: (value: string) => void;
+}
+
+const SelectWithSearch = React.forwardRef<
+  HTMLDivElement,
+  SelectWithSearchProps
+>(({ menuList, menuType, value, setValue }, ref) => {
   const id = useId()
   const [open, setOpen] = useState<boolean>(false)
   console.log("menuList", menuList)
   console.log("menuType", menuType)
   return (
-    <div className="*:not-first:mt-2">
+    <div className="*:not-first:mt-2" ref={ref}>
       <Label htmlFor={id}>Select {menuType}</Label>
       <Popover open={open} onOpenChange={setOpen}>
         <PopoverTrigger asChild>
@@ -84,4 +96,8 @@ export default function SelectWithSearch({ menuList, menuType, value, setValue }
       </Popover>
     </div>
   )
-}
+})
+
+SelectWithSearch.displayName = "SelectWithSearch"
+
+export default SelectWithSearch

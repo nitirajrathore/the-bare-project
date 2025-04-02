@@ -88,7 +88,7 @@ const MetricsColorSelector: React.FC<MetricsColorSelectorProps> = ({
                 setValue={setNewMetricName}
               />
 
-              <DefaultSelectWithSearch />
+              {/* <DefaultSelectWithSearch /> */}
 
               <button
                 onClick={handleSaveNewMetric}

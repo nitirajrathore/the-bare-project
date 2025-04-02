@@ -68,6 +68,9 @@ const SelectWithSearch = React.forwardRef<
         <PopoverContent
           className="border-input w-full min-w-[var(--radix-popper-anchor-width)] p-0"
           align="start"
+          side="bottom"
+          sideOffset={4}
+          avoidCollisions={false}
         >
           <Command>
             <CommandInput placeholder={"Search " + menuType + " ..."} />

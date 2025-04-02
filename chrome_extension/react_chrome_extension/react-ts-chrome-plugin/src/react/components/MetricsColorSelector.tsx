@@ -60,7 +60,7 @@ const MetricsColorSelector: React.FC<MetricsColorSelectorProps> = ({
   return (
     <div className="space-y-4">
       <div className="flex justify-between items-center">
-        <h2 className="text-xl font-semibold">Conditional Formatting</h2>
+        <h2 className="text-sm font-semibold">Conditional Formatting</h2>
       </div>
 
       <div className="space-y-3">
@@ -87,8 +87,6 @@ const MetricsColorSelector: React.FC<MetricsColorSelectorProps> = ({
                 value={newMetricName}
                 setValue={setNewMetricName}
               />
-
-              {/* <DefaultSelectWithSearch /> */}
 
               <button
                 onClick={handleSaveNewMetric}

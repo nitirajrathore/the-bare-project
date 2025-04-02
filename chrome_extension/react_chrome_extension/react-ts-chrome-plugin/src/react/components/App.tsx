@@ -38,7 +38,7 @@ function App() {
 
   return (
     <div className="p-4 min-h-screen bg-gray-100 text-gray-800">
-      <h1 className="text-2xl font-bold mb-4">Extension Settings</h1>
+      <h1 className="text-sm font-bold mb-4">Extension Settings</h1>
 
       <div className="mb-6 space-y-4">
         <div className="bg-white p-4 rounded-md shadow-sm min-w-[480px] max-w-[800px] mx-auto">

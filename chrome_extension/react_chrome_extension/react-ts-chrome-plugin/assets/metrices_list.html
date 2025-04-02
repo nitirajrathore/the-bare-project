@@ -1,0 +1,2232 @@
+<div class="flex flex-column-mobile flex-gap-32">
+  <div class="flex-grow">
+    <div class="upper ink-700 strong" style="margin-bottom: 2rem;">Recent</div>
+    
+    
+    <label class="ratio label-body" data-group-name="annual_pl most_used" data-name="Sales" data-short-name="Sales" data-description="Trailing 12 Months Sales" data-ratio="true">
+  <input type="checkbox" value="Sales" onchange="Gallery.toggle(this)">
+  <span>Sales</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl most_used" data-name="OPM" data-short-name="OPM" data-description="Operating profit margin based on last 4 quarters." data-ratio="true">
+  <input type="checkbox" value="OPM" onchange="Gallery.toggle(this)">
+  <span>OPM</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl most_used" data-name="Profit after tax" data-short-name="PAT 12M" data-description="Profit after tax excluding extra-ordinary items during last 12 months." data-ratio="true">
+  <input type="checkbox" value="Profit after tax" onchange="Gallery.toggle(this)">
+  <span>Profit after tax</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios most_used" data-name="Market Capitalization" data-short-name="Mar Cap" data-description="Market Capitalization of the company at current market price." data-ratio="true">
+  <input type="checkbox" value="Market Capitalization" onchange="Gallery.toggle(this)">
+  <span>Market Capitalization</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl most_used" data-name="Sales latest quarter" data-short-name="Sales Qtr" data-description="Sales as per latest quarterly results." data-ratio="true">
+  <input type="checkbox" value="Sales latest quarter" onchange="Gallery.toggle(this)">
+  <span>Sales latest quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl most_used" data-name="Profit after tax latest quarter" data-short-name="PAT Qtr" data-description="Profit after Tax (excluding extraordinary items) as per latest quarterly results." data-ratio="true">
+  <input type="checkbox" value="Profit after tax latest quarter" onchange="Gallery.toggle(this)">
+  <span>Profit after tax latest quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl most_used" data-name="YOY Quarterly sales growth" data-short-name="Qtr Sales Var" data-description="Year on year growth in quarterly sales." data-ratio="true">
+  <input type="checkbox" value="YOY Quarterly sales growth" onchange="Gallery.toggle(this)">
+  <span>YOY Quarterly sales growth</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl most_used" data-name="YOY Quarterly profit growth" data-short-name="Qtr Profit Var" data-description="Year on year growth in quarterly profit after tax." data-ratio="true">
+  <input type="checkbox" value="YOY Quarterly profit growth" onchange="Gallery.toggle(this)">
+  <span>YOY Quarterly profit growth</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios most_used" data-name="Price to Earning" data-short-name="P/E" data-description="Current Market Price to trailing 12 month's earnings (TTM PE). Earnings exclude extraordinary items." data-ratio="true">
+  <input type="checkbox" value="Price to Earning" onchange="Gallery.toggle(this)">
+  <span>Price to Earning</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios most_used" data-name="Dividend yield" data-short-name="Div Yld" data-description="Dividend yield excluding special dividends" data-ratio="true">
+  <input type="checkbox" value="Dividend yield" onchange="Gallery.toggle(this)">
+  <span>Dividend yield</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios most_used" data-name="Price to book value" data-short-name="CMP / BV" data-description="Price to book value of the stock." data-ratio="true">
+  <input type="checkbox" value="Price to book value" onchange="Gallery.toggle(this)">
+  <span>Price to book value</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl most_used" data-name="Return on capital employed" data-short-name="ROCE" data-description="
+        EBIT / Annual Average Capital Employed
+
+        Capital Employed = Share capital + Reserves + Borrowings
+        " data-ratio="true">
+  <input type="checkbox" value="Return on capital employed" onchange="Gallery.toggle(this)">
+  <span>Return on capital employed</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios most_used" data-name="Return on assets" data-short-name="ROA 12M" data-description="Net profit last year on average total assets in balance sheet." data-ratio="true">
+  <input type="checkbox" value="Return on assets" onchange="Gallery.toggle(this)">
+  <span>Return on assets</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios most_used" data-name="Debt to equity" data-short-name="Debt / Eq" data-description="Total debt of the company upon funds for equity share holders." data-ratio="true">
+  <input type="checkbox" value="Debt to equity" onchange="Gallery.toggle(this)">
+  <span>Debt to equity</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios most_used" data-name="Return on equity" data-short-name="ROE" data-description="ROE: Return on average equity measures a company's profitability by revealing how much profit a company generates with the money shareholders have invested." data-ratio="true">
+  <input type="checkbox" value="Return on equity" onchange="Gallery.toggle(this)">
+  <span>Return on equity</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl most_used" data-name="EPS" data-short-name="EPS 12M" data-description="Earning per share during last 4 quarters." data-ratio="true">
+  <input type="checkbox" value="EPS" onchange="Gallery.toggle(this)">
+  <span>EPS</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet most_used" data-name="Debt" data-short-name="Debt" data-description="Total borrowings as per latest annual numbers" data-ratio="true">
+  <input type="checkbox" value="Debt" onchange="Gallery.toggle(this)">
+  <span>Debt</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios most_used" data-name="Promoter holding" data-short-name="Prom. Hold." data-description="Promoter holding as per latest shareholding filing" data-ratio="true">
+  <input type="checkbox" value="Promoter holding" onchange="Gallery.toggle(this)">
+  <span>Promoter holding</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl most_used" data-name="Change in promoter holding" data-short-name="Change in Prom Hold" data-description="Change in promoter holding versus previous quarter." data-ratio="true">
+  <input type="checkbox" value="Change in promoter holding" onchange="Gallery.toggle(this)">
+  <span>Change in promoter holding</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios most_used" data-name="Earnings yield" data-short-name="Earnings Yield" data-description="Earnings yield formula as given by JG i.e. Trailing EBIT / Enterprise Value" data-ratio="true">
+  <input type="checkbox" value="Earnings yield" onchange="Gallery.toggle(this)">
+  <span>Earnings yield</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios most_used" data-name="Pledged percentage" data-short-name="Pledged" data-description="Percentage of promoter holding pledged." data-ratio="true">
+  <input type="checkbox" value="Pledged percentage" onchange="Gallery.toggle(this)">
+  <span>Pledged percentage</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios most_used" data-name="Industry PE" data-short-name="Ind PE" data-description="Industrial price to earning" data-ratio="true">
+  <input type="checkbox" value="Industry PE" onchange="Gallery.toggle(this)">
+  <span>Industry PE</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl most_used" data-name="Sales growth" data-short-name="Sales growth" data-description="TTM Sales growth: ie sales of last 4 quarters vs preceding 4 quarters." data-ratio="true">
+  <input type="checkbox" value="Sales growth" onchange="Gallery.toggle(this)">
+  <span>Sales growth</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl most_used" data-name="Profit growth" data-short-name="Profit growth" data-description="TTM Profit growth: ie profit of last 4 quarters vs preceding 4 quarters" data-ratio="true">
+  <input type="checkbox" value="Profit growth" onchange="Gallery.toggle(this)">
+  <span>Profit growth</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="price most_used" data-name="Current price" data-short-name="CMP" data-description="Last closing price of the stock." data-ratio="true">
+  <input type="checkbox" value="Current price" onchange="Gallery.toggle(this)">
+  <span>Current price</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio most_used" data-name="Price to Sales" data-short-name="CMP / Sales" data-description="Price to Sales" data-ratio="true">
+  <input type="checkbox" value="Price to Sales" onchange="Gallery.toggle(this)">
+  <span>Price to Sales</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio most_used" data-name="Price to Free Cash Flow" data-short-name="CMP / FCF" data-description="Price to Average free cash flow 3years per share" data-ratio="true">
+  <input type="checkbox" value="Price to Free Cash Flow" onchange="Gallery.toggle(this)">
+  <span>Price to Free Cash Flow</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio most_used" data-name="EVEBITDA" data-short-name="EV / EBITDA" data-description="Enterprise Value / EBITDA Ratio" data-ratio="true">
+  <input type="checkbox" value="EVEBITDA" onchange="Gallery.toggle(this)">
+  <span>EVEBITDA</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios most_used" data-name="Enterprise Value" data-short-name="EV" data-description="Enterprise Value is Market cap + debt - cash" data-ratio="true">
+  <input type="checkbox" value="Enterprise Value" onchange="Gallery.toggle(this)">
+  <span>Enterprise Value</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio most_used" data-name="Current ratio" data-short-name="Current ratio" data-description="A liquidity ratio that measures a company''s ability to pay short-term obligations" data-ratio="true">
+  <input type="checkbox" value="Current ratio" onchange="Gallery.toggle(this)">
+  <span>Current ratio</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio most_used" data-name="Interest Coverage Ratio" data-short-name="Int Coverage" data-description="Earnings before Interest and Taxes upon Interest Expense" data-ratio="true">
+  <input type="checkbox" value="Interest Coverage Ratio" onchange="Gallery.toggle(this)">
+  <span>Interest Coverage Ratio</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio most_used" data-name="PEG Ratio" data-short-name="PEG" data-description="Price to Earning / Profit growth 5Years" data-ratio="true">
+  <input type="checkbox" value="PEG Ratio" onchange="Gallery.toggle(this)">
+  <span>PEG Ratio</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="price most_used" data-name="Return over 3months" data-short-name="3mth return" data-description="Price change over last 3 months in percent" data-ratio="true">
+  <input type="checkbox" value="Return over 3months" onchange="Gallery.toggle(this)">
+  <span>Return over 3months</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="price most_used" data-name="Return over 6months" data-short-name="6mth return" data-description="Price change over last 6 months in percent" data-ratio="true">
+  <input type="checkbox" value="Return over 6months" onchange="Gallery.toggle(this)">
+  <span>Return over 6months</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="price" data-name="Is SME" data-short-name="Is SME" data-description="1 if it is a SME company" data-ratio="true">
+  <input type="checkbox" value="Is SME" onchange="Gallery.toggle(this)">
+  <span>Is SME</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="price" data-name="Is not SME" data-short-name="Is not SME" data-description="1 if it is not a SME company" data-ratio="true">
+  <input type="checkbox" value="Is not SME" onchange="Gallery.toggle(this)">
+  <span>Is not SME</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Number of equity shares" data-short-name="No. Eq. Shares" data-description="Number of equity shares as per latest filing" data-ratio="true">
+  <input type="checkbox" value="Number of equity shares" onchange="Gallery.toggle(this)">
+  <span>Number of equity shares</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Equity capital" data-short-name="Eq Cap" data-description="Equity share capital from latest balance sheet." data-ratio="true">
+  <input type="checkbox" value="Equity capital" onchange="Gallery.toggle(this)">
+  <span>Equity capital</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Preference capital" data-short-name="Pref Cap" data-description="Preference share capital from latest balance sheet." data-ratio="true">
+  <input type="checkbox" value="Preference capital" onchange="Gallery.toggle(this)">
+  <span>Preference capital</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Reserves" data-short-name="Reserves" data-description="Reserves from latest balance sheet." data-ratio="true">
+  <input type="checkbox" value="Reserves" onchange="Gallery.toggle(this)">
+  <span>Reserves</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Secured loan" data-short-name="Secured Loan" data-description="Secured loans from latest balance sheet." data-ratio="true">
+  <input type="checkbox" value="Secured loan" onchange="Gallery.toggle(this)">
+  <span>Secured loan</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Unsecured loan" data-short-name="Unsecured Loan" data-description="Unsecured loans from latest balance sheet." data-ratio="true">
+  <input type="checkbox" value="Unsecured loan" onchange="Gallery.toggle(this)">
+  <span>Unsecured loan</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Balance sheet total" data-short-name="BS Total" data-description="Balance Sheet total from latest balance sheet." data-ratio="true">
+  <input type="checkbox" value="Balance sheet total" onchange="Gallery.toggle(this)">
+  <span>Balance sheet total</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Gross block" data-short-name="Gross Block" data-description="Gross block from latest balance sheet." data-ratio="true">
+  <input type="checkbox" value="Gross block" onchange="Gallery.toggle(this)">
+  <span>Gross block</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Revaluation reserve" data-short-name="Reval Resv" data-description="Revaluation reserve from latest balance sheet." data-ratio="true">
+  <input type="checkbox" value="Revaluation reserve" onchange="Gallery.toggle(this)">
+  <span>Revaluation reserve</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Accumulated depreciation" data-short-name="Accum Dep" data-description="Accumulated Depreciation from latest balance sheet." data-ratio="true">
+  <input type="checkbox" value="Accumulated depreciation" onchange="Gallery.toggle(this)">
+  <span>Accumulated depreciation</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Net block" data-short-name="Net Block" data-description="Net block excluding CWIP from latest balance sheet." data-ratio="true">
+  <input type="checkbox" value="Net block" onchange="Gallery.toggle(this)">
+  <span>Net block</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Capital work in progress" data-short-name="CWIP" data-description="Capital work-in-progress from latest balance sheet." data-ratio="true">
+  <input type="checkbox" value="Capital work in progress" onchange="Gallery.toggle(this)">
+  <span>Capital work in progress</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Investments" data-short-name="Investments" data-description="Investments from latest balance sheet." data-ratio="true">
+  <input type="checkbox" value="Investments" onchange="Gallery.toggle(this)">
+  <span>Investments</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Current assets" data-short-name="Cur Assets" data-description="Current assets from latest balance sheet." data-ratio="true">
+  <input type="checkbox" value="Current assets" onchange="Gallery.toggle(this)">
+  <span>Current assets</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Current liabilities" data-short-name="Cur Liab" data-description="Current liabilities as reported in the latest balance sheet." data-ratio="true">
+  <input type="checkbox" value="Current liabilities" onchange="Gallery.toggle(this)">
+  <span>Current liabilities</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Book value of unquoted investments" data-short-name="BV Unq Invest" data-description="Book value of unquoted investments from latest balance sheet." data-ratio="true">
+  <input type="checkbox" value="Book value of unquoted investments" onchange="Gallery.toggle(this)">
+  <span>Book value of unquoted investments</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Market value of quoted investments" data-short-name="MV Quoted Inv" data-description="Market value of quoted investments from latest balance sheet." data-ratio="true">
+  <input type="checkbox" value="Market value of quoted investments" onchange="Gallery.toggle(this)">
+  <span>Market value of quoted investments</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Contingent liabilities" data-short-name="Cont Liab" data-description="Contingent liabilities from latest balance sheet." data-ratio="true">
+  <input type="checkbox" value="Contingent liabilities" onchange="Gallery.toggle(this)">
+  <span>Contingent liabilities</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="cash_flow" data-name="Cash from operations last year" data-short-name="CF Operations" data-description="Cash flow from operating activities as per last annual result" data-ratio="true">
+  <input type="checkbox" value="Cash from operations last year" onchange="Gallery.toggle(this)">
+  <span>Cash from operations last year</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="cash_flow" data-name="Free cash flow last year" data-short-name="Free Cash Flow" data-description="Cash Flow from operating activities - Fixed assets purchased + Fixed assets sold" data-ratio="true">
+  <input type="checkbox" value="Free cash flow last year" onchange="Gallery.toggle(this)">
+  <span>Free cash flow last year</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="cash_flow" data-name="Cash from investing last year" data-short-name="CF Investing" data-description="Cash flow from investing activities as per latest annual result" data-ratio="true">
+  <input type="checkbox" value="Cash from investing last year" onchange="Gallery.toggle(this)">
+  <span>Cash from investing last year</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="cash_flow" data-name="Cash from financing last year" data-short-name="CF Financing" data-description="Cash flow from financing activities as per latest annual result" data-ratio="true">
+  <input type="checkbox" value="Cash from financing last year" onchange="Gallery.toggle(this)">
+  <span>Cash from financing last year</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="cash_flow" data-name="Net cash flow last year" data-short-name="Net CF" data-description="Net cash flow as per latest annual result" data-ratio="true">
+  <input type="checkbox" value="Net cash flow last year" onchange="Gallery.toggle(this)">
+  <span>Net cash flow last year</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="cash_flow" data-name="Cash beginning of last year" data-short-name="Cash Beginning" data-description="Cash at beginning of year as per latest annual result" data-ratio="true">
+  <input type="checkbox" value="Cash beginning of last year" onchange="Gallery.toggle(this)">
+  <span>Cash beginning of last year</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="cash_flow" data-name="Cash end of last year" data-short-name="Cash End" data-description="Cash equivalents at end of last financial year" data-ratio="true">
+  <input type="checkbox" value="Cash end of last year" onchange="Gallery.toggle(this)">
+  <span>Cash end of last year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Sales last year" data-short-name="Sales Ann" data-description="Sales last year." data-ratio="true">
+  <input type="checkbox" value="Sales last year" onchange="Gallery.toggle(this)">
+  <span>Sales last year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Operating profit last year" data-short-name="OP Ann" data-description="Operating Profit last year." data-ratio="true">
+  <input type="checkbox" value="Operating profit last year" onchange="Gallery.toggle(this)">
+  <span>Operating profit last year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Other income last year" data-short-name="Other Inc Ann" data-description="Other Income last year." data-ratio="true">
+  <input type="checkbox" value="Other income last year" onchange="Gallery.toggle(this)">
+  <span>Other income last year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="EBIDT last year" data-short-name="EBIDT Ann" data-description="Earnings before Interest, Depreciation &amp; Tax last year." data-ratio="true">
+  <input type="checkbox" value="EBIDT last year" onchange="Gallery.toggle(this)">
+  <span>EBIDT last year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Depreciation last year" data-short-name="Dep Ann" data-description="Depreciation last year." data-ratio="true">
+  <input type="checkbox" value="Depreciation last year" onchange="Gallery.toggle(this)">
+  <span>Depreciation last year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="EBIT last year" data-short-name="EBIT Ann" data-description="Earnings before Interest &amp; Tax last year." data-ratio="true">
+  <input type="checkbox" value="EBIT last year" onchange="Gallery.toggle(this)">
+  <span>EBIT last year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Interest last year" data-short-name="Interest Ann" data-description="Interest last year." data-ratio="true">
+  <input type="checkbox" value="Interest last year" onchange="Gallery.toggle(this)">
+  <span>Interest last year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Profit before tax last year" data-short-name="PBT Ann" data-description="Profit before Tax last year." data-ratio="true">
+  <input type="checkbox" value="Profit before tax last year" onchange="Gallery.toggle(this)">
+  <span>Profit before tax last year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Tax last year" data-short-name="Tax Ann" data-description="Tax expense last year." data-ratio="true">
+  <input type="checkbox" value="Tax last year" onchange="Gallery.toggle(this)">
+  <span>Tax last year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Profit after tax last year" data-short-name="PAT Ann" data-description="Profit after Tax last year (excluding extraordinary items)." data-ratio="true">
+  <input type="checkbox" value="Profit after tax last year" onchange="Gallery.toggle(this)">
+  <span>Profit after tax last year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Extraordinary items last year" data-short-name="Extra Ord Item Ann" data-description="Extraordinary items last year." data-ratio="true">
+  <input type="checkbox" value="Extraordinary items last year" onchange="Gallery.toggle(this)">
+  <span>Extraordinary items last year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Net Profit last year" data-short-name="NP Ann" data-description="Net Profit last year." data-ratio="true">
+  <input type="checkbox" value="Net Profit last year" onchange="Gallery.toggle(this)">
+  <span>Net Profit last year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Dividend last year" data-short-name="Dividend Ann" data-description="Dividend paid last year." data-ratio="true">
+  <input type="checkbox" value="Dividend last year" onchange="Gallery.toggle(this)">
+  <span>Dividend last year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Material cost last year" data-short-name="Raw Material" data-description="Raw Material cost as a percentage of revenue last year" data-ratio="true">
+  <input type="checkbox" value="Material cost last year" onchange="Gallery.toggle(this)">
+  <span>Material cost last year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Employee cost last year" data-short-name="Employee cost" data-description="Total employee cost last incurred last year" data-ratio="true">
+  <input type="checkbox" value="Employee cost last year" onchange="Gallery.toggle(this)">
+  <span>Employee cost last year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="OPM last year" data-short-name="OPM Ann" data-description="Operating profit margin last year." data-ratio="true">
+  <input type="checkbox" value="OPM last year" onchange="Gallery.toggle(this)">
+  <span>OPM last year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="NPM last year" data-short-name="NPM Ann" data-description="Net profit margin last year." data-ratio="true">
+  <input type="checkbox" value="NPM last year" onchange="Gallery.toggle(this)">
+  <span>NPM last year</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Operating profit latest quarter" data-short-name="OP Qtr" data-description="Operating Profit as per latest quarterly results." data-ratio="true">
+  <input type="checkbox" value="Operating profit latest quarter" onchange="Gallery.toggle(this)">
+  <span>Operating profit latest quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Other income latest quarter" data-short-name="Other Inc Qtr" data-description="Other Income as per latest quarterly results." data-ratio="true">
+  <input type="checkbox" value="Other income latest quarter" onchange="Gallery.toggle(this)">
+  <span>Other income latest quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="EBIDT latest quarter" data-short-name="EBIDT Qtr" data-description="Earnings before Interest, Depreciation &amp; Tax as per latest quarterly results." data-ratio="true">
+  <input type="checkbox" value="EBIDT latest quarter" onchange="Gallery.toggle(this)">
+  <span>EBIDT latest quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Depreciation latest quarter" data-short-name="Dep Qtr" data-description="Depreciation as per latest quarterly results." data-ratio="true">
+  <input type="checkbox" value="Depreciation latest quarter" onchange="Gallery.toggle(this)">
+  <span>Depreciation latest quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="EBIT latest quarter" data-short-name="EBIT Qtr" data-description="Earnings before Interest and Tax as per latest quarterly results." data-ratio="true">
+  <input type="checkbox" value="EBIT latest quarter" onchange="Gallery.toggle(this)">
+  <span>EBIT latest quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Interest latest quarter" data-short-name="Interest Qtr" data-description="Interest as per latest quarterly results." data-ratio="true">
+  <input type="checkbox" value="Interest latest quarter" onchange="Gallery.toggle(this)">
+  <span>Interest latest quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Profit before tax latest quarter" data-short-name="PBT Qtr" data-description="Profit before Tax as per latest quarterly results." data-ratio="true">
+  <input type="checkbox" value="Profit before tax latest quarter" onchange="Gallery.toggle(this)">
+  <span>Profit before tax latest quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Tax latest quarter" data-short-name="Tax Qtr" data-description="Tax expense as per latest quarterly results." data-ratio="true">
+  <input type="checkbox" value="Tax latest quarter" onchange="Gallery.toggle(this)">
+  <span>Tax latest quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Extraordinary items latest quarter" data-short-name="Extra Ord Item Qtr" data-description="Extraordinary items as per latest quarterly results." data-ratio="true">
+  <input type="checkbox" value="Extraordinary items latest quarter" onchange="Gallery.toggle(this)">
+  <span>Extraordinary items latest quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Net Profit latest quarter" data-short-name="NP Qtr" data-description="Net Profit as per latest quarterly results." data-ratio="true">
+  <input type="checkbox" value="Net Profit latest quarter" onchange="Gallery.toggle(this)">
+  <span>Net Profit latest quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="GPM latest quarter" data-short-name="GPM Qtr" data-description="Gross profit margin as per latest quarterly results." data-ratio="true">
+  <input type="checkbox" value="GPM latest quarter" onchange="Gallery.toggle(this)">
+  <span>GPM latest quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="OPM latest quarter" data-short-name="OPM Qtr" data-description="Operating profit margin as per latest quarterly results." data-ratio="true">
+  <input type="checkbox" value="OPM latest quarter" onchange="Gallery.toggle(this)">
+  <span>OPM latest quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="NPM latest quarter" data-short-name="NPM Qtr" data-description="Net profit margin as per latest quarterly results." data-ratio="true">
+  <input type="checkbox" value="NPM latest quarter" onchange="Gallery.toggle(this)">
+  <span>NPM latest quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Equity Capital latest quarter" data-short-name="Eq Cap Qtr" data-description="Equity Capital as per latest quarterly results." data-ratio="true">
+  <input type="checkbox" value="Equity Capital latest quarter" onchange="Gallery.toggle(this)">
+  <span>Equity Capital latest quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="EPS latest quarter" data-short-name="EPS Qtr" data-description="Earning per share as per latest quarter." data-ratio="true">
+  <input type="checkbox" value="EPS latest quarter" onchange="Gallery.toggle(this)">
+  <span>EPS latest quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Price to Quarterly Earning" data-short-name="Qtr P/E" data-description="Price upon (latest quarterly earning x 4) 
+ i.e. PE based only on latest quarter earning" data-ratio="true">
+  <input type="checkbox" value="Price to Quarterly Earning" onchange="Gallery.toggle(this)">
+  <span>Price to Quarterly Earning</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Book value" data-short-name="B.V." data-description="Book value per share: (Equity Capital + Reserves) / Number of shares" data-ratio="true">
+  <input type="checkbox" value="Book value" onchange="Gallery.toggle(this)">
+  <span>Book value</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Inventory turnover ratio" data-short-name="Inven TO" data-description="Inventory turnover ratio for last year." data-ratio="true">
+  <input type="checkbox" value="Inventory turnover ratio" onchange="Gallery.toggle(this)">
+  <span>Inventory turnover ratio</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Quick ratio" data-short-name="Quick Rat" data-description="Quick ratio last year." data-ratio="true">
+  <input type="checkbox" value="Quick ratio" onchange="Gallery.toggle(this)">
+  <span>Quick ratio</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Exports percentage" data-short-name="Export" data-description="Exports percentage of total sales last year." data-ratio="true">
+  <input type="checkbox" value="Exports percentage" onchange="Gallery.toggle(this)">
+  <span>Exports percentage</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Total Assets" data-short-name="Assets" data-description="Total of Assets as per balance sheet" data-ratio="true">
+  <input type="checkbox" value="Total Assets" onchange="Gallery.toggle(this)">
+  <span>Total Assets</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Piotroski score" data-short-name="Piotski Scr" data-description="Companies with Piotroski score of 9 which reflects nine criteria used to determine the strength of a firm's financial position. It is based on 3 most important criteria: Profitability, Leverage and operating efficiency." data-ratio="true">
+  <input type="checkbox" value="Piotroski score" onchange="Gallery.toggle(this)">
+  <span>Piotroski score</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="G Factor" data-short-name="G Factor" data-description="Score out of 10. It is based on companies growth and quality of earnings. A score of 7 and above is very healthy." data-ratio="true">
+  <input type="checkbox" value="G Factor" onchange="Gallery.toggle(this)">
+  <span>G Factor</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Operating profit" data-short-name="OP 12M" data-description="Sum of operating profit in last 4 quarters" data-ratio="true">
+  <input type="checkbox" value="Operating profit" onchange="Gallery.toggle(this)">
+  <span>Operating profit</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Interest" data-short-name="Interest 12M" data-description="Sum of interest in last 4 quarters" data-ratio="true">
+  <input type="checkbox" value="Interest" onchange="Gallery.toggle(this)">
+  <span>Interest</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Depreciation" data-short-name="Dep 12M" data-description="Sum of Depreciation in last 4 quarters" data-ratio="true">
+  <input type="checkbox" value="Depreciation" onchange="Gallery.toggle(this)">
+  <span>Depreciation</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="EPS last year" data-short-name="EPS Ann" data-description="Earnings per share last financial year." data-ratio="true">
+  <input type="checkbox" value="EPS last year" onchange="Gallery.toggle(this)">
+  <span>EPS last year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="EBIT" data-short-name="EBIT 12M" data-description="Total earnings before interest and taxes during last 12 months." data-ratio="true">
+  <input type="checkbox" value="EBIT" onchange="Gallery.toggle(this)">
+  <span>EBIT</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Net profit" data-short-name="NP 12M" data-description="Net profits of the the company during last 12 months." data-ratio="true">
+  <input type="checkbox" value="Net profit" onchange="Gallery.toggle(this)">
+  <span>Net profit</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Asset Turnover Ratio" data-short-name="Asset Turnover" data-description="Annual Sales / Average Total Assets as per balance sheet" data-ratio="true">
+  <input type="checkbox" value="Asset Turnover Ratio" onchange="Gallery.toggle(this)">
+  <span>Asset Turnover Ratio</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Financial leverage" data-short-name="Leverage" data-description="Average Total Assets as per balance sheet / Net worth" data-ratio="true">
+  <input type="checkbox" value="Financial leverage" onchange="Gallery.toggle(this)">
+  <span>Financial leverage</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Current Tax" data-short-name="Current Tax 12M" data-description="Tax (without deferred tax) during last 4 quarters" data-ratio="true">
+  <input type="checkbox" value="Current Tax" onchange="Gallery.toggle(this)">
+  <span>Current Tax</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Tax" data-short-name="Tax 12M" data-description="Tax expenditure during last 4 quarters" data-ratio="true">
+  <input type="checkbox" value="Tax" onchange="Gallery.toggle(this)">
+  <span>Tax</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Operating profit 2quarters back" data-short-name="OP 2Qtr Bk" data-description="Operating profit 2 quarters back (preceding-preceding quarter)." data-ratio="true">
+  <input type="checkbox" value="Operating profit 2quarters back" onchange="Gallery.toggle(this)">
+  <span>Operating profit 2quarters back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Operating profit 3quarters back" data-short-name="OP 3Qtr Bk" data-description="Operating profit 3 quarters back (corresponding previous quarter of upcoming quarter)." data-ratio="true">
+  <input type="checkbox" value="Operating profit 3quarters back" onchange="Gallery.toggle(this)">
+  <span>Operating profit 3quarters back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Sales 2quarters back" data-short-name="Sales 2Qtr Bk" data-description="Sales during 2 quarters back (preceding-preceding quarter)." data-ratio="true">
+  <input type="checkbox" value="Sales 2quarters back" onchange="Gallery.toggle(this)">
+  <span>Sales 2quarters back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Sales 3quarters back" data-short-name="Sales 3Qtr Bk" data-description="Sales 3 quarters back (corresponding previous quarter of upcoming quarter)." data-ratio="true">
+  <input type="checkbox" value="Sales 3quarters back" onchange="Gallery.toggle(this)">
+  <span>Sales 3quarters back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Net profit 2quarters back" data-short-name="NP 2Qtr Bk" data-description="Net profit 2 quarters back (preceding-preceding quarter)." data-ratio="true">
+  <input type="checkbox" value="Net profit 2quarters back" onchange="Gallery.toggle(this)">
+  <span>Net profit 2quarters back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Net profit 3quarters back" data-short-name="NP 3Qtr Bk" data-description="Net profit 3 quarters back (corresponding previous quarter of upcoming quarter)." data-ratio="true">
+  <input type="checkbox" value="Net profit 3quarters back" onchange="Gallery.toggle(this)">
+  <span>Net profit 3quarters back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Working capital" data-short-name="Working Cap" data-description="Working capital (Current assets - current liabilities - short term borrowings) from latest balance sheet." data-ratio="true">
+  <input type="checkbox" value="Working capital" onchange="Gallery.toggle(this)">
+  <span>Working capital</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Number of Shareholders" data-short-name="No. of Share Holders" data-description="Number of shareholders as per latest filing" data-ratio="true">
+  <input type="checkbox" value="Number of Shareholders" onchange="Gallery.toggle(this)">
+  <span>Number of Shareholders</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Unpledged promoter holding" data-short-name="Unpledged Prom Hold" data-description="Percentage of unpledged promoter holding of total equity capital." data-ratio="true">
+  <input type="checkbox" value="Unpledged promoter holding" onchange="Gallery.toggle(this)">
+  <span>Unpledged promoter holding</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Return on invested capital" data-short-name="ROIC" data-description="NOPAT upon invested capital (net block + working capital) ie. return from core business" data-ratio="true">
+  <input type="checkbox" value="Return on invested capital" onchange="Gallery.toggle(this)">
+  <span>Return on invested capital</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Lease liabilities" data-short-name="Lease Liability" data-description="Amount of lease liabilities (part of borrowings) as per latest balance sheet" data-ratio="true">
+  <input type="checkbox" value="Lease liabilities" onchange="Gallery.toggle(this)">
+  <span>Lease liabilities</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Inventory" data-short-name="Inventory" data-description="Value of inventory as per latest annual report" data-ratio="true">
+  <input type="checkbox" value="Inventory" onchange="Gallery.toggle(this)">
+  <span>Inventory</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Trade receivables" data-short-name="Trade receivables" data-description="Trade Receivables (sundry debtors) as per latest annual report." data-ratio="true">
+  <input type="checkbox" value="Trade receivables" onchange="Gallery.toggle(this)">
+  <span>Trade receivables</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Debtor days" data-short-name="Debtor days" data-description="Average trade receivables by sales per day as per the latest annual report." data-ratio="true">
+  <input type="checkbox" value="Debtor days" onchange="Gallery.toggle(this)">
+  <span>Debtor days</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Industry PBV" data-short-name="Ind PBV" data-description="Industrial Price to Book Value" data-ratio="true">
+  <input type="checkbox" value="Industry PBV" onchange="Gallery.toggle(this)">
+  <span>Industry PBV</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Operating profit growth" data-short-name="Opert Prft Gwth" data-description="TTM Operating profit growth: change over last 4 quarters vs preceding 4 quarters" data-ratio="true">
+  <input type="checkbox" value="Operating profit growth" onchange="Gallery.toggle(this)">
+  <span>Operating profit growth</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Other income" data-short-name="Other Income" data-description="Other income from last 4 quarterly results." data-ratio="true">
+  <input type="checkbox" value="Other income" onchange="Gallery.toggle(this)">
+  <span>Other income</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="price" data-name="Volume 1month average" data-short-name="Avg Vol 1Mth" data-description="Average quantity traded over last 1 month across all exchanges." data-ratio="true">
+  <input type="checkbox" value="Volume 1month average" onchange="Gallery.toggle(this)">
+  <span>Volume 1month average</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="price" data-name="Volume 1week average" data-short-name="Avg Vol 1Wk" data-description="Average quantity traded over last 7 days across all exchanges." data-ratio="true">
+  <input type="checkbox" value="Volume 1week average" onchange="Gallery.toggle(this)">
+  <span>Volume 1week average</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="price" data-name="Volume" data-short-name="Vol 1d" data-description="Quantity traded on last trade date across all exchanges." data-ratio="true">
+  <input type="checkbox" value="Volume" onchange="Gallery.toggle(this)">
+  <span>Volume</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="price" data-name="High price" data-short-name="52w High" data-description="52 Weeks high price of the company's stock." data-ratio="true">
+  <input type="checkbox" value="High price" onchange="Gallery.toggle(this)">
+  <span>High price</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="price" data-name="Low price" data-short-name="52w Low" data-description="52 Weeks low price of the company's stock." data-ratio="true">
+  <input type="checkbox" value="Low price" onchange="Gallery.toggle(this)">
+  <span>Low price</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="price" data-name="High price all time" data-short-name="All time high" data-description="All time high price since 2005" data-ratio="true">
+  <input type="checkbox" value="High price all time" onchange="Gallery.toggle(this)">
+  <span>High price all time</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="price" data-name="Low price all time" data-short-name="All time low" data-description="All time low price since 2005" data-ratio="true">
+  <input type="checkbox" value="Low price all time" onchange="Gallery.toggle(this)">
+  <span>Low price all time</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Face value" data-short-name="Face value" data-description="Face value or nominal value of the company's equity shares." data-ratio="true">
+  <input type="checkbox" value="Face value" onchange="Gallery.toggle(this)">
+  <span>Face value</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Credit rating" data-short-name="Credit Rate" data-description="Credit rating of the company's loans." data-ratio="true">
+  <input type="checkbox" value="Credit rating" onchange="Gallery.toggle(this)">
+  <span>Credit rating</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio" data-name="Working Capital to Sales ratio" data-short-name="WC to Sales" data-description="Calculates working capital as a percentage of sales" data-ratio="true">
+  <input type="checkbox" value="Working Capital to Sales ratio" onchange="Gallery.toggle(this)">
+  <span>Working Capital to Sales ratio</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio" data-name="QoQ Profits" data-short-name="QoQ Profits" data-description="QoQ Profit Growth as per latest quarterly result" data-ratio="true">
+  <input type="checkbox" value="QoQ Profits" onchange="Gallery.toggle(this)">
+  <span>QoQ Profits</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio" data-name="QoQ Sales" data-short-name="QoQ Sales" data-description="QoQ Sales Growth as per latest quarterly result" data-ratio="true">
+  <input type="checkbox" value="QoQ Sales" onchange="Gallery.toggle(this)">
+  <span>QoQ Sales</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio" data-name="Net worth" data-short-name="Net worth" data-description="Company's net worth (or total book value)" data-ratio="true">
+  <input type="checkbox" value="Net worth" onchange="Gallery.toggle(this)">
+  <span>Net worth</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio" data-name="Market Cap to Sales" data-short-name="M.Cap / Sales" data-description="Market Cap to Sales ratio" data-ratio="true">
+  <input type="checkbox" value="Market Cap to Sales" onchange="Gallery.toggle(this)">
+  <span>Market Cap to Sales</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio" data-name="Interest Coverage" data-short-name="Interest coverage" data-description="Interest Coverage Ratio" data-ratio="true">
+  <input type="checkbox" value="Interest Coverage" onchange="Gallery.toggle(this)">
+  <span>Interest Coverage</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio" data-name="Enterprise Value to EBIT" data-short-name="EV / EBIT" data-description="Ratio of Enterprise value to EBIT" data-ratio="true">
+  <input type="checkbox" value="Enterprise Value to EBIT" onchange="Gallery.toggle(this)">
+  <span>Enterprise Value to EBIT</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio" data-name="Debt Capacity" data-short-name="Debt Capacity" data-description="Debt Capacity Greater than 1 indicates debt capacity bargain" data-ratio="true">
+  <input type="checkbox" value="Debt Capacity" onchange="Gallery.toggle(this)">
+  <span>Debt Capacity</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio" data-name="Debt To Profit" data-short-name="Debt To Profit" data-description="Rather than Debt to Equity, as the Debt is serviced through the actual net profit, this ratio checks how much debt the company is carrying and its ability to service the same" data-ratio="true">
+  <input type="checkbox" value="Debt To Profit" onchange="Gallery.toggle(this)">
+  <span>Debt To Profit</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio" data-name="Total Capital Employed" data-short-name="Capital Employed" data-description="Net block + Working capital + Capital work in progress" data-ratio="true">
+  <input type="checkbox" value="Total Capital Employed" onchange="Gallery.toggle(this)">
+  <span>Total Capital Employed</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio" data-name="CROIC" data-short-name="CROIC" data-description="Cash return on invested capital: Average (3yr) Free cash flow / Invested capital" data-ratio="true">
+  <input type="checkbox" value="CROIC" onchange="Gallery.toggle(this)">
+  <span>CROIC</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio" data-name="debtplus" data-short-name="debt+" data-description="modified debt equity to include contingent liabilities" data-ratio="true">
+  <input type="checkbox" value="debtplus" onchange="Gallery.toggle(this)">
+  <span>debtplus</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio" data-name="Leverage" data-short-name="Leverage" data-description="Financial Leverage" data-ratio="true">
+  <input type="checkbox" value="Leverage" onchange="Gallery.toggle(this)">
+  <span>Leverage</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio" data-name="Dividend Payout" data-short-name="Payout ratio" data-description="Dividend Payout as a percentage of net profit" data-ratio="true">
+  <input type="checkbox" value="Dividend Payout" onchange="Gallery.toggle(this)">
+  <span>Dividend Payout</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio" data-name="Intrinsic Value" data-short-name="IV" data-description="Intrinsic value based on modified Graham Number" data-ratio="true">
+  <input type="checkbox" value="Intrinsic Value" onchange="Gallery.toggle(this)">
+  <span>Intrinsic Value</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio" data-name="cash debt contingent liabilities by mcap" data-short-name="CDL" data-description="cash minus debt and contingent liabilities as percentage of market capitalization" data-ratio="true">
+  <input type="checkbox" value="cash debt contingent liabilities by mcap" onchange="Gallery.toggle(this)">
+  <span>cash debt contingent liabilities by mcap</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio" data-name="Cash by market cap" data-short-name="Cash / MCap" data-description="Average cash in last and preceding year as percentage of mcap" data-ratio="true">
+  <input type="checkbox" value="Cash by market cap" onchange="Gallery.toggle(this)">
+  <span>Cash by market cap</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio" data-name="52w Index" data-short-name="52w" data-description="Where is the stock currently, in its 52w price band: (Current price - Low price) * 100 / (High price - Low price)" data-ratio="true">
+  <input type="checkbox" value="52w Index" onchange="Gallery.toggle(this)">
+  <span>52w Index</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio" data-name="Down from 52w high" data-short-name="Down" data-description="Price difference from 52 weeks high" data-ratio="true">
+  <input type="checkbox" value="Down from 52w high" onchange="Gallery.toggle(this)">
+  <span>Down from 52w high</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio" data-name="Up from 52w low" data-short-name="Up" data-description="Price difference from 52 Weeks low" data-ratio="true">
+  <input type="checkbox" value="Up from 52w low" onchange="Gallery.toggle(this)">
+  <span>Up from 52w low</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio" data-name="From 52w high" data-short-name="From 52w high" data-description="How close is it to the 52w high" data-ratio="true">
+  <input type="checkbox" value="From 52w high" onchange="Gallery.toggle(this)">
+  <span>From 52w high</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio" data-name="Mkt Cap To Debt Cap" data-short-name="Mkt Cap To Debt Cap" data-description="Debt Capacity: If Market Cap/ Debt Cpacity < 1 then it is good; Ability to pay the debt" data-ratio="true">
+  <input type="checkbox" value="Mkt Cap To Debt Cap" onchange="Gallery.toggle(this)">
+  <span>Mkt Cap To Debt Cap</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio" data-name="Dividend Payout Ratio" data-short-name="Dividend Payout" data-description="Dividend Payout as a percentage of net profit" data-ratio="true">
+  <input type="checkbox" value="Dividend Payout Ratio" onchange="Gallery.toggle(this)">
+  <span>Dividend Payout Ratio</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio" data-name="Graham" data-short-name="Graham Price" data-description="Graham number is the formula Ben Graham used to calculate the maximum price one should pay for a stock: square root of (22.5 * EPS * BV)" data-ratio="true">
+  <input type="checkbox" value="Graham" onchange="Gallery.toggle(this)">
+  <span>Graham</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio" data-name="Price to Cash Flow" data-short-name="CMP / OCF" data-description="Price to Operating Cash Flow Ratio (per share)" data-ratio="true">
+  <input type="checkbox" value="Price to Cash Flow" onchange="Gallery.toggle(this)">
+  <span>Price to Cash Flow</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio" data-name="ROCE3yr avg" data-short-name="ROCE3yr avg" data-description="Average return on capital employed 3Years" data-ratio="true">
+  <input type="checkbox" value="ROCE3yr avg" onchange="Gallery.toggle(this)">
+  <span>ROCE3yr avg</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Working Capital Days" data-short-name="WC Days" data-description="(Working Capital - Cash) / Sales * 365" data-ratio="true">
+  <input type="checkbox" value="Working Capital Days" onchange="Gallery.toggle(this)">
+  <span>Working Capital Days</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Cash Equivalents" data-short-name="Cash" data-description="Cash equivalents as per the latest balance sheet" data-ratio="true">
+  <input type="checkbox" value="Cash Equivalents" onchange="Gallery.toggle(this)">
+  <span>Cash Equivalents</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Earning Power" data-short-name="BEP" data-description="Basic Earning Power: EBIT / Total Assets" data-ratio="true">
+  <input type="checkbox" value="Earning Power" onchange="Gallery.toggle(this)">
+  <span>Earning Power</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio" data-name="PB X PE" data-short-name="PB X PE" data-description="Graham's formula to calculate the maximum price one should pay for a stock. As per this rule, the product of a stock's price to earnings (P/E) and price to book value (P/BV) should not be more than 22.5 i.e., P/E of 15 multiplied by P/BV of 1.5." data-ratio="true">
+  <input type="checkbox" value="PB X PE" onchange="Gallery.toggle(this)">
+  <span>PB X PE</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Graham Number" data-short-name="Graham's Number" data-description="Graham number is the formula Ben Graham used to calculate the maximum price one should pay for a stock: square root of (22.5 * EPS * BV)" data-ratio="true">
+  <input type="checkbox" value="Graham Number" onchange="Gallery.toggle(this)">
+  <span>Graham Number</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio" data-name="NCAVPS" data-short-name="NCAVPS" data-description="Net Current Assets value per share: Working Capital / Number of equity shares" data-ratio="true">
+  <input type="checkbox" value="NCAVPS" onchange="Gallery.toggle(this)">
+  <span>NCAVPS</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio" data-name="Market Capt to Cash Flow" data-short-name="Mar Cap to CF" data-description="Market Capitalization / Cash from operating activities" data-ratio="true">
+  <input type="checkbox" value="Market Capt to Cash Flow" onchange="Gallery.toggle(this)">
+  <span>Market Capt to Cash Flow</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio" data-name="Altman Z Score" data-short-name="Altman Z Scr" data-description="Altman Z Score" data-ratio="true">
+  <input type="checkbox" value="Altman Z Score" onchange="Gallery.toggle(this)">
+  <span>Altman Z Score</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Cash Conversion Cycle" data-short-name="Cash Cycle" data-description="How quickly the company turns its inventory into sales, and its sales into cash, which is then used to pay its suppliers for goods and services" data-ratio="true">
+  <input type="checkbox" value="Cash Conversion Cycle" onchange="Gallery.toggle(this)">
+  <span>Cash Conversion Cycle</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Advance from Customers" data-short-name="Adv Cust" data-description="Advance from customers in current liabilities" data-ratio="true">
+  <input type="checkbox" value="Advance from Customers" onchange="Gallery.toggle(this)">
+  <span>Advance from Customers</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Trade Payables" data-short-name="Payables" data-description="Amount of trade payables (sundry creditors) as per latest annual report." data-ratio="true">
+  <input type="checkbox" value="Trade Payables" onchange="Gallery.toggle(this)">
+  <span>Trade Payables</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Days Payable Outstanding" data-short-name="Days Payable" data-description="Annual Trade Payables / Annual Material cost * 365" data-ratio="true">
+  <input type="checkbox" value="Days Payable Outstanding" onchange="Gallery.toggle(this)">
+  <span>Days Payable Outstanding</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Days Receivable Outstanding" data-short-name="Days Receivable" data-description="Number of days after which the payment is usually realized by the debtors" data-ratio="true">
+  <input type="checkbox" value="Days Receivable Outstanding" onchange="Gallery.toggle(this)">
+  <span>Days Receivable Outstanding</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Days Inventory Outstanding" data-short-name="Inventory Days" data-description="Annual Inventory / Annual Material Cost * 365" data-ratio="true">
+  <input type="checkbox" value="Days Inventory Outstanding" onchange="Gallery.toggle(this)">
+  <span>Days Inventory Outstanding</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="user_ratio" data-name="Market cap to quarterly profit" data-short-name="M.Cap / Qtr Profit" data-description="Number of times Market capitalization is of the Profit after tax from latest quarter." data-ratio="true">
+  <input type="checkbox" value="Market cap to quarterly profit" onchange="Gallery.toggle(this)">
+  <span>Market cap to quarterly profit</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="price" data-name="Return over 1day" data-short-name="1day return" data-description="Price change vs previous day in percent" data-ratio="true">
+  <input type="checkbox" value="Return over 1day" onchange="Gallery.toggle(this)">
+  <span>Return over 1day</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="price" data-name="Return over 1week" data-short-name="1wk return" data-description="Price change over last 1 week in percent" data-ratio="true">
+  <input type="checkbox" value="Return over 1week" onchange="Gallery.toggle(this)">
+  <span>Return over 1week</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="price" data-name="Return over 1month" data-short-name="1mth return" data-description="Price change over last 1 month in percent" data-ratio="true">
+  <input type="checkbox" value="Return over 1month" onchange="Gallery.toggle(this)">
+  <span>Return over 1month</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Last result date" data-short-name="Qtr Date" data-description="Date of the latest result available in YYYYMM format" data-ratio="true">
+  <input type="checkbox" value="Last result date" onchange="Gallery.toggle(this)">
+  <span>Last result date</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Last annual result date" data-short-name="Ann Date" data-description="Date of last annual result in YYYYMM format" data-ratio="true">
+  <input type="checkbox" value="Last annual result date" onchange="Gallery.toggle(this)">
+  <span>Last annual result date</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Expected quarterly sales growth" data-short-name="Exp Qtr Sales Var" data-description="Expected Year-on-year sales growth for the upcoming quarter based on trends of last 8 quarters." data-ratio="true">
+  <input type="checkbox" value="Expected quarterly sales growth" onchange="Gallery.toggle(this)">
+  <span>Expected quarterly sales growth</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Expected quarterly sales" data-short-name="Exp Qtr Sales" data-description="Expected sales for the upcoming quarter based on trend of last 8 quarters." data-ratio="true">
+  <input type="checkbox" value="Expected quarterly sales" onchange="Gallery.toggle(this)">
+  <span>Expected quarterly sales</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Expected quarterly operating profit" data-short-name="Exp Qtr OP" data-description="Expected operating profit for upcoming quarter based on expected quarterly sales." data-ratio="true">
+  <input type="checkbox" value="Expected quarterly operating profit" onchange="Gallery.toggle(this)">
+  <span>Expected quarterly operating profit</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Expected quarterly net profit" data-short-name="Exp Qtr NP" data-description="Expected net profit for the upcoming quarter based on expected sales." data-ratio="true">
+  <input type="checkbox" value="Expected quarterly net profit" onchange="Gallery.toggle(this)">
+  <span>Expected quarterly net profit</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Expected quarterly EPS" data-short-name="Exp Qtr EPS" data-description="Expected EPS for upcoming quarter based on expected sales." data-ratio="true">
+  <input type="checkbox" value="Expected quarterly EPS" onchange="Gallery.toggle(this)">
+  <span>Expected quarterly EPS</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="price" data-name="DMA 50" data-short-name="50 DMA" data-description="50 days exponential moving average" data-ratio="true">
+  <input type="checkbox" value="DMA 50" onchange="Gallery.toggle(this)">
+  <span>DMA 50</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="price" data-name="DMA 200" data-short-name="200 DMA" data-description="200 days exponential moving average" data-ratio="true">
+  <input type="checkbox" value="DMA 200" onchange="Gallery.toggle(this)">
+  <span>DMA 200</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="price" data-name="DMA 50 previous day" data-short-name="50 DMA prev." data-description="50 days exponential moving average day before yesterday" data-ratio="true">
+  <input type="checkbox" value="DMA 50 previous day" onchange="Gallery.toggle(this)">
+  <span>DMA 50 previous day</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="price" data-name="DMA 200 previous day" data-short-name="200 DMA prev." data-description="200 days exponential moving average day before yesterday" data-ratio="true">
+  <input type="checkbox" value="DMA 200 previous day" onchange="Gallery.toggle(this)">
+  <span>DMA 200 previous day</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="price" data-name="RSI" data-short-name="RSI" data-description="Relative Strength Index of 14 days" data-ratio="true">
+  <input type="checkbox" value="RSI" onchange="Gallery.toggle(this)">
+  <span>RSI</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="price" data-name="MACD" data-short-name="MACD" data-description="Last value of MACD line" data-ratio="true">
+  <input type="checkbox" value="MACD" onchange="Gallery.toggle(this)">
+  <span>MACD</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="price" data-name="MACD Previous Day" data-short-name="MACD Prev" data-description="MACD value of previous day" data-ratio="true">
+  <input type="checkbox" value="MACD Previous Day" onchange="Gallery.toggle(this)">
+  <span>MACD Previous Day</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="price" data-name="MACD Signal" data-short-name="MACD Signal" data-description="Last value of MACD Signal Line" data-ratio="true">
+  <input type="checkbox" value="MACD Signal" onchange="Gallery.toggle(this)">
+  <span>MACD Signal</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="price" data-name="MACD Signal Previous Day" data-short-name="MACD Signal Prev" data-description="Value of MACD signal line for previous day" data-ratio="true">
+  <input type="checkbox" value="MACD Signal Previous Day" onchange="Gallery.toggle(this)">
+  <span>MACD Signal Previous Day</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Public holding" data-short-name="Public Hold" data-description="Public shareholding excluding FII, DII and Government holding as per latest shareholding filing" data-ratio="true">
+  <input type="checkbox" value="Public holding" onchange="Gallery.toggle(this)">
+  <span>Public holding</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="FII holding" data-short-name="FII Hold" data-description="Total foreign institutional holdings as per latest shareholding filing" data-ratio="true">
+  <input type="checkbox" value="FII holding" onchange="Gallery.toggle(this)">
+  <span>FII holding</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Change in FII holding" data-short-name="Chg in FII Hold" data-description="Change in FII holding versus previous quarter." data-ratio="true">
+  <input type="checkbox" value="Change in FII holding" onchange="Gallery.toggle(this)">
+  <span>Change in FII holding</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="DII holding" data-short-name="DII Hold" data-description="Domestic institutional holding as per latest shareholding filing" data-ratio="true">
+  <input type="checkbox" value="DII holding" onchange="Gallery.toggle(this)">
+  <span>DII holding</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Change in DII holding" data-short-name="Chg in DII Hold" data-description="Change in DII holding versus previous quarter." data-ratio="true">
+  <input type="checkbox" value="Change in DII holding" onchange="Gallery.toggle(this)">
+  <span>Change in DII holding</span>
+</label>
+
+    
+  </div>
+
+  <div class="flex-grow">
+    <div class="upper ink-700 strong" style="margin-bottom: 2rem;">Preceding</div>
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Number of equity shares preceding year" data-short-name="No. Eq. Shares PY" data-description="Number of equity shares at the end of preceding financial year." data-ratio="true">
+  <input type="checkbox" value="Number of equity shares preceding year" onchange="Gallery.toggle(this)">
+  <span>Number of equity shares preceding year</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="cash_flow" data-name="Free cash flow preceding year" data-short-name="FCF Prev Ann" data-description="Cash Flow from operating activities - Fixed assets purchased + Fixed assets sold in preceding year" data-ratio="true">
+  <input type="checkbox" value="Free cash flow preceding year" onchange="Gallery.toggle(this)">
+  <span>Free cash flow preceding year</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="cash_flow" data-name="Cash from operations preceding year" data-short-name="CF Operations PY" data-description="Cash flow from operating activities from preceding year's cash-flow." data-ratio="true">
+  <input type="checkbox" value="Cash from operations preceding year" onchange="Gallery.toggle(this)">
+  <span>Cash from operations preceding year</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="cash_flow" data-name="Cash from investing preceding year" data-short-name="CF Investing PY" data-description="Cash flow from investing activities from preceding year's cash-flow." data-ratio="true">
+  <input type="checkbox" value="Cash from investing preceding year" onchange="Gallery.toggle(this)">
+  <span>Cash from investing preceding year</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="cash_flow" data-name="Cash from financing preceding year" data-short-name="CF Financing PY" data-description="Cash flow from financing activities from preceding year's cash-flow." data-ratio="true">
+  <input type="checkbox" value="Cash from financing preceding year" onchange="Gallery.toggle(this)">
+  <span>Cash from financing preceding year</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="cash_flow" data-name="Net cash flow preceding year" data-short-name="Net CF PY" data-description="Net cash-flow from preceding year's cash-flow." data-ratio="true">
+  <input type="checkbox" value="Net cash flow preceding year" onchange="Gallery.toggle(this)">
+  <span>Net cash flow preceding year</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="cash_flow" data-name="Cash beginning of preceding year" data-short-name="Cash Beginning PY" data-description="Cash at beginning of the year from preceding year's cash-flow." data-ratio="true">
+  <input type="checkbox" value="Cash beginning of preceding year" onchange="Gallery.toggle(this)">
+  <span>Cash beginning of preceding year</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="cash_flow" data-name="Cash end of preceding year" data-short-name="Cash End PY" data-description="Cash at end of the year from preceding year's balance sheet." data-ratio="true">
+  <input type="checkbox" value="Cash end of preceding year" onchange="Gallery.toggle(this)">
+  <span>Cash end of preceding year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Sales preceding year" data-short-name="Sales Prev Ann" data-description="Sales as per preceding annual results." data-ratio="true">
+  <input type="checkbox" value="Sales preceding year" onchange="Gallery.toggle(this)">
+  <span>Sales preceding year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Operating profit preceding year" data-short-name="OP Prev Ann" data-description="Operating Profit as per preceding annual results." data-ratio="true">
+  <input type="checkbox" value="Operating profit preceding year" onchange="Gallery.toggle(this)">
+  <span>Operating profit preceding year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Other income preceding year" data-short-name="Other Inc Prev Ann" data-description="Other Income as per preceding annual results." data-ratio="true">
+  <input type="checkbox" value="Other income preceding year" onchange="Gallery.toggle(this)">
+  <span>Other income preceding year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="EBIDT preceding year" data-short-name="EBIDT Prev Ann" data-description="Earnings before Interest, Depreciation &amp; Tax as per preceding annual results." data-ratio="true">
+  <input type="checkbox" value="EBIDT preceding year" onchange="Gallery.toggle(this)">
+  <span>EBIDT preceding year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Depreciation preceding year" data-short-name="Dep Prev Ann" data-description="Depreciation as per preceding annual results." data-ratio="true">
+  <input type="checkbox" value="Depreciation preceding year" onchange="Gallery.toggle(this)">
+  <span>Depreciation preceding year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="EBIT preceding year" data-short-name="EBIT Prev Ann" data-description="Earnings before Interest and Tax as per preceding annual results." data-ratio="true">
+  <input type="checkbox" value="EBIT preceding year" onchange="Gallery.toggle(this)">
+  <span>EBIT preceding year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Interest preceding year" data-short-name="Interest Prev Ann" data-description="Interest as per preceding annual results." data-ratio="true">
+  <input type="checkbox" value="Interest preceding year" onchange="Gallery.toggle(this)">
+  <span>Interest preceding year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Profit before tax preceding year" data-short-name="PBT Prev Ann" data-description="Profit before Tax as per preceding annual results." data-ratio="true">
+  <input type="checkbox" value="Profit before tax preceding year" onchange="Gallery.toggle(this)">
+  <span>Profit before tax preceding year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Tax preceding year" data-short-name="Tax Prev Ann" data-description="Tax expense as per preceding annual results." data-ratio="true">
+  <input type="checkbox" value="Tax preceding year" onchange="Gallery.toggle(this)">
+  <span>Tax preceding year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Profit after tax preceding year" data-short-name="PAT Prev Ann" data-description="Profit after Tax excluding extraordinary items as per preceding annual results." data-ratio="true">
+  <input type="checkbox" value="Profit after tax preceding year" onchange="Gallery.toggle(this)">
+  <span>Profit after tax preceding year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Extraordinary items preceding year" data-short-name="Extra Ord Prev Ann" data-description="Extraordinary items as per preceding annual results." data-ratio="true">
+  <input type="checkbox" value="Extraordinary items preceding year" onchange="Gallery.toggle(this)">
+  <span>Extraordinary items preceding year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Net Profit preceding year" data-short-name="NP Prev Ann" data-description="Net Profit as per preceding annual results." data-ratio="true">
+  <input type="checkbox" value="Net Profit preceding year" onchange="Gallery.toggle(this)">
+  <span>Net Profit preceding year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Dividend preceding year" data-short-name="Dividend Prev Ann" data-description="Dividend paid as per preceding annual results." data-ratio="true">
+  <input type="checkbox" value="Dividend preceding year" onchange="Gallery.toggle(this)">
+  <span>Dividend preceding year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="OPM preceding year" data-short-name="OPM Prev Ann" data-description="Operating profit margin as per preceding annual results." data-ratio="true">
+  <input type="checkbox" value="OPM preceding year" onchange="Gallery.toggle(this)">
+  <span>OPM preceding year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="NPM preceding year" data-short-name="NPM Prev Ann" data-description="Net profit margin as per preceding annual results." data-ratio="true">
+  <input type="checkbox" value="NPM preceding year" onchange="Gallery.toggle(this)">
+  <span>NPM preceding year</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Sales preceding quarter" data-short-name="Sales Prev Qtr" data-description="Sales as per preceding quarterly results." data-ratio="true">
+  <input type="checkbox" value="Sales preceding quarter" onchange="Gallery.toggle(this)">
+  <span>Sales preceding quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Operating profit preceding quarter" data-short-name="OP Prev Qtr" data-description="Operating Profit as per preceding quarterly results." data-ratio="true">
+  <input type="checkbox" value="Operating profit preceding quarter" onchange="Gallery.toggle(this)">
+  <span>Operating profit preceding quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Other income preceding quarter" data-short-name="Other Inc Prev Qtr" data-description="Other Income as per preceding quarterly results." data-ratio="true">
+  <input type="checkbox" value="Other income preceding quarter" onchange="Gallery.toggle(this)">
+  <span>Other income preceding quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="EBIDT preceding quarter" data-short-name="EBIDT Prev Qtr" data-description="Earnings before Interest, Depreciation &amp; Tax as per preceding quarterly results." data-ratio="true">
+  <input type="checkbox" value="EBIDT preceding quarter" onchange="Gallery.toggle(this)">
+  <span>EBIDT preceding quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Depreciation preceding quarter" data-short-name="Dep Prev Qtr" data-description="Depreciation as per preceding quarterly results." data-ratio="true">
+  <input type="checkbox" value="Depreciation preceding quarter" onchange="Gallery.toggle(this)">
+  <span>Depreciation preceding quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="EBIT preceding quarter" data-short-name="EBIT Prev Qtr" data-description="Earnings before Interest and Tax as per preceding quarterly results." data-ratio="true">
+  <input type="checkbox" value="EBIT preceding quarter" onchange="Gallery.toggle(this)">
+  <span>EBIT preceding quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Interest preceding quarter" data-short-name="Interest Prev Qtr" data-description="Interest as per preceding quarterly results." data-ratio="true">
+  <input type="checkbox" value="Interest preceding quarter" onchange="Gallery.toggle(this)">
+  <span>Interest preceding quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Profit before tax preceding quarter" data-short-name="PBT Prev Qtr" data-description="Profit before Tax as per preceding quarterly results." data-ratio="true">
+  <input type="checkbox" value="Profit before tax preceding quarter" onchange="Gallery.toggle(this)">
+  <span>Profit before tax preceding quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Tax preceding quarter" data-short-name="Tax Prev Qtr" data-description="Tax expense as per preceding quarterly results." data-ratio="true">
+  <input type="checkbox" value="Tax preceding quarter" onchange="Gallery.toggle(this)">
+  <span>Tax preceding quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Profit after tax preceding quarter" data-short-name="PAT Prev Qtr" data-description="Profit after Tax (excluding extraordinary items) as per preceding quarterly results." data-ratio="true">
+  <input type="checkbox" value="Profit after tax preceding quarter" onchange="Gallery.toggle(this)">
+  <span>Profit after tax preceding quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Extraordinary items preceding quarter" data-short-name="Extra Ord Prev Qtr" data-description="Extraordinary items as per preceding quarterly results." data-ratio="true">
+  <input type="checkbox" value="Extraordinary items preceding quarter" onchange="Gallery.toggle(this)">
+  <span>Extraordinary items preceding quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Net Profit preceding quarter" data-short-name="NP Prev Qtr" data-description="Net Profit as per preceding quarterly results." data-ratio="true">
+  <input type="checkbox" value="Net Profit preceding quarter" onchange="Gallery.toggle(this)">
+  <span>Net Profit preceding quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="OPM preceding quarter" data-short-name="OPM Prev Qtr" data-description="Operating profit margin as per preceding quarterly results." data-ratio="true">
+  <input type="checkbox" value="OPM preceding quarter" onchange="Gallery.toggle(this)">
+  <span>OPM preceding quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="NPM preceding quarter" data-short-name="NPM Prev Qtr" data-description="Net profit margin as per preceding quarterly results." data-ratio="true">
+  <input type="checkbox" value="NPM preceding quarter" onchange="Gallery.toggle(this)">
+  <span>NPM preceding quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Equity Capital preceding quarter" data-short-name="Eq Cap Prev Qtr" data-description="Equity Capital as per preceding quarterly results." data-ratio="true">
+  <input type="checkbox" value="Equity Capital preceding quarter" onchange="Gallery.toggle(this)">
+  <span>Equity Capital preceding quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="EPS preceding quarter" data-short-name="EPS Prev Qtr" data-description="Earning per share as per preceding quarterly results." data-ratio="true">
+  <input type="checkbox" value="EPS preceding quarter" onchange="Gallery.toggle(this)">
+  <span>EPS preceding quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Book value preceding year" data-short-name="B.V. Prev Ann" data-description="Book value per share: (Capital + Reserves) / Number of shares" data-ratio="true">
+  <input type="checkbox" value="Book value preceding year" onchange="Gallery.toggle(this)">
+  <span>Book value preceding year</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Return on capital employed preceding year" data-short-name="ROCE Prev Yr" data-description="
+        Figures taken from second last annual report:
+        EBIT / Annual Average Capital Employed
+
+        Capital Employed: Share capital + Reserves + Borrowing
+        " data-ratio="true">
+  <input type="checkbox" value="Return on capital employed preceding year" onchange="Gallery.toggle(this)">
+  <span>Return on capital employed preceding year</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Return on assets preceding year" data-short-name="ROA Prev Yr" data-description="Net profit returns during preceding year on average of total assets employed." data-ratio="true">
+  <input type="checkbox" value="Return on assets preceding year" onchange="Gallery.toggle(this)">
+  <span>Return on assets preceding year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="EPS preceding year" data-short-name="EPS Prev Ann" data-description="Earnings per share as per preceding financial year." data-ratio="true">
+  <input type="checkbox" value="EPS preceding year" onchange="Gallery.toggle(this)">
+  <span>EPS preceding year</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Return on equity preceding year" data-short-name="ROE Prev Ann" data-description="Return on average equity capital during preceding year." data-ratio="true">
+  <input type="checkbox" value="Return on equity preceding year" onchange="Gallery.toggle(this)">
+  <span>Return on equity preceding year</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Debt preceding year" data-short-name="Debt Prev Ann" data-description="Total secured and unsecured loan preceding year." data-ratio="true">
+  <input type="checkbox" value="Debt preceding year" onchange="Gallery.toggle(this)">
+  <span>Debt preceding year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Sales preceding 12months" data-short-name="Sales Prev 12M" data-description="Sales during 12 months preceding latest quarter" data-ratio="true">
+  <input type="checkbox" value="Sales preceding 12months" onchange="Gallery.toggle(this)">
+  <span>Sales preceding 12months</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Net profit preceding 12months" data-short-name="Profit Prev 12M" data-description="Net profit during 12 months preceding latest quarter" data-ratio="true">
+  <input type="checkbox" value="Net profit preceding 12months" onchange="Gallery.toggle(this)">
+  <span>Net profit preceding 12months</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Working capital preceding year" data-short-name="Work Cap PY" data-description="Working capital (Current assets - current liabilities - short term borrowings) from preceding balance sheet." data-ratio="true">
+  <input type="checkbox" value="Working capital preceding year" onchange="Gallery.toggle(this)">
+  <span>Working capital preceding year</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Number of Shareholders preceding quarter" data-short-name="No. of Share Holders Prev Qtr" data-description="Number of shareholders as per previous quarterly filing" data-ratio="true">
+  <input type="checkbox" value="Number of Shareholders preceding quarter" onchange="Gallery.toggle(this)">
+  <span>Number of Shareholders preceding quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Net block preceding year" data-short-name="Net Block PY" data-description="Net block of fixed assets preceding year from balance sheet." data-ratio="true">
+  <input type="checkbox" value="Net block preceding year" onchange="Gallery.toggle(this)">
+  <span>Net block preceding year</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Gross block preceding year" data-short-name="Gross Block PY" data-description="Gross fixed assets block preceding year." data-ratio="true">
+  <input type="checkbox" value="Gross block preceding year" onchange="Gallery.toggle(this)">
+  <span>Gross block preceding year</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Capital work in progress preceding year" data-short-name="CWIP PY" data-description="Capital work in progress (CWIP) from preceding year's balance sheet." data-ratio="true">
+  <input type="checkbox" value="Capital work in progress preceding year" onchange="Gallery.toggle(this)">
+  <span>Capital work in progress preceding year</span>
+</label>
+
+    
+  </div>
+
+  <div class="flex-grow">
+    <div class="upper ink-700 strong" style="margin-bottom: 2rem;">Historical</div>
+    
+    <label class="ratio label-body" data-group-name="annual_pl most_used" data-name="Sales growth 3Years" data-short-name="Sales Var 3Yrs" data-description="Compounded Sales Growth (CAGR) over last 3 years." data-ratio="true">
+  <input type="checkbox" value="Sales growth 3Years" onchange="Gallery.toggle(this)">
+  <span>Sales growth 3Years</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl most_used" data-name="Sales growth 5Years" data-short-name="Sales Var 5Yrs" data-description="Compounded Sales Growth (CAGR) over last 5 years." data-ratio="true">
+  <input type="checkbox" value="Sales growth 5Years" onchange="Gallery.toggle(this)">
+  <span>Sales growth 5Years</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl most_used" data-name="Profit growth 3Years" data-short-name="Profit Var 3Yrs" data-description="Compounded profit growth (CAGR) over last 3 years. Profit is profit after tax excluding exceptional items." data-ratio="true">
+  <input type="checkbox" value="Profit growth 3Years" onchange="Gallery.toggle(this)">
+  <span>Profit growth 3Years</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl most_used" data-name="Profit growth 5Years" data-short-name="Profit Var 5Yrs" data-description="Compounded profit growth (CAGR) over last 5 years. Profit is profit after tax excluding exceptional items." data-ratio="true">
+  <input type="checkbox" value="Profit growth 5Years" onchange="Gallery.toggle(this)">
+  <span>Profit growth 5Years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios most_used" data-name="Average return on equity 5Years" data-short-name="ROE 5Yr" data-description="Weighted average of return on equity over last 5 years." data-ratio="true">
+  <input type="checkbox" value="Average return on equity 5Years" onchange="Gallery.toggle(this)">
+  <span>Average return on equity 5Years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios most_used" data-name="Average return on equity 3Years" data-short-name="ROE 3Yr" data-description="Weighted average of return on equity over last 3 years." data-ratio="true">
+  <input type="checkbox" value="Average return on equity 3Years" onchange="Gallery.toggle(this)">
+  <span>Average return on equity 3Years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="price most_used" data-name="Return over 1year" data-short-name="1Yr return" data-description="Price change over last year in percent" data-ratio="true">
+  <input type="checkbox" value="Return over 1year" onchange="Gallery.toggle(this)">
+  <span>Return over 1year</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="price most_used" data-name="Return over 3years" data-short-name="3Yrs return" data-description="Price CAGR over last 3 years. Percentage change compounded annually." data-ratio="true">
+  <input type="checkbox" value="Return over 3years" onchange="Gallery.toggle(this)">
+  <span>Return over 3years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="price most_used" data-name="Return over 5years" data-short-name="5Yrs return" data-description="Price CAGR over last 5 years. Percentage change compounded annually." data-ratio="true">
+  <input type="checkbox" value="Return over 5years" onchange="Gallery.toggle(this)">
+  <span>Return over 5years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Number of equity shares 10years back" data-short-name="No. Eq. Shares 10 Yrs" data-description="Adjusted number of equity shares 10 years back. Shares are adjusted for bonuses and splits." data-ratio="true">
+  <input type="checkbox" value="Number of equity shares 10years back" onchange="Gallery.toggle(this)">
+  <span>Number of equity shares 10years back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="cash_flow" data-name="Free cash flow 3years" data-short-name="Free Cash Flow 3Yrs" data-description="Sum of (Cash Flow from operating activities - Fixed assets purchased + Fixed assets sold) over last 3 years" data-ratio="true">
+  <input type="checkbox" value="Free cash flow 3years" onchange="Gallery.toggle(this)">
+  <span>Free cash flow 3years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="cash_flow" data-name="Free cash flow 5years" data-short-name="Free Cash Flow 5Yrs" data-description="Sum of (Cash Flow from operating activities - Fixed assets purchased + Fixed assets sold) over last 5 years" data-ratio="true">
+  <input type="checkbox" value="Free cash flow 5years" onchange="Gallery.toggle(this)">
+  <span>Free cash flow 5years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="cash_flow" data-name="Free cash flow 7years" data-short-name="Free Cash Flow 7Yrs" data-description="Sum of (Cash Flow from operating activities - Fixed assets purchased + Fixed assets sold) over last 7 years" data-ratio="true">
+  <input type="checkbox" value="Free cash flow 7years" onchange="Gallery.toggle(this)">
+  <span>Free cash flow 7years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="cash_flow" data-name="Free cash flow 10years" data-short-name="Free Cash Flow 10Yrs" data-description="Sum of (Cash Flow from operating activities - Fixed assets purchased + Fixed assets sold) over last 10 years" data-ratio="true">
+  <input type="checkbox" value="Free cash flow 10years" onchange="Gallery.toggle(this)">
+  <span>Free cash flow 10years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Sales preceding year quarter" data-short-name="Sales PY Qtr" data-description="Sales as per previous year's corresponding latest quarter." data-ratio="true">
+  <input type="checkbox" value="Sales preceding year quarter" onchange="Gallery.toggle(this)">
+  <span>Sales preceding year quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Operating profit preceding year quarter" data-short-name="OP PY Qtr" data-description="Operating Profit as per previous year's corresponding latest quarter." data-ratio="true">
+  <input type="checkbox" value="Operating profit preceding year quarter" onchange="Gallery.toggle(this)">
+  <span>Operating profit preceding year quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Other income preceding year quarter" data-short-name="Other Inc PY Qtr" data-description="Other Income as per previous year's corresponding latest quarter." data-ratio="true">
+  <input type="checkbox" value="Other income preceding year quarter" onchange="Gallery.toggle(this)">
+  <span>Other income preceding year quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="EBIDT preceding year quarter" data-short-name="EBIDT PY Qtr" data-description="Earnings before Interest, Depreciation &amp; Tax as per previous year's corresponding latest quarter." data-ratio="true">
+  <input type="checkbox" value="EBIDT preceding year quarter" onchange="Gallery.toggle(this)">
+  <span>EBIDT preceding year quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Depreciation preceding year quarter" data-short-name="Dep PY Qtr" data-description="Depreciation as per previous year's corresponding latest quarter." data-ratio="true">
+  <input type="checkbox" value="Depreciation preceding year quarter" onchange="Gallery.toggle(this)">
+  <span>Depreciation preceding year quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="EBIT preceding year quarter" data-short-name="EBIT PY Qtr" data-description="Earnings before Interest and Tax as per previous year's corresponding latest quarter." data-ratio="true">
+  <input type="checkbox" value="EBIT preceding year quarter" onchange="Gallery.toggle(this)">
+  <span>EBIT preceding year quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Interest preceding year quarter" data-short-name="Interest PY Qtr" data-description="Interest as per previous year's corresponding latest quarter." data-ratio="true">
+  <input type="checkbox" value="Interest preceding year quarter" onchange="Gallery.toggle(this)">
+  <span>Interest preceding year quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Profit before tax preceding year quarter" data-short-name="PBT PY Qtr" data-description="Profit before Tax as per previous year's corresponding latest quarter." data-ratio="true">
+  <input type="checkbox" value="Profit before tax preceding year quarter" onchange="Gallery.toggle(this)">
+  <span>Profit before tax preceding year quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Tax preceding year quarter" data-short-name="Tax PY Qtr" data-description="Tax expense as per previous year's corresponding latest quarter." data-ratio="true">
+  <input type="checkbox" value="Tax preceding year quarter" onchange="Gallery.toggle(this)">
+  <span>Tax preceding year quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Profit after tax preceding year quarter" data-short-name="PAT PY Qtr" data-description="Profit after Tax excluding extra-ordinary items as per previous year's corresponding latest quarter." data-ratio="true">
+  <input type="checkbox" value="Profit after tax preceding year quarter" onchange="Gallery.toggle(this)">
+  <span>Profit after tax preceding year quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Extraordinary items preceding year quarter" data-short-name="Extra Ord Item PY Qt" data-description="Extraordinary items as per previous year's corresponding latest quarter." data-ratio="true">
+  <input type="checkbox" value="Extraordinary items preceding year quarter" onchange="Gallery.toggle(this)">
+  <span>Extraordinary items preceding year quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Net Profit preceding year quarter" data-short-name="NP PY Qtr" data-description="Net Profit as per previous year's corresponding latest quarter." data-ratio="true">
+  <input type="checkbox" value="Net Profit preceding year quarter" onchange="Gallery.toggle(this)">
+  <span>Net Profit preceding year quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="OPM preceding year quarter" data-short-name="OPM PY Qtr" data-description="Operating profit margin as per previous year's corresponding latest quarter." data-ratio="true">
+  <input type="checkbox" value="OPM preceding year quarter" onchange="Gallery.toggle(this)">
+  <span>OPM preceding year quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="NPM preceding year quarter" data-short-name="NPM PY Qtr" data-description="Net profit margin as per previous year's corresponding latest quarter." data-ratio="true">
+  <input type="checkbox" value="NPM preceding year quarter" onchange="Gallery.toggle(this)">
+  <span>NPM preceding year quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="Equity Capital preceding year quarter" data-short-name="Eq Cap PY Qtr" data-description="Equity Capital as per previous year's corresponding latest quarter." data-ratio="true">
+  <input type="checkbox" value="Equity Capital preceding year quarter" onchange="Gallery.toggle(this)">
+  <span>Equity Capital preceding year quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="quarter_pl" data-name="EPS preceding year quarter" data-short-name="EPS PY Qtr" data-description="Earnings Per Share as per previous year's corresponding latest quarter." data-ratio="true">
+  <input type="checkbox" value="EPS preceding year quarter" onchange="Gallery.toggle(this)">
+  <span>EPS preceding year quarter</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Book value 3years back" data-short-name="BV 3yrs back" data-description="
+        Book value per share 3years back
+        Book value = (Capital + Reserves) / Number of eq. shares 3 years back
+
+        - No. of equity shares are adjusted for splits and bonuses
+        " data-ratio="true">
+  <input type="checkbox" value="Book value 3years back" onchange="Gallery.toggle(this)">
+  <span>Book value 3years back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Book value 5years back" data-short-name="BV 5yrs back" data-description="
+        Book value per share 5years back
+        Book value = (Capital + Reserves) / Number of eq. shares 5 years back
+
+        - No. of equity shares are adjusted for splits and bonuses
+        " data-ratio="true">
+  <input type="checkbox" value="Book value 5years back" onchange="Gallery.toggle(this)">
+  <span>Book value 5years back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Book value 10years back" data-short-name="BV 10yrs back" data-description="
+        Book value per share 10years back
+        Book value = (Capital + Reserves) / Number of eq. shares 10 years back
+
+        - No. of equity shares are adjusted for splits and bonuses
+        " data-ratio="true">
+  <input type="checkbox" value="Book value 10years back" onchange="Gallery.toggle(this)">
+  <span>Book value 10years back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Inventory turnover ratio 3Years back" data-short-name="Inven TO 3Yr" data-description="Inventory turnover ratio 3 years back." data-ratio="true">
+  <input type="checkbox" value="Inventory turnover ratio 3Years back" onchange="Gallery.toggle(this)">
+  <span>Inventory turnover ratio 3Years back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Inventory turnover ratio 5Years back" data-short-name="Inven TO 5Yr" data-description="Inventory turnover ratio 5 years back." data-ratio="true">
+  <input type="checkbox" value="Inventory turnover ratio 5Years back" onchange="Gallery.toggle(this)">
+  <span>Inventory turnover ratio 5Years back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Inventory turnover ratio 7Years back" data-short-name="Inven TO 7Yr" data-description="Inventory turnover ratio 7 years back." data-ratio="true">
+  <input type="checkbox" value="Inventory turnover ratio 7Years back" onchange="Gallery.toggle(this)">
+  <span>Inventory turnover ratio 7Years back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Inventory turnover ratio 10Years back" data-short-name="Inven TO 10Yr" data-description="Inventory turnover ratio 10 years back." data-ratio="true">
+  <input type="checkbox" value="Inventory turnover ratio 10Years back" onchange="Gallery.toggle(this)">
+  <span>Inventory turnover ratio 10Years back</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Sales growth 10years median" data-short-name="Med Sales Gwth 10Yrs" data-description="Median sales growth growth of last 10 years" data-ratio="true">
+  <input type="checkbox" value="Sales growth 10years median" onchange="Gallery.toggle(this)">
+  <span>Sales growth 10years median</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Sales growth 5years median" data-short-name="Med Sales Gwth 5Yrs" data-description="Median sales growth growth of last 5 years" data-ratio="true">
+  <input type="checkbox" value="Sales growth 5years median" onchange="Gallery.toggle(this)">
+  <span>Sales growth 5years median</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Sales growth 7Years" data-short-name="Sales Var 7Yrs" data-description="Compounded Sales Growth (CAGR) over last 7 years." data-ratio="true">
+  <input type="checkbox" value="Sales growth 7Years" onchange="Gallery.toggle(this)">
+  <span>Sales growth 7Years</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Sales growth 10Years" data-short-name="Sales Var 10Yrs" data-description="Compounded Sales Growth (CAGR) over last 10 years." data-ratio="true">
+  <input type="checkbox" value="Sales growth 10Years" onchange="Gallery.toggle(this)">
+  <span>Sales growth 10Years</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="EBIDT growth 3Years" data-short-name="EBIDT Var 3Yrs" data-description="Compounded Growth in EBIDT (CAGR) over last 3 years." data-ratio="true">
+  <input type="checkbox" value="EBIDT growth 3Years" onchange="Gallery.toggle(this)">
+  <span>EBIDT growth 3Years</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="EBIDT growth 5Years" data-short-name="EBIDT Var 5Yrs" data-description="Compounded Growth in EBIDT (CAGR) over last 5 years." data-ratio="true">
+  <input type="checkbox" value="EBIDT growth 5Years" onchange="Gallery.toggle(this)">
+  <span>EBIDT growth 5Years</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="EBIDT growth 7Years" data-short-name="EBIDT Var 7Yrs" data-description="Compounded Growth in EBIDT (CAGR) over last 7 years." data-ratio="true">
+  <input type="checkbox" value="EBIDT growth 7Years" onchange="Gallery.toggle(this)">
+  <span>EBIDT growth 7Years</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="EBIDT growth 10Years" data-short-name="EBIDT Var 10Yrs" data-description="Compounded Growth in EBIDT (CAGR) over last 10 years." data-ratio="true">
+  <input type="checkbox" value="EBIDT growth 10Years" onchange="Gallery.toggle(this)">
+  <span>EBIDT growth 10Years</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="EPS growth 3Years" data-short-name="EPS Var 3Yrs" data-description="Compounded Growth in EPS (CAGR) over last 3 years." data-ratio="true">
+  <input type="checkbox" value="EPS growth 3Years" onchange="Gallery.toggle(this)">
+  <span>EPS growth 3Years</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="EPS growth 5Years" data-short-name="EPS Var 5Yrs" data-description="Compounded Growth in EPS (CAGR) over last 5 years." data-ratio="true">
+  <input type="checkbox" value="EPS growth 5Years" onchange="Gallery.toggle(this)">
+  <span>EPS growth 5Years</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="EPS growth 7Years" data-short-name="EPS Var 7Yrs" data-description="Compounded Growth in EPS (CAGR) over last 7 years." data-ratio="true">
+  <input type="checkbox" value="EPS growth 7Years" onchange="Gallery.toggle(this)">
+  <span>EPS growth 7Years</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="EPS growth 10Years" data-short-name="EPS Var 10Yrs" data-description="Compounded Growth in EPS (CAGR) over last 10 years." data-ratio="true">
+  <input type="checkbox" value="EPS growth 10Years" onchange="Gallery.toggle(this)">
+  <span>EPS growth 10Years</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Profit growth 7Years" data-short-name="Profit Var 7Yrs" data-description="Compounded profit growth (CAGR) over last 7 years. Profit is profit after tax excluding exceptional items." data-ratio="true">
+  <input type="checkbox" value="Profit growth 7Years" onchange="Gallery.toggle(this)">
+  <span>Profit growth 7Years</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Profit growth 10Years" data-short-name="Profit Var 10Yrs" data-description="Compounded profit growth (CAGR) over last 10 years. Profit is profit after tax excluding exceptional items." data-ratio="true">
+  <input type="checkbox" value="Profit growth 10Years" onchange="Gallery.toggle(this)">
+  <span>Profit growth 10Years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Exports percentage 3Years back" data-short-name="Export 3Yr" data-description="Exports percentage of total exports 3 years back." data-ratio="true">
+  <input type="checkbox" value="Exports percentage 3Years back" onchange="Gallery.toggle(this)">
+  <span>Exports percentage 3Years back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Exports percentage 5Years back" data-short-name="Export 5Yr" data-description="Exports percentage of total exports 5 years back." data-ratio="true">
+  <input type="checkbox" value="Exports percentage 5Years back" onchange="Gallery.toggle(this)">
+  <span>Exports percentage 5Years back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Average 5years dividend" data-short-name="Div 5Yrs" data-description="Average dividend per year paid in last 5 years." data-ratio="true">
+  <input type="checkbox" value="Average 5years dividend" onchange="Gallery.toggle(this)">
+  <span>Average 5years dividend</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Average return on capital employed 3Years" data-short-name="ROCE 3Yr" data-description="Average return on capital employed over last 3 years" data-ratio="true">
+  <input type="checkbox" value="Average return on capital employed 3Years" onchange="Gallery.toggle(this)">
+  <span>Average return on capital employed 3Years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Average return on capital employed 5Years" data-short-name="ROCE 5Yr" data-description="Average return on capital employed over last 5 years" data-ratio="true">
+  <input type="checkbox" value="Average return on capital employed 5Years" onchange="Gallery.toggle(this)">
+  <span>Average return on capital employed 5Years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Average return on capital employed 7Years" data-short-name="ROCE 7Yr" data-description="Average return on capital employed over last 7 years" data-ratio="true">
+  <input type="checkbox" value="Average return on capital employed 7Years" onchange="Gallery.toggle(this)">
+  <span>Average return on capital employed 7Years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Average return on capital employed 10Years" data-short-name="ROCE 10Yr" data-description="Average return on capital employed over last 10 years" data-ratio="true">
+  <input type="checkbox" value="Average return on capital employed 10Years" onchange="Gallery.toggle(this)">
+  <span>Average return on capital employed 10Years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Average return on equity 10Years" data-short-name="ROE 10Yr" data-description="Weighted average of return on capital employed over last 10 years." data-ratio="true">
+  <input type="checkbox" value="Average return on equity 10Years" onchange="Gallery.toggle(this)">
+  <span>Average return on equity 10Years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Average return on equity 7Years" data-short-name="ROE 7Yr" data-description="Weighted average of return on equity over last 7 years." data-ratio="true">
+  <input type="checkbox" value="Average return on equity 7Years" onchange="Gallery.toggle(this)">
+  <span>Average return on equity 7Years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Return on equity 5years growth" data-short-name="ROE 5Yr Var" data-description="Compounded ROE growth over last 5 years." data-ratio="true">
+  <input type="checkbox" value="Return on equity 5years growth" onchange="Gallery.toggle(this)">
+  <span>Return on equity 5years growth</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="cash_flow" data-name="Operating cash flow 3years" data-short-name="CF Opr 3Yrs" data-description="Sum of cash from operations over last 3 years." data-ratio="true">
+  <input type="checkbox" value="Operating cash flow 3years" onchange="Gallery.toggle(this)">
+  <span>Operating cash flow 3years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="cash_flow" data-name="Operating cash flow 5years" data-short-name="CF Opr 5Yrs" data-description="Sum of cash from operations over last 5 years." data-ratio="true">
+  <input type="checkbox" value="Operating cash flow 5years" onchange="Gallery.toggle(this)">
+  <span>Operating cash flow 5years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="cash_flow" data-name="Operating cash flow 7years" data-short-name="CF Opr 7Yrs" data-description="Sum of cash from operations over last 7 years." data-ratio="true">
+  <input type="checkbox" value="Operating cash flow 7years" onchange="Gallery.toggle(this)">
+  <span>Operating cash flow 7years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="cash_flow" data-name="Operating cash flow 10years" data-short-name="CF Opr 10Yrs" data-description="Sum of cash from operations over last 10 years." data-ratio="true">
+  <input type="checkbox" value="Operating cash flow 10years" onchange="Gallery.toggle(this)">
+  <span>Operating cash flow 10years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="cash_flow" data-name="Investing cash flow 10years" data-short-name="CF Inv 10Yrs" data-description="Cash from investing activity over last 10 years." data-ratio="true">
+  <input type="checkbox" value="Investing cash flow 10years" onchange="Gallery.toggle(this)">
+  <span>Investing cash flow 10years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="cash_flow" data-name="Investing cash flow 7years" data-short-name="CF Inv 7Yrs" data-description="Cash from investing activity over last 7 years." data-ratio="true">
+  <input type="checkbox" value="Investing cash flow 7years" onchange="Gallery.toggle(this)">
+  <span>Investing cash flow 7years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="cash_flow" data-name="Investing cash flow 5years" data-short-name="CF Inv 5Yrs" data-description="Cash from investing activity over last 5 years." data-ratio="true">
+  <input type="checkbox" value="Investing cash flow 5years" onchange="Gallery.toggle(this)">
+  <span>Investing cash flow 5years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="cash_flow" data-name="Investing cash flow 3years" data-short-name="CF Inv 3Yrs" data-description="Cash from investing activity over last 3 years." data-ratio="true">
+  <input type="checkbox" value="Investing cash flow 3years" onchange="Gallery.toggle(this)">
+  <span>Investing cash flow 3years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="OPM 5Year" data-short-name="5Yr OPM" data-description="Average operating profit margin during last 5 years." data-ratio="true">
+  <input type="checkbox" value="OPM 5Year" onchange="Gallery.toggle(this)">
+  <span>OPM 5Year</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="OPM 10Year" data-short-name="10Yr OPM" data-description="Average operating profit margin during last 10 years." data-ratio="true">
+  <input type="checkbox" value="OPM 10Year" onchange="Gallery.toggle(this)">
+  <span>OPM 10Year</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Working capital 3Years back" data-short-name="Work Cap 3Yr" data-description="Working capital (Current assets - current liabilities - short term borrowings) from 3 years old balance sheet." data-ratio="true">
+  <input type="checkbox" value="Working capital 3Years back" onchange="Gallery.toggle(this)">
+  <span>Working capital 3Years back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Working capital 5Years back" data-short-name="Work Cap 5Yr" data-description="Working capital (Current assets - current liabilities - short term borrowings) from 5 years old balance sheet." data-ratio="true">
+  <input type="checkbox" value="Working capital 5Years back" onchange="Gallery.toggle(this)">
+  <span>Working capital 5Years back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Working capital 7Years back" data-short-name="Work Cap 7Yr" data-description="Working capital (Current assets - current liabilities - short term borrowings) from 7 years old balance sheet." data-ratio="true">
+  <input type="checkbox" value="Working capital 7Years back" onchange="Gallery.toggle(this)">
+  <span>Working capital 7Years back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Working capital 10Years back" data-short-name="Work Cap 10Yr" data-description="Working capital (Current assets - current liabilities - short term borrowings) from 10 years old balance sheet." data-ratio="true">
+  <input type="checkbox" value="Working capital 10Years back" onchange="Gallery.toggle(this)">
+  <span>Working capital 10Years back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Debt 3Years back" data-short-name="Debt 3Yrs" data-description="Total secured and unsecured loan 3 years back." data-ratio="true">
+  <input type="checkbox" value="Debt 3Years back" onchange="Gallery.toggle(this)">
+  <span>Debt 3Years back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Debt 5Years back" data-short-name="Debt 5Yrs" data-description="Total secured and unsecured loan 5 years back." data-ratio="true">
+  <input type="checkbox" value="Debt 5Years back" onchange="Gallery.toggle(this)">
+  <span>Debt 5Years back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Debt 7Years back" data-short-name="Debt 7Yrs" data-description="Total secured and unsecured loan 7 years back." data-ratio="true">
+  <input type="checkbox" value="Debt 7Years back" onchange="Gallery.toggle(this)">
+  <span>Debt 7Years back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Debt 10Years back" data-short-name="Debt 10Yrs" data-description="Total secured and unsecured loan 10 Years back." data-ratio="true">
+  <input type="checkbox" value="Debt 10Years back" onchange="Gallery.toggle(this)">
+  <span>Debt 10Years back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Number of Shareholders 1year back" data-short-name="No. of Share Holders 1Yr" data-description="Number of shareholders one year back" data-ratio="true">
+  <input type="checkbox" value="Number of Shareholders 1year back" onchange="Gallery.toggle(this)">
+  <span>Number of Shareholders 1year back</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Change in promoter holding 3Years" data-short-name="Chg in Prom Hold 3Yr" data-description="Change in promoters holding over last 3 years." data-ratio="true">
+  <input type="checkbox" value="Change in promoter holding 3Years" onchange="Gallery.toggle(this)">
+  <span>Change in promoter holding 3Years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Average dividend payout 3years" data-short-name="Avg Div Payout 3Yrs" data-description="Weighted average dividend payout from net profits over last 3 years." data-ratio="true">
+  <input type="checkbox" value="Average dividend payout 3years" onchange="Gallery.toggle(this)">
+  <span>Average dividend payout 3years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Net block 3Years back" data-short-name="Net Block 3Yrs Back" data-description="Net block of fixed assets 3 years back." data-ratio="true">
+  <input type="checkbox" value="Net block 3Years back" onchange="Gallery.toggle(this)">
+  <span>Net block 3Years back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Net block 5Years back" data-short-name="Net Block 5Yrs Back" data-description="Net Block of fixed assets 5 years back." data-ratio="true">
+  <input type="checkbox" value="Net block 5Years back" onchange="Gallery.toggle(this)">
+  <span>Net block 5Years back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="balance_sheet" data-name="Net block 7Years back" data-short-name="Net Block 7Yrs Back" data-description="Net block of fixed assets 7 years back." data-ratio="true">
+  <input type="checkbox" value="Net block 7Years back" onchange="Gallery.toggle(this)">
+  <span>Net block 7Years back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="cash_flow" data-name="Cash 3Years back" data-short-name="Cash 3Yrs Back" data-description="Cash and equivalents in 3 years back balance sheet." data-ratio="true">
+  <input type="checkbox" value="Cash 3Years back" onchange="Gallery.toggle(this)">
+  <span>Cash 3Years back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="cash_flow" data-name="Cash 5Years back" data-short-name="Cash 5Yrs Back" data-description="Cash and equivalents in 5 years old balance sheet." data-ratio="true">
+  <input type="checkbox" value="Cash 5Years back" onchange="Gallery.toggle(this)">
+  <span>Cash 5Years back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="cash_flow" data-name="Cash 7Years back" data-short-name="Cash 7Yrs Back" data-description="Cash and equivalents from 7 years old balance sheet." data-ratio="true">
+  <input type="checkbox" value="Cash 7Years back" onchange="Gallery.toggle(this)">
+  <span>Cash 7Years back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Average debtor days 3years" data-short-name="Debtor days 3yrs" data-description="Average Debtor days over last 3 years" data-ratio="true">
+  <input type="checkbox" value="Average debtor days 3years" onchange="Gallery.toggle(this)">
+  <span>Average debtor days 3years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Debtor days 3years back" data-short-name="Debtor days 3yrs back" data-description="Debtor days as per 3 annual reports back." data-ratio="true">
+  <input type="checkbox" value="Debtor days 3years back" onchange="Gallery.toggle(this)">
+  <span>Debtor days 3years back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Debtor days 5years back" data-short-name="Debtor days 5yrs back" data-description="Debtor days as per 5 annual reports back." data-ratio="true">
+  <input type="checkbox" value="Debtor days 5years back" onchange="Gallery.toggle(this)">
+  <span>Debtor days 5years back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Return on assets 5years" data-short-name="ROA 5Yr" data-description="Average Return on Assets over last 5 Years" data-ratio="true">
+  <input type="checkbox" value="Return on assets 5years" onchange="Gallery.toggle(this)">
+  <span>Return on assets 5years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Return on assets 3years" data-short-name="ROA 3Yr" data-description="( Net Profit / Total assets ) of 3 years" data-ratio="true">
+  <input type="checkbox" value="Return on assets 3years" onchange="Gallery.toggle(this)">
+  <span>Return on assets 3years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Historical PE 3Years" data-short-name="3Yrs PE" data-description="Median price to earning ratio during last 3 years." data-ratio="true">
+  <input type="checkbox" value="Historical PE 3Years" onchange="Gallery.toggle(this)">
+  <span>Historical PE 3Years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Historical PE 10Years" data-short-name="10Yrs PE" data-description="Median price to earning ratio of last 10 years." data-ratio="true">
+  <input type="checkbox" value="Historical PE 10Years" onchange="Gallery.toggle(this)">
+  <span>Historical PE 10Years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Historical PE 7Years" data-short-name="7Yrs PE" data-description="Median price to earning ratio during last 7 years." data-ratio="true">
+  <input type="checkbox" value="Historical PE 7Years" onchange="Gallery.toggle(this)">
+  <span>Historical PE 7Years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Historical PE 5Years" data-short-name="5Yrs PE" data-description="Median price to earning ratio during last 5 years." data-ratio="true">
+  <input type="checkbox" value="Historical PE 5Years" onchange="Gallery.toggle(this)">
+  <span>Historical PE 5Years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="price" data-name="Volume 1year average" data-short-name="Avg Vol 1Yr" data-description="Average quantity traded over last 1 year across all exchanges." data-ratio="true">
+  <input type="checkbox" value="Volume 1year average" onchange="Gallery.toggle(this)">
+  <span>Volume 1year average</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Average Earnings 5Year" data-short-name="Avg PAT 5Yrs" data-description="Average profit after tax during last 5 annual results." data-ratio="true">
+  <input type="checkbox" value="Average Earnings 5Year" onchange="Gallery.toggle(this)">
+  <span>Average Earnings 5Year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Average Earnings 10Year" data-short-name="Avg PAT 10Yrs" data-description="Average profit during last 10 annual results." data-ratio="true">
+  <input type="checkbox" value="Average Earnings 10Year" onchange="Gallery.toggle(this)">
+  <span>Average Earnings 10Year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Average EBIT 5Year" data-short-name="Avg EBIT 5Yrs" data-description="Average EBIT of last 5 annual results." data-ratio="true">
+  <input type="checkbox" value="Average EBIT 5Year" onchange="Gallery.toggle(this)">
+  <span>Average EBIT 5Year</span>
+</label>
+
+    
+    <label class="ratio label-body" data-group-name="annual_pl" data-name="Average EBIT 10Year" data-short-name="Avg EBIT 10Yrs" data-description="Average EBIT of 10 annual results." data-ratio="true">
+  <input type="checkbox" value="Average EBIT 10Year" onchange="Gallery.toggle(this)">
+  <span>Average EBIT 10Year</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Market Capitalization 3years back" data-short-name="Mar Cap 3yrs back" data-description="Market cap at the end of financial year 3 years back." data-ratio="true">
+  <input type="checkbox" value="Market Capitalization 3years back" onchange="Gallery.toggle(this)">
+  <span>Market Capitalization 3years back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Market Capitalization 5years back" data-short-name="Mar Cap 5yrs back" data-description="Market cap at the end of financial year 5 years back." data-ratio="true">
+  <input type="checkbox" value="Market Capitalization 5years back" onchange="Gallery.toggle(this)">
+  <span>Market Capitalization 5years back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Market Capitalization 7years back" data-short-name="Mar Cap 7yrs back" data-description="Market cap at the end of financial year 7 years back." data-ratio="true">
+  <input type="checkbox" value="Market Capitalization 7years back" onchange="Gallery.toggle(this)">
+  <span>Market Capitalization 7years back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Market Capitalization 10years back" data-short-name="Mar Cap 10yrs back" data-description="Market cap at the end of financial year 10 years back." data-ratio="true">
+  <input type="checkbox" value="Market Capitalization 10years back" onchange="Gallery.toggle(this)">
+  <span>Market Capitalization 10years back</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Average Working Capital Days 3years" data-short-name="WC Days 3yrs" data-description="Average Working Capital days over last 3 years" data-ratio="true">
+  <input type="checkbox" value="Average Working Capital Days 3years" onchange="Gallery.toggle(this)">
+  <span>Average Working Capital Days 3years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="price" data-name="Return over 7years" data-short-name="7Yrs return" data-description="Price CAGR over last 7 years. Percentage change compounded annually." data-ratio="true">
+  <input type="checkbox" value="Return over 7years" onchange="Gallery.toggle(this)">
+  <span>Return over 7years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="price" data-name="Return over 10years" data-short-name="10Yrs return" data-description="Price CAGR over last 10 years. Percentage change compounded annually." data-ratio="true">
+  <input type="checkbox" value="Return over 10years" onchange="Gallery.toggle(this)">
+  <span>Return over 10years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Change in FII holding 3Years" data-short-name="Chg in FII Hold 3Yr" data-description="Change in FII holding over last 3 years." data-ratio="true">
+  <input type="checkbox" value="Change in FII holding 3Years" onchange="Gallery.toggle(this)">
+  <span>Change in FII holding 3Years</span>
+</label>
+
+    
+    <label class="ratio label-body hidden" data-group-name="ratios" data-name="Change in DII holding 3Years" data-short-name="Chg in DII Hold 3Yr" data-description="Change in DII holding over last 3 years." data-ratio="true">
+  <input type="checkbox" value="Change in DII holding 3Years" onchange="Gallery.toggle(this)">
+  <span>Change in DII holding 3Years</span>
+</label>
+
+    
+  </div>
+</div>

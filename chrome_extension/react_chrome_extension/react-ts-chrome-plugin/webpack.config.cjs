@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 const path = require('path');
 
@@ -60,5 +61,9 @@ module.exports = {
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx', '.css'],
+    plugins: [new TsconfigPathsPlugin()],
+    alias: {
+      '@': path.resolve(__dirname, './'),
+    }
   }
 };

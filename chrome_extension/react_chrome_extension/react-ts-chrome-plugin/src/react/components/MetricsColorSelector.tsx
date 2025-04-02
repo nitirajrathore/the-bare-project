@@ -3,6 +3,8 @@ import { MetricConfig } from './types';
 import MetricCondition from './MetricCondition';
 import { v4 as uuidv4 } from 'uuid';
 import metricsData from '../../resources/metrices.json';
+import SelectWithSearch from './SelectWithSearch';
+import DefaultSelectWithSearch from './DefaultSelectWithSearch';
 
 interface MetricsColorSelectorProps {
   metrics: MetricConfig[];
@@ -75,20 +77,19 @@ const MetricsColorSelector: React.FC<MetricsColorSelectorProps> = ({
       {isAddingMetric ? (
         <div className="p-3 bg-white rounded-md shadow-sm border border-gray-200">
           <div className="mb-3">
-            <label className="block mb-1 text-sm font-medium">Select Metric:</label>
             <div className="flex gap-2">
-              <select
+              <SelectWithSearch
+                menuList={metricsData.map(metric => ({
+                  value: metric.name,
+                  label: metric.displayName
+                }))}
+                menuType="Metric"
                 value={newMetricName}
-                onChange={(e) => setNewMetricName(e.target.value)}
-                className="flex-1 p-2 border border-gray-300 rounded-md text-sm"
-              >
-                <option value="">Select a metric</option>
-                {metricsData.map(metric => (
-                  <option key={metric.name} value={metric.name}>
-                    {metric.displayName}
-                  </option>
-                ))}
-              </select>
+                setValue={setNewMetricName}
+              />
+
+              <DefaultSelectWithSearch />
+
               <button
                 onClick={handleSaveNewMetric}
                 disabled={!newMetricName.trim()}

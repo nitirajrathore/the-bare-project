@@ -1,19 +1,42 @@
-## Where am I???
-I lost track of how to make a react plugin for chrome. 
-I lost progress and now I don't know how to fix this code.
-Instead of fixing this, I will create another plugin in React 
-and use that as an example to fix this or directly create a ScreenerPlus plugin.
+# Whats Next??
+1. Add aliases to the static ratios. This is required because, "Market Capitalization" by default is shown as "Market Cap" in default list. But when selected from 'Edit Ratios', it shows up as 'Mar Cap'. Similarly by default 'Price to Earning' are shown as 'Stock P/E' but when explicitly selected it is shown as 'Price to Earning'
+
+2. Make the config for time series fields.
 
 
 ## install and configure
 
 1. Tailwind
 
-2. Chrome
+2. Chrome types
 ```
 npm install --save-dev @types/chrome
 ```
 
+3. Shadcn
+```
+## DOES NOT WORK as my project has custom structure I guess.
+pnpm dlx shadcn@latest init
+```
+
+Following the [manual instructions](https://ui.shadcn.com/docs/installation/manual)
+```
+pnpm add class-variance-authority clsx tailwind-merge lucide-react tw-animate-css
+```
+
+#### install origin ui components
+```
+pnpm dlx shadcn@latest add https://originui.com/r/comp-229.json
+```
+
+### install tsconfig webpack plugin to handle the alias (@) in path.
+```
+pnpm add -D tsconfig-paths-webpack-plugin
+```
+
+## Using the template 
+
+the-bare-project/chrome_extension/react_chrome_extension/tutorial-react-ts-chrome-extension
 
 
 # Getting Started with Create React App

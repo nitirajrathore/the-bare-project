@@ -1,0 +1,226 @@
+[
+  {
+    "name": "Face Value",
+    "displayName": "Face value"
+  },
+  {
+    "name": "Book Value",
+    "displayName": "Book value"
+  },
+  {
+    "name": "Sales",
+    "displayName": "Sales"
+  },
+  {
+    "name": "OPM",
+    "displayName": "OPM"
+  },
+  {
+    "name": "Profit after tax",
+    "displayName": "Profit after tax"
+  },
+  {
+    "name": "Market Cap",
+    "displayName": "Market Capitalization"
+  },
+  {
+    "name": "Sales latest quarter",
+    "displayName": "Sales latest quarter"
+  },
+  {
+    "name": "Profit after tax latest quarter",
+    "displayName": "Profit after tax latest quarter"
+  },
+  {
+    "name": "YOY Quarterly sales growth",
+    "displayName": "YOY Quarterly sales growth"
+  },
+  {
+    "name": "YOY Quarterly profit growth",
+    "displayName": "YOY Quarterly profit growth"
+  },
+  {
+    "name": "Stock P/E",
+    "displayName": "Price to Earning"
+  },
+  {
+    "name": "Dividend Yield",
+    "displayName": "Dividend yield"
+  },
+  {
+    "name": "Price to book value",
+    "displayName": "Price to book value"
+  },
+  {
+    "name": "ROCE",
+    "displayName": "Return on capital employed"
+  },
+  {
+    "name": "Return on assets",
+    "displayName": "Return on assets"
+  },
+  {
+    "name": "Debt to equity",
+    "displayName": "Debt to equity"
+  },
+  {
+    "name": "ROE",
+    "displayName": "Return on equity"
+  },
+  {
+    "name": "EPS",
+    "displayName": "EPS"
+  },
+  {
+    "name": "Debt",
+    "displayName": "Debt"
+  },
+  {
+    "name": "Promoter holding",
+    "displayName": "Promoter holding"
+  },
+  {
+    "name": "Change in Prom Hold",
+    "displayName": "Change in promoter holding"
+  },
+  {
+    "name": "Earnings yield",
+    "displayName": "Earnings yield"
+  },
+  {
+    "name": "Pledged percentage",
+    "displayName": "Pledged percentage"
+  },
+  {
+    "name": "Industry PE",
+    "displayName": "Industry PE"
+  },
+  {
+    "name": "Sales growth",
+    "displayName": "Sales growth"
+  },
+  {
+    "name": "Profit growth",
+    "displayName": "Profit growth"
+  },
+  {
+    "name": "Current price",
+    "displayName": "Current price"
+  },
+  {
+    "name": "Price to Sales",
+    "displayName": "Price to Sales"
+  },
+  {
+    "name": "Price to Free Cash Flow",
+    "displayName": "Price to Free Cash Flow"
+  },
+  {
+    "name": "EVEBITDA",
+    "displayName": "EVEBITDA"
+  },
+  {
+    "name": "Enterprise Value",
+    "displayName": "Enterprise Value"
+  },
+  {
+    "name": "Current ratio",
+    "displayName": "Current ratio"
+  },
+  {
+    "name": "Interest Coverage Ratio",
+    "displayName": "Interest Coverage Ratio"
+  },
+  {
+    "name": "PEG Ratio",
+    "displayName": "PEG Ratio"
+  },
+  {
+    "name": "Return over 3months",
+    "displayName": "Return over 3months"
+  },
+  {
+    "name": "Return over 6months",
+    "displayName": "Return over 6months"
+  },
+  {
+    "name": "Is SME",
+    "displayName": "Is SME"
+  },
+  {
+    "name": "Is not SME",
+    "displayName": "Is not SME"
+  },
+  {
+    "name": "Number of equity shares",
+    "displayName": "Number of equity shares"
+  },
+  {
+    "name": "Equity capital",
+    "displayName": "Equity capital"
+  },
+  {
+    "name": "Preference capital",
+    "displayName": "Preference capital"
+  },
+  {
+    "name": "Reserves",
+    "displayName": "Reserves"
+  },
+  {
+    "name": "Secured loan",
+    "displayName": "Secured loan"
+  },
+  {
+    "name": "Unsecured loan",
+    "displayName": "Unsecured loan"
+  },
+  {
+    "name": "Balance sheet total",
+    "displayName": "Balance sheet total"
+  },
+  {
+    "name": "Gross block",
+    "displayName": "Gross block"
+  },
+  {
+    "name": "Revaluation reserve",
+    "displayName": "Revaluation reserve"
+  },
+  {
+    "name": "Accumulated depreciation",
+    "displayName": "Accumulated depreciation"
+  },
+  {
+    "name": "Net block",
+    "displayName": "Net block"
+  },
+  {
+    "name": "Capital work in progress",
+    "displayName": "Capital work in progress"
+  },
+  {
+    "name": "Investments",
+    "displayName": "Investments"
+  },
+  {
+    "name": "Current assets",
+    "displayName": "Current assets"
+  },
+  {
+    "name": "Current liabilities",
+    "displayName": "Current liabilities"
+  },
+  {
+    "name": "Book value of unquoted investments",
+    "displayName": "Book value of unquoted investments"
+  },
+  {
+    "name": "Market value of quoted investments",
+    "displayName": "Market value of quoted investments"
+  },
+  {
+    "name": "Contingent liabilities",
+    "displayName": "Contingent liabilities"
+  }
+]

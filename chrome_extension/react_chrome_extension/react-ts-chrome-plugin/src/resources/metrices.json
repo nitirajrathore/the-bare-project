@@ -12,9 +12,9 @@
     "displayName": "Profit after tax"
   },
   {
-    "name": "Market Cap",
+    "name": "Mar Cap",
     "alias": [
-      "Mar Cap"
+      "Market Cap"
     ],
     "displayName": "Market Capitalization"
   },
@@ -35,9 +35,9 @@
     "displayName": "YOY Quarterly profit growth"
   },
   {
-    "name": "Stock P/E",
+    "name": "Price to Earning",
     "alias": [
-      "Price to Earning"
+      "Stock P/E"
     ],
     "displayName": "Price to Earning"
   },
@@ -102,9 +102,9 @@
     "displayName": "Profit growth"
   },
   {
-    "name": "Current price",
+    "name": "Current Price",
     "alias": [
-      "Current Price"
+      "Current price"
     ],
     "displayName": "Current price"
   },
@@ -385,9 +385,9 @@
     "displayName": "Price to Quarterly Earning"
   },
   {
-    "name": "Book Value",
+    "name": "Book value",
     "alias": [
-      "Book value"
+      "Book Value"
     ],
     "displayName": "Book value"
   },

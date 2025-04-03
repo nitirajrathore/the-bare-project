@@ -2,7 +2,7 @@ export const presets = {
   "Value Stocks": [
     {
       "id": "1",
-      "name": "Market Cap",
+      "name": "Mar Cap",
       "conditions": [
         {
           "id": "1-1",
@@ -1147,7 +1147,7 @@ export const presets = {
     },
     {
       "id": "13",
-      "name": "Market Cap",
+      "name": "Mar Cap",
       "conditions": [
         {
           "id": "13-1",
@@ -1222,10 +1222,10 @@ export const presets = {
       ]
     }
   ],
-  "Blue-Chip Stocks":[
+  "Blue-Chip Stocks": [
     {
       "id": "1",
-      "name": "Market Cap",
+      "name": "Mar Cap",
       "conditions": [
         {
           "id": "1-1",
@@ -1752,7 +1752,7 @@ export const presets = {
   "Small-Cap Stocks": [
     {
       "id": "1",
-      "name": "Market Cap",
+      "name": "Mar Cap",
       "conditions": [
         {
           "id": "1-1",

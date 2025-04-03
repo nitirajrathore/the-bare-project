@@ -14,7 +14,7 @@ chrome.runtime.onInstalled.addListener(async () => {
   const defaultConfig: MetricConfig[] = [
     {
       id: 'market-cap',
-      name: 'Market Cap',
+      name: 'Mar Cap',
       conditions: [
         { id: '1', operator: '<', value: 1000, color: '#ffcdd2' },
         { id: '2', operator: '<', value: 10000, color: '#c8e6c9' },
@@ -26,10 +26,10 @@ chrome.runtime.onInstalled.addListener(async () => {
 
   await storage.set(METRICS_CONFIG, defaultConfig);
   console.log('Default configuration saved');
-  
+
   // Initialize presets from presets.js
   const defaultPresets: Preset[] = [];
-  
+
   // Convert presets from presets.js to the format we need
   for (const [presetName, metricsArray] of Object.entries(presets)) {
     defaultPresets.push({
@@ -37,7 +37,7 @@ chrome.runtime.onInstalled.addListener(async () => {
       metrics: metricsArray as MetricConfig[]
     });
   }
-  
+
   await storage.set(CONFIG_PRESETS_KEY, defaultPresets);
   console.log('Default presets saved');
 });

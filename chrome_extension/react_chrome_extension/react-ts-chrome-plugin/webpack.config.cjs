@@ -10,7 +10,8 @@ module.exports = {
   devtool: "source-map", // Ensure this is set
   target: 'web',
   entry: {
-    contentScript: './src/content/index.ts',
+    stock_page: './src/stock_page/index.ts',
+    quick_ratios: './src/quick_ratios/index.ts',
     background: './src/background/index.ts',
     react: './src/react/index.tsx'
   },

@@ -22,14 +22,30 @@
         "https://www.screener.in/*"
       ],
       "js": [
-        "contentScript.js"
+        "stock_page.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://www.screener.in/user/quick_ratios/*"
+      ],
+      "js": [
+        "quick_ratios.js"
       ]
     }
   ],
   "web_accessible_resources": [
     {
       "resources": [
-        "contentScript.js.map"
+        "stock_page.js.map"
+      ],
+      "matches": [
+        "https://www.screener.in/*"
+      ]
+    },
+    {
+      "resources": [
+        "quick_ratios.js.map"
       ],
       "matches": [
         "https://www.screener.in/*"

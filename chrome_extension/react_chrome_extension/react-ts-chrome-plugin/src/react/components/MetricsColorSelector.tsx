@@ -28,6 +28,7 @@ const MetricsColorSelector: React.FC<MetricsColorSelectorProps> = ({
         const newMetric: MetricConfig = {
           id: uuidv4(),
           name: selectedMetric.name,
+          aliases: selectedMetric.aliases,
           conditions: [],
           isExpanded: true
         };

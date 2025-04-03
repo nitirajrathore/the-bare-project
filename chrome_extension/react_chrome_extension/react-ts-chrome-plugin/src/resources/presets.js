@@ -3,6 +3,9 @@ export const presets = {
     {
       "id": "1",
       "name": "Mar Cap",
+      "aliases": [
+        "Market Cap"
+      ],
       "conditions": [
         {
           "id": "1-1",
@@ -31,7 +34,10 @@ export const presets = {
     },
     {
       "id": "2",
-      "name": "Stock P/E",
+      "name": "Price to Earning",
+      "aliases": [
+        "Stock P/E"
+      ],
       "conditions": [
         {
           "id": "2-1",
@@ -608,7 +614,10 @@ export const presets = {
     },
     {
       "id": "8",
-      "name": "Stock P/E",
+      "name": "Price to Earning",
+      "aliases": [
+        "Stock P/E"
+      ],
       "conditions": [
         {
           "id": "8-1",
@@ -1148,6 +1157,9 @@ export const presets = {
     {
       "id": "13",
       "name": "Mar Cap",
+      "aliases": [
+        "Market Cap"
+      ],
       "conditions": [
         {
           "id": "13-1",
@@ -1226,6 +1238,9 @@ export const presets = {
     {
       "id": "1",
       "name": "Mar Cap",
+      "aliases": [
+        "Market Cap"
+      ],
       "conditions": [
         {
           "id": "1-1",
@@ -1550,7 +1565,10 @@ export const presets = {
     },
     {
       "id": "10",
-      "name": "Stock P/E",
+      "name": "Price to Earning",
+      "aliases": [
+        "Stock P/E"
+      ],
       "conditions": [
         {
           "id": "10-1",
@@ -1753,6 +1771,9 @@ export const presets = {
     {
       "id": "1",
       "name": "Mar Cap",
+      "aliases": [
+        "Market Cap"
+      ],
       "conditions": [
         {
           "id": "1-1",

@@ -13,7 +13,7 @@
   },
   {
     "name": "Mar Cap",
-    "alias": [
+    "aliases": [
       "Market Cap"
     ],
     "displayName": "Market Capitalization"
@@ -36,7 +36,7 @@
   },
   {
     "name": "Price to Earning",
-    "alias": [
+    "aliases": [
       "Stock P/E"
     ],
     "displayName": "Price to Earning"
@@ -103,7 +103,7 @@
   },
   {
     "name": "Current Price",
-    "alias": [
+    "aliases": [
       "Current price"
     ],
     "displayName": "Current price"
@@ -386,7 +386,7 @@
   },
   {
     "name": "Book value",
-    "alias": [
+    "aliases": [
       "Book Value"
     ],
     "displayName": "Book value"

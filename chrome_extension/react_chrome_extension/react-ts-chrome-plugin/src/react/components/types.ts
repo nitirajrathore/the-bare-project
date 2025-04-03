@@ -8,9 +8,16 @@ export interface Condition {
   color: string;
 }
 
+export interface Metric {
+  name: string;
+  aliases?: string[];
+  displayName: string;
+}
+
 export interface MetricConfig {
   id: string;
   name: string;
+  aliases?: string[];
   conditions: Condition[];
   isExpanded?: boolean; // To track if the form is expanded or collapsed
 }

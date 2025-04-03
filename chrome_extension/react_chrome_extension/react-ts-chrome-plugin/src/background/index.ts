@@ -10,22 +10,12 @@ const CONFIG_PRESETS_KEY = 'config-presets';
 chrome.runtime.onInstalled.addListener(async () => {
   console.log('Extension installed - Setting up default config');
 
-  // Initialize default configuration
-  const defaultConfig: MetricConfig[] = [
-    {
-      id: 'market-cap',
-      name: 'Mar Cap',
-      conditions: [
-        { id: '1', operator: '<', value: 1000, color: '#ffcdd2' },
-        { id: '2', operator: '<', value: 10000, color: '#c8e6c9' },
-        { id: '3', operator: '>=', value: 10000, color: '#bbdefb' }
-      ],
-      isExpanded: false
-    }
-  ];
+  // Get first preset as default configuration
+  const firstPresetName = Object.keys(presets)[0];
+  const defaultConfig: MetricConfig[] = presets[firstPresetName] || [];
 
   await storage.set(METRICS_CONFIG, defaultConfig);
-  console.log('Default configuration saved');
+  console.log('Default configuration saved:', firstPresetName);
 
   // Initialize presets from presets.js
   const defaultPresets: Preset[] = [];

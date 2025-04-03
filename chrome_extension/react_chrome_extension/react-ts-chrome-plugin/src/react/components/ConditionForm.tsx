@@ -25,6 +25,7 @@ const ConditionForm: React.FC<ConditionFormProps> = ({
     { value: '<=', label: 'Less than or equal to' },
     { value: '>=', label: 'Greater than or equal to' },
     { value: '==', label: 'Equal to' },
+    { value: '!=', label: 'Not Equal to' },
     { value: 'range', label: 'Range' }
   ];
 
@@ -34,7 +35,7 @@ const ConditionForm: React.FC<ConditionFormProps> = ({
     const newCondition: Condition = {
       id: condition?.id || uuidv4(),
       operator,
-      value: value ? parseFloat(value) : null,
+      value: parseFloat(value),
       color
     };
 

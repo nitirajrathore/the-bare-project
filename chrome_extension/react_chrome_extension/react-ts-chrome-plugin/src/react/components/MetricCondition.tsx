@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Condition, MetricConfig } from './types';
 import ConditionForm from './ConditionForm';
 import ConditionSummary from './ConditionSummary';
@@ -16,6 +16,11 @@ const MetricCondition: React.FC<MetricConditionProps> = ({
   onDelete 
 }) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(metric.isExpanded || false);
+  
+  // Update local state when metric.isExpanded changes (e.g., when a preset is applied)
+  useEffect(() => {
+    setIsExpanded(metric.isExpanded || false);
+  }, [metric.isExpanded]);
   const [isAddingCondition, setIsAddingCondition] = useState<boolean>(false);
   const [editingConditionId, setEditingConditionId] = useState<string | null>(null);
 

@@ -19,7 +19,7 @@ class ScreenerFormatter {
     }
 
     async init() {
-        console.log("content.js: trying to load configs.")
+        // console.log("content.js: trying to load configs.")
         this.config = await this.loadConfig();
         this.applyFormatting();
     }

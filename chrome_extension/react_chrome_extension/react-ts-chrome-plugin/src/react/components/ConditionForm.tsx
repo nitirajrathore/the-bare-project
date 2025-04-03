@@ -109,7 +109,6 @@ const ConditionForm: React.FC<ConditionFormProps> = ({
         >
           Save
         </button>
-
       </div>
     </form>
   );

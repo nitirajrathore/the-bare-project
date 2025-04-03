@@ -30,7 +30,7 @@ export const presets = {
           "description": "Large Cap"
         }
       ],
-      "isExpanded": true
+      "isExpanded": false
     },
     {
       "id": "2",

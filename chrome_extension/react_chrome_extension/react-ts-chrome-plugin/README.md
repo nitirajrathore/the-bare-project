@@ -3,6 +3,7 @@
 
 2. Make the config for time series fields.
 
+3. There is no operator precedence between operators. So if >= 100 -> blue and == 121 -> green, it is difficult to say if the value of 121 will appear blue or green. Fix this. Low priority
 
 ## install and configure
 

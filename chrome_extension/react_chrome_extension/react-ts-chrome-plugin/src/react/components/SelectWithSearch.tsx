@@ -38,8 +38,8 @@ const SelectWithSearch = React.forwardRef<
 >(({ menuList, menuType, value, setValue }, ref) => {
   const id = useId()
   const [open, setOpen] = useState<boolean>(false)
-  console.log("menuList", menuList)
-  console.log("menuType", menuType)
+  // console.log("menuList", menuList)
+  // console.log("menuType", menuType)
   return (
     <div className="*:not-first:mt-2" ref={ref}>
       <Label htmlFor={id}>Select {menuType}</Label>

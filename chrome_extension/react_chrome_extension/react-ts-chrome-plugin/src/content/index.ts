@@ -15,7 +15,7 @@ class ScreenerFormatter {
     constructor() {
         this.config = {} as Record<string, MetricConfig>;
         this.init();
-        console.log('ScreenerFormatter initialized');
+        // console.log('ScreenerFormatter initialized');
     }
 
     async init() {
@@ -41,7 +41,7 @@ class ScreenerFormatter {
 
     formatStaticMetrics() {
         const items = document.querySelectorAll(METRIC_SELECTORS.staticMetrics);
-        console.log('Found static metric items:', items.length);
+        // console.log('Found static metric items:', items.length);
 
         if (items && items.length > 0) {
             items.forEach(item => {
@@ -51,13 +51,13 @@ class ScreenerFormatter {
                     const valueText = valueElement?.textContent?.trim();
 
                     if (label && valueText && this.config && this.config[label]) {
-                        console.log('Processing metric:', label, valueText);
+                        // console.log('Processing metric:', label, valueText);
                         const numValue = utils.parseNumber(valueText);
                         const rule = this.config[label];
                         const color = this.getColorForValue(numValue, rule.conditions);
                         if (color && valueElement) {
                             (valueElement as HTMLElement).style.backgroundColor = color;
-                            console.log('Applied color:', color, 'to:', label);
+                            // console.log('Applied color:', color, 'to:', label);
                         }
                     }
                 }
@@ -120,13 +120,19 @@ class ScreenerFormatter {
     }
 
     evaluateCondition(metricValue: number, condition: Condition) {
-        const { operator, value } = condition;
+        const { operator, value, valueMax } = condition;
 
         switch (operator) {
             case '>': return metricValue > value;
             case '<': return metricValue < value;
             case '>=': return metricValue >= value;
             case '<=': return metricValue <= value;
+            case '==': return metricValue === value;
+            case '!=': return metricValue !== value;
+            case 'range': {
+                const maxValue = valueMax || value; // Default to value if not provided
+                return metricValue >= value && metricValue <= maxValue;
+            }
             default: return false;
         }
     }
@@ -143,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const observer = new MutationObserver((mutations) => {
     mutations.forEach((mutation) => {
         if (mutation.addedNodes.length) {
-            console.log('Content changed - Reinitializing ScreenerFormatter');
+            // console.log('Content changed - Reinitializing ScreenerFormatter');
             new ScreenerFormatter();
         }
     });

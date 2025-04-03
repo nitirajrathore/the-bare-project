@@ -4,7 +4,6 @@ import MetricCondition from './MetricCondition';
 import { v4 as uuidv4 } from 'uuid';
 import metricsData from '../../resources/metrices.json';
 import SelectWithSearch from './SelectWithSearch';
-import DefaultSelectWithSearch from './DefaultSelectWithSearch';
 
 interface MetricsColorSelectorProps {
   metrics: MetricConfig[];

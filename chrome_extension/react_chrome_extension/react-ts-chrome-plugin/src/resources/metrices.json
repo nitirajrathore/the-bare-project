@@ -103,6 +103,9 @@
   },
   {
     "name": "Current price",
+    "alias": [
+      "Current Price"
+    ],
     "displayName": "Current price"
   },
   {

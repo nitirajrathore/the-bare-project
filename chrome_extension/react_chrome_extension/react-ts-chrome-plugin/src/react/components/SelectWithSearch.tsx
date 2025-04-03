@@ -42,7 +42,7 @@ const SelectWithSearch = React.forwardRef<
   // console.log("menuType", menuType)
   return (
     <div className="*:not-first:mt-2" ref={ref}>
-      <Label htmlFor={id}>Select {menuType}</Label>
+      {/* <Label htmlFor={id}>Select {menuType}</Label> */}
       <Popover open={open} onOpenChange={setOpen}>
         <PopoverTrigger asChild>
           <Button

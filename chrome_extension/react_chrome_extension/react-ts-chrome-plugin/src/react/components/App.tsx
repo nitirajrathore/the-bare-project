@@ -44,15 +44,15 @@ function App() {
             metrics={metrics}
             onMetricsChange={handleMetricsChange}
           />
+          <button
+            onClick={saveSettings}
+            className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 mt-4"
+          >
+            Save Settings
+          </button>
+
         </div>
       </div>
-
-      <button
-        onClick={saveSettings}
-        className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
-      >
-        Save All Settings
-      </button>
     </div>
   );
 }

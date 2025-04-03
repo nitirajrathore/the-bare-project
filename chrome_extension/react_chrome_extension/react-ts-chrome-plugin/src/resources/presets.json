@@ -4,7 +4,8 @@
       "id": "1",
       "name": "Mar Cap",
       "aliases": [
-        "Market Cap"
+        "Market Cap",
+        "Market Capitalization"
       ],
       "conditions": [
         {
@@ -236,6 +237,9 @@
           "color": "#ff1a1a",
           "description": "Low Efficiency"
         }
+      ],
+      "aliases": [
+        "Return on capital employed"
       ]
     },
     {
@@ -510,6 +514,9 @@
           "value": 10,
           "color": "#ff1a1a"
         }
+      ],
+      "aliases": [
+        "YOY Quarterly sales growth"
       ]
     },
     {
@@ -535,6 +542,9 @@
           "value": 5,
           "color": "#ff1a1a"
         }
+      ],
+      "aliases": [
+        "YOY Quarterly profit growth"
       ]
     },
     {
@@ -560,6 +570,9 @@
           "value": 10,
           "color": "#ff1a1a"
         }
+      ],
+      "aliases": [
+        "Return on capital employed"
       ]
     },
     {
@@ -738,6 +751,9 @@
           "value": 5,
           "color": "#ff1a1a"
         }
+      ],
+      "aliases": [
+        "Profit growth 3Years"
       ]
     },
     {
@@ -763,6 +779,9 @@
           "value": 10,
           "color": "#ff1a1a"
         }
+      ],
+      "aliases": [
+        "Average return on capital employed 3Years"
       ]
     },
     {
@@ -813,6 +832,9 @@
           "value": 30,
           "color": "#ff1a1a"
         }
+      ],
+      "aliases": [
+        "Price to Free Cash Flow"
       ]
     }
   ],
@@ -880,6 +902,9 @@
           "color": "#ff1a1a",
           "description": "Unsustainable (>60%)"
         }
+      ],
+      "aliases": [
+        "Dividend Payout Ratio"
       ]
     },
     {
@@ -908,6 +933,9 @@
           "color": "#ff1a1a",
           "description": "Inconsistent"
         }
+      ],
+      "aliases": [
+        "Average 5years dividend"
       ]
     },
     {
@@ -928,6 +956,9 @@
           "color": "#ff1a1a",
           "description": "Negative FCF"
         }
+      ],
+      "aliases": [
+        "Free cash flow last year"
       ]
     },
     {
@@ -1012,6 +1043,9 @@
           "color": "#ff1a1a",
           "description": "Low Efficiency"
         }
+      ],
+      "aliases": [
+        "Return on capital employed"
       ]
     },
     {
@@ -1152,13 +1186,17 @@
           "color": "#2fe980",
           "description": "Conservative Payout"
         }
+      ],
+      "aliases": [
+        "Average dividend payout 3years"
       ]
     },
     {
       "id": "13",
       "name": "Mar Cap",
       "aliases": [
-        "Market Cap"
+        "Market Cap",
+        "Market Capitalization"
       ],
       "conditions": [
         {
@@ -1211,6 +1249,9 @@
           "color": "#ff1a1a",
           "description": "Declining"
         }
+      ],
+      "aliases": [
+        "Average return on capital employed 5Years"
       ]
     },
     {
@@ -1231,6 +1272,9 @@
           "color": "#ff1a1a",
           "description": "No Dividend"
         }
+      ],
+      "aliases": [
+        "Dividend preceding year"
       ]
     }
   ],
@@ -1239,7 +1283,8 @@
       "id": "1",
       "name": "Mar Cap",
       "aliases": [
-        "Market Cap"
+        "Market Cap",
+        "Market Capitalization"
       ],
       "conditions": [
         {
@@ -1309,6 +1354,9 @@
           "color": "#ff1a1a",
           "description": "Poor (<10%)"
         }
+      ],
+      "aliases": [
+        "Average return on capital employed 5Years"
       ]
     },
     {
@@ -1672,6 +1720,9 @@
           "color": "#ff1a1a",
           "description": "Negative (<0)"
         }
+      ],
+      "aliases": [
+        "Free cash flow last year"
       ]
     },
     {
@@ -1708,6 +1759,9 @@
           "color": "#ff1a1a",
           "description": "Poor (<10%)"
         }
+      ],
+      "aliases": [
+        "Average return on equity 5Years"
       ]
     },
     {
@@ -1772,7 +1826,8 @@
       "id": "1",
       "name": "Mar Cap",
       "aliases": [
-        "Market Cap"
+        "Market Cap",
+        "Market Capitalization"
       ],
       "conditions": [
         {
@@ -1914,6 +1969,9 @@
           "color": "#ff1a1a",
           "description": "Poor (<12%)"
         }
+      ],
+      "aliases": [
+        "Return on capital employed"
       ]
     },
     {
@@ -2094,6 +2152,9 @@
           "color": "#ff1a1a",
           "description": "Weak (<10%)"
         }
+      ],
+      "aliases": [
+        "YOY Quarterly sales growth"
       ]
     },
     {
@@ -2130,6 +2191,9 @@
           "color": "#ff1a1a",
           "description": "Weak (<15%)"
         }
+      ],
+      "aliases": [
+        "YOY Quarterly profit growth"
       ]
     },
     {
@@ -2274,6 +2338,9 @@
           "color": "#ff1a1a",
           "description": "Highly Overvalued (>50)"
         }
+      ],
+      "aliases": [
+        "Price to Free Cash Flow"
       ]
     },
     {

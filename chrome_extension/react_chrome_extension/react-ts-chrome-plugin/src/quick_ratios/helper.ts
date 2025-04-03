@@ -17,10 +17,9 @@ async function manageCheckboxSelection(dataNames, maxSelected) {
   // 2. Create canBeDeselectedList
   const canBeDeselectedList = currentlySelectedCheckboxes.filter(checkbox => {
     const parent = checkbox.parentElement;
-    return !(parent && 
-        parent.tagName.toLowerCase() === 'label' && 
-        parent.hasAttribute('data-short-name') && 
-        dataNames.includes(parent.getAttribute('data-short-name')));
+    return !(parent &&
+      parent.tagName.toLowerCase() === 'label' &&
+      (elementIsOneOf(parent, dataNames)));
   });
 
   // All Checkboxes
@@ -30,7 +29,7 @@ async function manageCheckboxSelection(dataNames, maxSelected) {
   let selectedCount = currentlySelectedCheckboxes.length;
   for (const dataName of dataNames) {
     // get checkbox with data-short-name
-    const checkbox = getCheckboxWithDataName(dataName, checkboxes);
+    const checkbox = getCheckboxWithName(dataName, checkboxes);
     if (checkbox) {
       if (!checkbox.checked) {
         // Select the checkbox
@@ -44,8 +43,8 @@ async function manageCheckboxSelection(dataNames, maxSelected) {
           opacity: 1,
           transition: 'opacity 0.3s ease',
         });
+        selectedCount++;
       }
-      selectedCount++;
 
       // Deselect from canBeDeselectedList if needed
       if (selectedCount > maxSelected) {
@@ -71,6 +70,12 @@ async function manageCheckboxSelection(dataNames, maxSelected) {
 }
 
 
+
+function elementIsOneOf(element: HTMLElement, dataNames: string[]) {
+  return (element.hasAttribute('data-name') &&
+    dataNames.includes(element.getAttribute('data-name'))) || (element.hasAttribute('data-short-name') &&
+      dataNames.includes(element.getAttribute('data-short-name')));
+}
 
 /**
  * Selects or deselects checkboxes based on their data-short-name attribute.
@@ -156,10 +161,10 @@ export { manageCheckboxSelection, toggleCheckboxesByDataName, deselectAllCheckbo
  * @param {NodeListOf<Element>} checkboxes - The list of checkboxes to search through.
  * @returns {HTMLInputElement | null} - The found checkbox element or null if not found.
  */
-function getCheckboxWithDataName(dataName: string, checkboxes: Element[]): HTMLInputElement | null {
+function getCheckboxWithName(dataName: string, checkboxes: Element[]): HTMLInputElement | null {
   for (const checkbox of checkboxes) {
     const parent = checkbox.parentElement;
-    if (parent && parent.getAttribute('data-short-name') === dataName) {
+    if (parent && (parent.getAttribute('data-name') === dataName || parent.getAttribute('data-short-name') === dataName)) {
       return checkbox as HTMLInputElement;
     }
   }

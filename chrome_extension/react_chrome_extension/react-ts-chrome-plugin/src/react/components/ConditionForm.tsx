@@ -9,16 +9,16 @@ interface ConditionFormProps {
   onCancel: () => void;
 }
 
-const ConditionForm: React.FC<ConditionFormProps> = ({ 
-  condition, 
-  onSave, 
-  onCancel 
+const ConditionForm: React.FC<ConditionFormProps> = ({
+  condition,
+  onSave,
+  onCancel
 }) => {
   const [operator, setOperator] = useState<Operator>(condition?.operator || '<');
   const [value, setValue] = useState<string>(condition?.value?.toString() || '');
   const [valueMax, setValueMax] = useState<string>(condition?.valueMax?.toString() || '');
   const [color, setColor] = useState<string>(condition?.color || '#448AFF');
-  
+
   const operators: { value: Operator; label: string }[] = [
     { value: '<', label: 'Less than' },
     { value: '>', label: 'Greater than' },
@@ -30,18 +30,18 @@ const ConditionForm: React.FC<ConditionFormProps> = ({
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     const newCondition: Condition = {
       id: condition?.id || uuidv4(),
       operator,
       value: value ? parseFloat(value) : null,
       color
     };
-    
+
     if (operator === 'range') {
       newCondition.valueMax = valueMax ? parseFloat(valueMax) : null;
     }
-    
+
     onSave(newCondition);
   };
 
@@ -61,7 +61,7 @@ const ConditionForm: React.FC<ConditionFormProps> = ({
             ))}
           </select>
         </div>
-        
+
         <div className="flex-1">
           {operator === 'range' ? (
             <div className="flex items-center gap-2">
@@ -94,11 +94,8 @@ const ConditionForm: React.FC<ConditionFormProps> = ({
             />
           )}
         </div>
-        
+
         <ColorPicker color={color} onChange={setColor} />
-      </div>
-      
-      <div className="flex justify-end gap-2">
         <button
           type="button"
           onClick={onCancel}
@@ -112,6 +109,7 @@ const ConditionForm: React.FC<ConditionFormProps> = ({
         >
           Save
         </button>
+
       </div>
     </form>
   );

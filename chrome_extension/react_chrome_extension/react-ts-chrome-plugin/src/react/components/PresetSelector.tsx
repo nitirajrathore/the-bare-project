@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from './ui/button';
 import SelectSearchWithNewButton from './SelectSearchWithNewButton';
 import PresetDialog from './PresetDialog';
-import { MetricConfig } from './types';
+import { MetricConfig } from '../../types/types';
 import storage from '../../lib/storage';
 
 interface PresetSelectorProps {
@@ -32,7 +32,7 @@ const PresetSelector: React.FC<PresetSelectorProps> = ({ metrics, onApplyPreset 
         setPresets(storedPresets);
       }
     };
-    
+
     loadPresets();
   }, []);
 
@@ -58,7 +58,7 @@ const PresetSelector: React.FC<PresetSelectorProps> = ({ metrics, onApplyPreset 
 
   const handleSavePreset = async (presetName: string, mode: 'new' | 'existing') => {
     let updatedPresets = [...presets];
-    
+
     if (mode === 'new' && presetName.trim()) {
       // Add new preset
       updatedPresets.push({
@@ -67,13 +67,13 @@ const PresetSelector: React.FC<PresetSelectorProps> = ({ metrics, onApplyPreset 
       });
     } else if (mode === 'existing' && presetName) {
       // Update existing preset
-      updatedPresets = updatedPresets.map(preset => 
-        preset.name === presetName 
-          ? { ...preset, metrics: [...metrics] } 
+      updatedPresets = updatedPresets.map(preset =>
+        preset.name === presetName
+          ? { ...preset, metrics: [...metrics] }
           : preset
       );
     }
-    
+
     // Save to storage
     await storage.set(CONFIG_PRESETS_KEY, updatedPresets);
     setPresets(updatedPresets);
@@ -93,9 +93,9 @@ const PresetSelector: React.FC<PresetSelectorProps> = ({ metrics, onApplyPreset 
         onNewItem={handleSaveAsPreset}
         newItemLabel="Save as new preset"
       />
-      
-      <Button 
-        onClick={handleApplyPreset} 
+
+      <Button
+        onClick={handleApplyPreset}
         disabled={!selectedPreset}
         variant="outline"
         size="sm"
@@ -103,8 +103,8 @@ const PresetSelector: React.FC<PresetSelectorProps> = ({ metrics, onApplyPreset 
       >
         Apply Preset
       </Button>
-      
-      <Button 
+
+      <Button
         onClick={handleSaveAsPreset}
         variant="outline"
         size="sm"

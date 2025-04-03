@@ -1,9 +1,10 @@
 import { METRICS_CONFIG } from '../constants';
-import { MetricConfig } from '../react/components/types';
+import { MetricConfig } from '../types/types';
 import { Preset } from '../react/components/PresetSelector';
-import { presets } from '../resources/presets';
+import { loadPresets } from '../utils/utils';
 import storage from '../lib/storage';
 
+const presets = loadPresets();
 // Key for storing presets
 const CONFIG_PRESETS_KEY = 'config-presets';
 

@@ -1,3 +1,10 @@
+import presets from '../resources/presets.json';
+import { PresetsType } from '../types/presets';
+
+export const loadPresets = (): PresetsType => {
+  return presets as PresetsType;
+};
+
 export interface Utils {
   parseNumber: (value: string) => number;
   formatPercentage: (value: number) => string;

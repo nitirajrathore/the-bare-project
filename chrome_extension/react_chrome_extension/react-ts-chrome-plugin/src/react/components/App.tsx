@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import storage from '../../lib/storage';
 import MetricsColorSelector from './MetricsColorSelector';
 import PresetSelector from './PresetSelector';
-import { MetricConfig } from './types';
+import { MetricConfig } from '../../types/types';
 import { METRICS_CONFIG } from '../../constants'
 
 function App() {

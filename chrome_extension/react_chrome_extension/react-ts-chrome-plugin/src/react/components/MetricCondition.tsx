@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Condition, MetricConfig } from './types';
+import { Condition, MetricConfig } from '../../types/types';
 import ConditionForm from './ConditionForm';
 import ConditionSummary from './ConditionSummary';
 import { v4 as uuidv4 } from 'uuid';
@@ -10,13 +10,13 @@ interface MetricConditionProps {
   onDelete: (metricId: string) => void;
 }
 
-const MetricCondition: React.FC<MetricConditionProps> = ({ 
-  metric, 
-  onUpdate, 
-  onDelete 
+const MetricCondition: React.FC<MetricConditionProps> = ({
+  metric,
+  onUpdate,
+  onDelete
 }) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(metric.isExpanded || false);
-  
+
   // Update local state when metric.isExpanded changes (e.g., when a preset is applied)
   useEffect(() => {
     setIsExpanded(metric.isExpanded || false);
@@ -30,7 +30,7 @@ const MetricCondition: React.FC<MetricConditionProps> = ({
 
   const handleSaveCondition = (condition: Condition) => {
     const updatedConditions = [...metric.conditions];
-    
+
     if (editingConditionId) {
       // Update existing condition
       const index = updatedConditions.findIndex(c => c.id === editingConditionId);
@@ -42,12 +42,12 @@ const MetricCondition: React.FC<MetricConditionProps> = ({
       // Add new condition
       updatedConditions.push(condition);
     }
-    
+
     onUpdate({
       ...metric,
       conditions: updatedConditions
     });
-    
+
     setIsAddingCondition(false);
   };
 
@@ -103,9 +103,9 @@ const MetricCondition: React.FC<MetricConditionProps> = ({
               ) : (
                 <>
                   <div className="flex-1">
-                    <ConditionSummary 
-                      condition={condition} 
-                      onClick={() => handleEditCondition(condition.id)} 
+                    <ConditionSummary
+                      condition={condition}
+                      onClick={() => handleEditCondition(condition.id)}
                     />
                   </div>
                   <button
@@ -144,20 +144,20 @@ const MetricCondition: React.FC<MetricConditionProps> = ({
           </div>
         </div>
       ) : (
-        <div 
+        <div
           className="cursor-pointer hover:bg-gray-100 p-2 rounded-md transition-colors"
           onClick={toggleExpand}
         >
           <div className="flex flex-wrap gap-2">
             {metric.conditions.map((condition) => (
               <div key={condition.id} className="inline-flex items-center">
-                <div 
-                  className="w-2 h-2 rounded-full mr-1" 
+                <div
+                  className="w-2 h-2 rounded-full mr-1"
                   style={{ backgroundColor: condition.color }}
                 />
                 <span className="text-xs text-gray-600">
-                  {condition.operator === 'range' 
-                    ? `${condition.value} - ${condition.valueMax}` 
+                  {condition.operator === 'range'
+                    ? `${condition.value} - ${condition.valueMax}`
                     : `${condition.operator} ${condition.value}`}
                 </span>
               </div>

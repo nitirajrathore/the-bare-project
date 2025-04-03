@@ -1,6 +1,6 @@
 import { METRICS_CONFIG } from '../constants';
 import storage from '../lib/storage';
-import { MetricConfig, Condition } from '../react/components/types';
+import { MetricConfig, Condition } from '../types/types';
 import utils from '../utils/utils';
 
 const METRIC_SELECTORS = {
@@ -26,12 +26,12 @@ class ScreenerFormatter {
     async loadConfig(): Promise<Record<string, MetricConfig>> {
         const configs = await storage.get(METRICS_CONFIG);
         const configMap: Record<string, MetricConfig> = {};
-        
+
         if (configs) {
             configs.forEach((config: MetricConfig) => {
                 // Add entry for the main metric name
                 configMap[config.name] = config;
-                
+
                 // Add entries for all aliases if they exist
                 if (config.aliases && config.aliases.length > 0) {
                     config.aliases.forEach(alias => {
@@ -40,7 +40,7 @@ class ScreenerFormatter {
                 }
             });
         }
-        
+
         return configMap;
     }
     // async loadConfig(): Promise<MetricConfig[] | null> {

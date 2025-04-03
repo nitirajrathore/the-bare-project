@@ -1,6 +1,6 @@
 import { MAX_QUICK_RATIOS, METRICS_CONFIG } from '../constants';
 import storage from '../lib/storage';
-import { MetricConfig } from '../react/components/types';
+import { MetricConfig } from '../types/types';
 import { manageCheckboxSelection } from './helper';
 
 class QuickRatiosManager {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Condition, Operator } from './types';
+import { Condition, Operator } from '../../types/types';
 import ColorPicker from './ColorPicker';
 import { v4 as uuidv4 } from 'uuid';
 

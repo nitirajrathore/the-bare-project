@@ -1,5 +1,5 @@
 import React from 'react';
-import { Condition } from './types';
+import { Condition } from '../../types/types';
 
 interface ConditionSummaryProps {
   condition: Condition;
@@ -27,12 +27,12 @@ const ConditionSummary: React.FC<ConditionSummaryProps> = ({ condition, onClick 
   };
 
   return (
-    <div 
+    <div
       className="flex items-center p-2 bg-white rounded-md shadow-sm border border-gray-200 cursor-pointer hover:bg-gray-50 transition-colors"
       onClick={onClick}
     >
-      <div 
-        className="w-3 h-3 rounded-full mr-2" 
+      <div
+        className="w-3 h-3 rounded-full mr-2"
         style={{ backgroundColor: condition.color }}
       />
       <span className="text-sm">

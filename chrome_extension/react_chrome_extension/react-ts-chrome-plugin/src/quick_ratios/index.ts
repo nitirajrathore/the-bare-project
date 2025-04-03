@@ -1,7 +1,7 @@
 import { MAX_QUICK_RATIOS, METRICS_CONFIG } from '../constants';
 import storage from '../lib/storage';
 import { MetricConfig } from '../types/types';
-import { manageCheckboxSelection } from './helper';
+import { manageCheckboxSelection, deselectAllCheckboxes } from './helper';
 
 class QuickRatiosManager {
   private config: MetricConfig[];
@@ -43,6 +43,8 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (message.type === 'SELECT_QUICK_RATIOS') {
     console.log('select quick ratios using QuickRatiosManager');
     new QuickRatiosManager();
+  } else if (message.type === 'CLEAR_QUICK_RATIOS') {
+    deselectAllCheckboxes();
   }
 });
 

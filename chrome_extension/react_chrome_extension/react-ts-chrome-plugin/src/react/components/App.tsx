@@ -2,8 +2,9 @@ import { useState, useEffect } from 'react';
 import storage from '../../lib/storage';
 import MetricsColorSelector from './MetricsColorSelector';
 import PresetSelector from './PresetSelector';
+import QuickRatiosSettings from './QuickRatiosSettings';
 import { MetricConfig } from '../../types/types';
-import { METRICS_CONFIG } from '../../constants'
+import { METRICS_CONFIG } from '../../constants';
 
 function App() {
   const [metrics, setMetrics] = useState<MetricConfig[]>([]);
@@ -61,14 +62,7 @@ function App() {
     <div className="p-4 min-h-screen bg-gray-100 text-gray-800">
       <div className="mb-6 space-y-4">
         <div className="bg-white p-4 rounded-md shadow-sm min-w-[480px] max-w-[800px] mx-auto">
-          {isQuickRatiosPage && (
-            <button
-              onClick={handleQuickRatiosSelect}
-              className="w-full bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 mb-4"
-            >
-              Auto-Select Quick Ratios
-            </button>
-          )}
+          {isQuickRatiosPage && <QuickRatiosSettings />}
 
           <div className="mb-4">
             <div className="flex justify-between items-center mb-4">

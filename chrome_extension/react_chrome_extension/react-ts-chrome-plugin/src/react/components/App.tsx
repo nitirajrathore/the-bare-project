@@ -5,6 +5,7 @@ import PresetSelector from './PresetSelector';
 import QuickRatiosSettings from './QuickRatiosSettings';
 import { MetricConfig } from '../../types/types';
 import { METRICS_CONFIG } from '../../constants';
+import { Button } from './ui/button';
 
 function App() {
   const [metrics, setMetrics] = useState<MetricConfig[]>([]);
@@ -64,27 +65,26 @@ function App() {
         <div className="bg-white p-4 rounded-md shadow-sm min-w-[480px] max-w-[800px] mx-auto">
           {isQuickRatiosPage && <QuickRatiosSettings />}
 
-          <div className="mb-4">
-            <div className="flex justify-between items-center mb-4">
-              <h1 className="text-xl font-semibold">Metric Configuration</h1>
+          <div className="mb-4 flex items-center gap-8">
+            <div className="flex-1">
+              <PresetSelector
+                metrics={metrics}
+                onApplyPreset={handleMetricsChange}
+              />
             </div>
-            <PresetSelector
-              metrics={metrics}
-              onApplyPreset={handleMetricsChange}
-            />
+            <Button
+              onClick={saveSettings}
+              size="sm"
+              className="bg-blue-500 hover:bg-blue-600 text-white"
+            >
+              Save Settings
+            </Button>
           </div>
 
           <MetricsColorSelector
             metrics={metrics}
             onMetricsChange={handleMetricsChange}
           />
-
-          <button
-            onClick={saveSettings}
-            className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 mt-4"
-          >
-            Save Settings
-          </button>
         </div>
       </div>
     </div>

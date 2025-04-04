@@ -61,20 +61,17 @@ const MetricsColorSelector: React.FC<MetricsColorSelectorProps> = ({
     <div className="space-y-4">
       <div className="flex justify-between items-center">
         <h2 className="text-sm font-semibold">Conditional Formatting</h2>
+        {!isAddingMetric && (
+          <button
+            onClick={handleAddMetric}
+            className="flex items-center text-blue-500 hover:text-blue-700 text-sm"
+          >
+            <span className="mr-1 text-lg">+</span> Add New Metric
+          </button>
+        )}
       </div>
 
-      <div className="space-y-3">
-        {metrics.map(metric => (
-          <MetricCondition
-            key={metric.id}
-            metric={metric}
-            onUpdate={handleUpdateMetric}
-            onDelete={handleDeleteMetric}
-          />
-        ))}
-      </div>
-
-      {isAddingMetric ? (
+      {isAddingMetric && (
         <div className="p-3 bg-white rounded-md shadow-sm border border-gray-200">
           <div className="mb-3">
             <div className="flex gap-2">
@@ -104,14 +101,18 @@ const MetricsColorSelector: React.FC<MetricsColorSelectorProps> = ({
             </div>
           </div>
         </div>
-      ) : (
-        <button
-          onClick={handleAddMetric}
-          className="flex items-center text-blue-500 hover:text-blue-700"
-        >
-          <span className="mr-1 text-lg">+</span> Add New Metric
-        </button>
       )}
+
+      <div className="space-y-3">
+        {metrics.map(metric => (
+          <MetricCondition
+            key={metric.id}
+            metric={metric}
+            onUpdate={handleUpdateMetric}
+            onDelete={handleDeleteMetric}
+          />
+        ))}
+      </div>
     </div>
   );
 };

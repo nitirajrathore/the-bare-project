@@ -81,7 +81,7 @@ const PresetSelector: React.FC<PresetSelectorProps> = ({ metrics, onApplyPreset 
   };
 
   return (
-    <div className="flex items-center gap-2 mb-4">
+    <div className="flex items-center gap-2">
       <SelectSearchWithNewButton
         menuList={presets.map(preset => ({
           value: preset.name,

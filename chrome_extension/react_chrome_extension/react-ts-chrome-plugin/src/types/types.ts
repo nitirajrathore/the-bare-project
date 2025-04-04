@@ -21,3 +21,17 @@ export interface MetricConfig {
   conditions: Condition[];
   isExpanded?: boolean; // To track if the form is expanded or collapsed
 }
+
+export interface IHighlightingPattern {
+  name: string;
+  displayName: string;
+  description: string;
+  image: string;
+}
+
+export interface IColoringPattern {
+  name: string;
+  displayName: string;
+  description: string;
+  image: string;
+}

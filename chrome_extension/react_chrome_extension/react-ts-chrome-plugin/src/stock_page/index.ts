@@ -1,4 +1,4 @@
-import { METRICS_CONFIG } from '../constants';
+import { METRICS_CONFIG, SETTINGS, SettingKeys, HighlightingPatterns, ColoringPatterns } from '../constants';
 import storage from '../lib/storage';
 import { MetricConfig, Condition } from '../types/types';
 import utils from '../utils/utils';
@@ -11,9 +11,11 @@ const METRIC_SELECTORS = {
 
 class ScreenerFormatter {
     private config: Record<string, MetricConfig>;
+    private settings: Record<string, string>;
 
     constructor() {
         this.config = {} as Record<string, MetricConfig>;
+        this.settings = {} as Record<string, string>;
         this.init();
         // console.log('ScreenerFormatter initialized');
     }
@@ -21,7 +23,17 @@ class ScreenerFormatter {
     async init() {
         // console.log("content.js: trying to load configs.")
         this.config = await this.loadConfig();
+        this.settings = await this.loadSettings();
         this.applyFormatting();
+    }
+
+    async loadSettings(): Promise<Record<string, string>> {
+        const settings = await storage.get(SETTINGS) || {};
+        // Set defaults if not already set
+        settings[SettingKeys.HIGHLIGHTING_PATTERN] = settings[SettingKeys.HIGHLIGHTING_PATTERN] || HighlightingPatterns.Block;
+        settings[SettingKeys.COLORING_PATTERN] = settings[SettingKeys.COLORING_PATTERN] || ColoringPatterns.Mono;
+
+        return settings;
     }
     async loadConfig(): Promise<Record<string, MetricConfig>> {
         const configs = await storage.get(METRICS_CONFIG);
@@ -69,8 +81,34 @@ class ScreenerFormatter {
                         const rule = this.config[label];
                         const color = this.getColorForValue(numValue, rule.conditions);
                         if (color && valueElement) {
-                            (valueElement as HTMLElement).style.backgroundColor = color;
-                            // console.log('Applied color:', color, 'to:', label);
+                            let elem = valueElement as HTMLElement;
+                            switch (this.settings[SettingKeys.HIGHLIGHTING_PATTERN]) {
+                                case HighlightingPatterns.Number:
+                                    // Do nothing
+                                    break;
+                                case HighlightingPatterns.Value:
+                                    if (elem.parentElement) {
+                                        elem = elem.parentElement as HTMLElement;
+                                    }
+                                    break;
+                                case HighlightingPatterns.Block:
+                                    if (elem.parentElement) {
+                                        elem = elem.parentElement as HTMLElement;
+                                        if (elem.parentElement) {
+                                            elem = elem.parentElement as HTMLElement;
+                                        }
+                                    }
+                                    break;
+                            }
+
+                            switch (this.settings[SettingKeys.COLORING_PATTERN]) {
+                                case ColoringPatterns.Mono:
+                                    elem.style.backgroundColor = color;
+                                    break;
+                                case ColoringPatterns.Gradient:
+                                    elem.style.backgroundImage = `linear-gradient( to right, white, ${color})`;
+                                    break;
+                            }
                         }
                     }
                 }
@@ -78,6 +116,50 @@ class ScreenerFormatter {
             });
         }
     }
+    // DOES NOT WORK and too much to implement
+    // colorValueCell(rightEl: HTMLElement, color: string, coloringPattern: string) {
+    //     if (rightEl.parentElement == null) {
+    //         throw new Error("colorValueCell : Parent element is null");
+    //     }
+    //     const parentEl = rightEl.parentElement; // or however you get the parent
+
+    //     const parentRect = parentEl.getBoundingClientRect();
+    //     const rightRect = rightEl.getBoundingClientRect();
+
+    //     // Calculate the middle point of the parent element
+    //     const middleX = parentRect.left + parentRect.width / 2;
+
+    //     // Calculate how much space to cover from middle to right
+    //     const gradientStart = middleX - parentRect.left;
+    //     const gradientWidth = parentRect.width - gradientStart;
+
+    //     // Create a gradient overlay div
+    //     const gradientOverlay = document.createElement('div');
+    //     gradientOverlay.style.position = 'absolute';
+    //     gradientOverlay.style.top = "0";
+    //     gradientOverlay.style.left = `${gradientStart}px`;
+    //     gradientOverlay.style.width = `${gradientWidth}px`;
+    //     gradientOverlay.style.height = '100%';
+    //     if (coloringPattern === ColoringPatterns.Mono) {
+    //         gradientOverlay.style.backgroundColor = color;
+    //     } else if (coloringPattern === ColoringPatterns.Gradient) {
+    //         gradientOverlay.style.backgroundImage = `linear-gradient(to right, white, ${color})`;
+    //     }
+    //     gradientOverlay.style.pointerEvents = 'none';
+    //     gradientOverlay.style.zIndex = "0";
+
+    //     // Ensure the parent has relative positioning
+    //     parentEl.style.position = 'relative';
+
+    //     // Append the overlay
+    //     parentEl.appendChild(gradientOverlay);
+
+    //     // Optional: Bring all children above the overlay
+    //     Array.from(parentEl.children).forEach(child => {
+    //         child.style.position = 'relative';
+    //         child.style.zIndex = "1";
+    //     });
+    // }
 
     formatTimeSeriesData() {
         ['#quarters', '#annual'].forEach(tableId => {

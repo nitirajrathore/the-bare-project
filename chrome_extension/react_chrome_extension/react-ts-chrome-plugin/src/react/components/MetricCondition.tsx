@@ -3,6 +3,7 @@ import { Condition, MetricConfig } from '../../types/types';
 import ConditionForm from './ConditionForm';
 import ConditionSummary from './ConditionSummary';
 import { v4 as uuidv4 } from 'uuid';
+import { getOperatorSymbol } from '../lib/utils';
 
 interface MetricConditionProps {
   metric: MetricConfig;
@@ -158,7 +159,7 @@ const MetricCondition: React.FC<MetricConditionProps> = ({
                 <span className="text-xs text-gray-600">
                   {condition.operator === 'range'
                     ? `${condition.value} - ${condition.valueMax}`
-                    : `${condition.operator} ${condition.value}`}
+                    : `${getOperatorSymbol(condition.operator)} ${condition.value}`}
                 </span>
               </div>
             ))}

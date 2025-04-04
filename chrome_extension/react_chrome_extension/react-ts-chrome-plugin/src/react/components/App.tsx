@@ -10,6 +10,8 @@ import { Button } from './ui/button';
 function App() {
   const [metrics, setMetrics] = useState<MetricConfig[]>([]);
   const [isQuickRatiosPage, setIsQuickRatiosPage] = useState(false);
+  const [showSaveSuccess, setShowSaveSuccess] = useState(false);
+  const [isSaving, setIsSaving] = useState(false);
 
   // Check if current active tab is quick ratios page
   useEffect(() => {
@@ -34,6 +36,7 @@ function App() {
 
   // Save settings to Chrome storage and notify content script
   const saveSettings = async () => {
+    setIsSaving(true);
     await storage.set(METRICS_CONFIG, metrics);
 
     // Send message to all tabs with screener.in URL
@@ -43,6 +46,19 @@ function App() {
         chrome.tabs.sendMessage(tab.id, { type: 'CONFIG_UPDATED' });
       }
     });
+
+    // Show success notification
+    setShowSaveSuccess(true);
+
+    // Hide after 3 seconds
+    setTimeout(() => {
+      setShowSaveSuccess(false);
+    }, 3000);
+
+    // Reset button text after 2 seconds
+    setTimeout(() => {
+      setIsSaving(false);
+    }, 2000);
   };
 
   const handleQuickRatiosSelect = async () => {
@@ -75,9 +91,13 @@ function App() {
             <Button
               onClick={saveSettings}
               size="sm"
-              className="bg-blue-500 hover:bg-blue-600 text-white"
+              disabled={isSaving}
+              className={`${isSaving
+                  ? 'bg-green-500 hover:bg-green-500'
+                  : 'bg-blue-500 hover:bg-blue-600'
+                } text-white min-w-[100px] text-center`}
             >
-              Save Settings
+              {isSaving ? 'Saved' : 'Save Settings'}
             </Button>
           </div>
 

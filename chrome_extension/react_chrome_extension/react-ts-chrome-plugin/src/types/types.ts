@@ -1,4 +1,4 @@
-export type Operator = '<' | '>' | '<=' | '>=' | '==' | 'range' | '!='
+export type Operator = '<' | '>' | '<=' | '>=' | '=' | 'range' | '!='
 
 export interface Condition {
   id: string;

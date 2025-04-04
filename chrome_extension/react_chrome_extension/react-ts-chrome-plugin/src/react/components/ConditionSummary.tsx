@@ -1,5 +1,6 @@
 import React from 'react';
 import { Condition } from '../../types/types';
+import { getOperatorSymbol } from '../lib/utils';
 
 interface ConditionSummaryProps {
   condition: Condition;
@@ -7,17 +8,6 @@ interface ConditionSummaryProps {
 }
 
 const ConditionSummary: React.FC<ConditionSummaryProps> = ({ condition, onClick }) => {
-  const getOperatorSymbol = (operator: string): string => {
-    switch (operator) {
-      case '<': return '<';
-      case '>': return '>';
-      case '<=': return '≤';
-      case '>=': return '≥';
-      case '==': return '=';
-      case 'range': return 'between';
-      default: return operator;
-    }
-  };
 
   const getValueText = (): string => {
     if (condition.operator === 'range' && condition.valueMax !== undefined) {

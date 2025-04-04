@@ -222,7 +222,7 @@ class ScreenerFormatter {
             case '<': return metricValue < value;
             case '>=': return metricValue >= value;
             case '<=': return metricValue <= value;
-            case '==': return metricValue === value;
+            case '=': return metricValue === value;
             case '!=': return metricValue !== value;
             case 'range': {
                 const maxValue = valueMax || value; // Default to value if not provided

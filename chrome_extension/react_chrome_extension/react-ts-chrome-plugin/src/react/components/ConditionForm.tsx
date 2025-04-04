@@ -24,7 +24,7 @@ const ConditionForm: React.FC<ConditionFormProps> = ({
     { value: '>', label: 'Greater than' },
     { value: '<=', label: 'Less than or equal to' },
     { value: '>=', label: 'Greater than or equal to' },
-    { value: '==', label: 'Equal to' },
+    { value: '=', label: 'Equal to' },
     { value: '!=', label: 'Not Equal to' },
     { value: 'range', label: 'Range' }
   ];

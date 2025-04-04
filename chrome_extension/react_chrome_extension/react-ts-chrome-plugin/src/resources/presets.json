@@ -1138,7 +1138,7 @@
       "conditions": [
         {
           "id": "11-1",
-          "operator": "==",
+          "operator": "=",
           "value": 0,
           "color": "#2fe980",
           "description": "No Pledging"
@@ -1267,7 +1267,7 @@
         },
         {
           "id": "15-2",
-          "operator": "==",
+          "operator": "=",
           "value": 0,
           "color": "#ff1a1a",
           "description": "No Dividend"
@@ -1473,7 +1473,7 @@
       "conditions": [
         {
           "id": "6-1",
-          "operator": "==",
+          "operator": "=",
           "value": 0,
           "color": "#2fe980",
           "description": "Zero Pledge"
@@ -1568,7 +1568,7 @@
         },
         {
           "id": "8-4",
-          "operator": "==",
+          "operator": "=",
           "value": 0,
           "color": "#ff1a1a",
           "description": "No Dividend"
@@ -1806,14 +1806,14 @@
       "conditions": [
         {
           "id": "15-1",
-          "operator": "==",
+          "operator": "=",
           "value": 1,
           "color": "#2fe980",
           "description": "Mainboard Listed"
         },
         {
           "id": "15-2",
-          "operator": "==",
+          "operator": "=",
           "value": 0,
           "color": "#ff1a1a",
           "description": "SME Listed"
@@ -2052,7 +2052,7 @@
       "conditions": [
         {
           "id": "7-1",
-          "operator": "==",
+          "operator": "=",
           "value": 0,
           "color": "#2fe980",
           "description": "Zero Pledge"
@@ -2349,14 +2349,14 @@
       "conditions": [
         {
           "id": "15-1",
-          "operator": "==",
+          "operator": "=",
           "value": 1,
           "color": "#ffcc00",
           "description": "SME Listed (Higher Risk)"
         },
         {
           "id": "15-2",
-          "operator": "==",
+          "operator": "=",
           "value": 0,
           "color": "#a5d6a7",
           "description": "Mainboard Listed"

@@ -33,7 +33,7 @@ const MetricsColorSelector: React.FC<MetricsColorSelectorProps> = ({
           isExpanded: true
         };
 
-        onMetricsChange([...metrics, newMetric]);
+        onMetricsChange([newMetric, ...metrics]);
         setIsAddingMetric(false);
         setNewMetricName('');
       }

@@ -41,7 +41,7 @@ export default function RadioCards({
             className="sr-only"
           />
           <img
-            src={`/images/${option.image}`}
+            src={`${option.image}`}
             alt={option.displayName}
             className="w-20 h-20 object-contain"
           />

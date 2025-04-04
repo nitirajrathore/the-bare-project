@@ -43,7 +43,7 @@ export default function RadioCards({
           <img
             src={`${option.image}`}
             alt={option.displayName}
-            className="w-20 h-20 object-contain"
+            className="h-full object-contain"
           />
           <label
             htmlFor={`${id}-${index}`}

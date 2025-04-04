@@ -6,6 +6,7 @@ import QuickRatiosSettings from './QuickRatiosSettings';
 import { MetricConfig } from '../../types/types';
 import { METRICS_CONFIG } from '../../constants';
 import { Button } from './ui/button';
+import StyleSettings from './StyleSettings';
 
 function App() {
   const [metrics, setMetrics] = useState<MetricConfig[]>([]);
@@ -88,17 +89,20 @@ function App() {
                 onApplyPreset={handleMetricsChange}
               />
             </div>
-            <Button
-              onClick={saveSettings}
-              size="sm"
-              disabled={isSaving}
-              className={`${isSaving
+            <div className="flex items-center">
+              <Button
+                onClick={saveSettings}
+                size="sm"
+                disabled={isSaving}
+                className={`${isSaving
                   ? 'bg-green-500 hover:bg-green-500'
                   : 'bg-blue-500 hover:bg-blue-600'
-                } text-white min-w-[100px] text-center`}
-            >
-              {isSaving ? 'Saved' : 'Save Settings'}
-            </Button>
+                  } text-white min-w-[100px] text-center`}
+              >
+                {isSaving ? 'Saved' : 'Save Settings'}
+              </Button>
+              <StyleSettings />
+            </div>
           </div>
 
           <MetricsColorSelector

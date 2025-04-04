@@ -29,10 +29,17 @@ module.exports = {
       inject: false
     }),
     new CopyPlugin({
-      patterns: [{
-        from: path.resolve('manifest.json'),
-        to: path.resolve('dist')
-      }]
+      patterns: [
+        {
+          from: path.resolve('manifest.json'),
+          to: path.resolve('dist')
+        },
+        {
+          from: path.resolve('public', 'images'),
+          to: path.resolve('dist', 'public', 'images'),
+          noErrorOnMissing: true
+        }
+      ]
     }),
     new MiniCssExtractPlugin({
       filename: "styles.css",

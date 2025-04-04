@@ -26,13 +26,13 @@ export const HighlightingPatternList = [
     name: HighlightingPatterns.Number,
     displayName: "Number",
     description: "Highlight the number itself",
-    image: "number.png",
+    image: "public/images/number.png",
   },
   {
     name: HighlightingPatterns.Value,
     displayName: "Value",
     description: "Highlight the number including the unit",
-    image: "value.png",
+    image: "public/images/value.png",
   },
   // {
   //   name: HighlightingPatterns.ValueCell,
@@ -44,7 +44,7 @@ export const HighlightingPatternList = [
     name: HighlightingPatterns.Block,
     displayName: "Block",
     description: "Highlight the entire block including the metric name",
-    image: "block.png",
+    image: "public/images/block.png",
 
   }
 ] as IHighlightingPattern[];
@@ -55,12 +55,12 @@ export const ColoringPatternList = [
     name: ColoringPatterns.Mono,
     displayName: "Mono",
     description: "Solid color",
-    image: "mono.png",
+    image: "public/images/mono.png",
   },
   {
     name: ColoringPatterns.Gradient,
     displayName: "Gradient",
     description: "Gradient from white to the color",
-    image: "gradient.png",
+    image: "public/images/gradient.png",
   }
 ] as IColoringPattern[];

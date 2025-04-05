@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import SelectWithSearch from './SelectWithSearch';
-import TimeseriesMetric from './Timeseries';
-import metricsData from '../../resources/metrices.json';
-import { TimeseriesConfig } from '../../types/types';
+import TimeseriesMetric from './TimeseriesMetric';
+import { TimeseriesMetricConfig, MetricInfo } from '../../types/types';
 
 interface TimeseriesColorSelectorProps {
-  timeseriesMetrics: TimeseriesConfig[];
-  onTimeseriesMetricsChange: (metrics: TimeseriesConfig[]) => void;
+  timeseriesMetrics: TimeseriesMetricConfig[];
+  onTimeseriesMetricsChange: (metrics: TimeseriesMetricConfig[]) => void;
+  availableMetrics: MetricInfo[];
 }
 
 const TimeseriesColorSelector: React.FC<TimeseriesColorSelectorProps> = ({
   timeseriesMetrics,
-  onTimeseriesMetricsChange
+  onTimeseriesMetricsChange,
+  availableMetrics
 }) => {
   const [isAddingMetric, setIsAddingMetric] = useState(false);
   const [newMetricName, setNewMetricName] = useState('');
@@ -23,9 +24,9 @@ const TimeseriesColorSelector: React.FC<TimeseriesColorSelectorProps> = ({
 
   const handleSaveNewMetric = () => {
     if (newMetricName.trim()) {
-      const selectedMetric = metricsData.find(m => m.name === newMetricName);
+      const selectedMetric = availableMetrics.find(m => m.name === newMetricName);
       if (selectedMetric) {
-        const newMetric: TimeseriesConfig = {
+        const newMetric: TimeseriesMetricConfig = {
           id: uuidv4(),
           name: selectedMetric.name,
           aliases: selectedMetric.aliases,
@@ -41,7 +42,7 @@ const TimeseriesColorSelector: React.FC<TimeseriesColorSelectorProps> = ({
     }
   };
 
-  const handleUpdateMetric = (updatedMetric: TimeseriesConfig) => {
+  const handleUpdateMetric = (updatedMetric: TimeseriesMetricConfig) => {
     const updatedMetrics = timeseriesMetrics.map(metric =>
       metric.id === updatedMetric.id ? updatedMetric : metric
     );
@@ -72,7 +73,7 @@ const TimeseriesColorSelector: React.FC<TimeseriesColorSelectorProps> = ({
           <div className="mb-3">
             <div className="flex gap-2">
               <SelectWithSearch
-                menuList={metricsData.map(metric => ({
+                menuList={availableMetrics.map(metric => ({
                   value: metric.name,
                   label: metric.displayName
                 }))}

@@ -1,29 +1,67 @@
-import { TimeseriesConfig } from '../../types/types';
-import TimeseriesCondition from './TimeseriesCondition';
+import { useState } from 'react';
+import timeseriesData from '../../resources/timeseries.json';
+import SelectWithSearch from './SelectWithSearch';
+import TimeseriesColorSelector from './TimeseriesColorSelector';
+import { TimeseriesMetricConfig, TimeseriesUserConfig } from '../../types/types';
 
-interface TimeseriesMetricProps {
-  metric: TimeseriesConfig;
-  onUpdate: (updatedMetric: TimeseriesConfig) => void;
-  onDelete: (metricId: string) => void;
+interface TimeseriesProps {
+  timeseriesConfigs: TimeseriesUserConfig[];
+  onTimeseriesConfigsChange: (configs: TimeseriesUserConfig[]) => void;
 }
 
-export default function TimeseriesMetric({ metric, onUpdate, onDelete }: TimeseriesMetricProps) {
+export default function Timeseries({
+  timeseriesConfigs,
+  onTimeseriesConfigsChange
+}: TimeseriesProps) {
+  const [selectedType, setSelectedType] = useState<string>(
+    timeseriesConfigs[0]?.type || timeseriesData[0].type
+  );
+
+  const handleTypeChange = (type: string) => {
+    setSelectedType(type);
+    // If no config exists for this type, create one
+    if (!timeseriesConfigs.find(config => config.type === type)) {
+      onTimeseriesConfigsChange([
+        ...timeseriesConfigs,
+        { type, metricConfigs: [] }
+      ]);
+    }
+  };
+
+  const handleMetricsChange = (metrics: TimeseriesMetricConfig[]) => {
+    const updatedConfigs = timeseriesConfigs.map(config =>
+      config.type === selectedType
+        ? { ...config, metricConfigs: metrics }
+        : config
+    );
+    onTimeseriesConfigsChange(updatedConfigs);
+  };
+
+  const currentConfig = timeseriesConfigs.find(config => config.type === selectedType) || {
+    type: selectedType,
+    metricConfigs: []
+  };
+
   return (
-    <div className="mb-4 bg-gray-50 p-3 rounded-md border border-gray-200">
-      <div className="flex justify-between items-center mb-2">
-        <h3 className="text-md font-medium">{metric.name}</h3>
-        <button
-          onClick={() => onDelete(metric.id)}
-          className="text-red-500 hover:text-red-700 text-sm"
-          aria-label="Delete metric"
-        >
-          Remove
-        </button>
+    <div className="space-y-4">
+      <div className="flex items-center gap-4">
+        <SelectWithSearch
+          menuList={timeseriesData.map(series => ({
+            value: series.type,
+            label: series.type
+          }))}
+          menuType="Timeseries Type"
+          value={selectedType}
+          setValue={handleTypeChange}
+        />
       </div>
 
-      <TimeseriesCondition
-        metric={metric}
-        onUpdate={onUpdate}
+      <TimeseriesColorSelector
+        timeseriesMetrics={currentConfig.metricConfigs}
+        onTimeseriesMetricsChange={handleMetricsChange}
+        availableMetrics={
+          timeseriesData.find(series => series.type === selectedType)?.metrices || []
+        }
       />
     </div>
   );

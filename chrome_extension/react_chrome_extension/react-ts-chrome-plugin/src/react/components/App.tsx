@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import storage from '../../lib/storage';
 import PresetSelector from './PresetSelector';
 import QuickRatiosSettings from './QuickRatiosSettings';
-import { MetricConfig, TimeseriesConfig } from '../../types/types';
+import { MetricConfig, TimeseriesUserConfig } from '../../types/types';
 import { METRICS_CONFIG, TIMESERIES_CONFIG } from '../../constants';
 import { Button } from './ui/button';
 import StyleSettings from './StyleSettings';
@@ -10,7 +10,7 @@ import MetricSettingTabs from './MetricSettingTabs';
 
 function App() {
   const [metrics, setMetrics] = useState<MetricConfig[]>([]);
-  const [timeseriesMetrics, setTimeseriesMetrics] = useState<TimeseriesConfig[]>([]);
+  const [timeseriesConfigs, setTimeseriesConfigs] = useState<TimeseriesUserConfig[]>([]);
   const [isQuickRatiosPage, setIsQuickRatiosPage] = useState(false);
   const [showSaveSuccess, setShowSaveSuccess] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
@@ -38,7 +38,7 @@ function App() {
         setMetrics(metricsConfig);
       }
       if (timeseriesConfig) {
-        setTimeseriesMetrics(timeseriesConfig);
+        setTimeseriesConfigs(timeseriesConfig);
       }
     })();
   }, []);
@@ -49,7 +49,7 @@ function App() {
 
     await Promise.all([
       storage.set(METRICS_CONFIG, metrics),
-      storage.set(TIMESERIES_CONFIG, timeseriesMetrics)
+      storage.set(TIMESERIES_CONFIG, timeseriesConfigs)
     ]);
 
     // Send message to all tabs with screener.in URL
@@ -88,10 +88,10 @@ function App() {
     setMetrics(updatedMetrics);
   };
 
-  // Handle timeseries metrics changes
-  const handleTimeseriesMetricsChange = (updatedMetrics: TimeseriesConfig[]) => {
-    setTimeseriesMetrics(updatedMetrics);
-  };
+  // // Handle timeseries metrics changes
+  // const handleTimeseriesMetricsChange = (updatedMetrics: TimeseriesMetricConfig[]) => {
+  //   setTimeseriesConfigs(updatedMetrics);
+  // };
 
   return (
     <div className="p-4 min-h-screen bg-gray-100 text-gray-800">
@@ -125,8 +125,8 @@ function App() {
           <MetricSettingTabs
             metrics={metrics}
             onMetricsChange={handleMetricsChange}
-            timeseriesMetrics={timeseriesMetrics}
-            onTimeseriesMetricsChange={handleTimeseriesMetricsChange}
+            timeseriesConfigs={timeseriesConfigs}
+            onTimeseriesConfigsChange={setTimeseriesConfigs}
           />
         </div>
       </div>

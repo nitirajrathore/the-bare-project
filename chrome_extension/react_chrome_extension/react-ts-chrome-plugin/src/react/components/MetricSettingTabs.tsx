@@ -7,21 +7,21 @@ import {
   TabsTrigger,
 } from "@/src/react/components/ui/tabs"
 import MetricsColorSelector from './MetricsColorSelector'
-import TimeseriesColorSelector from './TimeseriesColorSelector'
-import { MetricConfig, TimeseriesConfig } from '../../types/types'
+import Timeseries from './Timeseries'
+import { MetricConfig, TimeseriesUserConfig } from '../../types/types'
 
 interface MetricSettingTabsProps {
   metrics: MetricConfig[];
   onMetricsChange: (metrics: MetricConfig[]) => void;
-  timeseriesMetrics: TimeseriesConfig[];
-  onTimeseriesMetricsChange: (metrics: TimeseriesConfig[]) => void;
+  timeseriesConfigs: TimeseriesUserConfig[];
+  onTimeseriesConfigsChange: (configs: TimeseriesUserConfig[]) => void;
 }
 
 export default function MetricSettingTabs({
   metrics,
   onMetricsChange,
-  timeseriesMetrics,
-  onTimeseriesMetricsChange
+  timeseriesConfigs,
+  onTimeseriesConfigsChange
 }: MetricSettingTabsProps) {
   return (
     <Tabs defaultValue="metrics">
@@ -61,9 +61,9 @@ export default function MetricSettingTabs({
       </TabsContent>
 
       <TabsContent value="timeseries" className="border-none p-0">
-        <TimeseriesColorSelector
-          timeseriesMetrics={timeseriesMetrics}
-          onTimeseriesMetricsChange={onTimeseriesMetricsChange}
+        <Timeseries
+          timeseriesConfigs={timeseriesConfigs}
+          onTimeseriesConfigsChange={onTimeseriesConfigsChange}
         />
       </TabsContent>
     </Tabs>

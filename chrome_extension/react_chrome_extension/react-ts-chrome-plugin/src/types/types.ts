@@ -8,10 +8,15 @@ export interface Condition {
   color: string;
 }
 
-export interface Metric {
+export interface MetricInfo {
   name: string;
   aliases?: string[];
   displayName: string;
+}
+
+export interface TimeseriesUserConfig {
+  type: string;
+  metricConfigs: TimeseriesMetricConfig[];
 }
 
 export interface MetricConfig {
@@ -24,7 +29,7 @@ export interface MetricConfig {
 
 export type ChangeType = 'absolute' | 'percentage';
 
-export interface TimeseriesConfig extends MetricConfig {
+export interface TimeseriesMetricConfig extends MetricConfig {
   changeType: ChangeType;
 }
 

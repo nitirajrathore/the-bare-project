@@ -1,11 +1,11 @@
 import { RadioGroup, RadioGroupItem } from "@/src/react/components/ui/radio-group"
 import { Label } from "@/src/react/components/ui/label"
 import MetricCondition from './MetricCondition'
-import { TimeseriesMetricConfig, ChangeType } from '../../types/types'
+import { TimeseriesConfig, ChangeType } from '../../types/types'
 
 interface TimeseriesConditionProps {
-  metric: TimeseriesMetricConfig;
-  onUpdate: (metric: TimeseriesMetricConfig) => void;
+  metric: TimeseriesConfig;
+  onUpdate: (metric: TimeseriesConfig) => void;
 }
 
 export default function TimeseriesCondition({

@@ -24,7 +24,7 @@ export interface MetricConfig {
 
 export type ChangeType = 'absolute' | 'percentage';
 
-export interface TimeseriesMetricConfig extends MetricConfig {
+export interface TimeseriesConfig extends MetricConfig {
   changeType: ChangeType;
 }
 

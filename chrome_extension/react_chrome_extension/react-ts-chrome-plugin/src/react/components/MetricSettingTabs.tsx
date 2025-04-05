@@ -8,13 +8,13 @@ import {
 } from "@/src/react/components/ui/tabs"
 import MetricsColorSelector from './MetricsColorSelector'
 import TimeseriesColorSelector from './TimeseriesColorSelector'
-import { MetricConfig, TimeseriesMetricConfig } from '../../types/types'
+import { MetricConfig, TimeseriesConfig } from '../../types/types'
 
 interface MetricSettingTabsProps {
   metrics: MetricConfig[];
   onMetricsChange: (metrics: MetricConfig[]) => void;
-  timeseriesMetrics: TimeseriesMetricConfig[];
-  onTimeseriesMetricsChange: (metrics: TimeseriesMetricConfig[]) => void;
+  timeseriesMetrics: TimeseriesConfig[];
+  onTimeseriesMetricsChange: (metrics: TimeseriesConfig[]) => void;
 }
 
 export default function MetricSettingTabs({

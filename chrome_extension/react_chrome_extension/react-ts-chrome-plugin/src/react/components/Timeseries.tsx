@@ -1,9 +1,9 @@
-import { TimeseriesMetricConfig } from '../../types/types';
+import { TimeseriesConfig } from '../../types/types';
 import TimeseriesCondition from './TimeseriesCondition';
 
 interface TimeseriesMetricProps {
-  metric: TimeseriesMetricConfig;
-  onUpdate: (updatedMetric: TimeseriesMetricConfig) => void;
+  metric: TimeseriesConfig;
+  onUpdate: (updatedMetric: TimeseriesConfig) => void;
   onDelete: (metricId: string) => void;
 }
 

@@ -3,11 +3,11 @@ import { v4 as uuidv4 } from 'uuid';
 import SelectWithSearch from './SelectWithSearch';
 import TimeseriesMetric from './Timeseries';
 import metricsData from '../../resources/metrices.json';
-import { TimeseriesMetricConfig } from '../../types/types';
+import { TimeseriesConfig } from '../../types/types';
 
 interface TimeseriesColorSelectorProps {
-  timeseriesMetrics: TimeseriesMetricConfig[];
-  onTimeseriesMetricsChange: (metrics: TimeseriesMetricConfig[]) => void;
+  timeseriesMetrics: TimeseriesConfig[];
+  onTimeseriesMetricsChange: (metrics: TimeseriesConfig[]) => void;
 }
 
 const TimeseriesColorSelector: React.FC<TimeseriesColorSelectorProps> = ({
@@ -25,7 +25,7 @@ const TimeseriesColorSelector: React.FC<TimeseriesColorSelectorProps> = ({
     if (newMetricName.trim()) {
       const selectedMetric = metricsData.find(m => m.name === newMetricName);
       if (selectedMetric) {
-        const newMetric: TimeseriesMetricConfig = {
+        const newMetric: TimeseriesConfig = {
           id: uuidv4(),
           name: selectedMetric.name,
           aliases: selectedMetric.aliases,
@@ -41,7 +41,7 @@ const TimeseriesColorSelector: React.FC<TimeseriesColorSelectorProps> = ({
     }
   };
 
-  const handleUpdateMetric = (updatedMetric: TimeseriesMetricConfig) => {
+  const handleUpdateMetric = (updatedMetric: TimeseriesConfig) => {
     const updatedMetrics = timeseriesMetrics.map(metric =>
       metric.id === updatedMetric.id ? updatedMetric : metric
     );

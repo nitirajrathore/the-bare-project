@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import storage from '../../lib/storage';
 import PresetSelector from './PresetSelector';
 import QuickRatiosSettings from './QuickRatiosSettings';
-import { MetricConfig, TimeseriesMetricConfig } from '../../types/types';
+import { MetricConfig, TimeseriesConfig } from '../../types/types';
 import { METRICS_CONFIG, TIMESERIES_CONFIG } from '../../constants';
 import { Button } from './ui/button';
 import StyleSettings from './StyleSettings';
@@ -10,7 +10,7 @@ import MetricSettingTabs from './MetricSettingTabs';
 
 function App() {
   const [metrics, setMetrics] = useState<MetricConfig[]>([]);
-  const [timeseriesMetrics, setTimeseriesMetrics] = useState<TimeseriesMetricConfig[]>([]);
+  const [timeseriesMetrics, setTimeseriesMetrics] = useState<TimeseriesConfig[]>([]);
   const [isQuickRatiosPage, setIsQuickRatiosPage] = useState(false);
   const [showSaveSuccess, setShowSaveSuccess] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
@@ -89,7 +89,7 @@ function App() {
   };
 
   // Handle timeseries metrics changes
-  const handleTimeseriesMetricsChange = (updatedMetrics: TimeseriesMetricConfig[]) => {
+  const handleTimeseriesMetricsChange = (updatedMetrics: TimeseriesConfig[]) => {
     setTimeseriesMetrics(updatedMetrics);
   };
 

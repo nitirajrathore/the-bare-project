@@ -1,9 +1,15 @@
 # Whats Next??
-1. Add aliases to the static ratios. This is required because, "Market Capitalization" by default is shown as "Market Cap" in default list. But when selected from 'Edit Ratios', it shows up as 'Mar Cap'. Similarly by default 'Price to Earning' are shown as 'Stock P/E' but when explicitly selected it is shown as 'Price to Earning'
+1. [done] Add aliases to the static ratios. This is required because, "Market Capitalization" by default is shown as "Market Cap" in default list. But when selected from 'Edit Ratios', it shows up as 'Mar Cap'. Similarly by default 'Price to Earning' are shown as 'Stock P/E' but when explicitly selected it is shown as 'Price to Earning'
 
 2. Make the config for time series fields.
 
+    1. Confirm that timeseries metrices with `-` in their name works correctly. 
+
 3. There is no operator precedence between operators. So if >= 100 -> blue and == 121 -> green, it is difficult to say if the value of 121 will appear blue or green. Fix this. Low priority
+
+    1. Do not let one metric to be set multiple times in configs. 
+
+    
 
 ## install and configure
 

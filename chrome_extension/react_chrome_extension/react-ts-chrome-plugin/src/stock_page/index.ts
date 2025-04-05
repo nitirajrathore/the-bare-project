@@ -1,6 +1,6 @@
-import { METRICS_CONFIG, SETTINGS, SettingKeys, HighlightingPatterns, ColoringPatterns } from '../constants';
+import { METRICS_CONFIG, SETTINGS, SettingKeys, HighlightingPatterns, ColoringPatterns, TIMESERIES_CONFIG } from '../constants';
 import storage from '../lib/storage';
-import { MetricConfig, Condition } from '../types/types';
+import { MetricConfig, Condition, TimeseriesUserConfig } from '../types/types';
 import utils from '../utils/utils';
 
 const METRIC_SELECTORS = {
@@ -11,19 +11,26 @@ const METRIC_SELECTORS = {
 
 class ScreenerFormatter {
     private config: Record<string, MetricConfig>;
+    private timeseriesConfig: TimeseriesUserConfig[];
     private settings: Record<string, string>;
 
     constructor() {
         this.config = {} as Record<string, MetricConfig>;
+        this.timeseriesConfig = [];
         this.settings = {} as Record<string, string>;
         this.init();
-        // console.log('ScreenerFormatter initialized');
     }
 
     async init() {
-        // console.log("content.js: trying to load configs.")
-        this.config = await this.loadConfig();
-        this.settings = await this.loadSettings();
+        const [config, timeseriesConfig, settings] = await Promise.all([
+            this.loadConfig(),
+            this.loadTimeseriesConfig(),
+            this.loadSettings()
+        ]);
+
+        this.config = config;
+        this.timeseriesConfig = timeseriesConfig || [];
+        this.settings = settings;
         this.applyFormatting();
     }
 
@@ -35,6 +42,7 @@ class ScreenerFormatter {
 
         return settings;
     }
+
     async loadConfig(): Promise<Record<string, MetricConfig>> {
         const configs = await storage.get(METRICS_CONFIG);
         const configMap: Record<string, MetricConfig> = {};
@@ -55,13 +63,14 @@ class ScreenerFormatter {
 
         return configMap;
     }
-    // async loadConfig(): Promise<MetricConfig[] | null> {
-    //     return storage.get(METRICS_CONFIG);
-    // }
+
+    async loadTimeseriesConfig(): Promise<TimeseriesUserConfig[]> {
+        return storage.get(TIMESERIES_CONFIG) || [];
+    }
 
     applyFormatting() {
         this.formatStaticMetrics();
-        // this.formatTimeSeriesData();
+        this.formatTimeSeriesData();
     }
 
     formatStaticMetrics() {
@@ -116,85 +125,61 @@ class ScreenerFormatter {
             });
         }
     }
-    // DOES NOT WORK and too much to implement
-    // colorValueCell(rightEl: HTMLElement, color: string, coloringPattern: string) {
-    //     if (rightEl.parentElement == null) {
-    //         throw new Error("colorValueCell : Parent element is null");
-    //     }
-    //     const parentEl = rightEl.parentElement; // or however you get the parent
-
-    //     const parentRect = parentEl.getBoundingClientRect();
-    //     const rightRect = rightEl.getBoundingClientRect();
-
-    //     // Calculate the middle point of the parent element
-    //     const middleX = parentRect.left + parentRect.width / 2;
-
-    //     // Calculate how much space to cover from middle to right
-    //     const gradientStart = middleX - parentRect.left;
-    //     const gradientWidth = parentRect.width - gradientStart;
-
-    //     // Create a gradient overlay div
-    //     const gradientOverlay = document.createElement('div');
-    //     gradientOverlay.style.position = 'absolute';
-    //     gradientOverlay.style.top = "0";
-    //     gradientOverlay.style.left = `${gradientStart}px`;
-    //     gradientOverlay.style.width = `${gradientWidth}px`;
-    //     gradientOverlay.style.height = '100%';
-    //     if (coloringPattern === ColoringPatterns.Mono) {
-    //         gradientOverlay.style.backgroundColor = color;
-    //     } else if (coloringPattern === ColoringPatterns.Gradient) {
-    //         gradientOverlay.style.backgroundImage = `linear-gradient(to right, white, ${color})`;
-    //     }
-    //     gradientOverlay.style.pointerEvents = 'none';
-    //     gradientOverlay.style.zIndex = "0";
-
-    //     // Ensure the parent has relative positioning
-    //     parentEl.style.position = 'relative';
-
-    //     // Append the overlay
-    //     parentEl.appendChild(gradientOverlay);
-
-    //     // Optional: Bring all children above the overlay
-    //     Array.from(parentEl.children).forEach(child => {
-    //         child.style.position = 'relative';
-    //         child.style.zIndex = "1";
-    //     });
-    // }
 
     formatTimeSeriesData() {
-        ['#quarters', '#annual'].forEach(tableId => {
-            const table = document.querySelector(tableId);
+        // Process each timeseries configuration
+        this.timeseriesConfig.forEach(timeseriesConfig => {
+            const table = document.querySelector(timeseriesConfig.cssSelector);
             if (!table) return;
-
-            const headers = Array.from(table.querySelectorAll('thead th'))
-                .map(th => th.textContent?.trim() ?? '');
 
             const rows = table.querySelectorAll('tbody tr');
             rows.forEach(row => {
-                const cells = row.querySelectorAll('td');
-                const metric = cells[0]?.textContent?.trim() ?? '';
+                const cells = Array.from(row.querySelectorAll('td'));
+                if (cells.length < 2) return;
 
-                // if (this.config[metric] && this.config[metric].timeSeriesRules) {
-                //     this.applyTimeSeriesFormatting(cells, this.config[metric].timeSeriesRules);
-                // }
+                const metricName = cells[0]?.textContent?.trim() ?? '';
+                const metricConfig = timeseriesConfig.metricConfigs.find(
+                    config => config.name === metricName || config.aliases?.includes(metricName)
+                );
+
+                if (!metricConfig) return;
+
+                // Process each cell starting from the second one (skip metric name)
+                for (let i = 2; i < cells.length; i++) {
+                    const currentCell = cells[i];
+                    const previousCell = cells[i - 1];
+
+                    const currentValue = utils.parseNumber(currentCell.textContent || '');
+                    const previousValue = utils.parseNumber(previousCell.textContent || '');
+
+                    if (isNaN(currentValue) || isNaN(previousValue)) continue;
+
+                    // Calculate change based on changeType
+                    let change: number;
+                    if (metricConfig.changeType === 'percentage') {
+                        change = ((currentValue - previousValue) / Math.abs(previousValue)) * 100;
+                    } else { // absolute
+                        change = currentValue - previousValue;
+                    }
+
+                    // Get color based on conditions
+                    const color = this.getColorForValue(change, metricConfig.conditions);
+                    if (!color) continue;
+
+                    // Apply coloring based on settings
+                    const elem = currentCell as HTMLElement;
+                    switch (this.settings[SettingKeys.COLORING_PATTERN]) {
+                        case ColoringPatterns.Mono:
+                            elem.style.backgroundColor = color;
+                            break;
+                        case ColoringPatterns.Gradient:
+                            elem.style.backgroundImage = `linear-gradient(to right, white, ${color})`;
+                            break;
+                    }
+                }
             });
         });
     }
-
-    // applyTimeSeriesFormatting(cells, rules) {
-    //     for (let i = 1; i < cells.length; i++) {
-    //         const currentValue = parseFloat(cells[i].textContent.replace(/,/g, ''));
-    //         const previousValue = parseFloat(cells[i - 1].textContent.replace(/,/g, ''));
-
-    //         if (!isNaN(currentValue) && !isNaN(previousValue)) {
-    //             const percentChange = ((currentValue - previousValue) / previousValue) * 100;
-    //             const color = this.getColorForTimeSeries(percentChange, rules);
-    //             if (color) {
-    //                 cells[i].style.backgroundColor = color;
-    //             }
-    //         }
-    //     }
-    // }
 
     getColorForValue(value: number, conditions: Condition[]) {
         for (const condition of conditions) {

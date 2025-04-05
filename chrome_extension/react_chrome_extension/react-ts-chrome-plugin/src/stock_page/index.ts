@@ -137,7 +137,19 @@ class ScreenerFormatter {
                 const cells = Array.from(row.querySelectorAll('td'));
                 if (cells.length < 2) return;
 
-                const metricName = cells[0]?.textContent?.trim() ?? '';
+                /*
+                we can either use this and add `\u00A0` to the aliases OR we can replace the `\u00A0` with normal space and use normal spaces in the aliases. Right now I choose to replace the `\u00A0` with normal space. But if that does not work for any reason, do the following in aliases for metrices. Eg. for Sales.
+                ```
+                    "aliases": [
+                        "Sales -",
+                        "Sales +",
+                        "Sales\u00A0+",
+                        "Sales\u00A0-"
+                        ]
+                ```
+                */
+                // const metricName = cells[0]?.textContent?.trim() ?? '';
+                const metricName = cells[0]?.textContent?.trim().replace(/\u00A0/g, ' ') ?? '';
                 const metricConfig = timeseriesConfig.metricConfigs.find(
                     config => config.name === metricName || config.aliases?.includes(metricName)
                 );

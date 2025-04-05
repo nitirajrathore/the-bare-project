@@ -5,7 +5,13 @@
     "metrices": [
       {
         "name": "Sales",
-        "displayName": "Sales"
+        "displayName": "Sales",
+        "aliases": [
+          "Sales -",
+          "Sales +",
+          "Sales\u00A0+",
+          "Sales\u00A0-"
+        ]
       },
       {
         "name": "YOY Sales Growth %",
@@ -13,7 +19,15 @@
       },
       {
         "name": "Expenses",
-        "displayName": "Expenses"
+        "displayName": "Expenses",
+        "aliases": [
+          "Expenses -",
+          "Expenses +"
+        ]
+      },
+      {
+        "name": "Material Cost %",
+        "displayName": "Material Cost %"
       },
       {
         "name": "Employee Cost %",
@@ -29,7 +43,11 @@
       },
       {
         "name": "Other Income",
-        "displayName": "Other Income"
+        "displayName": "Other Income",
+        "aliases": [
+          "Other Income -",
+          "Other Income +"
+        ]
       },
       {
         "name": "Exceptional items",
@@ -99,7 +117,13 @@
     "metrices": [
       {
         "name": "Sales",
-        "displayName": "Sales"
+        "displayName": "Sales",
+        "aliases": [
+          "Sales -",
+          "Sales +",
+          "Sales\u00A0+",
+          "Sales\u00A0-"
+        ]
       },
       {
         "name": "Sales Growth %",
@@ -107,11 +131,27 @@
       },
       {
         "name": "Expenses",
-        "displayName": "Expenses"
+        "displayName": "Expenses",
+        "aliases": [
+          "Expenses -",
+          "Expenses +"
+        ]
       },
       {
-        "name": "Material Cost % +",
-        "displayName": "Material Cost % +"
+        "name": "Material Cost %",
+        "displayName": "Material Cost % +",
+        "aliases": [
+          "Material Cost % -",
+          "Material Cost % +"
+        ]
+      },
+      {
+        "name": "Raw material cost",
+        "displayName": "Raw material cost"
+      },
+      {
+        "name": "Change in inventory",
+        "displayName": "Change in inventory"
       },
       {
         "name": "Manufacturing Cost %",
@@ -135,7 +175,11 @@
       },
       {
         "name": "Other Income",
-        "displayName": "Other Income"
+        "displayName": "Other Income",
+        "aliases": [
+          "Other Income -",
+          "Other Income +"
+        ]
       },
       {
         "name": "Exceptional items",
@@ -163,7 +207,11 @@
       },
       {
         "name": "Net Profit",
-        "displayName": "Net Profit"
+        "displayName": "Net Profit",
+        "aliases": [
+          "Net Profit -",
+          "Net Profit +"
+        ]
       },
       {
         "name": "Profit after tax",

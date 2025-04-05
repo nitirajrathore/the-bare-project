@@ -1,6 +1,8 @@
 
 import { IHighlightingPattern, IColoringPattern } from "./types/types";
-export const METRICS_CONFIG = "formattingRules";
+export const METRICS_CONFIG = "metricConfigs";
+export const TIMESERIES_CONFIG = "timeseriesConfigs";
+
 export const MAX_QUICK_RATIOS = "maxQuickRatios";
 export const SETTINGS = "settings";
 

@@ -1,0 +1,2070 @@
+[
+  {
+    "name": "Sales",
+    "displayName": "Sales"
+  },
+  {
+    "name": "YOY Sales Growth %",
+    "displayName": "YOY Sales Growth %"
+  },
+  {
+    "name": "Expenses",
+    "displayName": "Expenses"
+  },
+  {
+    "name": "Employee Cost %",
+    "displayName": "Employee Cost %"
+  },
+  {
+    "name": "Operating Profit",
+    "displayName": "Operating Profit"
+  },
+  {
+    "name": "OPM %",
+    "displayName": "OPM %"
+  },
+  {
+    "name": "Other Income",
+    "displayName": "Other Income"
+  },
+  {
+    "name": "Exceptional items",
+    "displayName": "Exceptional items"
+  },
+  {
+    "name": "Other income normal",
+    "displayName": "Other income normal"
+  },
+  {
+    "name": "Interest",
+    "displayName": "Interest"
+  },
+  {
+    "name": "Depreciation",
+    "displayName": "Depreciation"
+  },
+  {
+    "name": "Profit before tax",
+    "displayName": "Profit before tax"
+  },
+  {
+    "name": "Tax %",
+    "displayName": "Tax %"
+  },
+  {
+    "name": "Net Profit",
+    "displayName": "Net Profit"
+  },
+  {
+    "name": "Profit after tax",
+    "displayName": "Profit after tax"
+  },
+  {
+    "name": "Reported Net Profit",
+    "displayName": "Reported Net Profit"
+  },
+  {
+    "name": "Minority share",
+    "displayName": "Minority share"
+  },
+  {
+    "name": "Profit for EPS",
+    "displayName": "Profit for EPS"
+  },
+  {
+    "name": "Exceptional items AT",
+    "displayName": "Exceptional items AT"
+  },
+  {
+    "name": "Profit for PE",
+    "displayName": "Profit for PE"
+  },
+  {
+    "name": "YOY Profit Growth %",
+    "displayName": "YOY Profit Growth %"
+  },
+  {
+    "name": "EPS in Rs",
+    "displayName": "EPS in Rs"
+  },
+  {
+    "name": "Sales growth",
+    "displayName": "Sales growth"
+  },
+  {
+    "name": "Profit growth",
+    "displayName": "Profit growth"
+  },
+  {
+    "name": "Current Price",
+    "aliases": [
+      "Current price"
+    ],
+    "displayName": "Current price"
+  },
+  {
+    "name": "Price to Sales",
+    "displayName": "Price to Sales"
+  },
+  {
+    "name": "CMP / FCF",
+    "displayName": "Price to Free Cash Flow",
+    "aliases": [
+      "Price to Free Cash Flow"
+    ]
+  },
+  {
+    "name": "EVEBITDA",
+    "displayName": "EVEBITDA"
+  },
+  {
+    "name": "Enterprise Value",
+    "displayName": "Enterprise Value"
+  },
+  {
+    "name": "Current ratio",
+    "displayName": "Current ratio"
+  },
+  {
+    "name": "Int Coverage",
+    "displayName": "Interest Coverage Ratio",
+    "aliases": [
+      "Interest Coverage Ratio"
+    ]
+  },
+  {
+    "name": "PEG Ratio",
+    "displayName": "PEG Ratio"
+  },
+  {
+    "name": "Return over 3months",
+    "displayName": "Return over 3months"
+  },
+  {
+    "name": "Return over 6months",
+    "displayName": "Return over 6months"
+  },
+  {
+    "name": "Is SME",
+    "displayName": "Is SME"
+  },
+  {
+    "name": "Is not SME",
+    "displayName": "Is not SME"
+  },
+  {
+    "name": "No. Eq. Shares",
+    "displayName": "Number of equity shares",
+    "aliases": [
+      "Number of equity shares"
+    ]
+  },
+  {
+    "name": "Equity capital",
+    "displayName": "Equity capital"
+  },
+  {
+    "name": "Preference capital",
+    "displayName": "Preference capital"
+  },
+  {
+    "name": "Reserves",
+    "displayName": "Reserves"
+  },
+  {
+    "name": "Secured loan",
+    "displayName": "Secured loan"
+  },
+  {
+    "name": "Unsecured loan",
+    "displayName": "Unsecured loan"
+  },
+  {
+    "name": "Balance sheet total",
+    "displayName": "Balance sheet total"
+  },
+  {
+    "name": "Gross block",
+    "displayName": "Gross block"
+  },
+  {
+    "name": "Revaluation reserve",
+    "displayName": "Revaluation reserve"
+  },
+  {
+    "name": "Accum Dep",
+    "displayName": "Accumulated depreciation",
+    "aliases": [
+      "Accumulated depreciation"
+    ]
+  },
+  {
+    "name": "Net block",
+    "displayName": "Net block"
+  },
+  {
+    "name": "CWIP",
+    "displayName": "Capital work in progress",
+    "aliases": [
+      "Capital work in progress"
+    ]
+  },
+  {
+    "name": "Investments",
+    "displayName": "Investments"
+  },
+  {
+    "name": "Current assets",
+    "displayName": "Current assets"
+  },
+  {
+    "name": "Current liabilities",
+    "displayName": "Current liabilities"
+  },
+  {
+    "name": "BV Unq Invest",
+    "displayName": "Book value of unquoted investments",
+    "aliases": [
+      "Book value of unquoted investments"
+    ]
+  },
+  {
+    "name": "MV Quoted Inv",
+    "displayName": "Market value of quoted investments",
+    "aliases": [
+      "Market value of quoted investments"
+    ]
+  },
+  {
+    "name": "Cont Liab",
+    "displayName": "Contingent liabilities",
+    "aliases": [
+      "Contingent liabilities"
+    ]
+  },
+  {
+    "name": "CF Operations",
+    "displayName": "Cash from operations last year",
+    "aliases": [
+      "Cash from operations last year"
+    ]
+  },
+  {
+    "name": "Free Cash Flow",
+    "displayName": "Free cash flow last year",
+    "aliases": [
+      "Free cash flow last year"
+    ]
+  },
+  {
+    "name": "CF Investing",
+    "displayName": "Cash from investing last year",
+    "aliases": [
+      "Cash from investing last year"
+    ]
+  },
+  {
+    "name": "CF Financing",
+    "displayName": "Cash from financing last year",
+    "aliases": [
+      "Cash from financing last year"
+    ]
+  },
+  {
+    "name": "Net CF",
+    "displayName": "Net cash flow last year",
+    "aliases": [
+      "Net cash flow last year"
+    ]
+  },
+  {
+    "name": "Cash Beginning",
+    "displayName": "Cash beginning of last year",
+    "aliases": [
+      "Cash beginning of last year"
+    ]
+  },
+  {
+    "name": "Cash End",
+    "displayName": "Cash end of last year",
+    "aliases": [
+      "Cash end of last year"
+    ]
+  },
+  {
+    "name": "Sales last year",
+    "displayName": "Sales last year"
+  },
+  {
+    "name": "OP Ann",
+    "displayName": "Operating profit last year",
+    "aliases": [
+      "Operating profit last year"
+    ]
+  },
+  {
+    "name": "Other Inc Ann",
+    "displayName": "Other income last year",
+    "aliases": [
+      "Other income last year"
+    ]
+  },
+  {
+    "name": "EBIDT last year",
+    "displayName": "EBIDT last year"
+  },
+  {
+    "name": "Dep Ann",
+    "displayName": "Depreciation last year",
+    "aliases": [
+      "Depreciation last year"
+    ]
+  },
+  {
+    "name": "EBIT last year",
+    "displayName": "EBIT last year"
+  },
+  {
+    "name": "Interest last year",
+    "displayName": "Interest last year"
+  },
+  {
+    "name": "PBT Ann",
+    "displayName": "Profit before tax last year",
+    "aliases": [
+      "Profit before tax last year"
+    ]
+  },
+  {
+    "name": "Tax last year",
+    "displayName": "Tax last year"
+  },
+  {
+    "name": "PAT Ann",
+    "displayName": "Profit after tax last year",
+    "aliases": [
+      "Profit after tax last year"
+    ]
+  },
+  {
+    "name": "Extra Ord Item Ann",
+    "displayName": "Extraordinary items last year",
+    "aliases": [
+      "Extraordinary items last year"
+    ]
+  },
+  {
+    "name": "NP Ann",
+    "displayName": "Net Profit last year",
+    "aliases": [
+      "Net Profit last year"
+    ]
+  },
+  {
+    "name": "Dividend last year",
+    "displayName": "Dividend last year"
+  },
+  {
+    "name": "Raw Material",
+    "displayName": "Material cost last year",
+    "aliases": [
+      "Material cost last year"
+    ]
+  },
+  {
+    "name": "Employee cost",
+    "displayName": "Employee cost last year",
+    "aliases": [
+      "Employee cost last year"
+    ]
+  },
+  {
+    "name": "OPM last year",
+    "displayName": "OPM last year"
+  },
+  {
+    "name": "NPM last year",
+    "displayName": "NPM last year"
+  },
+  {
+    "name": "OP Qtr",
+    "displayName": "Operating profit latest quarter",
+    "aliases": [
+      "Operating profit latest quarter"
+    ]
+  },
+  {
+    "name": "Other Inc Qtr",
+    "displayName": "Other income latest quarter",
+    "aliases": [
+      "Other income latest quarter"
+    ]
+  },
+  {
+    "name": "EBIDT Qtr",
+    "displayName": "EBIDT latest quarter",
+    "aliases": [
+      "EBIDT latest quarter"
+    ]
+  },
+  {
+    "name": "Dep Qtr",
+    "displayName": "Depreciation latest quarter",
+    "aliases": [
+      "Depreciation latest quarter"
+    ]
+  },
+  {
+    "name": "EBIT latest quarter",
+    "displayName": "EBIT latest quarter"
+  },
+  {
+    "name": "Interest Qtr",
+    "displayName": "Interest latest quarter",
+    "aliases": [
+      "Interest latest quarter"
+    ]
+  },
+  {
+    "name": "PBT Qtr",
+    "displayName": "Profit before tax latest quarter",
+    "aliases": [
+      "Profit before tax latest quarter"
+    ]
+  },
+  {
+    "name": "Tax latest quarter",
+    "displayName": "Tax latest quarter"
+  },
+  {
+    "name": "Extra Ord Item Qtr",
+    "displayName": "Extraordinary items latest quarter",
+    "aliases": [
+      "Extraordinary items latest quarter"
+    ]
+  },
+  {
+    "name": "NP Qtr",
+    "displayName": "Net Profit latest quarter",
+    "aliases": [
+      "Net Profit latest quarter"
+    ]
+  },
+  {
+    "name": "GPM latest quarter",
+    "displayName": "GPM latest quarter"
+  },
+  {
+    "name": "OPM latest quarter",
+    "displayName": "OPM latest quarter"
+  },
+  {
+    "name": "NPM latest quarter",
+    "displayName": "NPM latest quarter"
+  },
+  {
+    "name": "Eq Cap Qtr",
+    "displayName": "Equity Capital latest quarter",
+    "aliases": [
+      "Equity Capital latest quarter"
+    ]
+  },
+  {
+    "name": "EPS latest quarter",
+    "displayName": "EPS latest quarter"
+  },
+  {
+    "name": "Qtr P/E",
+    "displayName": "Price to Quarterly Earning",
+    "aliases": [
+      "Price to Quarterly Earning"
+    ]
+  },
+  {
+    "name": "Book value",
+    "aliases": [
+      "Book Value"
+    ],
+    "displayName": "Book value"
+  },
+  {
+    "name": "Inven TO",
+    "displayName": "Inventory turnover ratio",
+    "aliases": [
+      "Inventory turnover ratio"
+    ]
+  },
+  {
+    "name": "Quick ratio",
+    "displayName": "Quick ratio"
+  },
+  {
+    "name": "Exports percentage",
+    "displayName": "Exports percentage"
+  },
+  {
+    "name": "Total Assets",
+    "displayName": "Total Assets"
+  },
+  {
+    "name": "Piotroski score",
+    "displayName": "Piotroski score"
+  },
+  {
+    "name": "G Factor",
+    "displayName": "G Factor"
+  },
+  {
+    "name": "Operating profit",
+    "displayName": "Operating profit"
+  },
+  {
+    "name": "Interest",
+    "displayName": "Interest"
+  },
+  {
+    "name": "Depreciation",
+    "displayName": "Depreciation"
+  },
+  {
+    "name": "EPS last year",
+    "displayName": "EPS last year"
+  },
+  {
+    "name": "EBIT",
+    "displayName": "EBIT"
+  },
+  {
+    "name": "Net profit",
+    "displayName": "Net profit"
+  },
+  {
+    "name": "Asset Turnover",
+    "displayName": "Asset Turnover Ratio",
+    "aliases": [
+      "Asset Turnover Ratio"
+    ]
+  },
+  {
+    "name": "Financial leverage",
+    "displayName": "Financial leverage"
+  },
+  {
+    "name": "Current Tax",
+    "displayName": "Current Tax"
+  },
+  {
+    "name": "Tax",
+    "displayName": "Tax"
+  },
+  {
+    "name": "OP 2Qtr Bk",
+    "displayName": "Operating profit 2quarters back",
+    "aliases": [
+      "Operating profit 2quarters back"
+    ]
+  },
+  {
+    "name": "OP 3Qtr Bk",
+    "displayName": "Operating profit 3quarters back",
+    "aliases": [
+      "Operating profit 3quarters back"
+    ]
+  },
+  {
+    "name": "Sales 2Qtr Bk",
+    "displayName": "Sales 2quarters back",
+    "aliases": [
+      "Sales 2quarters back"
+    ]
+  },
+  {
+    "name": "Sales 3Qtr Bk",
+    "displayName": "Sales 3quarters back",
+    "aliases": [
+      "Sales 3quarters back"
+    ]
+  },
+  {
+    "name": "NP 2Qtr Bk",
+    "displayName": "Net profit 2quarters back",
+    "aliases": [
+      "Net profit 2quarters back"
+    ]
+  },
+  {
+    "name": "NP 3Qtr Bk",
+    "displayName": "Net profit 3quarters back",
+    "aliases": [
+      "Net profit 3quarters back"
+    ]
+  },
+  {
+    "name": "Working capital",
+    "displayName": "Working capital"
+  },
+  {
+    "name": "No. of Share Holders",
+    "displayName": "Number of Shareholders",
+    "aliases": [
+      "Number of Shareholders"
+    ]
+  },
+  {
+    "name": "Unpledged Prom Hold",
+    "displayName": "Unpledged promoter holding",
+    "aliases": [
+      "Unpledged promoter holding"
+    ]
+  },
+  {
+    "name": "ROIC",
+    "displayName": "Return on invested capital",
+    "aliases": [
+      "Return on invested capital"
+    ]
+  },
+  {
+    "name": "Lease liabilities",
+    "displayName": "Lease liabilities"
+  },
+  {
+    "name": "Inventory",
+    "displayName": "Inventory"
+  },
+  {
+    "name": "Trade receivables",
+    "displayName": "Trade receivables"
+  },
+  {
+    "name": "Debtor days",
+    "displayName": "Debtor days"
+  },
+  {
+    "name": "Industry PBV",
+    "displayName": "Industry PBV"
+  },
+  {
+    "name": "Opert Prft Gwth",
+    "displayName": "Operating profit growth",
+    "aliases": [
+      "Operating profit growth"
+    ]
+  },
+  {
+    "name": "Other income",
+    "displayName": "Other income"
+  },
+  {
+    "name": "Avg Vol 1Mth",
+    "displayName": "Volume 1month average",
+    "aliases": [
+      "Volume 1month average"
+    ]
+  },
+  {
+    "name": "Avg Vol 1Wk",
+    "displayName": "Volume 1week average",
+    "aliases": [
+      "Volume 1week average"
+    ]
+  },
+  {
+    "name": "Volume",
+    "displayName": "Volume"
+  },
+  {
+    "name": "High price",
+    "displayName": "High price"
+  },
+  {
+    "name": "Low price",
+    "displayName": "Low price"
+  },
+  {
+    "name": "High price all time",
+    "displayName": "High price all time"
+  },
+  {
+    "name": "Low price all time",
+    "displayName": "Low price all time"
+  },
+  {
+    "name": "Face value",
+    "displayName": "Face value"
+  },
+  {
+    "name": "Credit rating",
+    "displayName": "Credit rating"
+  },
+  {
+    "name": "WC to Sales",
+    "displayName": "Working Capital to Sales ratio",
+    "aliases": [
+      "Working Capital to Sales ratio"
+    ]
+  },
+  {
+    "name": "QoQ Profits",
+    "displayName": "QoQ Profits"
+  },
+  {
+    "name": "QoQ Sales",
+    "displayName": "QoQ Sales"
+  },
+  {
+    "name": "Net worth",
+    "displayName": "Net worth"
+  },
+  {
+    "name": "Market Cap to Sales",
+    "displayName": "Market Cap to Sales"
+  },
+  {
+    "name": "Interest Coverage",
+    "displayName": "Interest Coverage"
+  },
+  {
+    "name": "EV / EBIT",
+    "displayName": "Enterprise Value to EBIT",
+    "aliases": [
+      "Enterprise Value to EBIT"
+    ]
+  },
+  {
+    "name": "Debt Capacity",
+    "displayName": "Debt Capacity"
+  },
+  {
+    "name": "Debt To Profit",
+    "displayName": "Debt To Profit"
+  },
+  {
+    "name": "Capital Employed",
+    "displayName": "Total Capital Employed",
+    "aliases": [
+      "Total Capital Employed"
+    ]
+  },
+  {
+    "name": "CROIC",
+    "displayName": "CROIC"
+  },
+  {
+    "name": "debtplus",
+    "displayName": "debtplus"
+  },
+  {
+    "name": "Leverage",
+    "displayName": "Leverage"
+  },
+  {
+    "name": "Intrinsic Value",
+    "displayName": "Intrinsic Value"
+  },
+  {
+    "name": "CDL",
+    "displayName": "cash debt contingent liabilities by mcap",
+    "aliases": [
+      "cash debt contingent liabilities by mcap"
+    ]
+  },
+  {
+    "name": "Cash by market cap",
+    "displayName": "Cash by market cap"
+  },
+  {
+    "name": "52w Index",
+    "displayName": "52w Index"
+  },
+  {
+    "name": "Down from 52w high",
+    "displayName": "Down from 52w high"
+  },
+  {
+    "name": "Up from 52w low",
+    "displayName": "Up from 52w low"
+  },
+  {
+    "name": "From 52w high",
+    "displayName": "From 52w high"
+  },
+  {
+    "name": "Mkt Cap To Debt Cap",
+    "displayName": "Mkt Cap To Debt Cap"
+  },
+  {
+    "name": "Dividend Payout",
+    "displayName": "Dividend Payout Ratio",
+    "aliases": [
+      "Dividend Payout Ratio"
+    ]
+  },
+  {
+    "name": "Graham",
+    "displayName": "Graham"
+  },
+  {
+    "name": "Price to Cash Flow",
+    "displayName": "Price to Cash Flow"
+  },
+  {
+    "name": "ROCE3yr avg",
+    "displayName": "ROCE3yr avg"
+  },
+  {
+    "name": "WC Days",
+    "displayName": "Working Capital Days",
+    "aliases": [
+      "Working Capital Days"
+    ]
+  },
+  {
+    "name": "Cash Equivalents",
+    "displayName": "Cash Equivalents"
+  },
+  {
+    "name": "Earning Power",
+    "displayName": "Earning Power"
+  },
+  {
+    "name": "PB X PE",
+    "displayName": "PB X PE"
+  },
+  {
+    "name": "Graham Number",
+    "displayName": "Graham Number"
+  },
+  {
+    "name": "NCAVPS",
+    "displayName": "NCAVPS"
+  },
+  {
+    "name": "Mar Cap to CF",
+    "displayName": "Market Capt to Cash Flow",
+    "aliases": [
+      "Market Capt to Cash Flow"
+    ]
+  },
+  {
+    "name": "Altman Z Score",
+    "displayName": "Altman Z Score"
+  },
+  {
+    "name": "Cash Cycle",
+    "displayName": "Cash Conversion Cycle",
+    "aliases": [
+      "Cash Conversion Cycle"
+    ]
+  },
+  {
+    "name": "Adv Cust",
+    "displayName": "Advance from Customers",
+    "aliases": [
+      "Advance from Customers"
+    ]
+  },
+  {
+    "name": "Trade Payables",
+    "displayName": "Trade Payables"
+  },
+  {
+    "name": "Days Payable",
+    "displayName": "Days Payable Outstanding",
+    "aliases": [
+      "Days Payable Outstanding"
+    ]
+  },
+  {
+    "name": "Days Receivable",
+    "displayName": "Days Receivable Outstanding",
+    "aliases": [
+      "Days Receivable Outstanding"
+    ]
+  },
+  {
+    "name": "Inventory Days",
+    "displayName": "Days Inventory Outstanding",
+    "aliases": [
+      "Days Inventory Outstanding"
+    ]
+  },
+  {
+    "name": "M.Cap / Qtr Profit",
+    "displayName": "Market cap to quarterly profit",
+    "aliases": [
+      "Market cap to quarterly profit"
+    ]
+  },
+  {
+    "name": "Return over 1day",
+    "displayName": "Return over 1day"
+  },
+  {
+    "name": "Return over 1week",
+    "displayName": "Return over 1week"
+  },
+  {
+    "name": "Return over 1month",
+    "displayName": "Return over 1month"
+  },
+  {
+    "name": "Last result date",
+    "displayName": "Last result date"
+  },
+  {
+    "name": "Ann Date",
+    "displayName": "Last annual result date",
+    "aliases": [
+      "Last annual result date"
+    ]
+  },
+  {
+    "name": "Exp Qtr Sales Var",
+    "displayName": "Expected quarterly sales growth",
+    "aliases": [
+      "Expected quarterly sales growth"
+    ]
+  },
+  {
+    "name": "Exp Qtr Sales",
+    "displayName": "Expected quarterly sales",
+    "aliases": [
+      "Expected quarterly sales"
+    ]
+  },
+  {
+    "name": "Exp Qtr OP",
+    "displayName": "Expected quarterly operating profit",
+    "aliases": [
+      "Expected quarterly operating profit"
+    ]
+  },
+  {
+    "name": "Exp Qtr NP",
+    "displayName": "Expected quarterly net profit",
+    "aliases": [
+      "Expected quarterly net profit"
+    ]
+  },
+  {
+    "name": "Exp Qtr EPS",
+    "displayName": "Expected quarterly EPS",
+    "aliases": [
+      "Expected quarterly EPS"
+    ]
+  },
+  {
+    "name": "DMA 50",
+    "displayName": "DMA 50"
+  },
+  {
+    "name": "DMA 200",
+    "displayName": "DMA 200"
+  },
+  {
+    "name": "DMA 50 previous day",
+    "displayName": "DMA 50 previous day"
+  },
+  {
+    "name": "200 DMA prev.",
+    "displayName": "DMA 200 previous day",
+    "aliases": [
+      "DMA 200 previous day"
+    ]
+  },
+  {
+    "name": "RSI",
+    "displayName": "RSI"
+  },
+  {
+    "name": "MACD",
+    "displayName": "MACD"
+  },
+  {
+    "name": "MACD Previous Day",
+    "displayName": "MACD Previous Day"
+  },
+  {
+    "name": "MACD Signal",
+    "displayName": "MACD Signal"
+  },
+  {
+    "name": "MACD Signal Prev",
+    "displayName": "MACD Signal Previous Day",
+    "aliases": [
+      "MACD Signal Previous Day"
+    ]
+  },
+  {
+    "name": "Public holding",
+    "displayName": "Public holding"
+  },
+  {
+    "name": "FII holding",
+    "displayName": "FII holding"
+  },
+  {
+    "name": "Chg in FII Hold",
+    "displayName": "Change in FII holding",
+    "aliases": [
+      "Change in FII holding"
+    ]
+  },
+  {
+    "name": "DII holding",
+    "displayName": "DII holding"
+  },
+  {
+    "name": "Chg in DII Hold",
+    "displayName": "Change in DII holding",
+    "aliases": [
+      "Change in DII holding"
+    ]
+  },
+  {
+    "name": "No. Eq. Shares PY",
+    "displayName": "Number of equity shares preceding year",
+    "aliases": [
+      "Number of equity shares preceding year"
+    ]
+  },
+  {
+    "name": "FCF Prev Ann",
+    "displayName": "Free cash flow preceding year",
+    "aliases": [
+      "Free cash flow preceding year"
+    ]
+  },
+  {
+    "name": "CF Operations PY",
+    "displayName": "Cash from operations preceding year",
+    "aliases": [
+      "Cash from operations preceding year"
+    ]
+  },
+  {
+    "name": "CF Investing PY",
+    "displayName": "Cash from investing preceding year",
+    "aliases": [
+      "Cash from investing preceding year"
+    ]
+  },
+  {
+    "name": "CF Financing PY",
+    "displayName": "Cash from financing preceding year",
+    "aliases": [
+      "Cash from financing preceding year"
+    ]
+  },
+  {
+    "name": "Net CF PY",
+    "displayName": "Net cash flow preceding year",
+    "aliases": [
+      "Net cash flow preceding year"
+    ]
+  },
+  {
+    "name": "Cash Beginning PY",
+    "displayName": "Cash beginning of preceding year",
+    "aliases": [
+      "Cash beginning of preceding year"
+    ]
+  },
+  {
+    "name": "Cash End PY",
+    "displayName": "Cash end of preceding year",
+    "aliases": [
+      "Cash end of preceding year"
+    ]
+  },
+  {
+    "name": "Sales Prev Ann",
+    "displayName": "Sales preceding year",
+    "aliases": [
+      "Sales preceding year"
+    ]
+  },
+  {
+    "name": "OP Prev Ann",
+    "displayName": "Operating profit preceding year",
+    "aliases": [
+      "Operating profit preceding year"
+    ]
+  },
+  {
+    "name": "Other Inc Prev Ann",
+    "displayName": "Other income preceding year",
+    "aliases": [
+      "Other income preceding year"
+    ]
+  },
+  {
+    "name": "EBIDT Prev Ann",
+    "displayName": "EBIDT preceding year",
+    "aliases": [
+      "EBIDT preceding year"
+    ]
+  },
+  {
+    "name": "Dep Prev Ann",
+    "displayName": "Depreciation preceding year",
+    "aliases": [
+      "Depreciation preceding year"
+    ]
+  },
+  {
+    "name": "EBIT preceding year",
+    "displayName": "EBIT preceding year"
+  },
+  {
+    "name": "Interest Prev Ann",
+    "displayName": "Interest preceding year",
+    "aliases": [
+      "Interest preceding year"
+    ]
+  },
+  {
+    "name": "PBT Prev Ann",
+    "displayName": "Profit before tax preceding year",
+    "aliases": [
+      "Profit before tax preceding year"
+    ]
+  },
+  {
+    "name": "Tax preceding year",
+    "displayName": "Tax preceding year"
+  },
+  {
+    "name": "PAT Prev Ann",
+    "displayName": "Profit after tax preceding year",
+    "aliases": [
+      "Profit after tax preceding year"
+    ]
+  },
+  {
+    "name": "Extra Ord Prev Ann",
+    "displayName": "Extraordinary items preceding year",
+    "aliases": [
+      "Extraordinary items preceding year"
+    ]
+  },
+  {
+    "name": "NP Prev Ann",
+    "displayName": "Net Profit preceding year",
+    "aliases": [
+      "Net Profit preceding year"
+    ]
+  },
+  {
+    "name": "Dividend Prev Ann",
+    "displayName": "Dividend preceding year",
+    "aliases": [
+      "Dividend preceding year"
+    ]
+  },
+  {
+    "name": "OPM preceding year",
+    "displayName": "OPM preceding year"
+  },
+  {
+    "name": "NPM preceding year",
+    "displayName": "NPM preceding year"
+  },
+  {
+    "name": "Sales Prev Qtr",
+    "displayName": "Sales preceding quarter",
+    "aliases": [
+      "Sales preceding quarter"
+    ]
+  },
+  {
+    "name": "OP Prev Qtr",
+    "displayName": "Operating profit preceding quarter",
+    "aliases": [
+      "Operating profit preceding quarter"
+    ]
+  },
+  {
+    "name": "Other Inc Prev Qtr",
+    "displayName": "Other income preceding quarter",
+    "aliases": [
+      "Other income preceding quarter"
+    ]
+  },
+  {
+    "name": "EBIDT Prev Qtr",
+    "displayName": "EBIDT preceding quarter",
+    "aliases": [
+      "EBIDT preceding quarter"
+    ]
+  },
+  {
+    "name": "Dep Prev Qtr",
+    "displayName": "Depreciation preceding quarter",
+    "aliases": [
+      "Depreciation preceding quarter"
+    ]
+  },
+  {
+    "name": "EBIT Prev Qtr",
+    "displayName": "EBIT preceding quarter",
+    "aliases": [
+      "EBIT preceding quarter"
+    ]
+  },
+  {
+    "name": "Interest Prev Qtr",
+    "displayName": "Interest preceding quarter",
+    "aliases": [
+      "Interest preceding quarter"
+    ]
+  },
+  {
+    "name": "PBT Prev Qtr",
+    "displayName": "Profit before tax preceding quarter",
+    "aliases": [
+      "Profit before tax preceding quarter"
+    ]
+  },
+  {
+    "name": "Tax Prev Qtr",
+    "displayName": "Tax preceding quarter",
+    "aliases": [
+      "Tax preceding quarter"
+    ]
+  },
+  {
+    "name": "PAT Prev Qtr",
+    "displayName": "Profit after tax preceding quarter",
+    "aliases": [
+      "Profit after tax preceding quarter"
+    ]
+  },
+  {
+    "name": "Extra Ord Prev Qtr",
+    "displayName": "Extraordinary items preceding quarter",
+    "aliases": [
+      "Extraordinary items preceding quarter"
+    ]
+  },
+  {
+    "name": "NP Prev Qtr",
+    "displayName": "Net Profit preceding quarter",
+    "aliases": [
+      "Net Profit preceding quarter"
+    ]
+  },
+  {
+    "name": "OPM Prev Qtr",
+    "displayName": "OPM preceding quarter",
+    "aliases": [
+      "OPM preceding quarter"
+    ]
+  },
+  {
+    "name": "NPM Prev Qtr",
+    "displayName": "NPM preceding quarter",
+    "aliases": [
+      "NPM preceding quarter"
+    ]
+  },
+  {
+    "name": "Eq Cap Prev Qtr",
+    "displayName": "Equity Capital preceding quarter",
+    "aliases": [
+      "Equity Capital preceding quarter"
+    ]
+  },
+  {
+    "name": "EPS Prev Qtr",
+    "displayName": "EPS preceding quarter",
+    "aliases": [
+      "EPS preceding quarter"
+    ]
+  },
+  {
+    "name": "B.V. Prev Ann",
+    "displayName": "Book value preceding year",
+    "aliases": [
+      "Book value preceding year"
+    ]
+  },
+  {
+    "name": "ROCE Prev Yr",
+    "displayName": "Return on capital employed preceding year",
+    "aliases": [
+      "Return on capital employed preceding year"
+    ]
+  },
+  {
+    "name": "ROA Prev Yr",
+    "displayName": "Return on assets preceding year",
+    "aliases": [
+      "Return on assets preceding year"
+    ]
+  },
+  {
+    "name": "EPS preceding year",
+    "displayName": "EPS preceding year"
+  },
+  {
+    "name": "ROE Prev Ann",
+    "displayName": "Return on equity preceding year",
+    "aliases": [
+      "Return on equity preceding year"
+    ]
+  },
+  {
+    "name": "Debt preceding year",
+    "displayName": "Debt preceding year"
+  },
+  {
+    "name": "Sales Prev 12M",
+    "displayName": "Sales preceding 12months",
+    "aliases": [
+      "Sales preceding 12months"
+    ]
+  },
+  {
+    "name": "Profit Prev 12M",
+    "displayName": "Net profit preceding 12months",
+    "aliases": [
+      "Net profit preceding 12months"
+    ]
+  },
+  {
+    "name": "Work Cap PY",
+    "displayName": "Working capital preceding year",
+    "aliases": [
+      "Working capital preceding year"
+    ]
+  },
+  {
+    "name": "No. of Share Holders Prev Qtr",
+    "displayName": "Number of Shareholders preceding quarter",
+    "aliases": [
+      "Number of Shareholders preceding quarter"
+    ]
+  },
+  {
+    "name": "Net Block PY",
+    "displayName": "Net block preceding year",
+    "aliases": [
+      "Net block preceding year"
+    ]
+  },
+  {
+    "name": "Gross Block PY",
+    "displayName": "Gross block preceding year",
+    "aliases": [
+      "Gross block preceding year"
+    ]
+  },
+  {
+    "name": "CWIP PY",
+    "displayName": "Capital work in progress preceding year",
+    "aliases": [
+      "Capital work in progress preceding year"
+    ]
+  },
+  {
+    "name": "Sales growth 3Years",
+    "displayName": "Sales growth 3Years"
+  },
+  {
+    "name": "Sales growth 5Years",
+    "displayName": "Sales growth 5Years"
+  },
+  {
+    "name": "Profit Var 3Yrs",
+    "displayName": "Profit growth 3Years",
+    "aliases": [
+      "Profit growth 3Years"
+    ]
+  },
+  {
+    "name": "Profit Var 5Yrs",
+    "displayName": "Profit growth 5Years",
+    "aliases": [
+      "Profit growth 5Years"
+    ]
+  },
+  {
+    "name": "ROE 5Yr",
+    "displayName": "Average return on equity 5Years",
+    "aliases": [
+      "Average return on equity 5Years"
+    ]
+  },
+  {
+    "name": "ROE 3Yr",
+    "displayName": "Average return on equity 3Years",
+    "aliases": [
+      "Average return on equity 3Years"
+    ]
+  },
+  {
+    "name": "Return over 1year",
+    "displayName": "Return over 1year"
+  },
+  {
+    "name": "Return over 3years",
+    "displayName": "Return over 3years"
+  },
+  {
+    "name": "Return over 5years",
+    "displayName": "Return over 5years"
+  },
+  {
+    "name": "No. Eq. Shares 10 Yrs",
+    "displayName": "Number of equity shares 10years back",
+    "aliases": [
+      "Number of equity shares 10years back"
+    ]
+  },
+  {
+    "name": "Free Cash Flow 3Yrs",
+    "displayName": "Free cash flow 3years",
+    "aliases": [
+      "Free cash flow 3years"
+    ]
+  },
+  {
+    "name": "Free Cash Flow 5Yrs",
+    "displayName": "Free cash flow 5years",
+    "aliases": [
+      "Free cash flow 5years"
+    ]
+  },
+  {
+    "name": "Free Cash Flow 7Yrs",
+    "displayName": "Free cash flow 7years",
+    "aliases": [
+      "Free cash flow 7years"
+    ]
+  },
+  {
+    "name": "Free Cash Flow 10Yrs",
+    "displayName": "Free cash flow 10years",
+    "aliases": [
+      "Free cash flow 10years"
+    ]
+  },
+  {
+    "name": "Sales PY Qtr",
+    "displayName": "Sales preceding year quarter",
+    "aliases": [
+      "Sales preceding year quarter"
+    ]
+  },
+  {
+    "name": "OP PY Qtr",
+    "displayName": "Operating profit preceding year quarter",
+    "aliases": [
+      "Operating profit preceding year quarter"
+    ]
+  },
+  {
+    "name": "Other Inc PY Qtr",
+    "displayName": "Other income preceding year quarter",
+    "aliases": [
+      "Other income preceding year quarter"
+    ]
+  },
+  {
+    "name": "EBIDT PY Qtr",
+    "displayName": "EBIDT preceding year quarter",
+    "aliases": [
+      "EBIDT preceding year quarter"
+    ]
+  },
+  {
+    "name": "Dep PY Qtr",
+    "displayName": "Depreciation preceding year quarter",
+    "aliases": [
+      "Depreciation preceding year quarter"
+    ]
+  },
+  {
+    "name": "EBIT PY Qtr",
+    "displayName": "EBIT preceding year quarter",
+    "aliases": [
+      "EBIT preceding year quarter"
+    ]
+  },
+  {
+    "name": "Interest PY Qtr",
+    "displayName": "Interest preceding year quarter",
+    "aliases": [
+      "Interest preceding year quarter"
+    ]
+  },
+  {
+    "name": "PBT PY Qtr",
+    "displayName": "Profit before tax preceding year quarter",
+    "aliases": [
+      "Profit before tax preceding year quarter"
+    ]
+  },
+  {
+    "name": "Tax PY Qtr",
+    "displayName": "Tax preceding year quarter",
+    "aliases": [
+      "Tax preceding year quarter"
+    ]
+  },
+  {
+    "name": "PAT PY Qtr",
+    "displayName": "Profit after tax preceding year quarter",
+    "aliases": [
+      "Profit after tax preceding year quarter"
+    ]
+  },
+  {
+    "name": "Extra Ord Item PY Qt",
+    "displayName": "Extraordinary items preceding year quarter",
+    "aliases": [
+      "Extraordinary items preceding year quarter"
+    ]
+  },
+  {
+    "name": "NP PY Qtr",
+    "displayName": "Net Profit preceding year quarter",
+    "aliases": [
+      "Net Profit preceding year quarter"
+    ]
+  },
+  {
+    "name": "OPM PY Qtr",
+    "displayName": "OPM preceding year quarter",
+    "aliases": [
+      "OPM preceding year quarter"
+    ]
+  },
+  {
+    "name": "NPM PY Qtr",
+    "displayName": "NPM preceding year quarter",
+    "aliases": [
+      "NPM preceding year quarter"
+    ]
+  },
+  {
+    "name": "Eq Cap PY Qtr",
+    "displayName": "Equity Capital preceding year quarter",
+    "aliases": [
+      "Equity Capital preceding year quarter"
+    ]
+  },
+  {
+    "name": "EPS PY Qtr",
+    "displayName": "EPS preceding year quarter",
+    "aliases": [
+      "EPS preceding year quarter"
+    ]
+  },
+  {
+    "name": "BV 3yrs back",
+    "displayName": "Book value 3years back",
+    "aliases": [
+      "Book value 3years back"
+    ]
+  },
+  {
+    "name": "BV 5yrs back",
+    "displayName": "Book value 5years back",
+    "aliases": [
+      "Book value 5years back"
+    ]
+  },
+  {
+    "name": "BV 10yrs back",
+    "displayName": "Book value 10years back",
+    "aliases": [
+      "Book value 10years back"
+    ]
+  },
+  {
+    "name": "Inven TO 3Yr",
+    "displayName": "Inventory turnover ratio 3Years back",
+    "aliases": [
+      "Inventory turnover ratio 3Years back"
+    ]
+  },
+  {
+    "name": "Inven TO 5Yr",
+    "displayName": "Inventory turnover ratio 5Years back",
+    "aliases": [
+      "Inventory turnover ratio 5Years back"
+    ]
+  },
+  {
+    "name": "Inven TO 7Yr",
+    "displayName": "Inventory turnover ratio 7Years back",
+    "aliases": [
+      "Inventory turnover ratio 7Years back"
+    ]
+  },
+  {
+    "name": "Inven TO 10Yr",
+    "displayName": "Inventory turnover ratio 10Years back",
+    "aliases": [
+      "Inventory turnover ratio 10Years back"
+    ]
+  },
+  {
+    "name": "Med Sales Gwth 10Yrs",
+    "displayName": "Sales growth 10years median",
+    "aliases": [
+      "Sales growth 10years median"
+    ]
+  },
+  {
+    "name": "Med Sales Gwth 5Yrs",
+    "displayName": "Sales growth 5years median",
+    "aliases": [
+      "Sales growth 5years median"
+    ]
+  },
+  {
+    "name": "Sales growth 7Years",
+    "displayName": "Sales growth 7Years"
+  },
+  {
+    "name": "Sales Var 10Yrs",
+    "displayName": "Sales growth 10Years",
+    "aliases": [
+      "Sales growth 10Years"
+    ]
+  },
+  {
+    "name": "EBIDT growth 3Years",
+    "displayName": "EBIDT growth 3Years"
+  },
+  {
+    "name": "EBIDT growth 5Years",
+    "displayName": "EBIDT growth 5Years"
+  },
+  {
+    "name": "EBIDT growth 7Years",
+    "displayName": "EBIDT growth 7Years"
+  },
+  {
+    "name": "EBIDT Var 10Yrs",
+    "displayName": "EBIDT growth 10Years",
+    "aliases": [
+      "EBIDT growth 10Years"
+    ]
+  },
+  {
+    "name": "EPS growth 3Years",
+    "displayName": "EPS growth 3Years"
+  },
+  {
+    "name": "EPS growth 5Years",
+    "displayName": "EPS growth 5Years"
+  },
+  {
+    "name": "EPS growth 7Years",
+    "displayName": "EPS growth 7Years"
+  },
+  {
+    "name": "EPS growth 10Years",
+    "displayName": "EPS growth 10Years"
+  },
+  {
+    "name": "Profit Var 7Yrs",
+    "displayName": "Profit growth 7Years",
+    "aliases": [
+      "Profit growth 7Years"
+    ]
+  },
+  {
+    "name": "Profit Var 10Yrs",
+    "displayName": "Profit growth 10Years",
+    "aliases": [
+      "Profit growth 10Years"
+    ]
+  },
+  {
+    "name": "Export 3Yr",
+    "displayName": "Exports percentage 3Years back",
+    "aliases": [
+      "Exports percentage 3Years back"
+    ]
+  },
+  {
+    "name": "Export 5Yr",
+    "displayName": "Exports percentage 5Years back",
+    "aliases": [
+      "Exports percentage 5Years back"
+    ]
+  },
+  {
+    "name": "Div 5Yrs",
+    "displayName": "Average 5years dividend",
+    "aliases": [
+      "Average 5years dividend"
+    ]
+  },
+  {
+    "name": "ROCE 3Yr",
+    "displayName": "Average return on capital employed 3Years",
+    "aliases": [
+      "Average return on capital employed 3Years"
+    ]
+  },
+  {
+    "name": "ROCE 5Yr",
+    "displayName": "Average return on capital employed 5Years",
+    "aliases": [
+      "Average return on capital employed 5Years"
+    ]
+  },
+  {
+    "name": "ROCE 7Yr",
+    "displayName": "Average return on capital employed 7Years",
+    "aliases": [
+      "Average return on capital employed 7Years"
+    ]
+  },
+  {
+    "name": "ROCE 10Yr",
+    "displayName": "Average return on capital employed 10Years",
+    "aliases": [
+      "Average return on capital employed 10Years"
+    ]
+  },
+  {
+    "name": "ROE 10Yr",
+    "displayName": "Average return on equity 10Years",
+    "aliases": [
+      "Average return on equity 10Years"
+    ]
+  },
+  {
+    "name": "ROE 7Yr",
+    "displayName": "Average return on equity 7Years",
+    "aliases": [
+      "Average return on equity 7Years"
+    ]
+  },
+  {
+    "name": "ROE 5Yr Var",
+    "displayName": "Return on equity 5years growth",
+    "aliases": [
+      "Return on equity 5years growth"
+    ]
+  },
+  {
+    "name": "CF Opr 3Yrs",
+    "displayName": "Operating cash flow 3years",
+    "aliases": [
+      "Operating cash flow 3years"
+    ]
+  },
+  {
+    "name": "CF Opr 5Yrs",
+    "displayName": "Operating cash flow 5years",
+    "aliases": [
+      "Operating cash flow 5years"
+    ]
+  },
+  {
+    "name": "CF Opr 7Yrs",
+    "displayName": "Operating cash flow 7years",
+    "aliases": [
+      "Operating cash flow 7years"
+    ]
+  },
+  {
+    "name": "CF Opr 10Yrs",
+    "displayName": "Operating cash flow 10years",
+    "aliases": [
+      "Operating cash flow 10years"
+    ]
+  },
+  {
+    "name": "CF Inv 10Yrs",
+    "displayName": "Investing cash flow 10years",
+    "aliases": [
+      "Investing cash flow 10years"
+    ]
+  },
+  {
+    "name": "CF Inv 7Yrs",
+    "displayName": "Investing cash flow 7years",
+    "aliases": [
+      "Investing cash flow 7years"
+    ]
+  },
+  {
+    "name": "CF Inv 5Yrs",
+    "displayName": "Investing cash flow 5years",
+    "aliases": [
+      "Investing cash flow 5years"
+    ]
+  },
+  {
+    "name": "CF Inv 3Yrs",
+    "displayName": "Investing cash flow 3years",
+    "aliases": [
+      "Investing cash flow 3years"
+    ]
+  },
+  {
+    "name": "OPM 5Year",
+    "displayName": "OPM 5Year"
+  },
+  {
+    "name": "OPM 10Year",
+    "displayName": "OPM 10Year"
+  },
+  {
+    "name": "Work Cap 3Yr",
+    "displayName": "Working capital 3Years back",
+    "aliases": [
+      "Working capital 3Years back"
+    ]
+  },
+  {
+    "name": "Work Cap 5Yr",
+    "displayName": "Working capital 5Years back",
+    "aliases": [
+      "Working capital 5Years back"
+    ]
+  },
+  {
+    "name": "Work Cap 7Yr",
+    "displayName": "Working capital 7Years back",
+    "aliases": [
+      "Working capital 7Years back"
+    ]
+  },
+  {
+    "name": "Work Cap 10Yr",
+    "displayName": "Working capital 10Years back",
+    "aliases": [
+      "Working capital 10Years back"
+    ]
+  },
+  {
+    "name": "Debt 3Years back",
+    "displayName": "Debt 3Years back"
+  },
+  {
+    "name": "Debt 5Years back",
+    "displayName": "Debt 5Years back"
+  },
+  {
+    "name": "Debt 7Years back",
+    "displayName": "Debt 7Years back"
+  },
+  {
+    "name": "Debt 10Years back",
+    "displayName": "Debt 10Years back"
+  },
+  {
+    "name": "No. of Share Holders 1Yr",
+    "displayName": "Number of Shareholders 1year back",
+    "aliases": [
+      "Number of Shareholders 1year back"
+    ]
+  },
+  {
+    "name": "Chg in Prom Hold 3Yr",
+    "displayName": "Change in promoter holding 3Years",
+    "aliases": [
+      "Change in promoter holding 3Years"
+    ]
+  },
+  {
+    "name": "Avg Div Payout 3Yrs",
+    "displayName": "Average dividend payout 3years",
+    "aliases": [
+      "Average dividend payout 3years"
+    ]
+  },
+  {
+    "name": "Net Block 3Yrs Back",
+    "displayName": "Net block 3Years back",
+    "aliases": [
+      "Net block 3Years back"
+    ]
+  },
+  {
+    "name": "Net Block 5Yrs Back",
+    "displayName": "Net block 5Years back",
+    "aliases": [
+      "Net block 5Years back"
+    ]
+  },
+  {
+    "name": "Net Block 7Yrs Back",
+    "displayName": "Net block 7Years back",
+    "aliases": [
+      "Net block 7Years back"
+    ]
+  },
+  {
+    "name": "Cash 3Years back",
+    "displayName": "Cash 3Years back"
+  },
+  {
+    "name": "Cash 5Years back",
+    "displayName": "Cash 5Years back"
+  },
+  {
+    "name": "Cash 7Years back",
+    "displayName": "Cash 7Years back"
+  },
+  {
+    "name": "Debtor days 3yrs",
+    "displayName": "Average debtor days 3years",
+    "aliases": [
+      "Average debtor days 3years"
+    ]
+  },
+  {
+    "name": "Debtor days 3yrs back",
+    "displayName": "Debtor days 3years back",
+    "aliases": [
+      "Debtor days 3years back"
+    ]
+  },
+  {
+    "name": "Debtor days 5yrs back",
+    "displayName": "Debtor days 5years back",
+    "aliases": [
+      "Debtor days 5years back"
+    ]
+  },
+  {
+    "name": "ROA 5Yr",
+    "displayName": "Return on assets 5years",
+    "aliases": [
+      "Return on assets 5years"
+    ]
+  },
+  {
+    "name": "ROA 3Yr",
+    "displayName": "Return on assets 3years",
+    "aliases": [
+      "Return on assets 3years"
+    ]
+  },
+  {
+    "name": "3Yrs PE",
+    "displayName": "Historical PE 3Years",
+    "aliases": [
+      "Historical PE 3Years"
+    ]
+  },
+  {
+    "name": "10Yrs PE",
+    "displayName": "Historical PE 10Years",
+    "aliases": [
+      "Historical PE 10Years"
+    ]
+  },
+  {
+    "name": "7Yrs PE",
+    "displayName": "Historical PE 7Years",
+    "aliases": [
+      "Historical PE 7Years"
+    ]
+  },
+  {
+    "name": "5Yrs PE",
+    "displayName": "Historical PE 5Years",
+    "aliases": [
+      "Historical PE 5Years"
+    ]
+  },
+  {
+    "name": "Avg Vol 1Yr",
+    "displayName": "Volume 1year average",
+    "aliases": [
+      "Volume 1year average"
+    ]
+  },
+  {
+    "name": "Avg PAT 5Yrs",
+    "displayName": "Average Earnings 5Year",
+    "aliases": [
+      "Average Earnings 5Year"
+    ]
+  },
+  {
+    "name": "Avg PAT 10Yrs",
+    "displayName": "Average Earnings 10Year",
+    "aliases": [
+      "Average Earnings 10Year"
+    ]
+  },
+  {
+    "name": "Average EBIT 5Year",
+    "displayName": "Average EBIT 5Year"
+  },
+  {
+    "name": "Average EBIT 10Year",
+    "displayName": "Average EBIT 10Year"
+  },
+  {
+    "name": "Mar Cap 3yrs back",
+    "displayName": "Market Capitalization 3years back",
+    "aliases": [
+      "Market Capitalization 3years back"
+    ]
+  },
+  {
+    "name": "Mar Cap 5yrs back",
+    "displayName": "Market Capitalization 5years back",
+    "aliases": [
+      "Market Capitalization 5years back"
+    ]
+  },
+  {
+    "name": "Mar Cap 7yrs back",
+    "displayName": "Market Capitalization 7years back",
+    "aliases": [
+      "Market Capitalization 7years back"
+    ]
+  },
+  {
+    "name": "Mar Cap 10yrs back",
+    "displayName": "Market Capitalization 10years back",
+    "aliases": [
+      "Market Capitalization 10years back"
+    ]
+  },
+  {
+    "name": "WC Days 3yrs",
+    "displayName": "Average Working Capital Days 3years",
+    "aliases": [
+      "Average Working Capital Days 3years"
+    ]
+  },
+  {
+    "name": "Return over 7years",
+    "displayName": "Return over 7years"
+  },
+  {
+    "name": "Return over 10years",
+    "displayName": "Return over 10years"
+  },
+  {
+    "name": "Chg in FII Hold 3Yr",
+    "displayName": "Change in FII holding 3Years",
+    "aliases": [
+      "Change in FII holding 3Years"
+    ]
+  },
+  {
+    "name": "Chg in DII Hold 3Yr",
+    "displayName": "Change in DII holding 3Years",
+    "aliases": [
+      "Change in DII holding 3Years"
+    ]
+  }
+]

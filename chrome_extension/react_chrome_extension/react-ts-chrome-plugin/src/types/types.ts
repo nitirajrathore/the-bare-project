@@ -22,6 +22,13 @@ export interface MetricConfig {
   isExpanded?: boolean; // To track if the form is expanded or collapsed
 }
 
+export type ChangeType = 'absolute' | 'percentage';
+
+export interface TimeseriesMetricConfig extends Omit<MetricConfig, 'conditions'> {
+  changeType: ChangeType;
+  conditions: Condition[];
+}
+
 export interface IHighlightingPattern {
   name: string;
   displayName: string;

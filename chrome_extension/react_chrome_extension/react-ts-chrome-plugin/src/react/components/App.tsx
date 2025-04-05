@@ -1,15 +1,16 @@
 import { useState, useEffect } from 'react';
 import storage from '../../lib/storage';
-import MetricsColorSelector from './MetricsColorSelector';
 import PresetSelector from './PresetSelector';
 import QuickRatiosSettings from './QuickRatiosSettings';
-import { MetricConfig } from '../../types/types';
-import { METRICS_CONFIG } from '../../constants';
+import { MetricConfig, TimeseriesMetricConfig } from '../../types/types';
+import { METRICS_CONFIG, TIMESERIES_CONFIG } from '../../constants';
 import { Button } from './ui/button';
 import StyleSettings from './StyleSettings';
+import MetricSettingTabs from './MetricSettingTabs';
 
 function App() {
   const [metrics, setMetrics] = useState<MetricConfig[]>([]);
+  const [timeseriesMetrics, setTimeseriesMetrics] = useState<TimeseriesMetricConfig[]>([]);
   const [isQuickRatiosPage, setIsQuickRatiosPage] = useState(false);
   const [showSaveSuccess, setShowSaveSuccess] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
@@ -28,9 +29,16 @@ function App() {
   // Load settings when the component mounts
   useEffect(() => {
     (async () => {
-      const metricsConfig = await storage.get(METRICS_CONFIG);
+      const [metricsConfig, timeseriesConfig] = await Promise.all([
+        storage.get(METRICS_CONFIG),
+        storage.get(TIMESERIES_CONFIG)
+      ]);
+
       if (metricsConfig) {
         setMetrics(metricsConfig);
+      }
+      if (timeseriesConfig) {
+        setTimeseriesMetrics(timeseriesConfig);
       }
     })();
   }, []);
@@ -38,7 +46,11 @@ function App() {
   // Save settings to Chrome storage and notify content script
   const saveSettings = async () => {
     setIsSaving(true);
-    await storage.set(METRICS_CONFIG, metrics);
+
+    await Promise.all([
+      storage.set(METRICS_CONFIG, metrics),
+      storage.set(TIMESERIES_CONFIG, timeseriesMetrics)
+    ]);
 
     // Send message to all tabs with screener.in URL
     const tabs = await chrome.tabs.query({ url: 'https://www.screener.in/*' });
@@ -76,6 +88,11 @@ function App() {
     setMetrics(updatedMetrics);
   };
 
+  // Handle timeseries metrics changes
+  const handleTimeseriesMetricsChange = (updatedMetrics: TimeseriesMetricConfig[]) => {
+    setTimeseriesMetrics(updatedMetrics);
+  };
+
   return (
     <div className="p-4 min-h-screen bg-gray-100 text-gray-800">
       <div className="mb-6 space-y-4">
@@ -105,9 +122,11 @@ function App() {
             </div>
           </div>
 
-          <MetricsColorSelector
+          <MetricSettingTabs
             metrics={metrics}
             onMetricsChange={handleMetricsChange}
+            timeseriesMetrics={timeseriesMetrics}
+            onTimeseriesMetricsChange={handleTimeseriesMetricsChange}
           />
         </div>
       </div>

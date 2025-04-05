@@ -15,6 +15,7 @@ export interface MetricInfo {
 }
 
 export interface TimeseriesUserConfig {
+  cssSelector: string;
   type: string;
   metricConfigs: TimeseriesMetricConfig[];
 }

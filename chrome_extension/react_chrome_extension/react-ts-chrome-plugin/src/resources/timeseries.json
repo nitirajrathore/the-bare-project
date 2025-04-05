@@ -1,6 +1,7 @@
 [
   {
     "type": "Quarterly Results",
+    "cssSelector": "#quarters > div.responsive-holder.fill-card-width > table",
     "metrices": [
       {
         "name": "Sales",
@@ -94,6 +95,7 @@
   },
   {
     "type": "Profit & Loss",
+    "cssSelector": "#profit-loss > div.responsive-holder.fill-card-width > table",
     "metrices": [
       {
         "name": "Sales",

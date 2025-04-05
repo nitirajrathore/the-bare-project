@@ -19,11 +19,16 @@ export default function Timeseries({
 
   const handleTypeChange = (type: string) => {
     setSelectedType(type);
-    // If no config exists for this type, create one
+    // If no config exists for this type, create one with cssSelector
     if (!timeseriesConfigs.find(config => config.type === type)) {
+      const timeseriesInfo = timeseriesData.find(series => series.type === type);
       onTimeseriesConfigsChange([
         ...timeseriesConfigs,
-        { type, metricConfigs: [] }
+        {
+          type,
+          cssSelector: timeseriesInfo?.cssSelector || '',
+          metricConfigs: []
+        }
       ]);
     }
   };
@@ -39,6 +44,7 @@ export default function Timeseries({
 
   const currentConfig = timeseriesConfigs.find(config => config.type === selectedType) || {
     type: selectedType,
+    cssSelector: timeseriesData.find(series => series.type === selectedType)?.cssSelector || '',
     metricConfigs: []
   };
 

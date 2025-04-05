@@ -24,9 +24,8 @@ export interface MetricConfig {
 
 export type ChangeType = 'absolute' | 'percentage';
 
-export interface TimeseriesMetricConfig extends Omit<MetricConfig, 'conditions'> {
+export interface TimeseriesMetricConfig extends MetricConfig {
   changeType: ChangeType;
-  conditions: Condition[];
 }
 
 export interface IHighlightingPattern {

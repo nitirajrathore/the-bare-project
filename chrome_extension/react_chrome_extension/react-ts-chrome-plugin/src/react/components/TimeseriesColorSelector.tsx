@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import SelectWithSearch from './SelectWithSearch';
-import TimeseriesMetricCondition from './TimeseriesMetricCondition';
+import TimeseriesMetric from './Timeseries';
 import metricsData from '../../resources/metrices.json';
 import { TimeseriesMetricConfig } from '../../types/types';
 
-interface TimeseriesColoringConfigProps {
+interface TimeseriesColorSelectorProps {
   timeseriesMetrics: TimeseriesMetricConfig[];
   onTimeseriesMetricsChange: (metrics: TimeseriesMetricConfig[]) => void;
 }
 
-const TimeseriesColoringConfig: React.FC<TimeseriesColoringConfigProps> = ({
+const TimeseriesColorSelector: React.FC<TimeseriesColorSelectorProps> = ({
   timeseriesMetrics,
   onTimeseriesMetricsChange
 }) => {
@@ -101,7 +101,7 @@ const TimeseriesColoringConfig: React.FC<TimeseriesColoringConfigProps> = ({
 
       <div className="space-y-3">
         {timeseriesMetrics.map(metric => (
-          <TimeseriesMetricCondition
+          <TimeseriesMetric
             key={metric.id}
             metric={metric}
             onUpdate={handleUpdateMetric}
@@ -113,4 +113,4 @@ const TimeseriesColoringConfig: React.FC<TimeseriesColoringConfigProps> = ({
   );
 };
 
-export default TimeseriesColoringConfig;
+export default TimeseriesColorSelector;

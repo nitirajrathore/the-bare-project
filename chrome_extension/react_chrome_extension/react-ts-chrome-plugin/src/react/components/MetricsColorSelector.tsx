@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { MetricConfig } from '../../types/types';
-import MetricCondition from './MetricCondition';
+import Metric from './Metric';
 import { v4 as uuidv4 } from 'uuid';
 import metricsData from '../../resources/metrices.json';
 import SelectWithSearch from './SelectWithSearch';
@@ -105,7 +105,7 @@ const MetricsColorSelector: React.FC<MetricsColorSelectorProps> = ({
 
       <div className="space-y-3">
         {metrics.map(metric => (
-          <MetricCondition
+          <Metric
             key={metric.id}
             metric={metric}
             onUpdate={handleUpdateMetric}

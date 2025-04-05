@@ -3,17 +3,15 @@ import { Label } from "@/src/react/components/ui/label"
 import MetricCondition from './MetricCondition'
 import { TimeseriesMetricConfig, ChangeType } from '../../types/types'
 
-interface TimeseriesMetricConditionProps {
+interface TimeseriesConditionProps {
   metric: TimeseriesMetricConfig;
   onUpdate: (metric: TimeseriesMetricConfig) => void;
-  onDelete: (id: string) => void;
 }
 
-export default function TimeseriesMetricCondition({
+export default function TimeseriesCondition({
   metric,
-  onUpdate,
-  onDelete
-}: TimeseriesMetricConditionProps) {
+  onUpdate
+}: TimeseriesConditionProps) {
   const handleChangeTypeUpdate = (changeType: ChangeType) => {
     onUpdate({
       ...metric,
@@ -22,17 +20,7 @@ export default function TimeseriesMetricCondition({
   };
 
   return (
-    <div className="space-y-4 p-4 bg-white rounded-md shadow-sm border border-gray-200">
-      {/* <div className="flex items-center justify-between">
-        <h3 className="font-medium">{metric.name}</h3>
-        <button
-          onClick={() => onDelete(metric.id)}
-          className="text-red-500 hover:text-red-700"
-        >
-          Remove
-        </button>
-      </div> */}
-
+    <div className="space-y-4">
       <RadioGroup
         value={metric.changeType}
         onValueChange={handleChangeTypeUpdate as (value: string) => void}
@@ -50,8 +38,9 @@ export default function TimeseriesMetricCondition({
 
       <MetricCondition
         metric={metric}
-        onUpdate={onUpdate}
-        onDelete={onDelete}
+        onUpdate={(updatedMetric) => {
+          onUpdate({ ...updatedMetric, changeType: metric.changeType });
+        }}
       />
     </div>
   );

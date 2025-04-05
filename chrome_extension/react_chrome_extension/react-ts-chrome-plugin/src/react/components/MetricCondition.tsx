@@ -2,28 +2,25 @@ import React, { useState, useEffect } from 'react';
 import { Condition, MetricConfig } from '../../types/types';
 import ConditionForm from './ConditionForm';
 import ConditionSummary from './ConditionSummary';
-import { v4 as uuidv4 } from 'uuid';
 import { getOperatorSymbol } from '../lib/utils';
 
 interface MetricConditionProps {
   metric: MetricConfig;
   onUpdate: (updatedMetric: MetricConfig) => void;
-  onDelete: (metricId: string) => void;
 }
 
 const MetricCondition: React.FC<MetricConditionProps> = ({
   metric,
-  onUpdate,
-  onDelete
+  onUpdate
 }) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(metric.isExpanded || false);
+  const [isAddingCondition, setIsAddingCondition] = useState<boolean>(false);
+  const [editingConditionId, setEditingConditionId] = useState<string | null>(null);
 
   // Update local state when metric.isExpanded changes (e.g., when a preset is applied)
   useEffect(() => {
     setIsExpanded(metric.isExpanded || false);
   }, [metric.isExpanded]);
-  const [isAddingCondition, setIsAddingCondition] = useState<boolean>(false);
-  const [editingConditionId, setEditingConditionId] = useState<string | null>(null);
 
   const handleAddCondition = () => {
     setIsAddingCondition(true);
@@ -79,18 +76,7 @@ const MetricCondition: React.FC<MetricConditionProps> = ({
   };
 
   return (
-    <div className="mb-4 bg-gray-50 p-3 rounded-md border border-gray-200">
-      <div className="flex justify-between items-center mb-2">
-        <h3 className="text-md font-medium">{metric.name}</h3>
-        <button
-          onClick={() => onDelete(metric.id)}
-          className="text-red-500 hover:text-red-700 text-sm"
-          aria-label="Delete metric"
-        >
-          Remove
-        </button>
-      </div>
-
+    <>
       {isExpanded ? (
         <div className="space-y-2">
           {metric.conditions.map((condition) => (
@@ -169,7 +155,7 @@ const MetricCondition: React.FC<MetricConditionProps> = ({
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 };
 

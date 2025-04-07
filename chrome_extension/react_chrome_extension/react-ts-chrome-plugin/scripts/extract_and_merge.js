@@ -40,25 +40,31 @@ function extractTableData(tableSelector, document) {
   return tableData;
 }
 
-// Function to merge metrics with deduplication
+// Function to merge metrics with deduplication and track changes
 function mergeMetrics(existing, newMetrics) {
   const merged = [...existing];
   const seen = new Set(existing.map(m => m.name));
+  const stats = {
+    added: 0,
+    modified: 0
+  };
 
   newMetrics.forEach(metric => {
     if (!seen.has(metric.name)) {
       merged.push(metric);
       seen.add(metric.name);
+      stats.added++;
     } else {
       // Update existing metric if new one has aliases
       const existingIndex = merged.findIndex(m => m.name === metric.name);
       if (metric.aliases && (!merged[existingIndex].aliases || metric.aliases.length > merged[existingIndex].aliases.length)) {
         merged[existingIndex] = metric;
+        stats.modified++;
       }
     }
   });
 
-  return merged;
+  return { merged, stats };
 }
 
 // Main function to process HTML and update timeseries.json
@@ -73,9 +79,17 @@ async function updateTimeseriesMetrics(htmlContent) {
   const timeseriesData = JSON.parse(fs.readFileSync(timeseriesPath, 'utf8'));
 
   // Process each timeseries type
+  const allStats = new Map();
+
   timeseriesData.forEach(timeseries => {
     const newMetrics = extractTableData(timeseries.cssSelector, document);
-    timeseries.metrices = mergeMetrics(timeseries.metrices || [], newMetrics);
+    const { merged, stats } = mergeMetrics(timeseries.metrices || [], newMetrics);
+    timeseries.metrices = merged;
+    allStats.set(timeseries.type, {
+      ...stats,
+      total: merged.length,
+      withAliases: merged.filter(m => m.aliases).length
+    });
   });
 
   // Write updated data back to file
@@ -85,11 +99,16 @@ async function updateTimeseriesMetrics(htmlContent) {
     'utf8'
   );
 
-  // Log statistics
-  timeseriesData.forEach(timeseries => {
-    console.log(`\n${timeseries.type}:`);
-    console.log(`Total metrics: ${timeseries.metrices.length}`);
-    console.log(`Metrics with aliases: ${timeseries.metrices.filter(m => m.aliases).length}`);
+  // Log detailed statistics
+  console.log('\nMerge Statistics:');
+  console.log('================');
+  allStats.forEach((stats, type) => {
+    console.log(`\n${type}:`);
+    console.log(`  New metrics added: ${stats.added}`);
+    console.log(`  Existing metrics modified: ${stats.modified}`);
+    console.log(`  Total metrics: ${stats.total}`);
+    console.log(`  Metrics with aliases: ${stats.withAliases}`);
+    console.log('  ----------------');
   });
 }
 

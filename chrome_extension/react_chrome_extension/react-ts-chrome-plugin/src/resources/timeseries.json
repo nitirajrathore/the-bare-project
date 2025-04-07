@@ -288,6 +288,10 @@
       {
         "name": "Financing Margin %",
         "displayName": "Financing Margin %"
+      },
+      {
+        "name": "Profit from Associates",
+        "displayName": "Profit from Associates"
       }
     ]
   },
@@ -604,6 +608,26 @@
       {
         "name": "Net Cash Flow",
         "displayName": "Net Cash Flow"
+      },
+      {
+        "name": "Operating investments",
+        "displayName": "Operating investments"
+      },
+      {
+        "name": "Deposits",
+        "displayName": "Deposits"
+      },
+      {
+        "name": "Invest in subsidiaries",
+        "displayName": "Invest in subsidiaries"
+      },
+      {
+        "name": "Proceeds from debentures",
+        "displayName": "Proceeds from debentures"
+      },
+      {
+        "name": "Redemption of debentures",
+        "displayName": "Redemption of debentures"
       }
     ]
   },

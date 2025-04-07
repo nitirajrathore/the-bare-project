@@ -7,10 +7,10 @@
         "name": "Sales",
         "displayName": "Sales",
         "aliases": [
-          "Sales -",
           "Sales +",
-          "Sales\u00A0+",
-          "Sales\u00A0-"
+          "Sales -",
+          "Sales +",
+          "Sales -"
         ]
       },
       {
@@ -21,8 +21,8 @@
         "name": "Expenses",
         "displayName": "Expenses",
         "aliases": [
-          "Expenses -",
-          "Expenses +"
+          "Expenses +",
+          "Expenses -"
         ]
       },
       {
@@ -45,8 +45,8 @@
         "name": "Other Income",
         "displayName": "Other Income",
         "aliases": [
-          "Other Income -",
-          "Other Income +"
+          "Other Income +",
+          "Other Income -"
         ]
       },
       {
@@ -119,10 +119,10 @@
         "name": "Sales",
         "displayName": "Sales",
         "aliases": [
-          "Sales -",
           "Sales +",
-          "Sales\u00A0+",
-          "Sales\u00A0-"
+          "Sales -",
+          "Sales +",
+          "Sales -"
         ]
       },
       {
@@ -133,16 +133,16 @@
         "name": "Expenses",
         "displayName": "Expenses",
         "aliases": [
-          "Expenses -",
-          "Expenses +"
+          "Expenses +",
+          "Expenses -"
         ]
       },
       {
         "name": "Material Cost %",
         "displayName": "Material Cost % +",
         "aliases": [
-          "Material Cost % -",
-          "Material Cost % +"
+          "Material Cost % +",
+          "Material Cost % -"
         ]
       },
       {
@@ -177,8 +177,8 @@
         "name": "Other Income",
         "displayName": "Other Income",
         "aliases": [
-          "Other Income -",
-          "Other Income +"
+          "Other Income +",
+          "Other Income -"
         ]
       },
       {
@@ -209,8 +209,8 @@
         "name": "Net Profit",
         "displayName": "Net Profit",
         "aliases": [
-          "Net Profit -",
-          "Net Profit +"
+          "Net Profit +",
+          "Net Profit -"
         ]
       },
       {
@@ -267,8 +267,8 @@
         "name": "Borrowings",
         "displayName": "Borrowings",
         "aliases": [
-          "Borrowings -",
-          "Borrowings +"
+          "Borrowings +",
+          "Borrowings -"
         ]
       },
       {
@@ -295,8 +295,8 @@
         "name": "Other Liabilities",
         "displayName": "Other Liabilities",
         "aliases": [
-          "Other Liabilities -",
-          "Other Liabilities +"
+          "Other Liabilities +",
+          "Other Liabilities -"
         ]
       },
       {
@@ -437,8 +437,8 @@
         "name": "Cash from Operating Activity",
         "displayName": "Cash from Operating Activity",
         "aliases": [
-          "Cash from Operating Activity -",
-          "Cash from Operating Activity +"
+          "Cash from Operating Activity +",
+          "Cash from Operating Activity -"
         ]
       },
       {
@@ -477,8 +477,8 @@
         "name": "Cash from Investing Activity",
         "displayName": "Cash from Investing Activity",
         "aliases": [
-          "Cash from Investing Activity -",
-          "Cash from Investing Activity +"
+          "Cash from Investing Activity +",
+          "Cash from Investing Activity -"
         ]
       },
       {
@@ -521,8 +521,8 @@
         "name": "Cash from Financing Activity",
         "displayName": "Cash from Financing Activity",
         "aliases": [
-          "Cash from Financing Activity -",
-          "Cash from Financing Activity +"
+          "Cash from Financing Activity +",
+          "Cash from Financing Activity -"
         ]
       },
       {
@@ -597,40 +597,40 @@
         "name": "Promoters",
         "displayName": "Promoters",
         "aliases": [
-          "Promoters -",
-          "Promoters +"
+          "Promoters +",
+          "Promoters -"
         ]
       },
       {
         "name": "FIIs",
         "displayName": "FIIs",
         "aliases": [
-          "FIIs -",
-          "FIIs +"
+          "FIIs +",
+          "FIIs -"
         ]
       },
       {
         "name": "DIIs",
         "displayName": "DIIs",
         "aliases": [
-          "DIIs -",
-          "DIIs +"
+          "DIIs +",
+          "DIIs -"
         ]
       },
       {
         "name": "Government",
         "displayName": "Government",
         "aliases": [
-          "Government -",
-          "Government +"
+          "Government +",
+          "Government -"
         ]
       },
       {
         "name": "Public",
         "displayName": "Public",
         "aliases": [
-          "Public -",
-          "Public +"
+          "Public +",
+          "Public -"
         ]
       },
       {

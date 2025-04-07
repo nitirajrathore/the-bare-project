@@ -250,5 +250,393 @@
         "displayName": "Dividend Payout %"
       }
     ]
+  },
+  {
+    "type": "Balance Sheet",
+    "cssSelector": "#balance-sheet > div.responsive-holder.fill-card-width > table",
+    "metrices": [
+      {
+        "name": "Equity Capital",
+        "displayName": "Equity Capital"
+      },
+      {
+        "name": "Reserves",
+        "displayName": "Reserves"
+      },
+      {
+        "name": "Borrowings",
+        "displayName": "Borrowings",
+        "aliases": [
+          "Borrowings -",
+          "Borrowings +"
+        ]
+      },
+      {
+        "name": "Long term Borrowings",
+        "displayName": "Long term Borrowings"
+      },
+      {
+        "name": "Short term Borrowings",
+        "displayName": "Short term Borrowings"
+      },
+      {
+        "name": "Lease Liabilities",
+        "displayName": "Lease Liabilities"
+      },
+      {
+        "name": "Preference Capital",
+        "displayName": "Preference Capital"
+      },
+      {
+        "name": "Other Borrowings",
+        "displayName": "Other Borrowings"
+      },
+      {
+        "name": "Other Liabilities",
+        "displayName": "Other Liabilities",
+        "aliases": [
+          "Other Liabilities -",
+          "Other Liabilities +"
+        ]
+      },
+      {
+        "name": "Non controlling int",
+        "displayName": "Non controlling int"
+      },
+      {
+        "name": "Trade Payables",
+        "displayName": "Trade Payables"
+      },
+      {
+        "name": "Advance from Customers",
+        "displayName": "Advance from Customers"
+      },
+      {
+        "name": "Other liability items",
+        "displayName": "Other liability items"
+      },
+      {
+        "name": "Total Liabilities",
+        "displayName": "Total Liabilities"
+      },
+      {
+        "name": "Fixed Assets",
+        "displayName": "Fixed Assets",
+        "aliases": [
+          "Fixed Assets -",
+          "Fixed Assets -"
+        ]
+      },
+      {
+        "name": "Land",
+        "displayName": "Land"
+      },
+      {
+        "name": "Building",
+        "displayName": "Building"
+      },
+      {
+        "name": "Plant Machinery",
+        "displayName": "Plant Machinery"
+      },
+      {
+        "name": "Equipments",
+        "displayName": "Equipments"
+      },
+      {
+        "name": "Computers",
+        "displayName": "Computers"
+      },
+      {
+        "name": "Furniture n fittings",
+        "displayName": "Furniture n fittings"
+      },
+      {
+        "name": "Vehicles",
+        "displayName": "Vehicles"
+      },
+      {
+        "name": "Intangible Assets",
+        "displayName": "Intangible Assets"
+      },
+      {
+        "name": "Other fixed assets",
+        "displayName": "Other fixed assets"
+      },
+      {
+        "name": "Gross Block",
+        "displayName": "Gross Block"
+      },
+      {
+        "name": "Accumulated Depreciation",
+        "displayName": "Accumulated Depreciation"
+      },
+      {
+        "name": "CWIP",
+        "displayName": "CWIP"
+      },
+      {
+        "name": "Investments",
+        "displayName": "Investments"
+      },
+      {
+        "name": "Other Assets",
+        "displayName": "Other Assets",
+        "aliases": [
+          "Other Assets -",
+          "Other Assets -"
+        ]
+      },
+      {
+        "name": "Inventories",
+        "displayName": "Inventories"
+      },
+      {
+        "name": "Trade receivables",
+        "displayName": "Trade receivables",
+        "aliases": [
+          "Trade receivables -",
+          "Trade receivables -"
+        ]
+      },
+      {
+        "name": "Receivables over 6m",
+        "displayName": "Receivables over 6m"
+      },
+      {
+        "name": "Receivables under 6m",
+        "displayName": "Receivables under 6m"
+      },
+      {
+        "name": "Prov for Doubtful",
+        "displayName": "Prov for Doubtful"
+      },
+      {
+        "name": "Cash Equivalents",
+        "displayName": "Cash Equivalents"
+      },
+      {
+        "name": "Loans n Advances",
+        "displayName": "Loans n Advances"
+      },
+      {
+        "name": "Other asset items",
+        "displayName": "Other asset items"
+      },
+      {
+        "name": "Total Assets",
+        "displayName": "Total Assets"
+      }
+    ]
+  },
+  {
+    "type": "Cash Flows",
+    "cssSelector": "#cash-flow > div.responsive-holder.fill-card-width > table",
+    "metrices": [
+      {
+        "name": "Cash from Operating Activity",
+        "displayName": "Cash from Operating Activity",
+        "aliases": [
+          "Cash from Operating Activity -",
+          "Cash from Operating Activity +"
+        ]
+      },
+      {
+        "name": "Profit from operations",
+        "displayName": "Profit from operations"
+      },
+      {
+        "name": "Receivables",
+        "displayName": "Receivables"
+      },
+      {
+        "name": "Inventory",
+        "displayName": "Inventory"
+      },
+      {
+        "name": "Payables",
+        "displayName": "Payables"
+      },
+      {
+        "name": "Loans Advances",
+        "displayName": "Loans Advances"
+      },
+      {
+        "name": "Other WC items",
+        "displayName": "Other WC items"
+      },
+      {
+        "name": "Working capital changes",
+        "displayName": "Working capital changes"
+      },
+      {
+        "name": "Direct taxes",
+        "displayName": "Direct taxes"
+      },
+      {
+        "name": "Cash from Investing Activity",
+        "displayName": "Cash from Investing Activity",
+        "aliases": [
+          "Cash from Investing Activity -",
+          "Cash from Investing Activity +"
+        ]
+      },
+      {
+        "name": "Fixed assets purchased",
+        "displayName": "Fixed assets purchased"
+      },
+      {
+        "name": "Fixed assets sold",
+        "displayName": "Fixed assets sold"
+      },
+      {
+        "name": "Investments purchased",
+        "displayName": "Investments purchased"
+      },
+      {
+        "name": "Investments sold",
+        "displayName": "Investments sold"
+      },
+      {
+        "name": "Interest received",
+        "displayName": "Interest received"
+      },
+      {
+        "name": "Dividends received",
+        "displayName": "Dividends received"
+      },
+      {
+        "name": "Acquisition of companies",
+        "displayName": "Acquisition of companies"
+      },
+      {
+        "name": "Inter corporate deposits",
+        "displayName": "Inter corporate deposits"
+      },
+      {
+        "name": "Other investing items",
+        "displayName": "Other investing items"
+      },
+      {
+        "name": "Cash from Financing Activity",
+        "displayName": "Cash from Financing Activity",
+        "aliases": [
+          "Cash from Financing Activity -",
+          "Cash from Financing Activity +"
+        ]
+      },
+      {
+        "name": "Proceeds from shares",
+        "displayName": "Proceeds from shares"
+      },
+      {
+        "name": "Proceeds from borrowings",
+        "displayName": "Proceeds from borrowings"
+      },
+      {
+        "name": "Repayment of borrowings",
+        "displayName": "Repayment of borrowings"
+      },
+      {
+        "name": "Interest paid fin",
+        "displayName": "Interest paid fin"
+      },
+      {
+        "name": "Dividends paid",
+        "displayName": "Dividends paid"
+      },
+      {
+        "name": "Financial liabilities",
+        "displayName": "Financial liabilities"
+      },
+      {
+        "name": "Other financing items",
+        "displayName": "Other financing items"
+      },
+      {
+        "name": "Net Cash Flow",
+        "displayName": "Net Cash Flow"
+      }
+    ]
+  },
+  {
+    "type": "Ratios",
+    "cssSelector": "#ratios > div.responsive-holder.fill-card-width > table",
+    "metrices": [
+      {
+        "name": "Debtor Days",
+        "displayName": "Debtor Days"
+      },
+      {
+        "name": "Inventory Days",
+        "displayName": "Inventory Days"
+      },
+      {
+        "name": "Days Payable",
+        "displayName": "Days Payable"
+      },
+      {
+        "name": "Cash Conversion Cycle",
+        "displayName": "Cash Conversion Cycle"
+      },
+      {
+        "name": "Working Capital Days",
+        "displayName": "Working Capital Days"
+      },
+      {
+        "name": "ROCE %",
+        "displayName": "ROCE %"
+      }
+    ]
+  },
+  {
+    "type": "Shareholding Pattern",
+    "cssSelector": "#quarterly-shp > div > table",
+    "metrices": [
+      {
+        "name": "Promoters",
+        "displayName": "Promoters",
+        "aliases": [
+          "Promoters -",
+          "Promoters +"
+        ]
+      },
+      {
+        "name": "FIIs",
+        "displayName": "FIIs",
+        "aliases": [
+          "FIIs -",
+          "FIIs +"
+        ]
+      },
+      {
+        "name": "DIIs",
+        "displayName": "DIIs",
+        "aliases": [
+          "DIIs -",
+          "DIIs +"
+        ]
+      },
+      {
+        "name": "Government",
+        "displayName": "Government",
+        "aliases": [
+          "Government -",
+          "Government +"
+        ]
+      },
+      {
+        "name": "Public",
+        "displayName": "Public",
+        "aliases": [
+          "Public -",
+          "Public +"
+        ]
+      },
+      {
+        "name": "No. of Shareholders",
+        "displayName": "No. of Shareholders"
+      }
+    ]
   }
 ]

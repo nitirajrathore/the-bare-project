@@ -19,7 +19,7 @@ export interface Utils {
 const utils: Utils = {
   parseNumber: (value: string): number => {
     if (typeof value !== 'string') return NaN;
-    value = value.replace(/,/g, '');
+    value = value.replace(/[,%]/g, '');
     return parseFloat(value);
   },
 

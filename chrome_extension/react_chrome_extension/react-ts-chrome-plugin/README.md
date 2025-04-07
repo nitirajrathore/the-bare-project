@@ -3,7 +3,11 @@
 
 2. Make the config for time series fields.
 
-    1. Confirm that timeseries metrices with `-` in their name works correctly. 
+    1. [done] Confirm that timeseries metrices with `-` in their name works correctly.
+    2. created timeseries.json for "Quarterly results" and "Profit & Loss"
+        1. Need to verify these for other type of companies like "Banking" which have different metrices.
+    3. Add metrices for other timeseries.
+        1. Check if all these metrices work for different companies.
 
 3. There is no operator precedence between operators. So if >= 100 -> blue and == 121 -> green, it is difficult to say if the value of 121 will appear blue or green. Fix this. Low priority
 

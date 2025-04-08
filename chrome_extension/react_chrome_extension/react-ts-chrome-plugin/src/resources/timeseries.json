@@ -628,6 +628,38 @@
       {
         "name": "Redemption of debentures",
         "displayName": "Redemption of debentures"
+      },
+      {
+        "name": "Advance tax",
+        "displayName": "Advance tax"
+      },
+      {
+        "name": "Redemp n Canc of Shares",
+        "displayName": "Redemp n Canc of Shares"
+      },
+      {
+        "name": "Other operating items",
+        "displayName": "Other operating items"
+      },
+      {
+        "name": "Investment subsidy",
+        "displayName": "Investment subsidy"
+      },
+      {
+        "name": "Exceptional CF items",
+        "displayName": "Exceptional CF items"
+      },
+      {
+        "name": "Investment in group cos",
+        "displayName": "Investment in group cos"
+      },
+      {
+        "name": "Share application money",
+        "displayName": "Share application money"
+      },
+      {
+        "name": "Interest paid",
+        "displayName": "Interest paid"
       }
     ]
   },
@@ -712,6 +744,14 @@
       {
         "name": "No. of Shareholders",
         "displayName": "No. of Shareholders"
+      },
+      {
+        "name": "Others",
+        "displayName": "Others",
+        "aliases": [
+          "Others -",
+          "Others +"
+        ]
       }
     ]
   }

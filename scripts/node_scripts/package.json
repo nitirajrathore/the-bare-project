@@ -1,0 +1,7 @@
+{
+	"type": "module",
+	"dependencies": {
+		"fast-glob": "^3.3.3",
+		"ignore": "^7.0.3"
+	}
+}

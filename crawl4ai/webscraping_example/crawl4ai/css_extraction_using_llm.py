@@ -1,5 +1,5 @@
 from crawl4ai.extraction_strategy import JsonCssExtractionStrategy
-from crawl4ai import LLMConfig
+from crawl4ai.config import LLMConfig
 
 html = "<div class='product'><h2>Gaming Laptop</h2><span class='price'>$999.99</span></div>"
 

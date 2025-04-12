@@ -1,11 +1,16 @@
 #  source: [Quick Start - Crawl4AI Documentation (v0.5.x)](https://docs.crawl4ai.com/core/quickstart/)
 
 import asyncio
-from crawl4ai import AsyncWebCrawler
+from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig, CacheMode
 
 async def main():
-  async with AsyncWebCrawler() as crawler: 
-    result = await crawler.arun("https://example.com")
+  browser_conf = BrowserConfig(headless=True, verbose=True)
+  run_conf = CrawlerRunConfig(
+    cache_mode=CacheMode.BYPASS,
+  )
+
+  async with AsyncWebCrawler(config=browser_conf) as crawler: 
+    result = await crawler.arun("https://example.com", config=run_conf)
     print("----------------- MARKDOWN -----------------")
     print(result.markdown[:300])
 

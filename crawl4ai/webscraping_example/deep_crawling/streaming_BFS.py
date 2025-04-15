@@ -7,24 +7,22 @@ from crawl4ai.deep_crawling import BFSDeepCrawlStrategy
 from crawl4ai.content_scraping_strategy import LXMLWebScrapingStrategy
 
 async def main():
-  #configure a 2-level deep crawl
   browser_config = BrowserConfig(headless=False)
+  #configure a 2-level deep crawl
   config = CrawlerRunConfig(
     deep_crawl_strategy=BFSDeepCrawlStrategy(
-      max_depth=2,
+      max_depth=1,
       include_external=False,
       ),
       scraping_strategy=LXMLWebScrapingStrategy(),
       verbose=True,
+      stream=True
   )
 
   async with AsyncWebCrawler(config=browser_config) as crawler:
-    results = await crawler.arun("https://theswissbay.ch/pdf/Books/Ancient%20history/", config=config)
-    print(f"Crawled {len(results)} pages")
-
-    for result in results[:3]:
-      print(f"URL: {result.url}")
-      print(f"Depth: {result.metadata.get('depth', 0)}")
+    async for result in await crawler.arun("https://en.wikipedia.org/wiki/Dharmendra_Pradhan", config=config):
+      if result.success:
+          print(f"Just completed: {result.url}")
 
 if __name__ == "__main__":
   asyncio.run(main())

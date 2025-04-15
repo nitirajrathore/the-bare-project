@@ -1,0 +1,2174 @@
+[
+  {
+    "href": "https: //data.humdata.org/dataset/repository-for-pdf-files",
+    "text": "OCHA Services",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://centre.humdata.org/",
+    "text": "Centre for Humanitarian Data",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/",
+    "text": "Humanitarian Data Exchange",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/faq",
+    "text": "FAQ",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/sign-in/?came_from=%2Fdataset%2Frepository-for-pdf-files",
+    "text": "Log in",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/signup/",
+    "text": "Sign up",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/m/dataset/repository-for-pdf-files?force_layout=light",
+    "text": "Switch to HDX Lite",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset",
+    "text": "Data",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/group",
+    "text": "Locations",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/organization",
+    "text": "Organisations",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/hapi",
+    "text": "HDX HAPI",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/signals",
+    "text": "HDX Signals",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/event/myanmar-earthquake",
+    "text": "Myanmar Earthquake",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/event/opt-israel-hostilities",
+    "text": "occupied Palestinian territory-Israel Hostilities",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/cod",
+    "text": "Common Operational Datasets (CODs)",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dashboards/overview-of-data-grids",
+    "text": "Data Grids",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataviz-gallery",
+    "text": "Dataviz Gallery",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataviz-guide/",
+    "text": "HDX Dataviz Guidelines",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/archive",
+    "text": "Archived",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/sign-in/?info_message_type=add-data",
+    "text": "Add data",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://centre.humdata.org",
+    "text": "https://centre.humdata.org",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/organization/hdx",
+    "text": "",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/sign-in/?came_from=%2Fdataset%2Frepository-for-pdf-files%2Fcontact%2F&info_message_type=contact-contributor",
+    "text": "Contact the contributor",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/group/world",
+    "text": "World",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/faqs/licenses",
+    "text": "Creative Commons Attribution International (CC BY)",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/029df9aa-c277-4571-9dae-dc9bc33bdd14/download/hdx-signals-impact-story.pdf",
+    "text": "Download\n                  HDX Signals Impact Story\n029df9aa-c277-4571-9dae-dc9bc33bdd14",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/029df9aa-c277-4571-9dae-dc9bc33bdd14/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/029df9aa-c277-4571-9dae-dc9bc33bdd14/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/6060a9f4-454d-4ac1-a4eb-728b99e00fcf/download/french-working-draft-drwg-data-responsibility-in-rapid-scale-down-or-closure-of-operations.pdf",
+    "text": "Download\n                  FRENCH WORKING DRAFT - DRWG - Data Responsibility in Rapid Scale Down or Closure of Operations.pdf\n6060a9f4-454d-4ac1-a4eb-728b99e00fcf",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/6060a9f4-454d-4ac1-a4eb-728b99e00fcf/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/6060a9f4-454d-4ac1-a4eb-728b99e00fcf/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/651edd52-d14c-4a23-a48c-f69b9aa7b1c9/download/the-state-of-open-humanitarian-data-2025.pdf",
+    "text": "Download\n                  The State of Open Humanitarian Data 2025.pdf\n651edd52-d14c-4a23-a48c-f69b9aa7b1c9",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/651edd52-d14c-4a23-a48c-f69b9aa7b1c9/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/651edd52-d14c-4a23-a48c-f69b9aa7b1c9/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/6720da63-f103-436c-84ac-5219fd788d90/download/solr-search-reference.pdf",
+    "text": "Download\n                  Solr Search Reference.pdf\n6720da63-f103-436c-84ac-5219fd788d90",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/6720da63-f103-436c-84ac-5219fd788d90/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/6720da63-f103-436c-84ac-5219fd788d90/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/3b675846-d01c-4fc9-b577-b7d426d2a598/download/hdx-ckan-api-cookbook.pdf",
+    "text": "Download\n                  HDX CKAN API Cookbook.pdf\n3b675846-d01c-4fc9-b577-b7d426d2a598",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/3b675846-d01c-4fc9-b577-b7d426d2a598/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/3b675846-d01c-4fc9-b577-b7d426d2a598/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/77d71ab4-ac48-43ea-9695-e316915a8bfc/download/working-draft-data-responsibility-in-rapid-scale-down-or-closure-of-operations.pdf",
+    "text": "Download\n                  [WORKING DRAFT] Data Responsibility in Rapid Scale Down or Closure of Operations.pdf\n77d71ab4-ac48-43ea-9695-e316915a8bfc",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/77d71ab4-ac48-43ea-9695-e316915a8bfc/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/77d71ab4-ac48-43ea-9695-e316915a8bfc/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/8bc5b848-8ece-4f1f-a78b-18dd972bb21a/download/data-responsibility-guidelines-2025.pdf",
+    "text": "Download\n                  Data Responsibility Guidelines 2025.pdf\n8bc5b848-8ece-4f1f-a78b-18dd972bb21a",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/8bc5b848-8ece-4f1f-a78b-18dd972bb21a/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/8bc5b848-8ece-4f1f-a78b-18dd972bb21a/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/bcf2fce8-9359-4eda-a892-76cc480fb26f/download/climate-guidance-on-vegetation-indices.pdf",
+    "text": "Download\n                  Climate Guidance on Vegetation Indices.pdf\nbcf2fce8-9359-4eda-a892-76cc480fb26f",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/bcf2fce8-9359-4eda-a892-76cc480fb26f/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/bcf2fce8-9359-4eda-a892-76cc480fb26f/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/dce3623f-f73d-4ea7-a05e-478da1b07e36/download/ocha-meta-final-impact-story-29.10.2024.pdf",
+    "text": "Download\n                  OCHA-META final Impact story - 29.10.2024.pdf\ndce3623f-f73d-4ea7-a05e-478da1b07e36",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/dce3623f-f73d-4ea7-a05e-478da1b07e36/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/dce3623f-f73d-4ea7-a05e-478da1b07e36/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/e614d95b-fb7e-43d2-9922-f2215318675a/download/guidance-note-on-statistical-disclosure-control-arabic-translation.pdf",
+    "text": "Download\n                  Guidance Note on Statistical Disclosure Control, Arabic Translation.pdf\ne614d95b-fb7e-43d2-9922-f2215318675a",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/e614d95b-fb7e-43d2-9922-f2215318675a/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/e614d95b-fb7e-43d2-9922-f2215318675a/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/c11b28db-4def-4406-8eca-1fcd98471356/download/guidance-note-on-humanitarian-data-ethics-arabic-translation.pdf",
+    "text": "Download\n                  Guidance Note on Humanitarian Data Ethics, Arabic Translation.pdf\nc11b28db-4def-4406-8eca-1fcd98471356",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/c11b28db-4def-4406-8eca-1fcd98471356/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/c11b28db-4def-4406-8eca-1fcd98471356/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/153bdb47-102d-4d1b-a9ec-0f0a2fdc6526/download/guidance-note-on-data-sharing-with-donors-arabic-translation.pdf",
+    "text": "Download\n                  Guidance Note on Data Sharing with Donors, Arabic Translation.pdf\n153bdb47-102d-4d1b-a9ec-0f0a2fdc6526",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/153bdb47-102d-4d1b-a9ec-0f0a2fdc6526/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/153bdb47-102d-4d1b-a9ec-0f0a2fdc6526/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/6ce59d98-e486-43dc-8a4a-69bc4c5dd7be/download/guidance-note-on-data-impact-assessment-arabic-translation.pdf",
+    "text": "Download\n                  Guidance Note on Data Impact Assessment, Arabic Translation.pdf\n6ce59d98-e486-43dc-8a4a-69bc4c5dd7be",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/6ce59d98-e486-43dc-8a4a-69bc4c5dd7be/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/6ce59d98-e486-43dc-8a4a-69bc4c5dd7be/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/3187f4bb-c260-406d-8bed-cc26a41675ae/download/guidance-note-on-cash-and-voucher-assistance-arabic-translation.pdf",
+    "text": "Download\n                  Guidance Note on Cash and Voucher Assistance, Arabic Translation.pdf\n3187f4bb-c260-406d-8bed-cc26a41675ae",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/3187f4bb-c260-406d-8bed-cc26a41675ae/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/3187f4bb-c260-406d-8bed-cc26a41675ae/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/7faed1a0-9b5e-4c7e-890e-ab3f654a028d/download/model-report-acled-cast.pdf",
+    "text": "Download\n                  Model Report - ACLED CAST.pdf\n7faed1a0-9b5e-4c7e-890e-ab3f654a028d",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/7faed1a0-9b5e-4c7e-890e-ab3f654a028d/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/7faed1a0-9b5e-4c7e-890e-ab3f654a028d/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/2e2ddd81-5159-467d-b5e3-8f4bc362875c/download/iasc-operational-guidance-2024-arabic.pdf",
+    "text": "Download\n                  IASC Operational Guidance 2024 Arabic.pdf\n2e2ddd81-5159-467d-b5e3-8f4bc362875c",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/2e2ddd81-5159-467d-b5e3-8f4bc362875c/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/2e2ddd81-5159-467d-b5e3-8f4bc362875c/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/bba718c1-f1f1-4273-be05-d24238c8fbe3/download/guidance-note-9-arabic.pdf",
+    "text": "Download\n                  guidance note 9 arabic.pdf\nbba718c1-f1f1-4273-be05-d24238c8fbe3",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/bba718c1-f1f1-4273-be05-d24238c8fbe3/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/bba718c1-f1f1-4273-be05-d24238c8fbe3/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/0e075e06-7900-4cd6-a519-9d6f788e7108/download/guidance-note-8-arabic.pdf",
+    "text": "Download\n                  guidance note 8 arabic.pdf\n0e075e06-7900-4cd6-a519-9d6f788e7108",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/0e075e06-7900-4cd6-a519-9d6f788e7108/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/0e075e06-7900-4cd6-a519-9d6f788e7108/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/dc32cee5-1d2a-4808-a53a-c2bafcfbab3c/download/guidance-note-3-arabic.pdf",
+    "text": "Download\n                  guidance note 3 arabic.pdf\ndc32cee5-1d2a-4808-a53a-c2bafcfbab3c",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/dc32cee5-1d2a-4808-a53a-c2bafcfbab3c/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/dc32cee5-1d2a-4808-a53a-c2bafcfbab3c/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/31e327c0-6433-4cf0-af3d-15ee18d6b4c0/download/guidance-note-11-arabic.pdf",
+    "text": "Download\n                  guidance note 11 arabic.pdf\n31e327c0-6433-4cf0-af3d-15ee18d6b4c0",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/31e327c0-6433-4cf0-af3d-15ee18d6b4c0/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/31e327c0-6433-4cf0-af3d-15ee18d6b4c0/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/7b9fd6b4-4c60-4d34-8998-c632ee1aba86/download/guidance-note-10-arabic.pdf",
+    "text": "Download\n                  guidance note 10 arabic.pdf\n7b9fd6b4-4c60-4d34-8998-c632ee1aba86",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/7b9fd6b4-4c60-4d34-8998-c632ee1aba86/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/7b9fd6b4-4c60-4d34-8998-c632ee1aba86/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/04251103-3e62-4f68-bc91-42e68cc9385f/download/guidance-note-2-arabic.pdf",
+    "text": "Download\n                  guidance note 2 arabic.pdf\n04251103-3e62-4f68-bc91-42e68cc9385f",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/04251103-3e62-4f68-bc91-42e68cc9385f/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/04251103-3e62-4f68-bc91-42e68cc9385f/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/ba7dde7c-8cba-4688-8513-1515ee1e39e7/download/tip-sheet-on-data-security-in-operational-data-management-spanish.pdf",
+    "text": "Download\n                  Tip Sheet on Data Security in Operational Data Management Spanish.pdf\nba7dde7c-8cba-4688-8513-1515ee1e39e7",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/ba7dde7c-8cba-4688-8513-1515ee1e39e7/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/ba7dde7c-8cba-4688-8513-1515ee1e39e7/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/3e5f6436-b6cd-455f-97d9-2cea25f2e313/download/impact_story_car-june-2024.pdf",
+    "text": "Download\n                  Impact_Story_CAR June 2024.pdf\n3e5f6436-b6cd-455f-97d9-2cea25f2e313",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/3e5f6436-b6cd-455f-97d9-2cea25f2e313/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/3e5f6436-b6cd-455f-97d9-2cea25f2e313/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/77866cc2-d5eb-42c6-995c-75ec9ff02ca8/download/data-responsibility-in-humanitarian-action.pdf",
+    "text": "Download\n                  Data Responsibility in Humanitarian Action.pdf\n77866cc2-d5eb-42c6-995c-75ec9ff02ca8",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/77866cc2-d5eb-42c6-995c-75ec9ff02ca8/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/77866cc2-d5eb-42c6-995c-75ec9ff02ca8/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/26bfeedc-6e6c-48eb-be76-343f0122b3bb/download/ai-briefing-note-april-2024.pdf",
+    "text": "Download\n                  AI Briefing Note April 2024.pdf\n26bfeedc-6e6c-48eb-be76-343f0122b3bb",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/26bfeedc-6e6c-48eb-be76-343f0122b3bb/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/26bfeedc-6e6c-48eb-be76-343f0122b3bb/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/b2e8f370-46b9-43f8-b924-a28bd704d2e5/download/acting-early-when-the-world-isnt-watching-lessons-from-anticipatory-action-in-ethiopia-in-2021.pdf",
+    "text": "Download\n                  Acting early when the world isn’t watching -- Lessons from anticipatory action in Ethiopia in 2021.pdf\nb2e8f370-46b9-43f8-b924-a28bd704d2e5",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/b2e8f370-46b9-43f8-b924-a28bd704d2e5/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/b2e8f370-46b9-43f8-b924-a28bd704d2e5/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/4413b95b-703a-4f22-9791-cfa341a1fb0a/download/tip-sheet-on-data-security-in-operational-data-management-french.pdf",
+    "text": "Download\n                  Tip Sheet on Data Security in Operational Data Management French.pdf\n4413b95b-703a-4f22-9791-cfa341a1fb0a",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/4413b95b-703a-4f22-9791-cfa341a1fb0a/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/4413b95b-703a-4f22-9791-cfa341a1fb0a/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/a8a2070d-1ad4-4d49-b7dc-1efc9b537bc5/download/tip-sheet-on-data-security-in-operational-data-management-ukrainian.pdf",
+    "text": "Download\n                  Tip Sheet on Data Security in Operational Data Management Ukrainian.pdf\na8a2070d-1ad4-4d49-b7dc-1efc9b537bc5",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/a8a2070d-1ad4-4d49-b7dc-1efc9b537bc5/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/a8a2070d-1ad4-4d49-b7dc-1efc9b537bc5/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/35031e9a-37eb-4566-915c-cff18b3cc3d9/download/chd_cadc_drought_trigger_technical_note_2024.pdf",
+    "text": "Download\n                  chd_cadc_drought_trigger_technical_note_2024.pdf\n35031e9a-37eb-4566-915c-cff18b3cc3d9",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/35031e9a-37eb-4566-915c-cff18b3cc3d9/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/35031e9a-37eb-4566-915c-cff18b3cc3d9/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/7b24dac5-1be7-4ed7-9718-1acebbcdb788/download/tip-sheet-on-data-security-in-operational-data-management-arabic.pdf",
+    "text": "Download\n                  Tip Sheet on Data Security in Operational Data Management Arabic.pdf\n7b24dac5-1be7-4ed7-9718-1acebbcdb788",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/7b24dac5-1be7-4ed7-9718-1acebbcdb788/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/7b24dac5-1be7-4ed7-9718-1acebbcdb788/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/86c9b04d-b09c-4b90-9333-ed02f0fe44c7/download/inform-report-2024.pdf",
+    "text": "Download\n                  INFORM Report 2024.pdf\n86c9b04d-b09c-4b90-9333-ed02f0fe44c7",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/86c9b04d-b09c-4b90-9333-ed02f0fe44c7/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/86c9b04d-b09c-4b90-9333-ed02f0fe44c7/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/97e7f593-82c5-490d-a24c-2d4e5b02f35b/download/the-state-of-open-humanitarian-data-2024.pdf",
+    "text": "Download\n                  The State of Open Humanitarian Data 2024.pdf\n97e7f593-82c5-490d-a24c-2d4e5b02f35b",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/97e7f593-82c5-490d-a24c-2d4e5b02f35b/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/97e7f593-82c5-490d-a24c-2d4e5b02f35b/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/956f7bcd-fd2f-4256-a12c-cba81ae2c7ba/download/chd_som_2024_technical_note_flood_risk_hnrp.pdf",
+    "text": "Download\n                  CHD_SOM_2024_Technical_Note_Flood_Risk_HNRP.pdf\n956f7bcd-fd2f-4256-a12c-cba81ae2c7ba",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/956f7bcd-fd2f-4256-a12c-cba81ae2c7ba/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/956f7bcd-fd2f-4256-a12c-cba81ae2c7ba/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/6c51a523-23d8-4207-be80-03dc0ad658c1/download/innovating-anticipatory-action-lessons-from-the-2022-south-sudan-floods.pdf",
+    "text": "Download\n                  Innovating Anticipatory Action -- Lessons from the 2022 South Sudan Floods.pdf\n6c51a523-23d8-4207-be80-03dc0ad658c1",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/6c51a523-23d8-4207-be80-03dc0ad658c1/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/6c51a523-23d8-4207-be80-03dc0ad658c1/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/2516b111-dca9-4789-883b-a1f4a35bf25a/download/guidance-note-11-french.pdf",
+    "text": "Download\n                  guidance note 11 french.pdf\n2516b111-dca9-4789-883b-a1f4a35bf25a",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/2516b111-dca9-4789-883b-a1f4a35bf25a/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/2516b111-dca9-4789-883b-a1f4a35bf25a/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/a02a33fe-3833-4371-abe9-f383904ed277/download/guidance-note-11-spanish.pdf",
+    "text": "Download\n                  guidance note 11 spanish.pdf\na02a33fe-3833-4371-abe9-f383904ed277",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/a02a33fe-3833-4371-abe9-f383904ed277/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/a02a33fe-3833-4371-abe9-f383904ed277/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/dac85080-6beb-4c3d-ad62-be0d7aecf08a/download/2023_hdx_quality-measures-sprint-report_final.pdf",
+    "text": "Download\n                  2023_HDX_Quality Measures Sprint Report_Final.pdf\ndac85080-6beb-4c3d-ad62-be0d7aecf08a",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/dac85080-6beb-4c3d-ad62-be0d7aecf08a/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/dac85080-6beb-4c3d-ad62-be0d7aecf08a/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/725c1295-9e24-40a2-b98f-ef0844d72208/download/guidance-note-11.pdf",
+    "text": "Download\n                  guidance note 11.pdf\n725c1295-9e24-40a2-b98f-ef0844d72208",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/725c1295-9e24-40a2-b98f-ef0844d72208/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/725c1295-9e24-40a2-b98f-ef0844d72208/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/0b7c0cdd-ba90-45c0-9e31-04f46456081a/download/model-report-displacement-global-monitoring.pdf",
+    "text": "Download\n                  Model Report - Displacement global monitoring.pdf\n0b7c0cdd-ba90-45c0-9e31-04f46456081a",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/0b7c0cdd-ba90-45c0-9e31-04f46456081a/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/0b7c0cdd-ba90-45c0-9e31-04f46456081a/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/f1ad9496-6e57-4ef8-9224-265c35ec849b/download/model-report-chad-drought-anticipatory-action-trigger.pdf",
+    "text": "Download\n                  Model Report - Chad Drought Anticipatory Action trigger.pdf\nf1ad9496-6e57-4ef8-9224-265c35ec849b",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/f1ad9496-6e57-4ef8-9224-265c35ec849b/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/f1ad9496-6e57-4ef8-9224-265c35ec849b/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/4036d81a-9003-4b2d-9233-4d2beaf53341/download/model-report-bgd-aa.pdf",
+    "text": "Download\n                  Model Report BGD AA.pdf\n4036d81a-9003-4b2d-9233-4d2beaf53341",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/4036d81a-9003-4b2d-9233-4d2beaf53341/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/4036d81a-9003-4b2d-9233-4d2beaf53341/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/29adeb93-e062-44f5-87a4-3716e37e114b/download/model-report-npl-aa.pdf",
+    "text": "Download\n                  Model Report NPL AA.pdf\n29adeb93-e062-44f5-87a4-3716e37e114b",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/29adeb93-e062-44f5-87a4-3716e37e114b/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/29adeb93-e062-44f5-87a4-3716e37e114b/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/4f9f0af7-5fd0-437e-befb-29b1bab53480/download/model-report-inform-risk-index.pdf",
+    "text": "Download\n                  Model Report - INFORM Risk Index.pdf\n4f9f0af7-5fd0-437e-befb-29b1bab53480",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/4f9f0af7-5fd0-437e-befb-29b1bab53480/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/4f9f0af7-5fd0-437e-befb-29b1bab53480/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/ee5ebee2-b0f0-4582-a040-a9e0cb6150d5/download/inform-report-2023.pdf",
+    "text": "Download\n                  INFORM Report 2023.pdf\nee5ebee2-b0f0-4582-a040-a9e0cb6150d5",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/ee5ebee2-b0f0-4582-a040-a9e0cb6150d5/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/ee5ebee2-b0f0-4582-a040-a9e0cb6150d5/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/26d90f7f-4dae-4f45-b9fc-f9e32fdd92b5/download/guidance_observationalrainfalldata.pdf",
+    "text": "Download\n                  Climate Guidance Series: Observational Rainfall Data\n26d90f7f-4dae-4f45-b9fc-f9e32fdd92b5",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/26d90f7f-4dae-4f45-b9fc-f9e32fdd92b5/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/26d90f7f-4dae-4f45-b9fc-f9e32fdd92b5/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/548ba224-2a87-49ad-b80f-444b14531d55/download/guidance_precipitationforecasts.pdf",
+    "text": "Download\n                  Climate Guidance Series: Precipitation Forecasts\n548ba224-2a87-49ad-b80f-444b14531d55",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/548ba224-2a87-49ad-b80f-444b14531d55/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/548ba224-2a87-49ad-b80f-444b14531d55/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/6841d1d2-3ba9-4a05-8802-fe29b7385f50/download/a-principled-framework-for-responsible-data-sharing-between-humanitarian-organizations-and-donor.pdf",
+    "text": "Download\n                  A Principled Framework for Responsible Data Sharing Between Humanitarian Organizations and Donors.pdf\n6841d1d2-3ba9-4a05-8802-fe29b7385f50",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/6841d1d2-3ba9-4a05-8802-fe29b7385f50/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/6841d1d2-3ba9-4a05-8802-fe29b7385f50/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/848a05e7-38e8-4d30-a93a-065b07ac5805/download/guidance-note-on-the-implications-of-cyber-threats-for-humanitarians.pdf",
+    "text": "Download\n                  Guidance Note on The Implications of Cyber Threats for Humanitarians.pdf\n848a05e7-38e8-4d30-a93a-065b07ac5805",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/848a05e7-38e8-4d30-a93a-065b07ac5805/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/848a05e7-38e8-4d30-a93a-065b07ac5805/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/20be8549-bad0-4efe-82e0-0d80ba533970/download/hdx-one-pager.pdf",
+    "text": "Download\n                  HDX One Pager.pdf\n20be8549-bad0-4efe-82e0-0d80ba533970",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/20be8549-bad0-4efe-82e0-0d80ba533970/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/20be8549-bad0-4efe-82e0-0d80ba533970/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/89da8b46-16b0-44f9-a2cf-32b2896015ca/download/niger-aa-trigger-for-drought-model-report-1.pdf",
+    "text": "Download\n                  Niger AA Trigger for Drought - Model Report.pdf\n89da8b46-16b0-44f9-a2cf-32b2896015ca",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/89da8b46-16b0-44f9-a2cf-32b2896015ca/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/89da8b46-16b0-44f9-a2cf-32b2896015ca/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/3808ed54-307e-41b4-8819-71221d833c0a/download/model-report-bfa-aa.pdf",
+    "text": "Download\n                  Model Report BFA AA.pdf\n3808ed54-307e-41b4-8819-71221d833c0a",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/3808ed54-307e-41b4-8819-71221d833c0a/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/3808ed54-307e-41b4-8819-71221d833c0a/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/9d4121c6-b32b-4eb8-a707-209c79241970/download/state-of-open-humanitarian-data-2023.pdf",
+    "text": "Download\n                  State of Open Humanitarian Data 2023.pdf\n9d4121c6-b32b-4eb8-a707-209c79241970",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/9d4121c6-b32b-4eb8-a707-209c79241970/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/9d4121c6-b32b-4eb8-a707-209c79241970/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/5d56ead3-b3a2-4160-a6fa-2e3dd79e0c96/download/data-responsibility-guidelines-2021-french.pdf",
+    "text": "Download\n                  Data Responsibility Guidelines 2021 French.pdf\n5d56ead3-b3a2-4160-a6fa-2e3dd79e0c96",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/5d56ead3-b3a2-4160-a6fa-2e3dd79e0c96/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/5d56ead3-b3a2-4160-a6fa-2e3dd79e0c96/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/02adcae8-17f2-4ce0-9e70-9a925edf9542/download/guidance-note-on-data-security-in-operational-data-management.pdf",
+    "text": "Download\n                  Guidance note on data security in operational data management.pdf\n02adcae8-17f2-4ce0-9e70-9a925edf9542",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/02adcae8-17f2-4ce0-9e70-9a925edf9542/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/02adcae8-17f2-4ce0-9e70-9a925edf9542/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/926e652a-d161-4b16-8598-936f706ee454/download/conflict-prediction-october-2022.pdf",
+    "text": "Download\n                  Conflict Prediction October 2022.pdf\n926e652a-d161-4b16-8598-936f706ee454",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/926e652a-d161-4b16-8598-936f706ee454/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/926e652a-d161-4b16-8598-936f706ee454/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/c9645061-d923-4c2e-b3f9-12147145802b/download/510-philippines-typhoon-model-report.pdf",
+    "text": "Download\n                  510 Philippines Typhoon Model Report.pdf\nc9645061-d923-4c2e-b3f9-12147145802b",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/c9645061-d923-4c2e-b3f9-12147145802b/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/c9645061-d923-4c2e-b3f9-12147145802b/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/64bb81f5-f21d-438d-8ad6-b7e94733c395/download/guidance-note-1-french-updated.pdf",
+    "text": "Download\n                  guidance note 1 french updated.pdf\n64bb81f5-f21d-438d-8ad6-b7e94733c395",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/64bb81f5-f21d-438d-8ad6-b7e94733c395/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/64bb81f5-f21d-438d-8ad6-b7e94733c395/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/f9fd4b55-d7c7-4f93-9345-b6365098e15d/download/guidance-note-2-french-updated.pdf",
+    "text": "Download\n                  guidance note 2 french updated.pdf\nf9fd4b55-d7c7-4f93-9345-b6365098e15d",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/f9fd4b55-d7c7-4f93-9345-b6365098e15d/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/f9fd4b55-d7c7-4f93-9345-b6365098e15d/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/40170a6b-dea8-407f-929b-5a0cbefba0a2/download/guidance-note-3-french.pdf",
+    "text": "Download\n                  guidance note 3 french.pdf\n40170a6b-dea8-407f-929b-5a0cbefba0a2",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/40170a6b-dea8-407f-929b-5a0cbefba0a2/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/40170a6b-dea8-407f-929b-5a0cbefba0a2/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/0005b14b-4603-47d9-99c7-e5497a12b1aa/download/guidance-note-4-french-updated.pdf",
+    "text": "Download\n                  guidance-note-4-french-updated.pdf\n0005b14b-4603-47d9-99c7-e5497a12b1aa",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/0005b14b-4603-47d9-99c7-e5497a12b1aa/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/0005b14b-4603-47d9-99c7-e5497a12b1aa/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/60e4657c-49c1-430b-a03a-53a77ae06180/download/guidance-note-5-french-updated.pdf",
+    "text": "Download\n                  guidance note 5 french updated.pdf\n60e4657c-49c1-430b-a03a-53a77ae06180",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/60e4657c-49c1-430b-a03a-53a77ae06180/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/60e4657c-49c1-430b-a03a-53a77ae06180/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/3d6a4e35-f25e-41f9-b914-de377d8d4e54/download/guidance-note-6-french.pdf",
+    "text": "Download\n                  guidance note 6 french.pdf\n3d6a4e35-f25e-41f9-b914-de377d8d4e54",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/3d6a4e35-f25e-41f9-b914-de377d8d4e54/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/3d6a4e35-f25e-41f9-b914-de377d8d4e54/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/7e47e8b4-85b9-4edc-b19f-d2984d65e0e5/download/guidance-note-7-french.pdf",
+    "text": "Download\n                  guidance note 7 french.pdf\n7e47e8b4-85b9-4edc-b19f-d2984d65e0e5",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/7e47e8b4-85b9-4edc-b19f-d2984d65e0e5/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/7e47e8b4-85b9-4edc-b19f-d2984d65e0e5/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/715d76db-99e5-4737-902d-ced4aad1179f/download/guidance-note-8-french.pdf",
+    "text": "Download\n                  guidance note 8 french.pdf\n715d76db-99e5-4737-902d-ced4aad1179f",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/715d76db-99e5-4737-902d-ced4aad1179f/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/715d76db-99e5-4737-902d-ced4aad1179f/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/3281e066-2643-46f0-aecf-43ee7374a453/download/tip-sheet-understanding-data-ecosystems.pdf",
+    "text": "Download\n                  tip-sheet-understanding-data-ecosystems.pdf\n3281e066-2643-46f0-aecf-43ee7374a453",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/3281e066-2643-46f0-aecf-43ee7374a453/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/3281e066-2643-46f0-aecf-43ee7374a453/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/5b28aba1-6662-4336-948e-0a5e7b71beb4/download/tip-sheet-on-data-security-in-operational-data-management.pdf",
+    "text": "Download\n                  Tip Sheet on Data Security in Operational Data Management.pdf\n5b28aba1-6662-4336-948e-0a5e7b71beb4",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/5b28aba1-6662-4336-948e-0a5e7b71beb4/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/5b28aba1-6662-4336-948e-0a5e7b71beb4/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/a23b2ace-0a1a-41d5-9e22-becfd1bc8c7b/download/tip-sheet-on-data-security-in-ocha-data-management.pdf",
+    "text": "Download\n                  Tip Sheet on Data Security in OCHA Data Management.pdf\na23b2ace-0a1a-41d5-9e22-becfd1bc8c7b",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/a23b2ace-0a1a-41d5-9e22-becfd1bc8c7b/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/a23b2ace-0a1a-41d5-9e22-becfd1bc8c7b/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/460e5b29-774a-4bf8-adb4-6c34f11f4987/download/model-report-ucb-cider-model.pdf",
+    "text": "Download\n                  Model Report - UCB Cider Model.pdf\n460e5b29-774a-4bf8-adb4-6c34f11f4987",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/460e5b29-774a-4bf8-adb4-6c34f11f4987/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/460e5b29-774a-4bf8-adb4-6c34f11f4987/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/8520c405-6665-4bf0-ad23-05fa15cba959/download/predictive-analytics-handout-un-ocha-centre-humdata.pdf",
+    "text": "Download\n                  Predictive Analytics handout - UN OCHA Centre Humdata.pdf\n8520c405-6665-4bf0-ad23-05fa15cba959",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/8520c405-6665-4bf0-ad23-05fa15cba959/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/8520c405-6665-4bf0-ad23-05fa15cba959/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/fff9d4bc-eac1-4009-8455-81df40dbe1b3/download/guidance-note-1-spanish.pdf",
+    "text": "Download\n                  Guidance Note 1 Spanish.pdf\nfff9d4bc-eac1-4009-8455-81df40dbe1b3",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/fff9d4bc-eac1-4009-8455-81df40dbe1b3/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/fff9d4bc-eac1-4009-8455-81df40dbe1b3/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/769c08ef-b269-4cfc-b976-8b7fb5a4719c/download/guidance-note-2-spanish.pdf",
+    "text": "Download\n                  Guidance Note 2 Spanish.pdf\n769c08ef-b269-4cfc-b976-8b7fb5a4719c",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/769c08ef-b269-4cfc-b976-8b7fb5a4719c/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/769c08ef-b269-4cfc-b976-8b7fb5a4719c/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/f1a297aa-7623-47cf-a24f-e3cda5bbfa47/download/guidance-note-3-spanish.pdf",
+    "text": "Download\n                  Guidance Note 3 Spanish.pdf\nf1a297aa-7623-47cf-a24f-e3cda5bbfa47",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/f1a297aa-7623-47cf-a24f-e3cda5bbfa47/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/f1a297aa-7623-47cf-a24f-e3cda5bbfa47/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/816ba519-afb9-46a1-9c02-b0f426e2e248/download/guidance-note-4-spanish.pdf",
+    "text": "Download\n                  Guidance Note 4 Spanish.pdf\n816ba519-afb9-46a1-9c02-b0f426e2e248",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/816ba519-afb9-46a1-9c02-b0f426e2e248/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/816ba519-afb9-46a1-9c02-b0f426e2e248/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/d975fd08-6cbb-41dc-9231-e69cc3bfd11c/download/guidance-note-5-spanish.pdf",
+    "text": "Download\n                  Guidance Note 5 Spanish.pdf\nd975fd08-6cbb-41dc-9231-e69cc3bfd11c",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/d975fd08-6cbb-41dc-9231-e69cc3bfd11c/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/d975fd08-6cbb-41dc-9231-e69cc3bfd11c/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/0653ecf4-712a-48e2-81f8-4961e8a1ba83/download/guidance-note-6-spanish.pdf",
+    "text": "Download\n                  Guidance Note 6 Spanish.pdf\n0653ecf4-712a-48e2-81f8-4961e8a1ba83",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/0653ecf4-712a-48e2-81f8-4961e8a1ba83/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/0653ecf4-712a-48e2-81f8-4961e8a1ba83/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/012034ac-f0c5-4cc2-8956-d71d062dae4d/download/guidance-note-7-spanish.pdf",
+    "text": "Download\n                  Guidance Note 7 Spanish.pdf\n012034ac-f0c5-4cc2-8956-d71d062dae4d",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/012034ac-f0c5-4cc2-8956-d71d062dae4d/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/012034ac-f0c5-4cc2-8956-d71d062dae4d/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/907d9847-b89d-4021-a2de-75468d1bac17/download/guidance-note-8-spanish.pdf",
+    "text": "Download\n                  Guidance Note 8 Spanish.pdf\n907d9847-b89d-4021-a2de-75468d1bac17",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/907d9847-b89d-4021-a2de-75468d1bac17/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/907d9847-b89d-4021-a2de-75468d1bac17/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/487f6d90-d879-4c59-8439-f2d08633f357/download/guidance-note-1.pdf",
+    "text": "Download\n                  guidance-note-1.pdf\n487f6d90-d879-4c59-8439-f2d08633f357",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/487f6d90-d879-4c59-8439-f2d08633f357/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/487f6d90-d879-4c59-8439-f2d08633f357/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/51949711-43d0-4c08-accc-109154510ef6/download/guidance-note-2.pdf",
+    "text": "Download\n                  guidance note 2.pdf\n51949711-43d0-4c08-accc-109154510ef6",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/51949711-43d0-4c08-accc-109154510ef6/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/51949711-43d0-4c08-accc-109154510ef6/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/7b985c57-e086-43df-93e7-8f667c995e2a/download/guidance-note-3.pdf",
+    "text": "Download\n                  guidance-note-3.pdf\n7b985c57-e086-43df-93e7-8f667c995e2a",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/7b985c57-e086-43df-93e7-8f667c995e2a/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/7b985c57-e086-43df-93e7-8f667c995e2a/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/a39c4674-d976-42ae-af31-e037c1ffb9fe/download/guidance-note-4.pdf",
+    "text": "Download\n                  guidance-note-4.pdf\na39c4674-d976-42ae-af31-e037c1ffb9fe",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/a39c4674-d976-42ae-af31-e037c1ffb9fe/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/a39c4674-d976-42ae-af31-e037c1ffb9fe/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/2ed4209a-76d9-4ea3-95f1-520a7fced9dc/download/guidance-note-5.pdf",
+    "text": "Download\n                  guidance-note-5.pdf\n2ed4209a-76d9-4ea3-95f1-520a7fced9dc",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/2ed4209a-76d9-4ea3-95f1-520a7fced9dc/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/2ed4209a-76d9-4ea3-95f1-520a7fced9dc/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/a1379937-5165-46f1-8bf0-b99ea7c0bb26/download/guidance-note-6.pdf",
+    "text": "Download\n                  guidance-note-6.pdf\na1379937-5165-46f1-8bf0-b99ea7c0bb26",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/a1379937-5165-46f1-8bf0-b99ea7c0bb26/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/a1379937-5165-46f1-8bf0-b99ea7c0bb26/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/5bfa1f7f-713c-4331-89d6-436f86f014d0/download/guidance-note-7.pdf",
+    "text": "Download\n                  guidance note 7.pdf\n5bfa1f7f-713c-4331-89d6-436f86f014d0",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/5bfa1f7f-713c-4331-89d6-436f86f014d0/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/5bfa1f7f-713c-4331-89d6-436f86f014d0/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/9db86627-8d8b-435f-8455-6c02802f8fee/download/guidance-note-8.pdf",
+    "text": "Download\n                  guidance note 8.pdf\n9db86627-8d8b-435f-8455-6c02802f8fee",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/9db86627-8d8b-435f-8455-6c02802f8fee/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/9db86627-8d8b-435f-8455-6c02802f8fee/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/c7053042-fd68-44c7-ae24-a57890a48235/download/ocha-dr-guidelines-working-draft-032019.pdf",
+    "text": "Download\n                  ocha-dr-guidelines-working-draft-032019.pdf\nc7053042-fd68-44c7-ae24-a57890a48235",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/c7053042-fd68-44c7-ae24-a57890a48235/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/c7053042-fd68-44c7-ae24-a57890a48235/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/60050608-0095-4c11-86cd-0a1fc5c29fd9/download/ocha-data-responsibility-guidelines_2021.pdf",
+    "text": "Download\n                  OCHA Data Responsibility Guidelines_2021.pdf\n60050608-0095-4c11-86cd-0a1fc5c29fd9",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/60050608-0095-4c11-86cd-0a1fc5c29fd9/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/60050608-0095-4c11-86cd-0a1fc5c29fd9/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/76e488d9-b69d-41bd-927c-116d633bac7b/download/peer-review-framework-2020.pdf",
+    "text": "Download\n                  peer-review-framework-2020.pdf\n76e488d9-b69d-41bd-927c-116d633bac7b",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/76e488d9-b69d-41bd-927c-116d633bac7b/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/76e488d9-b69d-41bd-927c-116d633bac7b/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/3b7dccf5-cfda-4d64-9af6-b63f861ac593/download/4459_002_tip-sheet-responsible-use-of-online-conferencing-tools_web_1.pdf",
+    "text": "Download\n                  4459_002_Tip-Sheet-Responsible-Use-of-Online-Conferencing-Tools_WEB_1.pdf\n3b7dccf5-cfda-4d64-9af6-b63f861ac593",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/3b7dccf5-cfda-4d64-9af6-b63f861ac593/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/3b7dccf5-cfda-4d64-9af6-b63f861ac593/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/e482c45f-02f2-409b-8444-17d04cb9f940/download/hdxcasestudy.pdf",
+    "text": "Download\n                  hdxcasestudy.pdf\ne482c45f-02f2-409b-8444-17d04cb9f940",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/e482c45f-02f2-409b-8444-17d04cb9f940/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/e482c45f-02f2-409b-8444-17d04cb9f940/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/6bef24f7-c479-4210-9528-65ceb9e76d24/download/centreforhumdata_handout_dec2016.pdf",
+    "text": "Download\n                  centreforhumdata_handout_dec2016.pdf\n6bef24f7-c479-4210-9528-65ceb9e76d24",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/6bef24f7-c479-4210-9528-65ceb9e76d24/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/6bef24f7-c479-4210-9528-65ceb9e76d24/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/2d9592f8-2980-4466-96f5-f0de23ea7ffa/download/ochabucky_final.pdf",
+    "text": "Download\n                  OCHABucky_Final.pdf\n2d9592f8-2980-4466-96f5-f0de23ea7ffa",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/2d9592f8-2980-4466-96f5-f0de23ea7ffa/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/2d9592f8-2980-4466-96f5-f0de23ea7ffa/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/be6ab2c8-f3c4-4045-9acf-529f6091c253/download/drc-model-card.pdf",
+    "text": "Download\n                  DRC-Model-Card.pdf\nbe6ab2c8-f3c4-4045-9acf-529f6091c253",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/be6ab2c8-f3c4-4045-9acf-529f6091c253/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/be6ab2c8-f3c4-4045-9acf-529f6091c253/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/6012a18a-bcfc-4a1e-a149-f9df656c2169/download/drc-model-evaluation-matrix.pdf",
+    "text": "Download\n                  DRC-Model-Evaluation-Matrix.pdf\n6012a18a-bcfc-4a1e-a149-f9df656c2169",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/6012a18a-bcfc-4a1e-a149-f9df656c2169/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/6012a18a-bcfc-4a1e-a149-f9df656c2169/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/79bfca07-d55b-44ab-a214-5608367d2d1f/download/ocha_data_explorer_quarterly_report.pdf",
+    "text": "Download\n                  ocha_data_explorer_quarterly_report.pdf\n79bfca07-d55b-44ab-a214-5608367d2d1f",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/79bfca07-d55b-44ab-a214-5608367d2d1f/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/79bfca07-d55b-44ab-a214-5608367d2d1f/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/89a2ff67-ef20-4005-9732-bfc23d76bf4b/download/ocha-bucky-model-card.pdf",
+    "text": "Download\n                  OCHA-Bucky-Model-Card.pdf\n89a2ff67-ef20-4005-9732-bfc23d76bf4b",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/89a2ff67-ef20-4005-9732-bfc23d76bf4b/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/89a2ff67-ef20-4005-9732-bfc23d76bf4b/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/658d5c4f-1680-4cb5-9fbf-10a0a64e2c39/download/hdx-qa-checklist.pdf",
+    "text": "Download\n                  hdx-qa-checklist.pdf\n658d5c4f-1680-4cb5-9fbf-10a0a64e2c39",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/658d5c4f-1680-4cb5-9fbf-10a0a64e2c39/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/658d5c4f-1680-4cb5-9fbf-10a0a64e2c39/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/89546fb6-b130-4189-9da9-c962053e729f/download/pa_2020_fellow_report_final.pdf",
+    "text": "Download\n                  pa_2020_fellow_report_final.pdf\n89546fb6-b130-4189-9da9-c962053e729f",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/89546fb6-b130-4189-9da9-c962053e729f/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/89546fb6-b130-4189-9da9-c962053e729f/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/56bb190e-fd43-4573-898c-76aaedb7e10a/download/state-of-open-humanitarian-data-2022.pdf",
+    "text": "Download\n                  State of Open Humanitarian Data 2022.pdf\n56bb190e-fd43-4573-898c-76aaedb7e10a",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/56bb190e-fd43-4573-898c-76aaedb7e10a/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/56bb190e-fd43-4573-898c-76aaedb7e10a/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/8b8916fb-5be5-4840-8b11-1ebe97f27a4b/download/state-of-open-humanitarian-data-2021.pdf",
+    "text": "Download\n                  State of Open Humanitarian Data 2021.pdf\n8b8916fb-5be5-4840-8b11-1ebe97f27a4b",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/8b8916fb-5be5-4840-8b11-1ebe97f27a4b/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/8b8916fb-5be5-4840-8b11-1ebe97f27a4b/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/053cc6a7-42aa-4286-88da-88a133e833aa/download/stateofdata2020.pdf",
+    "text": "Download\n                  StateofData2020.pdf\n053cc6a7-42aa-4286-88da-88a133e833aa",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/053cc6a7-42aa-4286-88da-88a133e833aa/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/053cc6a7-42aa-4286-88da-88a133e833aa/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/23d9bf17-ef82-4038-bb4e-23e97cfe893b/download/centre-for-humanitarian-data-one-pager.pdf",
+    "text": "Download\n                  Centre for Humanitarian Data One-Pager.pdf\n23d9bf17-ef82-4038-bb4e-23e97cfe893b",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/23d9bf17-ef82-4038-bb4e-23e97cfe893b/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/23d9bf17-ef82-4038-bb4e-23e97cfe893b/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/93a6170c-4b30-4578-9384-ee97e08d206f/download/iati-covid-19-data-final-report.pdf",
+    "text": "Download\n                  IATI COVID-19 Data - Final Report.pdf\n93a6170c-4b30-4578-9384-ee97e08d206f",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/93a6170c-4b30-4578-9384-ee97e08d206f/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/93a6170c-4b30-4578-9384-ee97e08d206f/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/57dd6394-7b8f-4ec1-a622-68a7ee15a04b/download/complex-systems-modeling-for-humanitarian-action-methods-and-opportunities-nov-2021.pdf",
+    "text": "Download\n                  Complex Systems Modeling for Humanitarian Action - Methods and Opportunities (Nov 2021).pdf\n57dd6394-7b8f-4ec1-a622-68a7ee15a04b",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/57dd6394-7b8f-4ec1-a622-68a7ee15a04b/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/57dd6394-7b8f-4ec1-a622-68a7ee15a04b/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/d3e1d2b0-af36-47fc-8442-8ac0fde7af73/download/final-report-cooper_smith-dial-peer-review.pdf",
+    "text": "Download\n                  Final report - Cooper_Smith - DIAL Peer review.pdf\nd3e1d2b0-af36-47fc-8442-8ac0fde7af73",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/d3e1d2b0-af36-47fc-8442-8ac0fde7af73/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/d3e1d2b0-af36-47fc-8442-8ac0fde7af73/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/44696c96-375b-4dc8-bc4c-2dd6c885f052/download/world-bank-group-image.png",
+    "text": "Download\n                  world-bank-group-image.png\n44696c96-375b-4dc8-bc4c-2dd6c885f052",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/44696c96-375b-4dc8-bc4c-2dd6c885f052/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/44696c96-375b-4dc8-bc4c-2dd6c885f052/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/fe9446da-979c-4606-90f1-d8ae537f5336/download/guidance-note-9-arabic.pdf",
+    "text": "Download\n                  guidance note 9 arabic.pdf\nfe9446da-979c-4606-90f1-d8ae537f5336",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/fe9446da-979c-4606-90f1-d8ae537f5336/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/fe9446da-979c-4606-90f1-d8ae537f5336/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/0d40446f-4c4a-4c79-9215-c2adafc4f191/download/guidance-note-8-arabic.pdf",
+    "text": "Download\n                  guidance note 8 arabic.pdf\n0d40446f-4c4a-4c79-9215-c2adafc4f191",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/0d40446f-4c4a-4c79-9215-c2adafc4f191/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/0d40446f-4c4a-4c79-9215-c2adafc4f191/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/d6b45aaa-1e63-48ee-aab1-e2182bd373af/download/guidance-note-3-arabic.pdf",
+    "text": "Download\n                  guidance note 3 arabic.pdf\nd6b45aaa-1e63-48ee-aab1-e2182bd373af",
+    "title": "Download",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/d6b45aaa-1e63-48ee-aab1-e2182bd373af/download_metadata?format=json",
+    "text": "JSON",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/d6b45aaa-1e63-48ee-aab1-e2182bd373af/download_metadata?format=csv",
+    "text": "CSV",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/faqs/terms",
+    "text": "TERMS OF SERVICE",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/about/hdx-qa-process",
+    "text": "QA PROCESS",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://data.humdata.org/faqs/devs",
+    "text": "RESOURCES FOR DEVELOPERS",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://centre.humdata.org/category/blog/",
+    "text": "BLOG",
+    "title": "",
+    "base_domain": "humdata.org"
+  },
+  {
+    "href": "https://centre.humdata.org/contact-us/",
+    "text": "CONTACT",
+    "title": "",
+    "base_domain": "humdata.org"
+  }
+]

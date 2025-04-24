@@ -10,9 +10,9 @@ async def main():
   )
 
   async with AsyncWebCrawler(config=browser_conf) as crawler: 
-    result = await crawler.arun("https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/029df9aa-c277-4571-9dae-dc9bc33bdd14/download/hdx-signals-impact-story.pdf", config=run_conf)
+    result = await crawler.arun("https://dpsindore.org/", config=run_conf)
     print("----------------- MARKDOWN -----------------")
-    print(result.markdown[:300])
+    print(result.markdown)
 
     # print("----------------- FIT MARKDOWN -----------------")
     # print(result.fit_markdown[:300])

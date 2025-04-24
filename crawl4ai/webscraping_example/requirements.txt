@@ -9,3 +9,6 @@ Requests==2.32.3
 pdfplumber
 tabulate
 camelot-py[base]
+table-ocr
+opencv-python
+

@@ -13,7 +13,7 @@ def extract_tables(*, input_pdf: str, output_csv: str) -> None:
         raise PermissionError(f"Cannot read file: {input_pdf}")
     
     print(f"Attempting to read: {input_pdf}")
-    tables = camelot.read_pdf(input_pdf, )
+    tables = camelot.read_pdf(input_pdf, flavor="lattice",)
     print(f"tables object: {tables}")
     for t in tables:
         print(f"table : ", t)

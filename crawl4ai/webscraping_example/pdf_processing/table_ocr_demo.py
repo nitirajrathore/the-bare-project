@@ -70,8 +70,28 @@ def extract_tables_from_pdf(pdf_path: str, csv_output_path: str) -> list[str]:
     return csv_files
 
 # Example usage:
+# if __name__ == "__main__":
+#     pdf_file = "/home/nitiraj/praroopai/mywork/the-bare-project/crawl4ai/webscraping_example/data/srkg_shishukunj_fees.pdf"  
+#     csv_base = "output.csv"
+#     csv_files = extract_tables_from_pdf(pdf_file, csv_base)
+#     print(f"Generated CSV files: {csv_files}")
+    
+
+# Example usage: Jhalaria Jr. KG Fees
+# if __name__ == "__main__":
+#     pdf_file = "/home/nitiraj/praroopai/website-crawler/exp/filtered_bfs/pruning/19/downloads/jhalaria-campus/wp-content/uploads/2024/03/Jhalaria-Jr-KG-Fees-2024-25final.pdf.pdf"
+#     csv_base = "/home/nitiraj/praroopai/website-crawler/exp/filtered_bfs/pruning/19/downloads/jhalaria-campus/wp-content/uploads/2024/03/Jhalaria-Jr-KG-Fees-2024-25final.pdf.csv"
+#     csv_files = extract_tables_from_pdf(pdf_file, csv_base)
+#     print(f"Generated CSV files: {csv_files}")
+
+# Example usage: Jalaria Nursery Fees
 if __name__ == "__main__":
-    pdf_file = "/home/nitiraj/praroopai/mywork/the-bare-project/crawl4ai/webscraping_example/data/srkg_shishukunj_fees.pdf"  
-    csv_base = "output.csv"
+    pdf_file = "/home/nitiraj/praroopai/website-crawler/exp/filtered_bfs/pruning/19/downloads/jhalaria-campus/wp-content/uploads/2024/03/Jhalaria-Nursery-Fees-2024-25final.pdf.pdf"
+    csv_base = "/home/nitiraj/praroopai/website-crawler/exp/filtered_bfs/pruning/19/downloads/jhalaria-campus/wp-content/uploads/2024/03/Jhalaria-Nursery-Fees-2024-25final.pdf.csv"
     csv_files = extract_tables_from_pdf(pdf_file, csv_base)
     print(f"Generated CSV files: {csv_files}")
+    
+    
+    https://www.shishukunj.in/jhalaria-campus/wp-content/uploads/2024/09/SV_-Nursery_Information-about-fees-2025-26.pdf
+    
+    https://www.shishukunj.in/jhalaria-campus/wp-content/uploads/2024/09/SV_-Nursery_Information-about-fees-2025-26.pdf

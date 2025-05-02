@@ -35,56 +35,113 @@ try {
 const mode = args.includes('--delete') ? 'delete' : 'print';
 
 const skipArg = args.find(arg => arg.startsWith('--skip='));
-const skipDirs = skipArg
+const skipPaths = skipArg
   ? skipArg.replace('--skip=', '').split(',').map(d => d.trim()).filter(Boolean)
   : [];
 
 const noDeleteArg = args.find(arg => arg.startsWith('--no-delete='));
-const noDeleteDirs = noDeleteArg
+const noDeletePaths = noDeleteArg
   ? noDeleteArg.replace('--no-delete=', '').split(',').map(d => d.trim()).filter(Boolean)
   : [];
 
-function normalizePath(dir) {
-  if (path.isAbsolute(dir)) {
-    return dir;
+function normalizePath(targetPath) {
+  if (path.isAbsolute(targetPath)) {
+    return targetPath;
   }
-  return path.resolve(ROOT_DIR, dir);
+  return path.resolve(ROOT_DIR, targetPath);
 }
 
 // Normalize paths to be absolute
-const normalizedSkipDirs = skipDirs.map(normalizePath);
-const normalizedNoDeleteDirs = noDeleteDirs.map(normalizePath);
+const normalizedSkipPaths = skipPaths.map(normalizePath);
+const normalizedNoDeletePaths = noDeletePaths.map(normalizePath);
 
 // Print configuration information
 console.log(`Root directory: ${ROOT_DIR}`);
 console.log(`Mode: ${mode === 'delete' ? 'Delete ignored files' : 'Print ignored files only'}`);
 
-if (normalizedSkipDirs.length > 0) {
-  console.log('\nDirectories to skip from processing:');
-  normalizedSkipDirs.forEach(dir => {
-    console.log(`  - ${path.relative(ROOT_DIR, dir) || '.'} (${dir})`);
+if (normalizedSkipPaths.length > 0) {
+  console.log('\nPaths to skip from processing:');
+  normalizedSkipPaths.forEach(itemPath => {
+    console.log(`  - ${path.relative(ROOT_DIR, itemPath) || '.'} (${itemPath})`);
   });
 }
 
-if (normalizedNoDeleteDirs.length > 0) {
-  console.log('\nDirectories to skip from deletion:');
-  normalizedNoDeleteDirs.forEach(dir => {
-    console.log(`  - ${path.relative(ROOT_DIR, dir) || '.'} (${dir})`);
+if (normalizedNoDeletePaths.length > 0) {
+  console.log('\nPaths to skip from deletion:');
+  normalizedNoDeletePaths.forEach(itemPath => {
+    console.log(`  - ${path.relative(ROOT_DIR, itemPath) || '.'} (${itemPath})`);
   });
 }
 
 console.log('\nStarting traversal...\n');
 
-function shouldIgnoreDir(dir) {
-  return normalizedSkipDirs.some(skipped =>
-    dir === skipped || dir.startsWith(skipped + path.sep)
-  );
+function shouldSkipPath(targetPath) {
+  // Check if the path or any of its parent directories should be skipped
+  return normalizedSkipPaths.some(skipPath => {
+    try {
+      // Check if paths are identical
+      if (targetPath === skipPath) return true;
+
+      // Check if the target is inside a skipped directory 
+      // by seeing if it starts with the skip path plus a separator
+      if (targetPath.startsWith(skipPath + path.sep)) return true;
+
+      // For file patterns that might not end with path separator
+      const skipStat = fs.statSync(skipPath, { throwIfNoEntry: false });
+      if (!skipStat) {
+        // If the path doesn't exist, it might be a pattern
+        // Check if the basename matches
+        const skipBasename = path.basename(skipPath);
+        const targetBasename = path.basename(targetPath);
+        if (skipBasename === targetBasename) return true;
+      }
+
+      return false;
+    } catch (err) {
+      return false;
+    }
+  });
 }
 
-function shouldNotDeleteDir(dir) {
-  return normalizedNoDeleteDirs.some(noDelete =>
-    dir === noDelete || dir.startsWith(noDelete + path.sep)
-  );
+function shouldNotDeletePath(targetPath) {
+  const targetBasename = path.basename(targetPath);
+
+  // Check if path is in .git directory or is a .git directory itself
+  if (targetPath.includes(`${path.sep}.git${path.sep}`) || targetPath.endsWith(`${path.sep}.git`)) {
+    return true;
+  }
+
+  // Check for exact filename matches in the --no-delete list
+  // This handles patterns like ".env" that should protect any file named .env
+  if (noDeletePaths.includes(targetBasename)) {
+    return true;
+  }
+
+  // Check if the path or any of its parent directories should be protected from deletion
+  return normalizedNoDeletePaths.some(noDeletePath => {
+    try {
+      // Check if paths are identical
+      if (targetPath === noDeletePath) return true;
+
+      // Check if the target is inside a protected directory
+      if (targetPath.startsWith(noDeletePath + path.sep)) return true;
+
+      // For file patterns (without the full path)
+      const noDeleteBasename = path.basename(noDeletePath);
+
+      // Check if basenames match exactly (for file pattern matching)
+      if (targetBasename === noDeleteBasename) return true;
+
+      // Handle extension-based patterns (e.g. ".env")
+      if (noDeleteBasename.startsWith('.') && targetBasename === noDeleteBasename) {
+        return true;
+      }
+
+      return false;
+    } catch (err) {
+      return false;
+    }
+  });
 }
 
 function printUsage() {
@@ -104,18 +161,18 @@ Options:
   --delete                   Delete ignored files instead of just printing them.
                              Without this flag, files are only printed.
                              
-  --skip=<dir1,dir2,...>     Comma-separated list of directories to skip during traversal.
-                             Paths can be absolute or relative to the root directory.
+  --skip=<path1,path2,...>   Comma-separated list of paths (files or directories) to skip 
+                             during traversal. Paths can be absolute or relative to the root directory.
                              
-  --no-delete=<dir1,dir2,...> Comma-separated list of directories that should not be deleted
-                             even if they match gitignore patterns. Paths can be absolute
-                             or relative to the root directory.
+  --no-delete=<path1,path2,...> Comma-separated list of paths (files or directories) that should not 
+                             be deleted even if they match gitignore patterns. Paths can be absolute
+                             or relative to the root directory. .git directories are automatically protected.
 
 Examples:
   node delete_git_ignored.js ./my-project
   node delete_git_ignored.js C:\\Users\\me\\project --delete
-  node delete_git_ignored.js ./project --skip=node_modules,dist
-  node delete_git_ignored.js ./project --delete --no-delete=.git,important-folder
+  node delete_git_ignored.js ./project --skip=node_modules,dist,config.json
+  node delete_git_ignored.js ./project --delete --no-delete=.git,important-folder,data.csv
 `);
 }
 
@@ -144,9 +201,9 @@ async function findIgnoredFiles(dir, ig) {
 }
 
 async function traverseAndClean(dir) {
-  if (shouldIgnoreDir(dir)) {
+  if (shouldSkipPath(dir)) {
     const relPath = path.relative(ROOT_DIR, dir);
-    console.log(`[SKIPPED] Directory excluded from processing: ${relPath}`);
+    console.log(`[SKIPPED] Path excluded from processing: ${relPath || '.'}`);
     return;
   }
 
@@ -157,15 +214,15 @@ async function traverseAndClean(dir) {
     const fullPath = path.join(dir, entry.name);
     const relPath = path.relative(ROOT_DIR, fullPath);
 
-    if (shouldIgnoreDir(fullPath)) {
-      console.log(`[SKIPPED] Directory excluded from processing: ${relPath}`);
+    if (shouldSkipPath(fullPath)) {
+      console.log(`[SKIPPED] Path excluded from processing: ${relPath}`);
       continue;
     }
 
     const isIgnored = ig && ig.ignores(entry.name);
 
     if (isIgnored) {
-      if (shouldNotDeleteDir(fullPath)) {
+      if (shouldNotDeletePath(fullPath)) {
         console.log(`[PROTECTED] ${relPath} (matches gitignore but protected from deletion)`);
       } else if (mode === 'print') {
         console.log(`[IGNORED] ${relPath}`);

@@ -1,0 +1,13 @@
+  source .venv/bin/activate
+  pip install -U prisma 
+  prisma generate
+
+  prisma db push 
+
+  python insert_user.py
+
+  python user_insert.py
+
+  python retrieve_users.py
+
+  

@@ -1,7 +1,7 @@
 // database
 datasource db {
-  provider = "sqlite"
-  url      = "file:database.db"
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
 }
 
 // generator
@@ -28,3 +28,86 @@ model User {
   posts Post[]
 }
 
+
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+model SportFacility {
+  id               Int        @id @default(autoincrement())
+  name             String
+  description      String?
+  schoolInfo       SchoolInfo @relation(fields: [schoolInfoId], references: [id], onDelete: Cascade)
+  schoolInfoId     Int
+}
+
+model ManagementPerson {
+  id               Int        @id @default(autoincrement())
+  name             String
+  position         String
+  schoolInfo       SchoolInfo @relation(fields: [schoolInfoId], references: [id], onDelete: Cascade)
+  schoolInfoId     Int
+}
+
+model InfrastructureFacility {
+  id               Int        @id @default(autoincrement())
+  name             String
+  description      String?
+  schoolInfo       SchoolInfo @relation(fields: [schoolInfoId], references: [id], onDelete: Cascade)
+  schoolInfoId     Int
+}
+
+model OtherFacility {
+  id               Int        @id @default(autoincrement())
+  name             String
+  description      String?
+  schoolInfo       SchoolInfo @relation(fields: [schoolInfoId], references: [id], onDelete: Cascade)
+  schoolInfoId     Int
+}
+
+model Lab {
+  id               Int        @id @default(autoincrement())
+  name             String
+  description      String?
+  schoolInfo       SchoolInfo @relation(fields: [schoolInfoId], references: [id], onDelete: Cascade)
+  schoolInfoId     Int
+}
+
+model SchoolInfo {
+  id                   Int                    @id @default(autoincrement())
+  school_name          String?
+  city                 String?
+  state                String?
+  locality             String?
+  school_type          String?
+  board_affiliation    String?
+  establishment_year   Int?
+  website              String?
+  contact_phone        String[]               // List of Phone numbers
+  contact_email        String?
+  school_address       String?
+  other_office_addresses String[]             // List of other addresses
+  grade_levels         String?
+  medium_instruction   String?
+  teacher_student_ratio Json                  // Store as JSON for Dict[str, str]
+  campus_size          String?
+  annual_fees          Json                   // Store as JSON for Dict[str, str]
+  sports_facilities    SportFacility[]
+  labs                 Lab[]
+  school_infrastructure InfrastructureFacility[]
+  cocurricular         Json                   // Dict[str, str] as JSON
+  achievements         String[]
+  accolades            String[]
+  special_needs        String[]
+  transportation       String?
+  other_facilities     OtherFacility[]
+  performance          String[]
+  alumni               String[]
+  visits               String[]
+  tours                String[]
+  career_counselling   String?
+  school_timings       Json                   // Dict[str, str] as JSON
+  misc                 String[]
+  management           ManagementPerson[]
+  created_at           DateTime               @default(now())
+  updated_at           DateTime               @updatedAt
+}

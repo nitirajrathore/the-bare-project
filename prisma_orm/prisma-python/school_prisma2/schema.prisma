@@ -1,0 +1,57 @@
+// database
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// generator
+generator client {
+  provider             = "prisma-client-py"
+  recursive_type_depth = 5
+}
+
+
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+model SchoolInfo {
+  id                   Int                    @id @default(autoincrement())
+  school_name          String?
+  city                 String?
+  state                String?
+  locality             String?
+  school_type          String?
+  board_affiliation    String?
+  establishment_year   Int?
+  website              String?
+  contact_phone        String[]               // List of Phone numbers
+  contact_email        String?
+  school_address       String?
+  other_office_addresses String[]             // List of other addresses
+  grade_levels         String?
+  medium_instruction   String?
+  teacher_student_ratio Json                  // Store as JSON for Dict[str, str]
+  campus_size          String?
+  annual_fees          Json                   // Store as JSON for Dict[str, str]
+  sports_facilities    Json[]
+  labs                 Json[]
+  school_infrastructure Json[]
+  cocurricular         Json                   // Dict[str, str] as JSON
+  achievements         String[]
+  accolades            String[]
+  special_needs        String[]
+  transportation       String?
+  other_facilities     Json[]
+  performance          String[]
+  alumni               String[]
+  visits               String[]
+  tours                String[]
+  career_counselling   String?
+  school_timings       Json                   // Dict[str, str] as JSON
+  misc                 String[]
+  management           Json[]
+  created_at           DateTime               @default(now())
+  updated_at           DateTime               @updatedAt
+
+  @@map("school_info")
+}

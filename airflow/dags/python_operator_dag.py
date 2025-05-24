@@ -2,7 +2,7 @@ from datetime import datetime, timedelta
 
 from airflow import DAG
 from airflow.operators.python import PythonOperator
-
+# INFO: Old way of doing things. Airflow 2.0+ supports annotations to easily convert python function to task and flows.
 default_args = {
 
   'owner':'nitiraj',

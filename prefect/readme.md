@@ -30,4 +30,27 @@ uv run hello_world.py
 ```
 
 ## To create a deployment
-Check this example.
+Check this example. deploy_github.py and deploy_local.py in this folder and others in https://docs.prefect.io/v3/examples/deployments
+
+just run the deployment python scripts to create a deployment.
+
+```
+export PREFECT_API_URL="http://192.168.1.170:4200/api"
+python deploy_local.py
+python deploy_github.py
+```
+
+## Start worker
+The below command will start a worker on the machine in which you are running this command.
+It should have pre-requisites software installed to download and run the flow. Like for github deployment it should have git. I think if flow needs tesseraact etc then that should be already installed in that worker.
+```
+export PREFECT_API_URL="http://192.168.1.170:4200/api"
+prefect worker start --pool 'my-work-pool'
+```
+
+## Run deployment
+
+```
+export PREFECT_API_URL="http://192.168.1.170:4200/api"
+prefect deployment run 'hello/github-hello-deployment'
+```

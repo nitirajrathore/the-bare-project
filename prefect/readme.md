@@ -54,3 +54,68 @@ prefect worker start --pool 'my-work-pool'
 export PREFECT_API_URL="http://192.168.1.170:4200/api"
 prefect deployment run 'hello/github-hello-deployment'
 ```
+
+## Rate limit
+
+### Create global limit
+```
+prefect gcl create github-api --limit 60 --slot-decay-per-second 0.016
+```
+
+### use in task / flow
+```
+rate_limit("github-api")
+httpx.get(f"https://api.github.com/repos/{github_repo}").json()
+
+```
+
+
+## Retries in tasks
+```
+@task(    retries=3,
+)
+```
+
+## Caching 
+```
+@task(
+    cache_policy=INPUTS,
+    cache_expiration=timedelta(days=1)
+)
+```
+
+## Dask
+
+For local machine dask parallelization
+```
+pip install prefect_dask
+```
+
+## Creating Dask clusters
+### Method 1 : Commandline 
+
+Start scheduler
+```
+dask-scheduler
+```
+
+Start first worker
+```
+dask-worker tcp://192.168.1.12:8786
+```
+
+Start second worker
+```
+dask-worker tcp://192.168.1.12:8786
+```
+
+In python create a client
+
+```
+from dask.distributed import Client
+
+client = Client("tcp://192.168.1.12:8786")
+```
+
+
+

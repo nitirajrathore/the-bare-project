@@ -118,4 +118,7 @@ client = Client("tcp://192.168.1.12:8786")
 ```
 
 
+## ChatGPT discussion
+
+https://chatgpt.com/share/683c450b-14cc-800b-b8d4-627e7e9796f1
 

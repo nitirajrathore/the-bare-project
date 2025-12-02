@@ -13,7 +13,7 @@ pip install -U prefect-client
 start prefect server on local with
 ```
 source venv/bin/activate
-
+prefect config set PREFECT_SERVER_API_HOST=192.168.1.170
 export PREFECT_API_URL="http://192.168.1.170:4200/api"
 
 prefect server start --background

@@ -1,0 +1,19 @@
+2002  cd ansible/
+ 2003  which python 
+ 2004  uv venv .venv --python /home/nitiraj/.pyenv/shims/python 
+ 2005  source .venv/bin/activate 
+ 2006  python --version 
+ 2007  which python 
+ 2008  pip install ansible 
+ 2009  mkdir ansible_quickstart 
+ 2010  cd ansible_quickstart/
+ 2011  ls
+ 2012  touch inventory.ini
+ 2013  ansible-inventory -i inventory.ini --list
+ 2014  ansible myhosts -m ping -i inventory.ini 
+ 2015  ansible-inventory -i inventory.yml --list
+ 2016  ansible myhosts -m ping -i inventory.yml 
+ 2017  ansible-inventory -i inventory.yml --list
+ 2018  ansible myhosts -m ping -i inventory.yml 
+ 2019  touch playbook.yaml
+ 2020  ansible-playbook -i inventory.yml playbook.yaml 
